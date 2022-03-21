@@ -1,0 +1,937 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64F53688-439D-4B3F-8CF2-409B209794B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrontDesk.Kiosk</RootNamespace>
+    <AssemblyName>ScreenDoxKiosk</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+    <ApplicationIcon>screendox_y.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>..\publish\kiosk\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>14</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DEV_MODE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NO_CURSOR</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Server Setup|AnyCPU' ">
+    <OutputPath>bin\Server Setup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Server Setup|x86' ">
+    <OutputPath>bin\x86\Server Setup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0C9E3B04C9BA3D2DC8CE4618CFB7BD4066587685</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FrontDeskKiosk_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>FrontDesk.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bootstrapper, Version=2.0.3.13, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bootstrapper.2.0.3.13\lib\Net40\Bootstrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Bootstrapper.Ninject, Version=2.0.3.13, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bootstrapper.Ninject.2.0.3.13\lib\Net40\Bootstrapper.Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.4.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.NLog41, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.NLog41.3.4.1\lib\net40\Common.Logging.NLog41.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonServiceLocator.NinjectAdapter.Unofficial, Version=3.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.NinjectAdapter.Unofficial.3.2.2.0\lib\Net40\CommonServiceLocator.NinjectAdapter.Unofficial.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.WPF, Version=4.7.0.37774, Culture=neutral, PublicKeyToken=0758b07a11a4f466, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.WPF.4.7.0.9\lib\net40\FontAwesome.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Conventions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Extensions.Conventions.3.3.0\lib\net45\Ninject.Extensions.Conventions.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Factory, Version=3.3.2.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Extensions.Factory.3.3.2\lib\net45\Ninject.Extensions.Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="NinjectAdapter">
+      <HintPath>..\packages\CommonServiceLocator.NinjectAdapter.1.0.0.0\lib\NinjectAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.7.9\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\!!!Required Components\SQL Compact Runtime\4,0\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Controllers\ILookupTableDataSyncController.cs" />
+    <Compile Include="Controllers\KioskEndpointHeaderDescriptor.cs" />
+    <Compile Include="Controllers\KioskEndpointServiceClientFactory.cs" />
+    <Compile Include="Controllers\LookupTableDataSyncController.cs" />
+    <Compile Include="Controls\Keyboard\KeyButtonLayout.xaml.cs">
+      <DependentUpon>KeyButtonLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextBoxExtensions\WatermarkTerminalTextBox.xaml.cs">
+      <DependentUpon>WatermarkTerminalTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\ToUpperConverter.cs" />
+    <Compile Include="IMainWindow.cs" />
+    <Compile Include="Resources\Copyrights.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Copyrights.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Behaviors\ITextInputControlBehavior.cs" />
+    <Compile Include="Screens\Behaviors\PatientBirthdayScreenBehavior.cs" />
+    <Compile Include="Screens\Behaviors\PatientNameScreenBehavior.cs" />
+    <Compile Include="Screens\Behaviors\TextInputControlBehavior.cs" />
+    <Compile Include="Screens\Behaviors\TextInputWithPopupSuggestControlBehavior.cs" />
+    <Compile Include="Screens\DemographcsOnOffReservation.xaml.cs">
+      <DependentUpon>DemographcsOnOffReservation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DemographicMilitaryCombat.xaml.cs">
+      <DependentUpon>DemographicMilitaryCombat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DemographicMilitaryExperience.xaml.cs">
+      <DependentUpon>DemographicMilitaryExperience.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DemographicRace.xaml.cs">
+      <DependentUpon>DemographicRace.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DemographicsCountyName.xaml.cs">
+      <DependentUpon>DemographicsCountyName.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DemographicsCountyState.xaml.cs">
+      <DependentUpon>DemographicsCountyState.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DemographicsEducationLevel.xaml.cs">
+      <DependentUpon>DemographicsEducationLevel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DemographicsMaritalStatus.xaml.cs">
+      <DependentUpon>DemographicsMaritalStatus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DemographicsSexualOrientation.xaml.cs">
+      <DependentUpon>DemographicsSexualOrientation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Behaviors\DemographicsLookupValuesControlBehavior.cs" />
+    <Compile Include="Screens\DemographicsTribe.xaml.cs">
+      <DependentUpon>DemographicsTribe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\IPatientBirthdayScreen.cs" />
+    <Compile Include="Screens\IPatientNameScreen.cs" />
+    <Compile Include="Screens\IStatefulVisualScreen.cs" />
+    <Compile Include="Screens\ITextInputWithPopupSuggestControl.cs" />
+    <Compile Include="Screens\IVisualScreenWithNextButton.cs" />
+    <Compile Include="Screens\ITextInputWithAutosuggestControl.cs" />
+    <Compile Include="Screens\IVisualThankYouScreen.cs" />
+    <Compile Include="Screens\DemographicsMessage.xaml.cs">
+      <DependentUpon>DemographicsMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DemographicsGender.xaml.cs">
+      <DependentUpon>DemographicsGender.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Behaviors\TextInputWithAutosuggestContrlBehavior.cs" />
+    <Compile Include="Screens\DemographicsSendResult.xaml.cs">
+      <DependentUpon>DemographicsSendResult.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Services\IPatientNameValidationService.cs" />
+    <Compile Include="Services\PatientNameValidationException.cs" />
+    <Compile Include="Services\PatientNameValidationService.cs" />
+    <Compile Include="Workflow\IScreeningResultState.cs" />
+    <Compile Include="Workflow\IVisualScreenFactory.cs" />
+    <Compile Include="Workflow\QuestionAnswersConstants.cs" />
+    <Compile Include="Workflow\ScreeningState.cs" />
+    <Compile Include="Workflow\SectionQuestionsVisualScreenController.cs" />
+    <Compile Include="Workflow\VisualScreenFactory.cs" />
+    <Compile Include="Workflow\VisualScreenState.cs" />
+    <Page Include="Controls\Keyboard\KeyboardControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Keyboard\KeyButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Keyboard\KeyButtonLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Controls\OutOfServiceFullScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\OutOfServiceNotification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ScreensBackGround.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\SmallLogo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TextBoxExtensions\MaskedDateTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TextBoxExtensions\MaskedPhoneTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TextBoxExtensions\MaskedTerminalTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TextBoxExtensions\MaskedZipCodeTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TextBoxExtensions\TerminalTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\LoadingIndicator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TextBoxExtensions\WatermarkTerminalTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FailedToStartWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ResourceDictionary\ApplicationStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResourceDictionary\Buttons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResourceDictionary\Keys.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResourceDictionary\Layouts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResourceDictionary\TextBoxes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screens\Address.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\Birthday.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\City.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\DemographcsOnOffReservation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\DemographicMilitaryCombat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\DemographicMilitaryExperience.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\DemographicRace.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\DemographicsCountyName.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\DemographicsCountyState.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\DemographicsEducationLevel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\DemographicsMaritalStatus.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\DemographicsSexualOrientation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\DemographicsTribe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\Home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\LastName.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\MiddleName.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\Phone.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\DemographicsGender.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\DemographicsSendResult.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\SendResult.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\State.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\DemographicsMessage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\ThankYou.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\ScreeningSectionPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\FirstName.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\Welcome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\ZipCode.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\UserSessionIsExpiring.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IoC\NinjectBootstrapper.cs" />
+    <Compile Include="Controllers\IUserSessionTimeoutController.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ScreensBackGround.xaml.cs">
+      <DependentUpon>ScreensBackGround.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SmallLogo.xaml.cs">
+      <DependentUpon>SmallLogo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextBoxExtensions\MaskedZipCodeTextBox.xaml.cs">
+      <DependentUpon>MaskedZipCodeTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ScreeningMinimalAgeDataSyncController.cs" />
+    <Compile Include="FailedToStartWindow.xaml.cs">
+      <DependentUpon>FailedToStartWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KioskConfigurationException.cs" />
+    <Compile Include="Screens\Address.xaml.cs">
+      <DependentUpon>Address.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screens\Birthday.xaml.cs">
+      <DependentUpon>Birthday.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screens\City.xaml.cs">
+      <DependentUpon>City.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ErrorNotificationController.cs" />
+    <Compile Include="Controls\OutOfServiceFullScreen.xaml.cs">
+      <DependentUpon>OutOfServiceFullScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OutOfServiceNotification.xaml.cs">
+      <DependentUpon>OutOfServiceNotification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\IVisualSectionScreen.cs" />
+    <Compile Include="Screens\LastName.xaml.cs">
+      <DependentUpon>LastName.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screens\MiddleName.xaml.cs">
+      <DependentUpon>MiddleName.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screens\Phone.xaml.cs">
+      <DependentUpon>Phone.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State.xaml.cs">
+      <DependentUpon>State.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ZipCode.xaml.cs">
+      <DependentUpon>ZipCode.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserSessionIsExpiring.xaml.cs">
+      <DependentUpon>UserSessionIsExpiring.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\KioskEndpointService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SoundController.cs" />
+    <Compile Include="Controllers\UserSessionTimeoutController.cs" />
+    <Compile Include="Controls\Keyboard\KeyboardControl.xaml.cs">
+      <DependentUpon>KeyboardControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Keyboard\KeyboardController.cs" />
+    <Compile Include="Controls\Keyboard\KeyButton.xaml.cs">
+      <DependentUpon>KeyButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextBoxExtensions\MaskedDateTextBox.xaml.cs">
+      <DependentUpon>MaskedDateTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextBoxExtensions\MaskedPhoneTextBox.xaml.cs">
+      <DependentUpon>MaskedPhoneTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextBoxExtensions\MaskedTerminalTextBox.xaml.cs">
+      <DependentUpon>MaskedTerminalTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextBoxExtensions\MaskHelper.cs" />
+    <Compile Include="Controls\TextBoxExtensions\TerminalTextBox.xaml.cs">
+      <DependentUpon>TerminalTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IScreenControl.cs" />
+    <Compile Include="Controls\LoadingIndicator.xaml.cs">
+      <DependentUpon>LoadingIndicator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenComponentHelper.cs" />
+    <Compile Include="Screens\SendResult.xaml.cs">
+      <DependentUpon>SendResult.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ThankYou.xaml.cs">
+      <DependentUpon>ThankYou.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreeningSectionPanel.xaml.cs">
+      <DependentUpon>ScreeningSectionPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\FirstName.xaml.cs">
+      <DependentUpon>FirstName.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\IVisualScreen.cs" />
+    <Compile Include="Screens\NextScreenClickedEventArg.cs" />
+    <Compile Include="Screens\Welcome.xaml.cs">
+      <DependentUpon>Welcome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\AppSettings.cs" />
+    <Compile Include="Controllers\OutOfServiceController.cs" />
+    <Compile Include="Workflow\IPatientScreeningFrequencyRepository.cs" />
+    <Compile Include="Workflow\IScreeningFrequencySpecification.cs" />
+    <Compile Include="Workflow\PatientScreeningFrequencyRepository.cs" />
+    <Compile Include="Workflow\ScreeningController.cs" />
+    <Compile Include="Workflow\ScreeningResultState.cs" />
+    <Compile Include="Workflow\ScreeningStep.cs" />
+    <Compile Include="Workflow\ScreeningFrequencySpecification.cs" />
+    <Compile Include="Workflow\VisualScreenController.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Copyrights.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Copyrights.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\FrontDesk.Common.LookupValue1.datasource" />
+    <None Include="Properties\DataSources\FrontDesk.Common.LookupValue2.datasource" />
+    <None Include="Properties\DataSources\FrontDesk.Common.LookupValue3.datasource" />
+    <None Include="Properties\DataSources\RPMS.Common.Models.PatientSearch.datasource" />
+    <None Include="Service References\KioskEndpointService\Arrays1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KioskEndpointService\FrontDesk.Common1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KioskEndpointService\FrontDesk.Server.Services1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KioskEndpointService\ScreenDox.Server.Common.Models.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KioskEndpointService\service1.wsdl" />
+    <None Include="Service References\KioskEndpointService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KioskEndpointService\System1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KioskEndpointService\www.frontdeskhealth.com1.wsdl" />
+    <None Include="Service References\KioskEndpointService\www.frontdeskhealth.com1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KioskEndpointService\www.screendox.com.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Resource Include="Fonts\proximanova-black.otf" />
+    <Resource Include="Fonts\proximanova-semibold.otf" />
+    <Resource Include="Fonts\Proxima Nova A Black.otf" />
+    <Resource Include="Fonts\Proxima Nova A Bold.otf" />
+    <Resource Include="Fonts\Proxima Nova A Light It.otf" />
+    <Resource Include="Fonts\Proxima Nova A Semibold.otf" />
+    <Resource Include="Fonts\Proxima Nova Black.otf" />
+    <Resource Include="Fonts\Proxima Nova Bold.otf" />
+    <Resource Include="Fonts\Proxima Nova Light It.otf" />
+    <Resource Include="Fonts\Proxima Nova S Black.otf" />
+    <Resource Include="Fonts\Proxima Nova S Bold.otf" />
+    <Resource Include="Fonts\Proxima Nova S Light It.otf" />
+    <Resource Include="Fonts\Proxima Nova S Semibold.otf" />
+    <Resource Include="Fonts\Proxima Nova Semibold.otf" />
+    <None Include="FrontDesk.snk" />
+    <None Include="FrontDeskKiosk_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FrontDesk.Common\FrontDesk.Common.csproj">
+      <Project>{CCFD383D-DE2A-4CC8-B9BE-4AEB515328B3}</Project>
+      <Name>FrontDesk.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk.Kiosk\FrontDesk.Kiosk.csproj">
+      <Project>{655AE36B-D1A7-4FCE-BB08-C676401299A6}</Project>
+      <Name>FrontDesk.Kiosk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk\FrontDesk.csproj">
+      <Project>{277C5FEB-A989-48C4-B6DC-C8EF41F5C215}</Project>
+      <Name>FrontDesk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScreenDox.Rpms.Common.Models\ScreenDox.Rpms.Common.Models.csproj">
+      <Project>{1a999930-8849-40cc-83e8-0d70e3ed61c5}</Project>
+      <Name>ScreenDox.Rpms.Common.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\FrontDeskKiosk.sdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\DataSources\FrontDesk.Common.LookupValue.datasource" />
+    <None Include="Service References\KioskEndpointService\configuration91.svcinfo" />
+    <None Include="Service References\KioskEndpointService\configuration.svcinfo" />
+    <None Include="Service References\KioskEndpointService\FrontDesk.Kiosk.KioskEndpointService.ScreeningSectionAgeView.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KioskEndpointService\KioskEndpoint.wsdl" />
+    <None Include="Service References\KioskEndpointService\KioskEndpoint.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KioskEndpointService\KioskEndpoint1.wsdl" />
+    <None Include="Service References\KioskEndpointService\KioskEndpoint1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KioskEndpointService\KioskEndpoint2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KioskEndpointService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Resource Include="Images\logo_grey_v2.png" />
+    <None Include="Service References\KioskEndpointService\KioskEndpoint.disco" />
+    <Resource Include="screendox_icon_XQq_icon.ico" />
+    <Resource Include="screendox_icon_1.png" />
+    <Resource Include="screendox_y.ico" />
+    <Resource Include="Images\logo_bw_2019.png" />
+    <Resource Include="Images\logo_color_top.png" />
+    <Resource Include="Images\Welcome_Box_1.png" />
+    <Resource Include="Images\Welcome_Box_2.png" />
+    <Resource Include="Images\Welcome_Box_3.png" />
+    <Content Include="Sound\Button.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\Closedown.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\Error.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\Moretime.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\Startup.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\Biglogo.jpg" />
+    <Resource Include="Images\small_logo.png" />
+    <Resource Include="Images\ButtonMoreTimeShadow.png" />
+    <Resource Include="Images\DepressionButtonShadow.png" />
+    <Resource Include="Fonts\MyriadPro-Bold.otf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </Resource>
+    <Resource Include="Fonts\MyriadPro-BoldCond.otf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </Resource>
+    <Resource Include="Fonts\MyriadPro-BoldCondIt.otf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </Resource>
+    <Resource Include="Fonts\MyriadPro-BoldIt.otf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </Resource>
+    <Resource Include="Fonts\MyriadPro-Cond.otf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </Resource>
+    <Resource Include="Fonts\MyriadPro-CondIt.otf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </Resource>
+    <Resource Include="Fonts\MyriadPro-It.otf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </Resource>
+    <Resource Include="Fonts\MyriadPro-Regular.otf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </Resource>
+    <Resource Include="Fonts\MyriadPro-Semibold.otf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </Resource>
+    <Resource Include="Fonts\MyriadPro-SemiboldIt.otf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </Resource>
+    <Resource Include="Images\tb.png" />
+    <Resource Include="Images\ButtonYesNoShadow.png" />
+    <Content Include="App_setup.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\KioskEndpointService\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y "$(SolutionDir)!!!Required Components\SQL Compact Runtime\*.dll"  "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <!--<Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\3.0\WPF\Microsoft.Expression.Blend.WPF.targets" />-->
+</Project>

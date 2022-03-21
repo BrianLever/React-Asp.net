@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0B7BD27-8C29-461A-B5EC-800EAF35123C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrontDesk.Server.Tests.MotherObjects</RootNamespace>
+    <AssemblyName>FrontDesk.Server.Tests.MotherObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MotherObjects\BhsThirtyDayFollowUpMotherObject.cs" />
+    <Compile Include="MotherObjects\BhsVisitMotherObject.cs" />
+    <Compile Include="MotherObjects\ScreeningInfoMotherObject.cs" />
+    <Compile Include="MotherObjects\ScreeningResultMotherObject.cs" />
+    <Compile Include="MotherObjects\UserMotherObject.cs" />
+    <Compile Include="MotherObjects\VisitSettingsMotherObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FrontDesk.Common\FrontDesk.Common.csproj">
+      <Project>{ccfd383d-de2a-4cc8-b9be-4aeb515328b3}</Project>
+      <Name>FrontDesk.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk.Server\FrontDesk.Server.csproj">
+      <Project>{1804a9c6-e97c-43b7-b90e-581c2746efc9}</Project>
+      <Name>FrontDesk.Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk\FrontDesk.csproj">
+      <Project>{277c5feb-a989-48c4-b6dc-c8ef41f5c215}</Project>
+      <Name>FrontDesk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Screendox.Server.Models\ScreenDox.Server.Models.csproj">
+      <Project>{897817ac-5b59-4098-b6dc-22d42e73f1d9}</Project>
+      <Name>ScreenDox.Server.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

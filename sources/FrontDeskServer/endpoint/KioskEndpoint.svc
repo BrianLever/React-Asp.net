@@ -1,0 +1,4 @@
+﻿<%@ ServiceHost Language="C#" Debug="false" 
+    Service="FrontDesk.Server.Services.KioskEndpoint, FrontDesk.Server" 
+    Factory="Autofac.Integration.Wcf.AutofacServiceHostFactory, Autofac.Integration.Wcf"
+%>

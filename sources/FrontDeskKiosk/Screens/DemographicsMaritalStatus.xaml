@@ -1,0 +1,36 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+           
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    x:Class="FrontDesk.Kiosk.Screens.DemographicsMaritalStatus"
+    xmlns:controls="clr-namespace:FrontDesk.Kiosk.Controls"      
+    MinHeight="1024" mc:Ignorable="d">
+    <Grid Style="{StaticResource ContactInfoContainer}">
+        <controls:ScreensBackGround x:Name="ucBackgound" x:FieldModifier="protected" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+
+        <Grid  x:Name="grdRootGrid" x:FieldModifier="protected" >
+            <StackPanel Orientation="Vertical" Margin="0"  >
+                <TextBlock Style="{ StaticResource FormLabel }">Please select your <Run FontWeight="Bold">MARITAL STATUS</Run>:</TextBlock>
+
+                
+            </StackPanel>
+            <Grid  Background="Transparent" MinHeight="388px" x:Name="grdOptionsInRow" Margin="300,364,300,182" 
+                   VerticalAlignment="Center">
+
+                <WrapPanel x:Name="pnlMultiLineAnswerOptions" Margin="0,0,0,0" Visibility="Visible" 
+                           Orientation="Horizontal" 
+                           HorizontalAlignment="Center" VerticalAlignment="Center" >
+                    <Button Style="{DynamicResource DemographicsGenderButtonStyle}" IsDefault="True" Content="More than half the days"/>
+                    <Button Style="{DynamicResource DemographicsGenderButtonStyle}" Content="More than half the days"/>
+                    <Button Style="{DynamicResource DemographicsGenderButtonStyle}" Content="More than half the days"/>
+                    <Button Style="{DynamicResource DemographicsGenderButtonStyle}" Content="More than half the days"/>
+                </WrapPanel>
+            </Grid>
+        </Grid>
+        <Button x:Name="btnNext" x:FieldModifier="protected" Background="Transparent"
+                    Style="{StaticResource YellowKeyboardAlignedNextButton}">
+        </Button>
+    </Grid>
+</UserControl>

@@ -1,0 +1,24 @@
+﻿{
+  "patients": [
+    {
+      "RowID": "1661",
+      "HealthRecordNumber": "000000000539",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Dental Interview 5",
+        "MiddleName": ""
+      },
+      "DOB": "19720715",
+      "StreetAddress": {
+        "Address1": "1305 Remington Road",
+        "Address2": "Suite P",
+        "City": "Schaumburg",
+        "State": "IL ",
+        "Zip": "60173"
+      },
+      "HomePhone": "8474906869",
+      "OfficePhone": ""
+    }
+  ]
+}
+

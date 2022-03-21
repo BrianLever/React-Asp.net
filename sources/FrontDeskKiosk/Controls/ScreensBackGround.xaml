@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="FrontDesk.Kiosk.Controls.ScreensBackGround"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uc="clr-namespace:FrontDesk.Kiosk.Controls"
+    HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinHeight="1024" MinWidth="1280">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <StackPanel Margin="25,0,365,110" VerticalAlignment="Bottom" HorizontalAlignment="Left" Orientation="Vertical"
+                >
+            <TextBlock x:Name="txtCopyright" x:FieldModifier="protected" Style="{StaticResource CopyrightText}" 
+                       Text="(CAGE Questionnaire) Copyright © 1984 by the American Medical Association. All rights reserved. eewrwe wer wrwe wer wer werww ewr ew e werweew wer we"
+                   />
+        </StackPanel>
+        <uc:SmallLogo HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0"></uc:SmallLogo>
+    </Grid>
+</UserControl>

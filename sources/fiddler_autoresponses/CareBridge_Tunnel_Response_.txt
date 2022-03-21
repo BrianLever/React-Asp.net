@@ -1,0 +1,26 @@
+Secure Protocol: Tls
+Cipher: Aes256 256bits
+Hash Algorithm: Sha1 160bits
+Key Exchange: ECDHE_RSA (0xae06) 256bits
+
+== Server Certificate ==========
+[Subject]
+  CN=*.emedapps.com, OU=Domain Control Validated
+
+[Issuer]
+  CN=Go Daddy Secure Certificate Authority - G2, OU=http://certs.godaddy.com/repository/, O="GoDaddy.com, Inc.", L=Scottsdale, S=Arizona, C=US
+
+[Serial Number]
+  0081F0C07192601BF2
+
+[Not Before]
+  11/1/2018 11:42:17 PM
+
+[Not After]
+  11/1/2020 11:42:17 PM
+
+[Thumbprint]
+  19B9F384D682CE824558CB1EA701E16D0EBB0CBD
+
+[SubjectAltNames]
+*.emedapps.com, emedapps.com

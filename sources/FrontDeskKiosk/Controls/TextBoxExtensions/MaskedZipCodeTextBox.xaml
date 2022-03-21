@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="FrontDesk.Kiosk.Controls.TextBoxExtensions.MaskedZipCodeTextBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uc="clr-namespace:FrontDesk.Kiosk.Controls.TextBoxExtensions">
+
+    <Grid>
+        <Border Style="{StaticResource MaskedTerminalTextBoxBorderRoot}">
+
+        </Border>
+        <Grid Width="300" HorizontalAlignment="Left">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+
+            <uc:MaskedTerminalTextBox x:Name="ucNum1" Grid.Column="0" Margin="8,0,0,0" />
+            <uc:MaskedTerminalTextBox x:Name="ucNum2" Grid.Column="1" />
+            <uc:MaskedTerminalTextBox x:Name="ucNum3" Grid.Column="2" />
+            <uc:MaskedTerminalTextBox x:Name="ucNum4" Grid.Column="3" />
+            <uc:MaskedTerminalTextBox x:Name="ucNum5" Grid.Column="4" Margin="0,0,8,0" />
+        </Grid>
+
+    </Grid>
+</UserControl>

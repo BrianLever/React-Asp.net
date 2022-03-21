@@ -1,0 +1,120 @@
+﻿{
+	"_sectionAnswers": {
+		"SIH": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "SIH",
+					"QuestionID": 1,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "SIH",
+			"AnswerValue": 0
+		},
+		"TCC": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "TCC",
+					"QuestionID": 4,
+					"AnswerValue": 0
+				},
+				
+			},
+			"ScreeningSectionID": "TCC",
+			"AnswerValue": 0
+		},
+		"CAGE": {
+			"_answers": {
+				
+				"5": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 5,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "CAGE",
+			"AnswerValue": 0
+		},
+		"GAD-7": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 1,
+					"AnswerValue": 3
+				},
+				"2": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 2,
+					"AnswerValue": 3
+				},
+				"3": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 3,
+					"AnswerValue": 3
+				},
+				"4": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 4,
+					"AnswerValue": 3
+				},
+				"5": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 5,
+					"AnswerValue": 3
+				},
+				"6": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 6,
+					"AnswerValue": 3
+				},
+				"7": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 7,
+					"AnswerValue": 3
+				},
+				"8": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 8,
+					"AnswerValue": 3
+				},
+			},
+			"ScreeningSectionID": "GAD-7",
+			"AnswerValue": 1
+		},
+		"DAST": {
+			"_answers": {
+				"10": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 10,
+					"AnswerValue": 0
+				},
+				
+			},
+			"ScreeningSectionID": "DAST",
+			"AnswerValue": 0
+		},
+		"HITS": {
+			"_answers": {
+				"5": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 5,
+					"AnswerValue": 0
+				}
+				
+			},
+			"ScreeningSectionID": "HITS",
+			"AnswerValue": 0
+		}
+	},
+	"ScreeningID": "BHS",
+	"StreetAddress": "1125 WEST 6TH STREET",
+	"City": "LOS ANGELES",
+	"StateID": "CA",
+	"ZipCode": "90013",
+	"Phone": "213-202-3975",
+	"KioskID": 1000,
+	"FirstName": "Marry (Anxiety Severe)",
+	"LastName": "Test",
+	"MiddleName": "",
+	"Birthday": "1985-01-01T00:00:00"
+}

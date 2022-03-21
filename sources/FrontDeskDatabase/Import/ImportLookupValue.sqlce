@@ -1,0 +1,129 @@
+﻿-- Script Date: 6/8/2019 2:45 PM  - ErikEJ.SqlCeScripting version 3.5.2.81
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Race',1,N'American Indian',2,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Race',2,N'Asian',4,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Race',3,N'Black or African American',5,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Race',4,N'Hispanic or Latino',6,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Race',5,N'Native Hawaiian or Other Pacific Islander',7,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Race',6,N'Unknown',10,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Race',7,N'Alaska Native',3,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Race',8,N'White',8,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Race',9,N'Other',9,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'EducationLevel',1,N'Elementary School',2,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'EducationLevel',2,N'Some High School',3,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'EducationLevel',3,N'Completed High School Diploma',5,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'EducationLevel',5,N'Technical School',6,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'EducationLevel',6,N'AA degree',7,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'EducationLevel',7,N'Bachelor''s Degree',8,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'EducationLevel',8,N'Master''s Degree',9,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'EducationLevel',10,N'Doctoral Degree',10,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'EducationLevel',11,N'Completed GED or High School Equivalent',4,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'MaritalStatus',1,N'Divorced',6,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'MaritalStatus',2,N'Married',3,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'MaritalStatus',3,N'Partner',4,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'MaritalStatus',4,N'Single',2,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'MaritalStatus',5,N'Widowed',7,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'MaritalStatus',6,N'Separated',5,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'SexualOrientation',1,N'Straight/Heterosexual',2,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'SexualOrientation',2,N'Bisexual',4,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'SexualOrientation',3,N'Gay/Lesbian',3,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'SexualOrientation',4,N'Don’t Know',6,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'SexualOrientation',5,N'Other',5,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'SexualOrientation',6,N'Decline to Answer',7,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'MilitaryExperience',1,N'None',2,{ts '2019-06-04 22:00:14'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'MilitaryExperience',2,N'Active duty',3,{ts '2019-06-04 22:00:14'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'MilitaryExperience',3,N'Veteran',4,{ts '2019-06-04 22:00:14'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'MilitaryExperience',4,N'Deployed to a combat zone',5,{ts '2019-06-04 22:00:14'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Gender',1,N'Male',2,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Gender',2,N'Female',3,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Gender',3,N'Transgender',4,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Gender',4,N'Don’t Know',6,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Gender',5,N'Not Female, Male, or Transgender',5,{ts '2019-06-08 10:58:27'});
+GO
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'Gender',6,N'Decline to Answer',7,{ts '2019-06-08 10:58:27'});
+GO
+
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'LivingOnReservation',1,N'On Reservation',2,{ts '2019-06-08 10:58:27'});
+GO
+
+INSERT INTO [LookupValue] ([Screen],[ID],[Name],[OrderIndex],[LastModifiedDateUTC]) 
+VALUES (N'LivingOnReservation',2,N'Off Reservation',3,{ts '2019-06-08 10:58:27'});
+GO

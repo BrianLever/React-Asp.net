@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Microsoft Visual Studio 2008 Web Deployment Project 
+  http://go.microsoft.com/fwlink/?LinkID=104956
+
+-->
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45646FC7-15B0-4427-897F-5FBCD3B1AFA1}</ProjectGuid>
+    <SourceWebPhysicalPath>..\FrontDeskLicenseManagement</SourceWebPhysicalPath>
+    <SourceWebProject>{00F31D7B-C48B-410E-A027-206348820949}|C:\Projects\FrontDesk\FrontDeskLicenseManagement</SourceWebProject>
+    <SourceWebVirtualPath>/FrontDeskLicenseManagement</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\Debug</OutputPath>
+    <EnableUpdateable>false</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Deploy_FrontDeskLicenseManagement</SingleAssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\Release</OutputPath>
+    <EnableUpdateable>false</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Deploy_FrontDeskLicenseManagement</SingleAssemblyName>
+    <KeyFile>
+    </KeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Server Setup|AnyCPU' ">
+    <UseMerge>true</UseMerge>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <SingleAssemblyName>Deploy_FrontDeskLicenseManagement</SingleAssemblyName>
+    <OutputPath>.\Server Setup</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BouncyCastle-1.5\BouncyCastle-3DESonly.csproj">
+      <Project>{2E34D9DD-24D2-4668-AD5E-698BCDFD4333}</Project>
+      <Name>BouncyCastle-3DESonly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk.Common\FrontDesk.Common.csproj">
+      <Project>{CCFD383D-DE2A-4CC8-B9BE-4AEB515328B3}</Project>
+      <Name>FrontDesk.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk.Licensing\FrontDesk.Licensing.csproj">
+      <Project>{B722E384-68B3-4B0F-9152-C80AFE82A567}</Project>
+      <Name>FrontDesk.Licensing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk.Server.Licensing.Management\FrontDesk.Server.Licensing.Management.csproj">
+      <Project>{E0C77D89-4734-494B-AD51-AB925CF5B2A1}</Project>
+      <Name>FrontDesk.Server.Licensing.Management</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk.Server\FrontDesk.Server.csproj">
+      <Project>{1804A9C6-E97C-43B7-B90E-581C2746EFC9}</Project>
+      <Name>FrontDesk.Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk\FrontDesk.csproj">
+      <Project>{277C5FEB-A989-48C4-B6DC-C8EF41F5C215}</Project>
+      <Name>FrontDesk</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>1.0.0.0</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>1.0.0.0</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Server Setup|AnyCPU'">
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>1.0.0.0</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>1.0.0.0</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WebDeployment\v10.0\Microsoft.WebDeployment.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.WebDeployment.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="BeforeMerge">
+  </Target>
+  <Target Name="AfterMerge">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <!-- Merge all assemblies to one and obfuscate. -->
+  <Target Name="AfterBuild" Condition="'$(Configuration)'=='Release' Or '$(Configuration)'=='Server Setup'">
+    <Exec Command="AfterBuild.cmd &quot;$(Configuration)&quot; $(SingleAssemblyName)" IgnoreExitCode="false">
+    </Exec>
+  </Target>
+</Project>

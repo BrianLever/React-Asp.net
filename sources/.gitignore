@@ -1,0 +1,148 @@
+
+_svn
+TestResults
+obj
+BouncyCastle-1.5/bin
+Debug
+FrontDesk.opensdf
+*.suo
+*.user
+*.config
+/ScreenDox.Server.Api/Web.config
+/FrontDeskServer/Web.config
+FrontDeskInterfaceHost/bin
+FrontDeskLicenseManagement/Bin
+*.dbmdl
+Installations/FrontDeskServerSetup/InstallationPackage/
+Installations/FrontDeskLicenseManagementSetup/InstallationPackage
+FrontDesk.sdf
+Deploy_FrontDeskServer/Release
+Deploy_FrontDeskServer/FDServer_Release.zip
+Deploy_FrontDeskServer/AssemblyInfo
+Deploy_FrontDeskServer/Server Setup/
+FrontDesk.Common/bin
+FrontDesk.Server/bin
+FrontDesk/bin
+FrontDesk.Licensing/bin
+FrontDeskKiosk/bin
+RPMS.Data/bin
+RPMS.Common/bin
+RPMS/Deploy_FrontDeskInterfaceHost.csproj/AssemblyInfo/
+Installations/FrontDeskSetupLauncher/Release
+RPMS/Deploy_FrontDeskInterfaceHost.csproj/AssemblyInfo/Release
+RPMS/Deploy_FrontDeskInterfaceHost.csproj/AssemblyInfo/Release
+RPMS/Deploy_FrontDeskInterfaceHost.csproj/Release
+RPMS/Deploy_FrontDeskInterfaceHost.csproj/RPMSInterface_Release.zip
+RPMS/Deploy_FrontDeskInterfaceHost.csproj/AssemblyInfo
+RPMS/Deploy_FrontDeskInterfaceHost.csproj/AssemblyInfo
+Deploy_FrontDeskLicenseManagement/AssemblyInfos
+Deploy_FrontDeskLicenseManagement/AssemblyInfo/
+Deploy_FrontDeskLicenseManagement/Release/
+FrontDesk.Server.Licensing.Management/bin/
+FrontDesk_UnitTest/bin/
+Installations/Common/FrontDesk.Deploy.SQLServerInstaller/bin/
+Installations/FrontDesk.Deployment/bin
+Installations/FrontDeskKioskSetup1/Release
+Installations/FrontDeskKioskUILocker/bin
+Installations/FrontDeskLicenseManagementSetup/Release
+Installations/KioskInstallCustomActions/bin/
+Installations/ServerInstallCustomActions/bin
+RPMS.Data.Tests/bin
+RPMS.UnitTest/bin
+RPMS/Deploy_FrontDeskInterfaceHost.csproj/AssemblyInfo/
+RPMS/Deploy_FrontDeskInterfaceHost.csproj/AssemblyInfo/
+RPMS/Deploy_FrontDeskInterfaceHost.csproj/AssemblyInfo
+RPMS/Deploy_FrontDeskInterfaceHost.csproj/AssemblyInfo/
+RPMS/Deploy_FrontDeskInterfaceHost.csproj/AssemblyInfo/
+RPMS/Deploy_FrontDeskInterfaceHost.csproj/AssemblyInfo/
+Installations/LicenseManagementCustomActions/bin/
+!Resources/RPMS sources/ehr_0110.08.src_02282011/
+!Resources/RPMS sources/ehr_0110.08.src_02282011
+!Resources/RPMS sources/ehr_0110.08.src_02282011
+!Resources/RPMS sources/ehr_0110.08.src_02282011/
+!Resources/RPMS sources/ehr_0110.08.src_02282011/BEHCPRS
+!Resources/RPMS sources/ehr_0110.08.src_02282011
+!Resources/RPMS sources/ehr_0110.08.src_02282011/BEHCPRS/BEHCPRS20.cfg
+!Resources/RPMS sources/ehr_0110*
+!Resources/RPMS sources/GUI src/ven_0260.src.zip
+FrontDeskKiosk/Service References/bin
+FrontDeskRpmsService/bin
+RPMS.Data.BMXNet/bin
+RPMS.Data.BMXNet.Tests/bin
+
+/FrontdDeskKiosk.Tests/bin
+/Installations/FrontDeskServerSetup/Release/*.exe
+Installations/FrontDeskServerSetup/Release
+FrontDeskLicenseDatabase/sql/release
+Installations/RPMSFrontDeskInterfaceSetup/Release
+FrontDesk.RPMS.InstallerCustomActions/bin/
+
+/FrontDeskRpmsService/trace.txt
+Deploy_FrontDeskServer/FD_Release.zip
+/*.opensdf
+/FrontDesk.Deployment.Tests/bin
+/FrontDesk.Tests/bin
+/FrontDeskDatabase/sql
+/FrontDeskRpmsService/publish
+/*.vsmdi
+/*.sdf
+/FrontDesk.Common.Tests/bin
+/.project
+/Installations/FrontDeskSetupLauncher/Server Setup/*.log
+/FrontDesk.Server.Tests/bin
+/*.psess
+/*.vspx
+/FrontDesk.Tests.Common/bin
+/docs/2015-11-21/design/*/*.jpg
+/docs/2015-11-21/design/*/__MACOSX
+FrontDesk-vs2013.VC.opendb
+/docs/archive (1)
+/docs/archive
+/FrontDeskServer/{8B0A8F3D-8D20-4E73-8F24-ED1627C4D77A}/CodeAnalysisLog.xml
+/FrontDeskServer/{8B0A8F3D-8D20-4E73-8F24-ED1627C4D77A}/*.lastcodeanalysissucceeded
+/docs/2015-11-21/favicons
+/*.db
+/publish
+/*.opendb
+/FrontDeskKiosk/publish
+/docs/2016-04-11-changes/*.lnk
+/.vs/FrontDesk-vs2013/v15
+/FrontDeskDatabase/*.jfm
+/**/*.jfm
+/packages/**
+/FrontDesk.Server.IntegrationTests/bin
+/Frontdesk.Kiosk.Simulator.Tests/bin
+/Frontdesk.Kiosk.Simulator/bin/Release
+/!Resources/RPMS sources/GUI src/bmx_0200scr
+/SmartExport/ScreenDox.Rpms.SmartExport.App/bin
+/SmartExport/Frontdesk.Server.SmartExport/bin/
+/FrontDesk.Server.Tests.MotherObjects/bin/Release
+/ScreenDox.Rpms.SmartExport.App.Tests/bin/Release
+/ScreenDox.Rpms.SmartExport.Console/bin/Release
+/UpgradeLog2.htm
+/UpgradeLog.htm
+/.vs/slnx.sqlite
+/FrontDesk.Server.SmartExport.Tests/bin
+/.vs/FrontDesk-vs2013/DesignTimeBuild
+*.dtbcache
+/RPMS*/bin
+/RPMS*/obj
+
+/ScreenDox.KioskInstaller.Tools/bin
+/FrontDesk.Kiosk/bin
+
+/Installations/FrontDeskKioskSetup1/output.txt
+/FrontDeskLicenseManagement/{7CF6018F-3C2E-445C-9CF7-C468F11A6C5B}
+/.vs/FrontDesk-vs2013/v16/Browse.VC.db
+/.vs/FrontDesk-vs2013/v16/Server/sqlite3/db.lock
+/.vs/FrontDesk-vs2013/v16/Server/sqlite3/storage.ide
+/.vs/FrontDesk-vs2013/v16/Server/sqlite3/storage.ide-shm
+/.vs/FrontDesk-vs2013/v16/Server/sqlite3/storage.ide-wal
+/.vs/FrontDesk-vs2013/v16/Solution.VC.db
+/.vs/FrontDesk-vs2013/config
+/.vs/FrontDesk-vs2013/v16
+**/bin
+**/obj
+/PrecompiledWeb
+/ScreenDoxKioskInstallApi.Tests/bin
+/kiosk-installation-cmdlets/CN/ScreenDox_Installation_files/filebeat-7.7.0

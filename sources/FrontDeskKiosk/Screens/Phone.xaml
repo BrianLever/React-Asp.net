@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="FrontDesk.Kiosk.Screens.Phone"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+    xmlns:uc="clr-namespace:FrontDesk.Kiosk.Controls.TextBoxExtensions" 
+    xmlns:cc="clr-namespace:FrontDesk.Kiosk.Controls"                                       
+    xmlns:kuc="clr-namespace:FrontDesk.Kiosk.Controls.Keyboard">
+    <Grid  Style="{StaticResource ContactInfoContainer}">
+        <cc:ScreensBackGround/>
+        <StackPanel>
+            <TextBlock Style="{ StaticResource FormLabel }">Please enter your 
+                <Run FontWeight="Black">PHONE NUMBER</Run>, starting with the area code first:</TextBlock>
+            <Grid Style="{StaticResource ContactInfoTextFieldLineWrapper}">
+                <uc:MaskedPhoneTextBox x:Name="ucPhone" HorizontalAlignment="Left" FilledInControlForeground="#FF4D4D4D"/>
+                <kuc:KeyButton x:Name="btnBackspace" Text="DELETE" DepressedTemplateKey="BackspaceSep" 
+                    PressedTemplateKey="BackspaceSep_Pressed" DisabledTemplateKey="BackspaceSep_Disabled"   
+                    Style="{ StaticResource Backspace }" KeyPressing="btnBackspace_KeyPressing"
+                               HorizontalAlignment="Right" ></kuc:KeyButton>
+            </Grid>
+
+            <Grid Style="{ StaticResource DigitalKeyboard }">
+                <StackPanel Style="{ StaticResource KbBackground}"></StackPanel>
+                <kuc:KeyboardControl x:Name="ucKeyboard" KbType="Digital" 
+                                     KeyPressing="ucKeyboard_KeyPressing" 
+                                     KeyPressed="ucKeyboard_KeyPressed"/>
+            </Grid>
+        </StackPanel>
+        <Button x:Name="btnNext" Click="OnNext" Style="{StaticResource YellowKeyboardAlignedNextButton}">NEXT</Button>
+    </Grid>
+</UserControl>

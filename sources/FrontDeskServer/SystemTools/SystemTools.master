@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SystemTools.master.cs"
+    Inherits="SystemToolsMaster" MasterPageFile="~/FrontDeskMaster.master" %>
+
+<%@ Register Src="~/controls/UI/RpmsCredentialsExpiratonNotificationMessage.ascx" TagPrefix="ctrl" TagName="RpmsCredentialsExpirationAlert" %>
+
+<%@ MasterType VirtualPath="~/FrontDeskMaster.master" %>
+<asp:Content runat="server" ID="content" ContentPlaceHolderID="cphContent">
+    <div class="w100">
+        <div class="fleft w20 leftMenu">
+            <asp:Menu runat="server" ID="menuLeft" DataSourceID="smdsLeftMenu" SkinID="LeftMenu" 
+             StaticDisplayLevels="1" MaximumDynamicDisplayLevels="0" >
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="smdsLeftMenu" runat="server" StartingNodeUrl="~/SystemTools/Default.aspx"
+                ShowStartingNode="false" />
+        </div>
+        <div class="fleft w80">
+            <div class="rmar20">
+                <ctrl:RpmsCredentialsExpirationAlert runat="server" ID="credentialsNotification" ClientIDMode="Static" />
+            </div>
+            <asp:ContentPlaceHolder runat="server" ID="cphSystemTools">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>

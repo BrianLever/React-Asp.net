@@ -1,0 +1,8 @@
+<publishData>
+  <publishTarget publishUrl="C:\Projects\FrontDesk\Deploy_FrontDeskInterface\">
+    <file relUrl="bin/FrontDeskInterface.dll" publishTime="10/28/2010 20:15:07" />
+    <file relUrl="Web.config" publishTime="10/28/2010 18:46:50" />
+    <file relUrl="FrontDeskInterface.svc" publishTime="10/26/2010 18:54:18" />
+    <file relUrl="bin/RPMS.Common.dll" publishTime="10/28/2010 20:15:07" />
+  </publishTarget>
+</publishData>

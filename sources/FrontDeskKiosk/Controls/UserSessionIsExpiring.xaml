@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="FrontDesk.Kiosk.Controls.UserSessionIsExpiring"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    MinHeight="1024" MinWidth="1280">
+    <UserControl.Resources>
+       
+
+
+
+    </UserControl.Resources>
+    <Grid>
+        <Grid Opacity="0.81">
+            <Grid.Background>
+                <SolidColorBrush Color="#FFF7F7F7"/>
+            </Grid.Background>
+        </Grid>
+        <Button Style="{DynamicResource ClickToContinueButtonStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Button"/>
+    </Grid>
+</UserControl>

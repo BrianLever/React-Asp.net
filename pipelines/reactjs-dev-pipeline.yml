@@ -1,0 +1,92 @@
+# React.js
+# Build and test NPM React.JS project.
+name: $(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+trigger:
+  branches:
+      include:
+      - releases/*
+      - features/*
+      - bugs/*
+  paths:
+    include:    
+    - sources/screen.dox.ui.app
+    exclude:
+    - pipelines/*
+    - sources/fiddler_autoresponses/*
+    - sources/CI-cmdlets/*
+    - sources/kiosk-installation-cmdlets/*
+    - sources/Postman-files/*
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Prod'
+  appDirectory: $(Build.Repository.LocalPath)\sources\screen.dox.ui.app
+
+stages:
+- stage: Build
+  jobs:
+  - job: Build_Screendox_UI
+    displayName: 'Build Screendox UI (React)'
+    workspace:
+      clean: outputs
+    steps:
+
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '14.x'
+      displayName: 'Install Node.js'
+
+    - task: Npm@1
+      displayName: 'Npm Install'
+      inputs:
+        command: 'install'
+        workingDir: '$(appDirectory)'
+        verbose: true
+        # customRegistry: 'useFeed'
+        # customFeed: '896778c8-d8ef-4c25-a652-f67384b1f3e0'
+
+    # - script: npm install -f
+    #   displayName: 'npm install'
+    #   workingDirectory: $(appDirectory)
+    #   failOnStderr: false
+
+    - script: $(Build.Repository.LocalPath)\sources\CI-cmdlets\build_reactjs_app.cmd $(Build.ArtifactStagingDirectory)
+      displayName: 'Build Screendox UI'
+      failOnStderr: true
+    
+    - task: CopyFiles@2
+      displayName: 'Copy web.config'
+      inputs:
+        SourceFolder: '$(appDirectory)'
+        Contents: 'web.config'
+        TargetFolder: '$(appDirectory)\build'
+        OverWrite: true
+
+    # Publish build artifacts to Azure Pipelines or a Windows file share
+    - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
+      displayName: 'Snapshot Environment Variables'
+
+    - task: CopyFiles@2
+      displayName: 'Copy React App files'
+      inputs:
+        SourceFolder: '$(appDirectory)\build'
+        Contents: '**'
+        TargetFolder: '$(Build.ArtifactStagingDirectory)\Screendox.UI'
+        OverWrite: true
+    
+    - task: CopyFiles@2
+      displayName: 'Copy deployment scripts'
+      inputs:
+        SourceFolder: '$(Build.SourcesDirectory)\pipelines\scripts'
+        Contents: '**'
+        TargetFolder: '$(Build.ArtifactStagingDirectory)\scripts'
+        OverWrite: true
+
+    - task: PublishBuildArtifacts@1
+      inputs:
+        pathToPublish: '$(Build.ArtifactStagingDirectory)' 
+        artifactName: 'drop' 
+        parallel: false

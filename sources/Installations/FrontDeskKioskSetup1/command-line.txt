@@ -1,0 +1,36 @@
+https://localhost/screendox
+
+https://localhost/screendoxkioskInstallApi
+
+PRUW
+
+7da891c424f26415aa18f104f67df4fe719114b148c65f59d80042ee3fe17f58
+
+
+
+msiexec /i ScreenDoxKioskSetup.msi /qf /l* out.txt SERVER_URL=https://localhost/screendox SERVER_INSTALL_API_URL=https://localhost/screendoxkioskInstallApi KIOSK_KEY=PRUW KIOSK_SECRET=7da891c424f26415aa18f104f67df4fe719114b148c65f59d80042ee3fe17f58 CustomTextA_EDIT1=https://localhost/screendox
+
+
+/appfolder="[TARGETDIR]\" /kioskkey="[KIOSK_KEY]" /server="[SERVER_URL]" /installapi="[SERVER_INSTALL_API_URL]" /kiosksecret="[KIOSK_SECRET]"
+
+
+
+C:\ScreenDox\KioskInstallationPackagesDirectory
+
+
+
+
+
+
+https://192.168.100.114/screendox
+
+https://192.168.100.114/screendoxkioskInstallApi
+
+6LZW
+
+7db891c454ff6415aa18f101167df4fe719114b148c65f59d80042ee3fe17f58
+
+
+
+
+6MPR

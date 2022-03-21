@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Root" roles="*">
+    <siteMapNode url="Clients.aspx" title="Clients"  description="Client Management" />
+    <siteMapNode url="Licenses.aspx" title="Licenses"  description="License Management" />          
+    <siteMapNode url="Activation.aspx" title="Activation"  description="License Activation" />
+    <siteMapNode url="ErrorLog.aspx" title="Error Log"  description="Application Error Logs" />
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="./assets/logo-tab.svg" />
+    <link rel="stylesheet" id="font-awesome-free-css" href="//use.fontawesome.com/releases/v5.12.0/css/all.css?ver=5.7.2" type="text/css" media="all">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,800&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.typekit.net/uhu1xfp.css">
+    
+    <!-- <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,800&display=swap');
+    </style> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Screendox web site"
+    />
+    <link rel="apple-touch-icon" href="./assets/logo-tab.svg" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title id="screendox_page_title">Screendox</title>
+    <style>
+      em {
+        font-style: italic !important;
+      }      
+      .MuiPickersToolbar-toolbar {
+        background-color: rgb(46, 46, 66) !important;
+      }
+      .MuiPickersDay-daySelected {
+        background-color: rgb(46, 46, 66) !important;
+      }
+      .MuiButton-textPrimary {
+        color:rgb(46, 46, 66) !important;
+      }
+      .MuiFormLabel-root {
+        border-color: rgb(46, 46, 66) !important;
+        color: rgb(46, 46, 66) !important;
+        font-weight: 500;
+      }
+      .MuiFormLabel-root.Mui-focused {
+        color:rgb(46, 46, 66) !important;
+      }
+      .MuiOutlinedInput-notchedOutline {
+        border-color: rgb(46, 46, 66) !important;
+        transition: border linear 0.2s, box-shadow linear 0.2s !important;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%) !important;
+        border-width: 1px !important;
+      }
+      .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+        border-color: rgb(46, 46, 66) !important;
+      }
+
+      .MuiButton-endIcon {
+        margin-bottom: 10px;
+      }
+      .MuiInputBase-input {
+        font-weight: 800 !important;
+      }
+      .MuiSelect-outlined.MuiSelect-outlined {
+        font-weight: 400 !important;       
+      }
+      .MuiList-padding {
+        padding-top: 0px !important; 
+        padding-bottom: 0px !important; 
+      }  
+      .MuiSelect-icon {
+        top: calc(50% - 12px);
+        color:#2e2e42 !important;
+        right: 0;
+        position: absolute;
+        pointer-events: none;
+}
+
+      .ql-editor {
+        min-height: 120px;
+      }
+      .MuiInput-underline:after{
+        border-bottom: 2px solid rgb(46, 46, 66) !important;
+      }
+      .MuiButton-root {
+        font-size: 1em !important;
+      }
+      .MuiTableCell-root {
+        font-size: 1rem !important;
+      }
+      .MuiInput-underline:after {
+        display: none !important;
+      }
+      .MuiInput-underline:before {
+        display: none !important;
+      }
+      .ql-toolbar.ql-snow {
+        border: none !important;
+      }
+      .ql-container.ql-snow {
+        border: 1px solid rgb(46,46,66) !important;
+        min-height: 165px !important;
+        border-radius: 4px !important;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%) !important;
+      }
+      td:first-child,
+      th:first-child {
+        border-radius: 5px 0 0 5px;
+      }
+
+      td:last-child,
+      th:last-child {
+        border-radius: 0 5px 5px 0;
+      }
+      .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+        background-color: rgb(181 181 199) !important;
+      }
+      .PrivateTabIndicator-root-64 {
+        display: none !important;
+      }
+      .MuiInputLabel-outlined.MuiInputLabel-marginDense {
+        cursor: text;
+        max-width: 66.66%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transform-origin: left bottom;
+        transform: translate(0, 1rem) scale(1.5) !important;
+        font-size: 0.7em;
+        margin-left: 15px;
+        margin-top: 2px;
+        font-weight: 500 !important;
+      }
+      .MuiInputLabel-outlined.MuiInputLabel-shrink {
+        cursor: unset;
+        max-width: unset;
+        white-space: unset;
+        overflow: unset;
+        text-overflow: unset;
+        transform-origin: unset;
+        transform: translate(14px, -6px) scale(1) !important;
+        font-size: 0.7em;
+        margin-left: unset;
+        margin-top: unset;
+        font-weight: 500 !important;
+      }
+      @media only screen and (max-width: 1600px) {
+        .MuiTable-root .kmrvmU {
+          font-size: 0.8em !important;
+          padding: 0px 3px!important;
+        }
+      }
+    </style>
+  </head>
+  <body style="width: 100%;">
+    <noscript>Screendox</noscript>
+    <div id="backdrop-root"></div>
+    <div id="overlay-root"></div>
+    <div id="d-backdrop-root"></div>
+    <div id="d-overlay-root"></div>
+    <div id="root" style="width: 100%; height: 100%;"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

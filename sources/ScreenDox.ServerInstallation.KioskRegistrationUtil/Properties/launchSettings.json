@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ScreenDox.ServerInstallation.KioskRegistrationUtil": {
+      "commandName": "Executable",
+      "executablePath": "dotnet "
+    }
+  }
+}

@@ -1,0 +1,255 @@
+﻿{
+  "visits": [
+    {
+       "VisitID": "390",
+      "AdmitDate": "20071105090015",
+      "ServiceCategory": "",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Westside Medical Office",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "541",
+      "AdmitDate": "20150903102000",
+      "ServiceCategory": "",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Desert Springs Surgical Ctr",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "1441",
+      "AdmitDate": "20180104102500",
+      "ServiceCategory": "Office Visit",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "CHC Medical",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "1481",
+      "AdmitDate": "20180126112000",
+      "ServiceCategory": "",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Cardiology Clinic",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "1347",
+      "AdmitDate": "20171013122000",
+      "ServiceCategory": "Well child",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Westside Medical Office",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "596",
+      "AdmitDate": "20151027170800",
+      "ServiceCategory": "",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "St Vincents Hospital Inpatient",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "530",
+      "AdmitDate": "20150803091000",
+      "ServiceCategory": "",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Beach Optical",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "508",
+      "AdmitDate": "20150717082600",
+      "ServiceCategory": "Office Visit",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Coastal Internal Medicine",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "537",
+      "AdmitDate": "20150810101008",
+      "ServiceCategory": "",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Beach Optical",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "959",
+      "AdmitDate": "20160505091000",
+      "ServiceCategory": "Well child",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "CHC Medical",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "762",
+      "AdmitDate": "20160115091000",
+      "ServiceCategory": "Office Visit",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "CHC Medical",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "1278",
+      "AdmitDate": "20170619091000",
+      "ServiceCategory": "Office Visit",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Cardiology Clinic",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "1170",
+      "AdmitDate": "20170118091000",
+      "ServiceCategory": "Office Visit",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "CHC Dental",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "1984",
+      "AdmitDate": "20190329091000",
+      "ServiceCategory": "Office Visit",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Westside Medical Office",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "494",
+      "AdmitDate": "20150704091000",
+      "ServiceCategory": "Office Visit",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "CHC Dental",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "886",
+      "AdmitDate": "20160324091000",
+      "ServiceCategory": "Office Visit",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "CHC Medical",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "1316",
+      "AdmitDate": "20170809091000",
+      "ServiceCategory": "Office Visit",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Westside Medical Office",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "1427",
+      "AdmitDate": "20171208091000",
+      "ServiceCategory": "Office Visit",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Cardiology Clinic",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "574",
+      "AdmitDate": "20151012091000",
+      "ServiceCategory": "Office Visit",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Westside Medical Office",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "539",
+      "AdmitDate": "20150820091000",
+      "ServiceCategory": "Office Visit",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Westside Medical Office",
+      "DOB": "20160615"
+    },
+    {
+       "VisitID": "1229",
+      "AdmitDate": "20170407095600",
+      "ServiceCategory": "Office Visit",
+      "PatientName": {
+        "LastName": "Test",
+        "FirstName": "Child",
+        "MiddleName": "Girl"
+      },
+      "LocationName": "Cardiology Clinic",
+      "DOB": "20160615"
+    }    ]
+}

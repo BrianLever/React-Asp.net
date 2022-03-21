@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f55aa0fa-ad15-44b9-be24-75f9832e70db" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/screendox/endpoint/kioskendpoint.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="KioskEndpoint8.xsd" MetadataType="Schema" ID="f0c5b75c-dd5c-483c-93b0-d41f08983514" SourceId="1" SourceUrl="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd0" />
+    <MetadataFile FileName="KioskEndpoint1.disco" MetadataType="Disco" ID="231420c2-f3a7-422a-80dd-77f7f08c909b" SourceId="1" SourceUrl="http://localhost/screendox/endpoint/KioskEndpoint.svc?disco" />
+    <MetadataFile FileName="KioskEndpoint2.wsdl" MetadataType="Wsdl" ID="fe12f99f-4fa7-4f32-810a-570894e81185" SourceId="1" SourceUrl="http://localhost/screendox/endpoint/KioskEndpoint.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="KioskEndpoint81.xsd" MetadataType="Schema" ID="23468190-98f0-4c6c-8bac-066ac485a011" SourceId="1" SourceUrl="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd5" />
+    <MetadataFile FileName="KioskEndpoint82.xsd" MetadataType="Schema" ID="a273e550-34a1-4fe8-81a3-12083fd07339" SourceId="1" SourceUrl="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd4" />
+    <MetadataFile FileName="KioskEndpoint83.xsd" MetadataType="Schema" ID="1d344f98-5769-4343-8158-5d9ea4f5ef3d" SourceId="1" SourceUrl="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd7" />
+    <MetadataFile FileName="KioskEndpoint84.xsd" MetadataType="Schema" ID="40dfb78a-c6b9-4369-9f2b-06b20c89f772" SourceId="1" SourceUrl="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd6" />
+    <MetadataFile FileName="KioskEndpoint85.xsd" MetadataType="Schema" ID="f7f7f1be-ebf9-4d0c-947a-f7a6ff863f3b" SourceId="1" SourceUrl="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd1" />
+    <MetadataFile FileName="KioskEndpoint86.xsd" MetadataType="Schema" ID="3e773b18-8637-4587-b815-a032fafb6bbe" SourceId="1" SourceUrl="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd3" />
+    <MetadataFile FileName="KioskEndpoint87.xsd" MetadataType="Schema" ID="d7c139a0-43be-487b-a366-a81009c7771c" SourceId="1" SourceUrl="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd2" />
+    <MetadataFile FileName="KioskEndpoint21.wsdl" MetadataType="Wsdl" ID="271adfef-c81d-42f2-a7bf-2f8f5d2e4dc8" SourceId="1" SourceUrl="http://localhost/screendox/endpoint/KioskEndpoint.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

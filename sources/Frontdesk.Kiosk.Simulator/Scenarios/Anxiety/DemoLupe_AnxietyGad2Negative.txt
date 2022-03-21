@@ -1,0 +1,107 @@
+﻿{
+	"_sectionAnswers": {
+		"SIH": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "SIH",
+					"QuestionID": 1,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "SIH",
+			"AnswerValue": 0
+		},
+		"TCC": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "TCC",
+					"QuestionID": 4,
+					"AnswerValue": 0
+				},
+				
+			},
+			"ScreeningSectionID": "TCC",
+			"AnswerValue": 0
+		},
+		"CAGE": {
+			"_answers": {
+				
+				"5": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 5,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "CAGE",
+			"AnswerValue": 0
+		},
+		"PHQ-9": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 1,
+					"AnswerValue": 0
+				},
+				"2": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 2,
+					"AnswerValue": 0
+				},
+			},
+			"ScreeningSectionID": "PHQ-9",
+			"AnswerValue": 0
+		},
+		"GAD-7": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 1,
+					"AnswerValue": 0
+				},
+				"2": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 2,
+					"AnswerValue": 0
+				},
+				
+			},
+			"ScreeningSectionID": "GAD-7",
+			"AnswerValue": 0
+		},
+		"DAST": {
+			"_answers": {
+				"10": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 10,
+					"AnswerValue": 0
+				},
+				
+			},
+			"ScreeningSectionID": "DAST",
+			"AnswerValue": 0
+		},
+		"HITS": {
+			"_answers": {
+				"5": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 5,
+					"AnswerValue": 0
+				}
+				
+			},
+			"ScreeningSectionID": "HITS",
+			"AnswerValue": 0
+		}
+	},
+	"ScreeningID": "BHS",
+	"StreetAddress": "1125 W 6TH STREET SUITE 103",
+	"City": "LOS ANGELES",
+	"StateID": "CA",
+	"ZipCode": "90017",
+	"Phone": "213-202-3970",
+	"KioskID": 1000,
+	"FirstName": "LUPE (Anxiety None GAD-2)",
+	"LastName": "DEMO",
+	"MiddleName": "",
+	"Birthday": "1985-01-01T00:00:00"
+}

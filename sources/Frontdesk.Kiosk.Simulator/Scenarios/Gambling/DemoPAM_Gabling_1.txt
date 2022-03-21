@@ -1,0 +1,36 @@
+﻿{
+	"_sectionAnswers": {
+		"BBGS": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "BBGS",
+					"QuestionID": 1,
+					"AnswerValue": 1
+				},
+				"2": {
+					"ScreeningSectionID": "BBGS",
+					"QuestionID": 2,
+					"AnswerValue": 1
+				},
+				"3": {
+					"ScreeningSectionID": "BBGS",
+					"QuestionID": 3,
+					"AnswerValue": 0
+				},
+				"4": {
+					"ScreeningSectionID": "BBGS",
+					"QuestionID": 4,
+					"AnswerValue": 0
+				}				
+			},
+			"ScreeningSectionID": "BBGS",
+			"AnswerValue": 1
+		}
+	},
+	"ScreeningID": "BHS",
+	"KioskID": 1000,
+	"FirstName": "PAM (Gambling Score 1)",
+	"LastName": "DEMO",
+	"MiddleName": "",
+	"Birthday": "1985-01-01T00:00:00"
+}

@@ -1,0 +1,14 @@
+1. Add age labels app settings into the web config
+        <add key="IndicatorReport_AgeGroups" value="0 - 9;10 - 11;12 - 17;18 - 24;25 - 54;55 or Older"/>
+
+
+2. add elements to web.config
+<location path="SystemTools/VisitSettings.aspx">
+        <system.web>
+            <authorization>
+                <allow roles="Super Administrator"/>
+                <deny users="*"/>
+            </authorization>
+        </system.web>
+    </location>
+

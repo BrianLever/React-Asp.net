@@ -1,0 +1,347 @@
+.login {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../assets/login_background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 100%;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    min-width: 100%;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+  }
+
+  .login * {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+  }
+
+  .form_container {
+    background-color: rgba(46, 46, 66, 1);
+    width: 33.3333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0%;
+    left: 2%;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+  }
+
+  .form_container_login {
+     max-width: 375px;
+     position: relative;
+     padding: 0;
+     width: 100%;
+     margin: 0;
+     font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+  }
+
+  .form_container_login > h1 {
+     display: block;
+     font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+     text-align: center;
+  }
+
+  .form_container_login:not(.clc-both-logo) h1 a {
+    background-image: url('../../../assets/logo_WHITE.svg');
+    background-size: contain;
+    width: 200px;
+    height: 45px;
+    background-position: center;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+  }
+
+  .form_container_login h1 a {
+    background-repeat: no-repeat;
+    color: #3c434a;
+    height: 84px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0 auto 25px;
+    padding: 0;
+    text-decoration: none;
+    width: 84px;
+    text-indent: -9999px;
+    outline: 0;
+    overflow: hidden;
+    display: block;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+  }
+  
+  .form_container_login label {
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 3px;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+  }
+
+  .form_container_login form .input, .form_container_login input[type="text"], .form_container_login input[type="password"] {
+    border: none;
+    border-bottom: 2px solid #000;
+    margin: 0px 0 16px 0;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(46, 46, 46, 1);
+    font-size: 24px;
+    line-height: 1.333333;
+    width: 100%;
+    padding: 0.1875rem 0 0.1875rem 0.3125rem;
+    min-height: 40px;
+    max-height: none;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+  }
+
+  .loginForm {
+    height: 300px;
+    background-color: rgba(219, 157, 70, 0);
+    // padding: 20px 24px;
+    border: none;
+    // box-shadow: 0 0px 0px rgb(0 0 0 / 0%);
+    box-sizing: border-box;
+    max-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 26px 24px 34px;
+    font-weight: 400;
+    overflow: hidden;
+    // background: #fff;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+    // box-shadow: 0 1px 3px rgb(0 0 0 / 4%);
+  }
+
+  .password_input {
+    padding-right: 2.5rem;
+    font-size: 24px;
+    line-height: 1.33333;
+    width: 100%;
+    padding: 0.1875rem 0.3125rem;
+    min-height: 40px;
+    max-height: none;
+    margin: 0px 6px 16px 0;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+  }
+
+  .password_button {
+    background: 0 0;
+    border: 1px solid transparent;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 2;
+    width: 2.5rem;
+    height: 2.5rem;
+    min-width: 40px;
+    min-height: 40px;
+    margin: 0;
+    padding: 5px 9px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #2271b1;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+
+  .dashicons {
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 0.25em;
+    position: relative;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: top;
+    text-align: center;
+    transition: color .1s ease-in;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+    font-family: dashicons;
+    color: #2271b1;
+  }
+
+  .dashicons:before {
+    // content: "\f177";
+  }
+
+  .dashicons:before {
+    display: inline-block;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: top;
+    text-align: center;
+    transition: color .1s ease-in;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+    font-family: dashicons;
+    color: #2271b1;
+  }
+
+  .forgetmenot {
+    font-weight: 400;
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .forgetmenot input {
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    background: #fff;
+    color: #50575e;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+    height: 15px;
+    margin: -.25rem .25rem 0 0;
+    outline: 0;
+    padding: 0!important;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+    text-align: center;
+    vertical-align: middle;
+    width: 15px;
+    min-width: 15px;
+    -webkit-appearance: none;
+    // box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    transition: .05s border-color ease-in-out;
+  }
+
+  .forgetmenot label {
+    line-height: 1.5;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+    vertical-align: baseline;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .submit {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: left;
+    max-width: 100%;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  
+  .submitButton {
+    min-height: 32px;
+    line-height: 2.307692;
+    padding: 0 12px;
+    vertical-align: baseline;
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1);
+    color: rgba(46, 46, 46, 1);
+    float: right;
+    text-decoration: none;
+    text-shadow: none;
+    // display: inline-block;
+    font-size: 13px;
+    margin: 0;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .resetPassword {
+    margin: 0 0 0 0;
+    font-size: 13px;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+    padding-left: 24px;
+  }
+
+  .extra_container {
+    width: 66.6666%;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+  }
+
+  .errors {
+    color: #e97777;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell, "Helvetica Neue", sans-serif !important;
+    margin-bottom: 5px;
+  }
+  
+  .blackButtonStyle {
+    background-color: #2e2e42;
+    &:hover {
+      background-color: #2e2e42 !important;
+    }
+  }
+
+  input[type=checkbox]:checked::before {
+    content: url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%233582c4%27%2F%3E%3C%2Fsvg%3E);
+    margin: -.1875rem 0 0 -.25rem;
+    height: 1.3125rem;
+    width: 1.3125rem;
+  }
+
+  input[type=checkbox]:checked::before, input[type=radio]:checked::before {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    // width: 1rem;
+    speak: never;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (min-width: 768px) {
+    .control {
+      align-items: center;
+      flex-direction: row;
+    }
+  
+  }
+
+  @media only screen and (max-width: 768px) {
+    .form_container {
+      width: 50% !important;
+    }
+    .extra_container {
+      width: 50% !important;
+    }
+  }
+
+  @media only screen and (max-width: 577px) {
+    .form_container {
+      width: 100% !important;
+    }
+    .extra_container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100% !important;
+    }
+  }

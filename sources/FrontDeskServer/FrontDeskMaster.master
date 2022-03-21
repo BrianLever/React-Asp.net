@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FrontDeskMaster.master.cs"
+    Inherits="FrontDeskMaster" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="shortcut icon" href="~/favicon.ico" runat="server" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="~/apple-touch-icon-57x57.png" runat="server" />
+    <link rel="apple-touch-icon" sizes="60x60" href="~/apple-touch-icon-60x60.png" runat="server" />
+    <link rel="apple-touch-icon" sizes="72x72" href="~/apple-touch-icon-72x72.png" runat="server" />
+    <link rel="apple-touch-icon" sizes="76x76" href="~/apple-touch-icon-76x76.png" runat="server" />
+    <link rel="apple-touch-icon" sizes="114x114" href="~/apple-touch-icon-114x114.png" runat="server" />
+    <link rel="apple-touch-icon" sizes="120x120" href="~/apple-touch-icon-120x120.png" runat="server" />
+    <link rel="apple-touch-icon" sizes="144x144" href="~/apple-touch-icon-144x144.png" runat="server" />
+    <link rel="apple-touch-icon" sizes="152x152" href="~/apple-touch-icon-152x152.png" runat="server" />
+    <link rel="apple-touch-icon" sizes="180x180" href="~/apple-touch-icon-180x180.png" runat="server" />
+    <link rel="icon" type="image/png" href="~/favicon-32x32.png" sizes="32x32" runat="server" />
+    <link rel="icon" type="image/png" href="~/android-chrome-192x192.png" sizes="192x192" runat="server" />
+    <link rel="icon" type="image/png" href="~/favicon-96x96.png" sizes="96x96" runat="server" />
+    <link rel="icon" type="image/png" href="~/favicon-16x16.png" sizes="16x16" runat="server" />
+    <link rel="manifest" href="~/manifest.json" runat="server" />
+    <link rel="mask-icon" href="~/safari-pinned-tab.svg" color="#5bbad5" runat="server" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="~/mstile-144x144.png" runat="server" />
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link charset="utf-8" href="~/Content/bootstrap.css" runat="server" type="text/css" rel="stylesheet" />
+    <link charset="utf-8" href="~/styles/normalize.css" runat="server" type="text/css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="mainContainer">
+
+        <form id="form1" runat="server" autocomplete="off">
+            <asp:ScriptManager ID="scriptManager" runat="server" AllowCustomErrorsRedirect="true"
+                EnablePartialRendering="true" EnablePageMethods="true" ScriptMode="Release">
+                <Scripts>
+                    <asp:ScriptReference Path="~/Scripts/vue.min.js" ScriptMode="Auto" />
+                    <asp:ScriptReference Path="~/Scripts/bootstrap.js" ScriptMode="Auto" />
+                    <asp:ScriptReference Path="~/Scripts/bootstrap-notify.js" ScriptMode="Auto" />
+                    <asp:ScriptReference Path="~/Scripts/bootstrap3-typeahead.min.js" ScriptMode="Auto" />
+                </Scripts>
+            </asp:ScriptManager>
+
+            <cc:AsyncUpdateIndicator runat="server" ID="asyncIndicator" />
+            <div id="header">
+                <div id="logo">
+                    <asp:Image runat="server" SkinID="LogoImg" />
+                </div>
+                <div id="menuLine">
+                    <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" EnableViewState="False"
+                        SkinID="mainMenu" CssSelectorClass="mainMenu" />
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+                </div>
+                <div id="loginStatus">
+                    <div>
+                        <asp:LoginView ID="LoginView1" runat="server">
+                            <LoggedInTemplate>
+                                Logged as
+                            <%=LoggedUserName%>
+                            </LoggedInTemplate>
+                            <AnonymousTemplate>
+                                <asp:HyperLink ID="hlLogin" runat="server" NavigateUrl="~/Login.aspx" Text="Login"
+                                    OnLoad="hlLogin_Load"></asp:HyperLink>
+                            </AnonymousTemplate>
+                        </asp:LoginView>
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutText="Logout" LogoutAction="Redirect"
+                            LogoutPageUrl="~/Logout.aspx" />
+                    </div>
+                    <div id="logoText">
+                        <span class="version">Version:
+                        <%= (AppVersion) %></span>
+                    </div>
+                </div>
+
+                <div class="clearer"></div>
+            </div>
+            <div id="content">
+                <asp:UpdatePanel ID="up" runat="server" ChildrenAsTriggers="true" UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <asp:PlaceHolder ID="phLicenseExpiration" runat="server" Visible="false">
+                            <div id="license_expiration" class="notification-box">
+                                <asp:Image ID="imgWarn" runat="server" CssClass="warn" AlternateText="notification"
+                                    ImageUrl="~/images/warning-icon.png" />
+                                <asp:LinkButton ID="lbnClose" runat="server" CssClass="close" CausesValidation="false"
+                                    OnClick="OnExpirationNotificationClose">
+                                    <asp:Image ID="imgClose" runat="server" ImageUrl="~/images/x.png" />
+                                </asp:LinkButton>
+                                <div>
+                                    <asp:Label ID="lblExpirationText" runat="server" CssClass="text"></asp:Label>&nbsp;
+                                <asp:HyperLink ID="hlRenewLicense" runat="server" NavigateUrl="~/SystemTools/LicenseManagement.aspx" Text="Renew License"
+                                    CssClass="renew"></asp:HyperLink>
+                                </div>
+                            </div>
+                        </asp:PlaceHolder>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+                <asp:ContentPlaceHolder ID="cphNotificaionArea" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="cphContentRaw" runat="server">
+                </asp:ContentPlaceHolder>
+                <div id="pageHeader">
+                    <h1>
+                        <%=PageHeaderText%></h1>
+                </div>
+                <div id="scrollContent">
+                    <asp:ContentPlaceHolder ID="cphContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div id="footer" style="visibility: hidden;">
+                <p>
+                    Copyright&nbsp;&copy;&nbsp;2009 - <%= GetCurrentYear() %>, J.L. Ward Associates, Inc. All rights reserved.
+                <br />
+                    <a href="http://screendox.com/support" target="_blank">screendox.com/support</a>
+                </p>
+            </div>
+            <script type="text/javascript">
+                $addHandler(window, "resize", onResize);
+                onResize();
+            </script>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+
+
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+            function endRequestHandler(sender, args) {
+                if (args.get_error() != undefined) {
+                    var errorMessage = args.get_error().message;
+                    args.set_errorHandled(true);
+                    var text = new String(errorMessage);
+                    if (text.startsWith("Sys.WebForms")) {
+                        var pos = text.indexOf(": ", 0);
+                        if (pos >= 0) {
+                            text = text.substr(pos + 2, text.length - pos - 2);
+                        }
+                    }
+
+                    alert(text);
+                }
+
+            }
+
+            if (prm != null) {
+                prm.add_endRequest(endRequestHandler);
+            }
+    </script>
+
+</body>
+</html>

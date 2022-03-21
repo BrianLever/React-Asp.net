@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessPermissionsErrorMessage" xml:space="preserve">
+    <value>You do not have access permissions for this page or record. Access is denied.</value>
+  </data>
+  <data name="Activation_InvalidKeyMessage" xml:space="preserve">
+    <value>You have entered an invalid activation key. Please ensure that you have entered the activation key correctly.</value>
+  </data>
+  <data name="Activation_LisenceIsAlreadyActivatedMessage" xml:space="preserve">
+    <value>Your product license is already activated. You cannot re-activate it.</value>
+  </data>
+  <data name="Activation_SucceedMessage" xml:space="preserve">
+    <value>You product license was activated successfully.</value>
+  </data>
+  <data name="BhsDemographicsPrintingFailed" xml:space="preserve">
+    <value>Failed to print Behavioral Patient Demographics for record {0}</value>
+  </data>
+  <data name="BhsFollowUpPrintingFailed" xml:space="preserve">
+    <value>Failed to print Follow-Up Report for record {0}</value>
+  </data>
+  <data name="BhsVisitPrintingFailed" xml:space="preserve">
+    <value>Failed to print Behavioral Health Screening Visit Report for record {0}</value>
+  </data>
+  <data name="BHS_REPORT_INDICATES" xml:space="preserve">
+    <value>Indicates</value>
+  </data>
+  <data name="CheckInCreateBhsVisitFailed" xml:space="preserve">
+    <value>Failed to create Behavioral Health Screening Visit record {0}</value>
+  </data>
+  <data name="CheckInDeletionFailed" xml:space="preserve">
+    <value>Failed to delete Check-In due to internal error.</value>
+  </data>
+  <data name="CheckInHasValidationErrors" xml:space="preserve">
+    <value>This Check-In has been received from Kiosk with errors. Please see the Error Log for detailed information which data is missing. Error entry requires closed date and time on the Check-In record creation date.</value>
+  </data>
+  <data name="CheckInPrintingFailed" xml:space="preserve">
+    <value>Failed to print Behavioral Health Screening Report for record {0}</value>
+  </data>
+  <data name="ConfirmBeginExport" xml:space="preserve">
+    <value>You are about to update EHR database with ScreenDox screening results. Procceed?</value>
+  </data>
+  <data name="DeleteCheckInConfirmMessage" xml:space="preserve">
+    <value>You are about to delete Check-In Record. Proceed?</value>
+  </data>
+  <data name="DropDown_AllText" xml:space="preserve">
+    <value>&lt;&lt; All &gt;&gt;</value>
+  </data>
+  <data name="DropDown_NotSelectedFilter" xml:space="preserve">
+    <value>&lt;&lt; Any &gt;&gt;</value>
+  </data>
+  <data name="DropDown_NotSelectedText" xml:space="preserve">
+    <value>&lt;&lt; Not selected &gt;&gt;</value>
+  </data>
+  <data name="DropDown_NotSelectedText1" xml:space="preserve">
+    <value>&lt;&lt; Not selected &gt;&gt;</value>
+  </data>
+  <data name="EditPatientContact_Error" xml:space="preserve">
+    <value>Failed to edit patient contact information. Patient can not be found</value>
+  </data>
+  <data name="EditPatient_DataChanged" xml:space="preserve">
+    <value>Patient's record has been changed. Click Save button to apply changes and update EHR search result. Reset button reverts changes.</value>
+  </data>
+  <data name="ExportFailed" xml:space="preserve">
+    <value>BHS Report export has failed,</value>
+  </data>
+  <data name="ExportLimitMsg" xml:space="preserve">
+    <value>Maximum number of exported entries should not exceed {0}. Please use the filter to reduce number of results.</value>
+  </data>
+  <data name="ExportWizard_ExportCompletedSuccessfully" xml:space="preserve">
+    <value>Export operation has completed successfully.</value>
+  </data>
+  <data name="ExportWizard_ExportCompletedWithErrors" xml:space="preserve">
+    <value>Export operation has completed with errors.</value>
+  </data>
+  <data name="ExportWizard_ExportFailed" xml:space="preserve">
+    <value>Export operation has failed.</value>
+  </data>
+  <data name="ExportWizard_PleaseSelectPatient" xml:space="preserve">
+    <value>Please select matched patient from the list to proceed.</value>
+  </data>
+  <data name="ExportWizard_PleaseSelectVisit" xml:space="preserve">
+    <value>Please select visit from the list to proceed.</value>
+  </data>
+  <data name="ExportWizard_ReportHasBeenExportedAlready" xml:space="preserve">
+    <value>Selected BHS Report has been already exported.</value>
+  </data>
+  <data name="ExportWiz_ScreeningResultNotSelected" xml:space="preserve">
+    <value>Please select screening result before export.</value>
+  </data>
+  <data name="FailedToUpdateFDExportDetails" xml:space="preserve">
+    <value>BHS Report has been exported to EHR but failed update export details in the FD database.</value>
+  </data>
+  <data name="Frequency_Annually" xml:space="preserve">
+    <value>Annually</value>
+  </data>
+  <data name="Frequency_BiMonthly" xml:space="preserve">
+    <value>Bi-Monthly</value>
+  </data>
+  <data name="Frequency_Daily" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="Frequency_EveryVisit" xml:space="preserve">
+    <value>Every visit</value>
+  </data>
+  <data name="Frequency_Monthly" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="Frequency_Once" xml:space="preserve">
+    <value>One time only</value>
+  </data>
+  <data name="Frequency_Quarterly" xml:space="preserve">
+    <value>Quarterly</value>
+  </data>
+  <data name="Frequency_Weekly" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+  <data name="IndicatorReport_Total" xml:space="preserve">
+    <value>Total number of patient records:</value>
+  </data>
+  <data name="KioskAlreadyUsed" xml:space="preserve">
+    <value>Kiosk name is already in use. Please enter a different kiosk name</value>
+  </data>
+  <data name="KioskCountExceeded" xml:space="preserve">
+    <value>You have exceeded the maximum allowed number of Kiosks according to the terms of your license agreement. Please acquire additional licenses or disable Kiosks.</value>
+  </data>
+  <data name="KioskKeyLabelNotes" xml:space="preserve">
+    <value>(Use this value during ScreenDox Kiosk application installation)</value>
+  </data>
+  <data name="Kiosk_CannotAddKioskToBlockedLocation" xml:space="preserve">
+    <value>You have selected a disabled Branch Location. You are not allowed to add new kiosk to a disabled Branch Location</value>
+  </data>
+  <data name="Kiosk_Disabled_Failed" xml:space="preserve">
+    <value>Failed to enable kiosk. Maximum kiosk count has been exceeded</value>
+  </data>
+  <data name="Kiosk_UnableToDelete" xml:space="preserve">
+    <value>Unable to delete Kiosk because there are patient reports associated with it.</value>
+  </data>
+  <data name="Kiosk_UnableToEnableBecauseLocationIsDisabled" xml:space="preserve">
+    <value>You cannot enable kiosk. The assigned location is disabled.</value>
+  </data>
+  <data name="LicenseExpirationText" xml:space="preserve">
+    <value>Please note, application license will expire in &lt;b&gt;{0}&lt;/b&gt; days.</value>
+  </data>
+  <data name="LicenseKey_CreateActivationREquestKeyFailedMessage" xml:space="preserve">
+    <value>Failed to create activation request key. Invalid license key or application internal error.</value>
+  </data>
+  <data name="LicenseKey_DuplicateKeyMessage" xml:space="preserve">
+    <value>You have already used this license key. Please use another license key.</value>
+  </data>
+  <data name="LicenseKey_InvalidKeyMessage" xml:space="preserve">
+    <value>You have entered invalid license key.</value>
+  </data>
+  <data name="LicenseKey_MoreThanOneLisenceRuleInfo" xml:space="preserve">
+    <value>If you have more than one activated license, only the license shown on top of the list can be used. Other licenses, even if they are not expired, will be ignored.</value>
+  </data>
+  <data name="LicenseKey_SucceedMessage" xml:space="preserve">
+    <value>Your license key has been accepted. Now you need to activate it to start using the application.</value>
+  </data>
+  <data name="Location_Disabled_Failed" xml:space="preserve">
+    <value>Failed to disable branch location. Branch location has one or more active kiosks</value>
+  </data>
+  <data name="LoginFailedMessage" xml:space="preserve">
+    <value>Failed to login. You have entered invalid username or password or your account has been blocked.</value>
+  </data>
+  <data name="Membership_DuplicatePassword" xml:space="preserve">
+    <value>New password has already been used. Please enter another.</value>
+  </data>
+  <data name="Membership_InvalidCurrentPwd" xml:space="preserve">
+    <value>Failed to change password. You have entered invalid password value.</value>
+  </data>
+  <data name="NeedToBeSuperuserToActivateProductErrorMessage" xml:space="preserve">
+    <value>“ScreenDox” application needs to be activated before first use. You need to login with Superuser credentials to activate this product.</value>
+  </data>
+  <data name="NoMatchesForPatient" xml:space="preserve">
+    <value>There is no matches in the EHR system</value>
+  </data>
+  <data name="NoVisitsForPatient" xml:space="preserve">
+    <value>There is no scheduled visits for selected patient record in the EHR system</value>
+  </data>
+  <data name="PatientInfoEdit_FDTitle" xml:space="preserve">
+    <value>ScreenDox Record</value>
+  </data>
+  <data name="PatientInfoEdit_RpmsTitle" xml:space="preserve">
+    <value>EHR Record</value>
+  </data>
+  <data name="RenewalPeriodCompareError" xml:space="preserve">
+    <value>Renewal period can not be less than 1 day</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_BRIEF" xml:space="preserve">
+    <value>Brief Screening Questions</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_PERCENT_NEGATIVE" xml:space="preserve">
+    <value>(%) Negative</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_PERCENT_POSITIVE" xml:space="preserve">
+    <value>(%) Positive</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_TOTAL" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_TOTAL_NEGATIVE" xml:space="preserve">
+    <value>Total Negative</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_TOTAL_POSITIVE" xml:space="preserve">
+    <value>Total Positive</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_TOTAL_REPORTED" xml:space="preserve">
+    <value>Total Reported</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_TOTAL_UNIQUE" xml:space="preserve">
+    <value>Total Unique Patients</value>
+  </data>
+  <data name="RpmsCredentials_MoreThanOneMessage" xml:space="preserve">
+    <value>If you have more than one credential, only the credential shown on top of the list is used. Other credentials, even if they are not expired, are ignored.</value>
+  </data>
+  <data name="RpmsPatientsAccessErrorMessage" xml:space="preserve">
+    <value>Cannot search for patients. There is no connection to the EHR database.</value>
+  </data>
+  <data name="RPMS_NotConnectedMessage" xml:space="preserve">
+    <value>ScreenDox Screener does not have connection to the EHR. See error log for details.</value>
+  </data>
+  <data name="ScreeningFrequency_Notes" xml:space="preserve">
+    <value>Set how frequent each screening is conducted for the GPRA period.
+&lt;br /&gt;
+ScreenDox always screens patient on the first visit of each GPRA period.</value>
+  </data>
+  <data name="ScreeningMinimalAgeForm_EmptyValueError" xml:space="preserve">
+    <value>'Minimum Age' field is required. Please enter "0" (zero) value if screening measure should be presented for all patients regardless of their age.</value>
+  </data>
+  <data name="ScreeningMinimalAgeForm_Notes" xml:space="preserve">
+    <value>A patient whose age is less than the minimum age for the screening measure will automatically not be presented questions for the measure. &lt;br&gt;Use “0” (zero) value to present the screening measure for all patients.</value>
+  </data>
+  <data name="ScreeningMinimalAgeForm_RangeError" xml:space="preserve">
+    <value>'Minimum Age' field accepts values from 0 to 200</value>
+  </data>
+  <data name="SecurityLog_UserDeleteError" xml:space="preserve">
+    <value>Unable to delete user. Security log contains records of user access to patient information.</value>
+  </data>
+  <data name="SecurityStateSavedWithErrors" xml:space="preserve">
+    <value>Internal error occurred while saving security event enabled state. Some of the security settings could not be saved.</value>
+  </data>
+  <data name="VisitSettingsCutScore_RangeError" xml:space="preserve">
+    <value>'Cut Score'  field accepts values from 1 to 30. Default value is '1'.</value>
+  </data>
+  <data name="VisitSettingsCutStore_EmptyValueError" xml:space="preserve">
+    <value>'Cut Score' field is required. Please enter "1" (one) value if all severity levels
+should be included on the Visit List.</value>
+  </data>
+  <data name="VisitSettingsForm_Notes" xml:space="preserve">
+    <value>Only Measure Tools in the "On" position will create a Visit when a patient screens positive for these problems.</value>
+  </data>
+  <data name="Warning_UpgradeBrowser" xml:space="preserve">
+    <value>You are using an unsupported browser:  Internet Explorer 6.&lt;br/&gt;Please upgrade your browser to Internet Explorer 8 or  Mozilla Firefox 3.5</value>
+  </data>
+  <data name="WriteMyOwnSecurityQuestion" xml:space="preserve">
+    <value>Write my own question</value>
+  </data>
+</root>

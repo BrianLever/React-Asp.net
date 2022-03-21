@@ -1,0 +1,21 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "FrontDeskLicenseDatabase"
+   MSDTVersion = "80"
+   Begin Folder = "Change Scripts"
+   End
+   Begin Folder = "Create Scripts"
+      Script = "install_licensemanagement.sql"
+      Script = "Installation Script.sql"
+      Begin Folder = "Tables"
+         Script = "Activation.sql"
+         Script = "Client.sql"
+         Script = "ErrorLog.sql"
+         Script = "License.sql"
+         Script = "State.sql"
+      End
+   End
+   Begin DBRefFolder = "Database References"
+   End
+   Begin Folder = "Queries"
+   End
+End

@@ -1,0 +1,120 @@
+﻿.fclear{ clear:both; overflow:hidden; } /* KSA: removed  font-size:0; use  clearer when you do not have content*/
+.clearer{ clear:both; overflow:hidden; width:0; height:0; margin:0; font-size:0; line-height:0;}
+
+/* Common styles that are uses independing from Theme */
+.HorizontalScroll 
+{
+	overflow: auto;
+	border-bottom:solid 1px silver; 
+	vertical-align: top; 
+	text-align:left;
+	margin: 0px;
+	padding:0px;
+}
+
+.nowrap{white-space:nowrap;}
+
+DIV.c, 
+TABLE.c, 
+P.c
+{ margin-left: auto; margin-right: auto;}
+
+
+DIV.block-hcenter, 
+TABLE.block-hcenter, 
+P.block-hcenter
+{ margin-left: auto; margin-right: auto; }
+
+/*Width*/
+.w5{width: 5%;}
+.w10{width: 10%;}
+.w15{width: 15%;}
+.w20{width: 20%;}
+.w25{width: 25%;}
+.w30{width: 30%;}
+.w35{width: 35%;}
+.w40{width: 40%;}
+.w45{width: 45%;}
+.w50{width: 50%;}
+.w55{width: 55%;}
+.w60{width: 60%;}
+.w65{width: 65%;}
+.w70{width: 70%;}
+.w75{width: 75%;}
+.w80{width: 80%;}
+.w85{width: 85%;}
+.w90{width: 90%;}
+.w95{width: 95%;}
+.w100{width: 100%;}
+.w100px{width: 100px;}
+.w200px{width: 200px;}
+.w350px{width: 350px;}
+.w400px{width:400px;}
+.w405px{width:405px;}
+
+/* PADDING */
+
+/* PADDING */
+.pad0{padding: 0px 0px 0px 0px;}
+.pad2{padding: 2px 2px 2px 2px;}
+.pad5{padding: 5px 5px 5px 5px;}
+.pad10{padding: 10px 10px 10px 10px;}
+
+.rpad2{padding-right: 2px;}
+.lpad2{padding-left: 2px;}
+.tpad2{padding-top: 2px;}
+.bpad2{padding-bottom: 2px;}
+.pad5{padding: 5px 5px 5px 5px;}
+.rpad5{padding-right: 5px;}
+.lpad5{padding-left: 5px;}
+.tpad5{padding-top: 5px;}
+.bpad5{padding-bottom: 5px;}
+.pad10{padding: 10px 10px 10px 10px;}
+.lpad10{padding-left: 10px;}
+.rpad10{padding-right: 10px;}
+.tpad10{padding-top: 10px;}
+.bpad10{padding-bottom: 10px;}
+.rpad15{padding-right: 15px;}
+.lpad15{padding-left: 15px;}
+.tpad15{padding-top: 15px;}
+.tpad12{padding-top: 12px;}
+.bpad15{padding-bottom: 15px;}
+.lpad20{padding-left: 20px;}
+.rpad20{padding-right:20px;}
+/* MARGINS */
+.mar0{margin: 0px 0px 0px 0px;}
+.lmar5{margin-left: 5px;}
+.rmar5{margin-right: 5px;}
+.tmar5{margin-top: 5px;}
+.bmar5{margin-bottom: 5px;}
+.bmar2{margin-bottom: 2px;}
+
+.lmar10{margin-left: 10px;}
+.rmar10{margin-right: 10px;}
+.tmar10{margin-top: 10px;}
+.bmar10{margin-bottom: 10px;}
+
+.rmar20{margin-right: 20px;}
+
+
+/* ALIGN */
+.r{text-align: right;}
+.l{text-align: left;}
+.c{text-align: center;}
+/* ALIGN */
+.top{vertical-align: top;}
+.bottom{vertical-align: bottom ;}
+.middle{vertical-align: middle;}
+
+/*TEXT STYLES*/
+.u{text-decoration: underline;}
+.b{font-weight: bold;}
+.i{font-style: italic;}
+.red{color:Red; font-size:13px}
+.error_message{color:Red; font-size:13px}
+
+/* Floating */
+.fleft {float:left;}
+.fright {float:right;}
+.fnone {clear:both;}
+.fboth {clear:both; height:0px; width:0px;}

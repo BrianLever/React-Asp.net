@@ -1,0 +1,206 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: #00000054;
+  }
+  
+  .modal {
+    position: fixed;
+    top: calc(100vh - 85%);
+    z-index: 10;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 80%;
+    // height: 600px;
+  }
+  
+  .miniModal {
+    position: fixed;
+    top: calc(100vh - 60%);
+    z-index: 10;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 80%;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-family: "hero-new",sans-serif;
+    font-size: 25.6px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    margin-right: calc(0em * -1);
+    text-transform: none;
+    color: #2e2e42;
+    transition-timing-function: cubic-bezier(0.400,0.000,0.200,1.000);
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .actions {
+    padding: 16px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .screenModal {
+    position: fixed;
+    top: calc(100vh - 92%);
+    z-index: 10;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 80%;
+    bottom: 25px;
+  }
+  .manageUsersModal {
+    position: fixed;
+    top: calc(100vh - 92%);
+    z-index: 10;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 90%;
+    bottom: 25px;
+  }
+
+  .ehrExportModal {
+    position: fixed;
+    top: calc(100vh - 92%);
+    z-index: 10;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 90%;
+    bottom: 25px;
+  }
+  
+  .ehrExportScreenRecordInformationModal {
+    position: fixed;
+    top: calc(100vh - 80%);
+    z-index: 10;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 90%;
+    bottom: calc(100vh - 80%);
+    background-color: rgb(237, 237, 242);
+    padding: 4em;
+  }
+
+  .screendoxAboutModal {
+    position: fixed;
+    top: calc(100vh - 80%);
+    z-index: 10;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 90%;
+    bottom: calc(100vh - 80%);
+    background-color: rgb(237, 237, 242);
+    padding: 4em;
+    padding-left: 45px;
+    padding-right: 90px;
+    padding-bottom: 45px;
+  }
+  
+  .closeIcon {
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    top: 20px;
+  }
+
+  .informationTitle {
+    font-family: "hero-new",sans-serif;
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    margin-right: calc(0em * -1);
+    text-transform: none;
+    color: rgb(46,46,66);
+    transition-timing-function: cubic-bezier(0.400,0.000,0.200,1.000);
+    margin-bottom: 20px;
+  }
+
+  .informationDescription {
+    font-family: "hero-new",sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    text-transform: none;
+    color: rgb(46,46,66);
+    background-color: transparent;
+    transition-timing-function: cubic-bezier(0.400,0.000,0.200,1.000);
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: 768px) {
+    .modal {
+      left: calc(10%);
+      width: 80%;
+      padding: 12px 36px;
+    }
+
+    .screenModal {
+      left: calc(3%);
+      width: 95%;
+      padding: 12px 36px;
+    }
+    .miniModal {
+      left: calc(10%);
+      width: 80%;
+      padding: 12px 36px;
+    }
+    .ehrExportModal{
+      left: calc(3%);
+      width: 95%;
+      padding: 12px 36px;
+    }
+    .manageUsersModal {
+      left: calc(3%);
+      width: 95%;
+      padding: 12px 36px;
+    }
+
+    .ehrExportScreenRecordInformationModal {
+      left: calc(15%);
+      width: 70%;
+      padding: 4em;
+    }
+    .screendoxAboutModal {
+      left: calc(13%);
+      width: 73%;
+      padding: 4em;
+      padding-left: 45px;
+      padding-right: 90px;
+      padding-bottom: 45px;
+    }
+  }
+  
+
+  .screenProfileHeaderBorderStyle {
+    z-index: 1;
+    margin: 0px auto 0px auto;
+    border-width: 0px 0px 1px 0px;
+    border-style: none none solid none;
+    border-color: transparent transparent rgb(237,237,242) transparent;
+    padding: 0px 0px 10px 0px;
+    font-size: 1em;
+    background-color: transparent;
+    transition-timing-function: cubic-bezier(0.400,0.000,0.200,1.000);
+  }

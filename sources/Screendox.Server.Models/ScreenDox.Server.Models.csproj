@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{897817AC-5B59-4098-B6DC-22D42E73F1D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScreenDox.Server.Models</RootNamespace>
+    <AssemblyName>ScreenDox.Server.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>FrontDesk.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.10.3.3\lib\netstandard2.0\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BhsReportType.cs" />
+    <Compile Include="BhsResponseBase.cs" />
+    <Compile Include="BhsSearchFilterModel.cs" />
+    <Compile Include="BranchLocation.cs" />
+    <Compile Include="ColumbiaReports\ColumbiaRiskAssessmentReport.cs" />
+    <Compile Include="ColumbiaReports\ColumbiaSuicideReport.cs" />
+    <Compile Include="ColumbiaReports\ColumbiaSuicideReportFactory.cs" />
+    <Compile Include="Configuration\ISystemSettingItem.cs" />
+    <Compile Include="Configuration\SystemSettingItem.cs" />
+    <Compile Include="Configuration\SystemSettingsItemFactory.cs" />
+    <Compile Include="FilterParams\SimpleFilterModel.cs" />
+    <Compile Include="Mapping\ColumbiaSuicideReportResponseMappingProfile.cs" />
+    <Compile Include="Mapping\RpmsCredentialsRequestMappingProfile.cs" />
+    <Compile Include="Mapping\PatientAddressRequestMappingProfile.cs" />
+    <Compile Include="Mapping\NewUserPrincipalRequestMappingProfile.cs" />
+    <Compile Include="Mapping\UserSearchItemResponseMappingProfile.cs" />
+    <Compile Include="Mapping\PatientSearchInfoMatchMappingProfile.cs" />
+    <Compile Include="Mapping\VisitMatchMappingProfile.cs" />
+    <Compile Include="Mapping\PatientInfoMatchMappingProfile.cs" />
+    <Compile Include="Mapping\UserPrincipalResponseProfile.cs" />
+    <Compile Include="Mapping\UpdatePatientRequestMappingProfile.cs" />
+    <Compile Include="Mapping\VisitSettingItemViewModelProfile.cs" />
+    <Compile Include="Mapping\ScreeningSectionAgeItemViewModelProfile.cs" />
+    <Compile Include="Mapping\ScreeningProfileMappingProfile.cs" />
+    <Compile Include="Mapping\ScreeningFrequencyItemViewModelProfile.cs" />
+    <Compile Include="PagedFilterModel.cs" />
+    <Compile Include="ViewModels\RpmsCredentialsResponse.cs" />
+    <Compile Include="ViewModels\RpmsCredentialsRequest.cs" />
+    <Compile Include="ViewModels\ColumbiaSuicideCreateRequest.cs" />
+    <Compile Include="ViewModels\UserPrincipalRequest.cs" />
+    <Compile Include="ViewModels\PatientSearchInfoMatch.cs" />
+    <Compile Include="ViewModels\PatientSearchResponse.cs" />
+    <Compile Include="PatientSearchFilter.cs" />
+    <Compile Include="Requests\LicenseKeyRequest.cs" />
+    <Compile Include="ScreeningProfileAgeRequest.cs" />
+    <Compile Include="ErrorLogItem.cs" />
+    <Compile Include="SearchFilters\DateRangeFilter.cs" />
+    <Compile Include="SearchFilters\PagedDateRangeFilter.cs" />
+    <Compile Include="Security\UserPrincipalAccount.cs" />
+    <Compile Include="ViewModels\ActivationLicenseCertificateResponse.cs" />
+    <Compile Include="ViewModels\ColumbiaSuicideCopyFromRequest.cs" />
+    <Compile Include="ViewModels\ColumbiaSuicideCreateVisitRequest.cs" />
+    <Compile Include="ViewModels\ColumbiaSuicideReportResponse.cs" />
+    <Compile Include="ViewModels\ColumbiaSuicideReportSearchResponse.cs" />
+    <Compile Include="ViewModels\ColumbiaSuicideReportUpdateRequest.cs" />
+    <Compile Include="ViewModels\EhrExportRequest.cs" />
+    <Compile Include="ViewModels\EhrExportResponse.cs" />
+    <Compile Include="ViewModels\PatientAddressRequest.cs" />
+    <Compile Include="ViewModels\IRequestModelWithValidation.cs" />
+    <Compile Include="ViewModels\LicenseCertificateResponse.cs" />
+    <Compile Include="ViewModels\UpdatePatientRequest.cs" />
+    <Compile Include="ViewModels\NewUserPrincipalRequest.cs" />
+    <Compile Include="ViewModels\UserSearchItemsResponse.cs" />
+    <Compile Include="ViewModels\UserSearchRequest.cs" />
+    <Compile Include="ViewModels\Validators\ColumbiaSuicideCreateRequestValidator.cs" />
+    <Compile Include="ViewModels\Validators\PatientSearchFilterValidator.cs" />
+    <Compile Include="ViewModels\Validators\UpdatePatientRequestValidator.cs" />
+    <Compile Include="ViewModels\Validators\NewUserPrincipalRequestValidator.cs" />
+    <Compile Include="ViewModels\Validators\RpmsCredentialsRequestValidator.cs" />
+    <Compile Include="ViewModels\Validators\UserPrincipalRequestValidator.cs" />
+    <Compile Include="ViewModels\Validators\UserSetPasswordAndSecurityQuestionRequestValidator.cs" />
+    <Compile Include="ViewModels\VisitMatch.cs" />
+    <Compile Include="ViewModels\PatientInfoMatch.cs" />
+    <Compile Include="ViewModels\ResetPasswordSecurityQuestion.cs" />
+    <Compile Include="ViewModels\SecurityLogEventSettingItemRequest.cs" />
+    <Compile Include="ViewModels\SecurityLogEventSettingResponse.cs" />
+    <Compile Include="ViewModels\SecurityLogSettingRequest.cs" />
+    <Compile Include="ViewModels\SystemSettingRequest.cs" />
+    <Compile Include="ViewModels\AgeGroupSettingResponse.cs" />
+    <Compile Include="ViewModels\AgeGroupSettingRequest.cs" />
+    <Compile Include="ViewModels\UniqueColumbiaReportViewModel.cs" />
+    <Compile Include="ViewModels\UserResetPasswordRequest.cs" />
+    <Compile Include="ViewModels\UserChangeSecurityQuestionRequest.cs" />
+    <Compile Include="ViewModels\UserChangePasswordRequest.cs" />
+    <Compile Include="ViewModels\UserPrincipalResponse.cs" />
+    <Compile Include="ViewModels\Validators\PatientAddressRequestValidator.cs" />
+    <Compile Include="ViewModels\Validators\UserResetPasswordRequestValidator.cs" />
+    <Compile Include="ViewModels\Validators\UserChangeSecurityQuestionRequestValidator.cs" />
+    <Compile Include="ViewModels\Validators\UserChangePasswordRequestValidator.cs" />
+    <Compile Include="ViewModels\Validators\UserPrincipalValidator.cs" />
+    <Compile Include="VisitSettingItemRequest.cs" />
+    <Compile Include="ScreeningSectionAgeItemViewModel.cs" />
+    <Compile Include="ScreeningFrequencyItemViewModel.cs" />
+    <Compile Include="ScreeningProfileFrequencyRequest.cs" />
+    <Compile Include="ScreeningProfileRequest.cs" />
+    <Compile Include="SearchByNamePagedSearchFilter.cs" />
+    <Compile Include="Kiosk.cs" />
+    <Compile Include="KioskFactory.cs" />
+    <Compile Include="KioskRequest.cs" />
+    <Compile Include="KioskSearchFilter.cs" />
+    <Compile Include="BranchLocationSearchFilter.cs" />
+    <Compile Include="BranchLocationRequest.cs" />
+    <Compile Include="DemographicsRequest.cs" />
+    <Compile Include="Extensions\DateFormattingExtentions.cs" />
+    <Compile Include="Extensions\DateTimeExtension.cs" />
+    <Compile Include="Extensions\DoubleExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Factory\ScreeningResultRequestFactory.cs" />
+    <Compile Include="Factory\ScreeningResultResponseFactory.cs" />
+    <Compile Include="FollowUpRequest.cs" />
+    <Compile Include="IUserPrincipal.cs" />
+    <Compile Include="Mapping\KioskMappingProfile.cs" />
+    <Compile Include="Mapping\BranchLocationMappingProfile.cs" />
+    <Compile Include="Mapping\BhsFollowUpMappingProfile.cs" />
+    <Compile Include="Mapping\BhsDemographicsMappingProfile.cs" />
+    <Compile Include="Mapping\VisitResponseMappingProfile.cs" />
+    <Compile Include="PagedSearchFilter.cs" />
+    <Compile Include="PagedVisitFilterModel.cs" />
+    <Compile Include="PagedScreeningResultFilterModel.cs" />
+    <Compile Include="PatientInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\TextMessages.Designer.cs">
+      <DependentUpon>TextMessages.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ScreeningResultByProblemFilter.cs" />
+    <Compile Include="ScreeningResultFilterModel.cs" />
+    <Compile Include="ScreeningResultRecord.cs" />
+    <Compile Include="ScreeningResultResponse.cs" />
+    <Compile Include="ScreeningSectionQuestionResultRequest.cs" />
+    <Compile Include="ScreeningResultSectionAnswerResponse.cs" />
+    <Compile Include="ScreeningSectionResultRequest.cs" />
+    <Compile Include="ScreeningResultSectionResponse.cs" />
+    <Compile Include="SearchResponse.cs" />
+    <Compile Include="SimpleFilterModel.cs" />
+    <Compile Include="SystemSummary.cs" />
+    <Compile Include="UniquePatientScreenViewModel.cs" />
+    <Compile Include="UniqueFollowUpViewModel.cs" />
+    <Compile Include="UniqueVisitViewModel.cs" />
+    <Compile Include="UserPrincipal.cs" />
+    <Compile Include="VisitFilterModel.cs" />
+    <Compile Include="VisitRequest.cs" />
+    <Compile Include="FollowUpResponse.cs" />
+    <Compile Include="DemographicsResponse.cs" />
+    <Compile Include="VisitResponse.cs" />
+    <Compile Include="VisitSettingItemViewModel.cs" />
+    <Compile Include="VisitSettingsDescriptor.cs" />
+    <Compile Include="VisitViewModelBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FrontDesk.Common\FrontDesk.Common.csproj">
+      <Project>{ccfd383d-de2a-4cc8-b9be-4aeb515328b3}</Project>
+      <Name>FrontDesk.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk\FrontDesk.csproj">
+      <Project>{277c5feb-a989-48c4-b6dc-c8ef41f5c215}</Project>
+      <Name>FrontDesk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPMS.Common\RPMS.Common.csproj">
+      <Project>{d0be6581-5428-4cde-a4f8-f9282bd087d8}</Project>
+      <Name>RPMS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScreenDox.Rpms.Common.Models\ScreenDox.Rpms.Common.Models.csproj">
+      <Project>{1A999930-8849-40CC-83E8-0D70E3ED61C5}</Project>
+      <Name>ScreenDox.Rpms.Common.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\TextMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TextMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FrontDesk.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

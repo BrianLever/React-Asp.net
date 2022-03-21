@@ -1,0 +1,909 @@
+﻿body
+{
+        color: #333333;
+        font-family: Verdana,Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        /*overflow: hidden;*/
+}
+/*html {
+overflow: hidden;
+}
+*/
+
+/* Generic Styles */
+body,html,form,div,p,h1,h2,h3,ul,ol,pre,fieldset,input,blockquote{ margin:0; padding:0;}
+h1, h2, h3, h4, h5, h6, pre, code, address, caption, cite, code, em, strong, th
+{font-size:1em; font-style:normal; font-weight:normal;}
+p{ margin-bottom:18px;}
+img{ border:0 none;}
+table{border-spacing: 0;}
+
+/*Text*/
+.error
+{
+        font-family: Verdana,Arial, Helvetica, sans-serif;	font-size: 11px;	font-weight: normal;
+        font-size: 11px;
+        color: #FF0000;
+}
+
+.errorPage
+{
+        font-family: Verdana,Arial, Helvetica, sans-serif; font-weight: normal;
+        font-size: 16px;
+        color: red;
+}
+
+.invalid{ border-color: #FF0000; color: #FF0000;}
+
+
+.note { font-size: 80%;}
+.note ol > li{ margin-left: 5em;}
+.ast { margin-left:2px; color: red; vertical-align: top;}
+/*Links*/
+a           {	color: #333333;	text-decoration: none; text-decoration: none ;}
+a:visited	{	text-decoration: none;}
+a:hover	    {	text-decoration: underline; }
+
+.action a {	font-weight:bold; }
+
+input[type="radio"] {
+    margin-left: 0.5px; /* fix for left side cut in safari*/
+}
+
+/* master page div */
+div#mainContainer{ min-width:1250px;  min-height:400px;   }
+
+
+/* Header */
+div#header {
+    clear: both;
+    overflow: hidden;
+    border-collapse: collapse;
+    border-bottom: solid 1px #333333;
+    background-color: #333333;
+    min-width: 1250px;
+    min-height: 65px;
+}
+
+
+
+div#header div#logo{text-align:left; width: 20%;
+                                        padding:20px 3px 5px 20px; float:left;}
+div#header div#logo > img{ height: 23px; width: 128px;}
+div#header div#menuLine{float:left; width:55%;padding:12px 3px 5px 10px;text-align: center;}
+div#header div#menuLine .mainMenu{ margin: 0 auto;width: 600px;}
+div#header div#loginStatus{float:right; clear:right; width:20%; text-align:right; color: White; font-size: 11px; vertical-align:bottom; margin-top:15px;padding-right: 20px;}
+
+div#header div#logoText{ padding-top:5px; font-size:10px;}
+
+div#header div#loginStatus a { margin-left:10px; color:#EEBD47; font-weight:bold; }
+div#header div.updateBrowser { float:none; background-color:#EEBD47; font-size: 11pt; text-align:center; padding: 10px;}
+
+/* End Header */
+/* Content Place Holder */
+div#content{clear:both; 
+                     text-align: center; overflow: visible;  vertical-align: top;
+                     min-width:1250px;
+    min-height: 400px;
+                    overflow:hidden;
+                    }
+
+div#scrollContent{ margin:10px 0; vertical-align:top; border:0; padding-bottom:10px; }
+
+DIV#content DIV#pageHeader {height:28px; text-align:left; margin-right:10px; margin-left:20px;}
+DIV#content DIV#pageHeader h1
+{
+        font : 18px Arial, Helvetica, sans-serif;
+        color : #003DB6;
+        text-decoration : none;
+        font-weight : bold;
+        font-style:italic;
+        text-align:left;
+        line-height:34px;
+}
+
+/* End Content Place Holder */
+/* Footer */
+div#footer{ min-width:1250px;text-align:center; border-top:solid 2px #333333; background-color:#333333; line-height:20px; float:none; clear:both;padding-top: 15px;padding-bottom: 15px;}
+div#footer p{vertical-align:bottom; padding:2px; margin:0px; color:White;}
+div#footer a{color: #EEBD47; text-decoration: underline;}
+div#footer a:hover{text-decoration: none;}
+/* End footer */
+
+
+/* end master page div */
+
+
+/* form style */
+.column {float:left;}
+.column.left {width: 40%; text-align:right;  clear:both;}
+.column.right {width:57%; text-align:left;} 
+.column.joined {width:99.5%; background-color:#ffffff;}
+
+.column.first {width: 40%; text-align:right;  clear:both;}
+.column.second {width:26%; text-align:left;} 
+.column.third {width:30%; text-align:left;} 
+
+
+
+
+.column ul{ padding-left: 0;}
+.column div.error_summary{ margin-left: 0;}
+
+div.grid2col{ overflow:hidden;}
+div.grid2col .column.left,
+div.grid2col .column.right,
+div.grid2col .column.joined
+{padding:0 0.5% 0 0.5%; line-height:24px; margin-top:2px; margin-bottom:2px; }
+
+DIV.grid2col .column.right input[type=checkbox]{display: block;  float: left; height: 20px; width: 20px;  }
+DIV.grid2col .column.right .help{ margin-left:5px; /*display: block;  float: left; */white-space:normal; margin-top:-5px;}
+
+
+div.grid3col{ overflow:hidden;}
+div.grid3col .column.first,
+div.grid3col .column.second,
+div.grid3col .column.third,
+div.grid3col .column.joined
+{padding:0 0.5% 0 0.5%; line-height:24px; margin-top:2px; margin-bottom:2px; }
+
+
+DIV.grid3col .column.second input[type=checkbox],
+DIV.grid3col .column.third input[type=checkbox]
+{display: block;  float: left; height: 24px; width: 24px; margin-left:-5px;   }
+
+DIV.grid2col .column.second .help,
+DIV.grid2col .column.third .help
+{ margin-left:5px; /*display: block;  float: left; */white-space:normal; margin-top:-5px;}
+
+
+
+/* end form style */
+
+
+/* input form base */
+.input_form, .input_form li { margin:0; padding:0;}
+.input_form { list-style:none; width:417px;}
+.input_form li {text-align:left; padding:4px 0px 0px 0px; overflow:hidden; font:normal 13px/24px Arial; }
+.input_form li .fieldLabel { display:block; float:left; width: 100px; text-align:right; margin:0px 10px 0px 0px; }
+
+.input_form li input[type=text] { display:block; float:left; width:300px;}
+.input_form li textarea { display:block; float:left; width:300px;}
+.input_form li select { display:block; float:left; width:306px; }
+.input_form li .error_message { display:block; float:left; margin-left:0px; margin-left:5px; }
+.input_form .buttons { text-align:left; padding-top:10px;margin-left: 110px; }
+
+/*ERROR_MESSAGES*/
+.error_message{color:#FF0000; }
+input[type=text] + span.error_message{ margin:0px; padding-left:2px;}
+
+div.error_summary{ margin-left:auto; margin-right:auto; width:80%; 
+                                     color:#991111; padding:10px 0px; 
+                                     list-style-position:inside; 
+                                     text-align:left;}
+.error_summary li { }
+
+/* filter forms layouts */
+
+div.simple_filter { margin:5px auto; padding:0px; clear:both; }
+div.simple_filter .fieldLabel {display:block; float:left; text-align:right; margin:0px 10px 0px 0px; }
+div.simple_filter input[type=text] { display:block; float:left; width:350px;}
+div.simple_filter textarea { display:block; float:left; width:350px;}
+div.simple_filter select { display:block; float:left; width:150px; margin:0px 10px 0px 0px; }
+div.simple_filter input[type=button] { display:block; float:left; margin-left: 5px;}
+
+.inline_filter { display: block; text-align:left; clear:both; float:none;}
+.inline_filter ul { margin:0; padding:0; display: block; float:none; clear:both;   }
+.inline_filter ul li { margin:0; padding:0; display: block; float:left; list-style-type:none; text-align:left;   }
+.inline_filter ul li label { padding-left: 5px;   }
+.inline_filter ul li span { font-size: 12px; vertical-align:bottom; font-weight:normal;}
+
+.inline_filter ul.filter-box{}
+.inline_filter ul.filter-box > li { margin:0; padding:0; display: block; float:none; list-style-type:none; text-align:left; }
+.inline_filter ul.filter-box > li .date_range { float:left; margin-left: 0.5px;}
+
+.inline_filter ul> li .date_range .label label { margin-left: 5px;}
+
+
+/* table with 3 columns for filter values and last for buttons */
+.inline_filter .line3col{ min-width: 600px; }
+.inline_filter .line3col li.first{width: 30%; }
+.inline_filter .line3col li.second{width: 25%;}
+.inline_filter .line3col li.third{width: 25%;}
+.inline_filter .line3col li.buttons{width: 15%;}
+
+.inline_filter .line3col li input,
+.inline_filter .line3col li select {max-width: 95%; min-width: 200px;}
+
+
+/* table with 2 columns for filter values and last for buttons */
+.inline_filter .line{overflow:hidden; line-height:21px;}
+.inline_filter .line li{ margin-right: 10px;}
+.inline_filter .line li.buttons{min-width: 200px; text-align:left;}
+
+.inline_filter .line li input[type=text],
+.inline_filter .line li select {max-width: 95%; }
+
+.inline_filter .line li select {min-width: 200px;}
+.inline_filter li div input[type=text] {min-width: 85px; }
+
+
+
+/* table with 2 columns for filter values and last for buttons */
+.inline_filter .line2col{ width: 417px;  }
+.inline_filter .line2col li {text-align:left; padding:4px 0px 0px 0px; overflow:hidden; font:normal 12px/24px Arial; }
+.inline_filter .line2col .fieldLabel { display:block; float:left; width: 100px; text-align:right; margin:0px 10px 0px 0px;  }
+
+.inline_filter .line2col li > input[type=text] { display:block; float:left; width:300px; }
+.inline_filter .line2col li > textarea { display:block; float:left; width:300px;}
+.inline_filter .line2col li > select { display:block; float:left; width:306px; }
+.inline_filter .line2col li > .error_message { display:block; float:left; margin-left:5px; }
+.inline_filter .line2col .buttons { text-align:left; padding-top:10px;margin-left: 160px; }
+
+
+
+.inline_filter .line2col.check-in {margin:0px auto 10px auto; width:610px;}
+.inline_filter .line2col.check-in li {clear:both; float:none;}
+.inline_filter .line2col.check-in li .fieldLabel { width:150px;  }
+.inline_filter .line2col.check-in li > input[type=text] { width:200px;  }
+.inline_filter .line2col.check-in li > textarea { width:200px }
+.inline_filter .line2col.check-in li > select { width:205px; }
+.inline_filter .line2col.check-in .date_range {float: left;}
+.inline_filter .line2col.check-in .date_range  .datePicker_container { float:left; }
+.inline_filter .line2col.check-in .date_range span {float:left;}
+
+
+.inline_filter.bhi ul.line > li:first-child {min-width:250px; }
+.inline_filter.bhi .line li select {width: 250px;}
+.inline_filter.bhi .line .date_range {float: left;}
+.inline_filter.bhi .line .date_range .datePicker_container { float:left;}
+.inline_filter.bhi .line .date_range  span {float:left;}
+.inline_filter.bhi div.buttons {text-align:left; margin:5px 0px; padding-bottom:5px; border-bottom:solid 1px #000000;}
+
+.inline_filter.bhi .score-filter-box {margin-left:250px; padding-left: 10px; }
+.inline_filter.bhi .score-filter-box .line{margin-top: 5px;}
+.bhi.score-filter-container {margin-left:5px; margin-right: 20px;}
+
+th.bhi-age-column {
+    width: 4em;
+}
+
+
+/* end filter forms layouts */
+
+
+
+
+
+/* Date Picker */
+.datePicker_container.picker .input { height:16px; }
+.datePicker_container.picker .icon img{ padding:0; margin: 0 0 0 2px; height:20px; line-height:20px }
+.datePicker_container.picker .icon img{ padding:0; margin:0 0 0 2px;; height:20px; line-height:20px}
+.popup_calendar div {line-height: 16px;}
+
+.bborder_thin{	border-bottom-width: 1px;		border-bottom-style: solid;	border-bottom-color: #2599FF;}
+.bborder_thin_blue{	border-bottom-width: 1px;		border-bottom-style: solid;	border-bottom-color: #2599FF;}
+.tborder_thin_blue{	border-top-width: 1px;		border-top-style: solid;	border-top-color: #2599FF;}
+
+
+/* Wizard Step Headers */
+ul.wizard_tabs{display:block; margin:5px 0px; padding:0; float:right;}
+ul.wizard_tabs li {display:block; float:left; list-style:none; margin-left:5px; padding: 5px 10px; background-color: #bdbdbd; font-weight:bold; color:#ffffff;}
+ul.wizard_tabs li.active{ background-color: #2599FF;}
+ul.wizard_tabs a{ color:#ffffff;}
+
+
+
+/* not completed pages content */
+.under_construct{ margin:100px auto; width:500px; text-align:center;}
+.under_construct img{ display:block; margin:0 auto;}
+.under_construct p{ margin-top:50px; font-size: 20px; }
+
+/* Pagination */
+
+.pagelink td{padding: 4px;}
+.pagelink table{margin:5px 0px;}
+.pagelink span {border: solid 1px #E3A207; padding:3px 4px;}
+.pagelink A
+{
+        font-size: 13px;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        color: #4059AD;
+        text-decoration: underline;
+}
+.pagelink A:visited
+{
+        font-size: 13px;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        color: #4059AD;
+        text-decoration: underline;
+}
+.pagelink A:active
+{
+        font-size: 13px;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        color: #4059AD;
+        text-decoration: underline;
+}
+.pagelink A:hover
+{
+        font-size: 13px;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        color: #FF0000;
+        text-decoration: none;
+}
+/* Pagination 2 */
+div.pager{font-size: 13px;color: #333333;}
+div.pager > .cur_page{margin-right: 10px;}
+div.pager > span.page_link {padding: 4px 4px 4px 4px;}
+div.pager  a {text-decoration: none; color: #4059AD;}
+div.pager  a:hover {text-decoration: underline; color: #FF0000;}
+
+div.pager > span.page_link.selected {border: solid 1px #E3A207;}
+div.pager > span.page_link.selected > a {text-decoration: none; color: #333333;}
+div.pager > span.page_link.selected > a:hover {text-decoration: none; color: #333333;}
+
+div.pager > span.next {margin-left:10px;}
+div.pager > span.last {margin-left:10px;}
+div.pager > span.previous {margin-right:10px;}
+div.pager > span.first {margin-right:10px;}
+
+div.pager > span.next_range {margin-left:15px;}
+div.pager > span.previous_range {margin-right:15px;}
+
+
+
+/* Report BEGIN */
+
+
+
+
+div.bhsreport{font-family: Arial, Tahoma, Helvetica; font-size:8pt;  width:773px; 
+              margin:20px auto;}
+div.bhs h1,div.bhsvisit h1, div.bhsreport h1 {
+    font-size: 13pt; font-weight: bold; margin-bottom: 12pt; text-align:center; min-height: 40px; line-height: 40px;
+}
+div.group{border: none; padding:3px; width:765px; float:none; clear:both; margin-top:3px;}
+div.bhsreport div.group.noborder{border-width:0px;}
+div.group h2{font-size:9pt; font-weight:bold; color: #ffffff; background-color: #000000; text-align:left; padding: 2px 2px 2px 8px; margin-bottom:9px;}
+
+
+div.bhs table.patient{ width:100%; border-collapse:collapse; border:none 0px; margin:0px; padding:0px;  }
+div.bhs table.patient td{ padding: 2px 5px 2px 11px; border-style:solid; border-color:#000000; border-width: 0px 0px 0px 0px; text-align:left; border-collapse:collapse;}
+div.bhs table.patient td div {text-align:left; overflow: hidden; white-space: nowrap;}
+
+div.bhs table.patient td.col1 { padding-left:0px; border-left-width:0px; width:205px}
+div.bhs table.patient td.col1 > div { width:205px ; }
+div.bhs table.patient td.col2, div.bhsreport table.patient td.col2 > div {width:167px;} 
+div.bhs table.patient td.col3, div.bhsreport table.patient td.col3 > div {width:119px;} 
+div.bhs table.patient td.col4, div.bhsreport table.patient td.col4 > div {width:119px;} 
+div.bhs table.patient td.col5, div.bhsreport table.patient td.col5 > div {width:143px;} 
+
+div.bhs table.patient tr.head > td { border-top-width: 1px; }
+div.bhs table.patient tr.body > td {color:#0000ff;border-bottom-width:1px;}
+div.bhs table.patient tr.body > td a {color:#0000ff; }
+div.bhs table.patient tr.body > td a:visited {color:#0000ff;}
+
+div.bhsvisit{width:inherit; margin-left: 20px; margin-right:20px;}
+div.bhsvisit div.group{width:100%;}
+
+/* NEW DESIGN BEGIN  version 4.0 */
+div.bhsreport div.header + div > table,
+div.bhsreport  table { border-style:solid; border-width:2px 2px 2px 2px; border-color:#eeeeee; margin-top: 5px; margin-bottom: 5px;}
+
+div.bhsreport table, 
+div.bhsreport table{ width:100%;border-collapse:collapse; outline: none; }
+div.bhsreport table td, th{text-align:left; padding-left:10px; border:solid 1px #eee; border-collapse:collapse}
+div.bhsreport div.header { background-color:#bcbcbc ; color: #333; font-weight: bold; 
+                                                            padding: 6px 5px 6px 5px; margin:0; text-align:center;
+                                                            border:none; border-collapse:separate; border-bottom:solid 1px #eeeeee; text-align:left}
+div.bhsreport tr > th,
+div.bhsreport tfoot > tr {
+    background-color: #bcbcbc;
+    color: #333;
+    font-weight: bold;
+    padding: 6px 5px 6px 5px;
+    margin: 0;
+    text-align: center;
+    border: none;
+    border-collapse: separate;
+    border-bottom: solid 1px #eeeeee;
+}
+
+div.bhsreport .questionOnFocus  tr:first-child > th:first-child {
+     color: #333;font-weight: normal;
+}
+div.bhsreport .questionOnFocus  tr > th .lpad { display: block;padding-left: 20px;}
+div.bhsreport .questionOnFocus  tr > td:first-child {padding-left: 40px;}
+div.bhsreport .questionOnFocus span.preamble{ font-weight: normal;font-style: normal;}
+
+div.bhsreport tr > th.noborder { border-bottom:none;}
+
+div.bhsreport tr:first-child > th:first-child {text-align:left;}                              
+div.bhsreport  tr > td {margin:0;  padding: 5px 5px 5px 5px; border-collapse:separate; text-align:left; vertical-align:top }
+div.bhsreport  tr > td:first-child {text-align:left;}
+div.bhsreport  tbody tr.alt { background-color:#eeeeee; }
+
+div.bhsreport span.preamble{display:block; margin: 0px 0px 6px 0px;padding-left: 5px; font-size:9pt; font-weight:bold; font-style: italic; text-align:left; margin-top:5px;} 
+div.bhsreport div.note{text-align:justify; font-size:6pt; margin:10px 7px; padding:0px}
+
+div.bhsreport .score table{ width:100%; margin:0; padding:0; border-width: 0px; border-style: solid; }
+div.bhsreport .score table td{text-align:left; margin:0;  padding: 0px 3px 0px 7px; background-color: #edbd47; }
+
+div.bhsreport .score table tr.head > td { font-weight:bold;}
+div.bhsreport .score table tr.head > td.copy { border-width: 0px; width:40%; font-family:Times New Roman, Arial, Tahoma; 
+                                                                        font-size: 7pt; font-weight:normal; font-style:italic; padding-left:7px; 
+                                                                        vertical-align:bottom; background-color:Transparent;}
+div.bhsreport .score table tr.body > td {color:#4059AD; }
+
+div.bhsreport .score table tr.head > td.score { border-width: 2px 2px 0px 2px; border-style: solid; border-color: #bcbcbc; }
+div.bhsreport .score table tr.head > td.risk { border-width: 2px 2px 0px 0px; border-style: solid; border-color: #bcbcbc; }
+div.bhsreport .score table tr.body > td.score { border-width: 0px 2px 2px 2px; border-style: solid; border-color: #bcbcbc; }
+div.bhsreport .score table tr.body > td.risk { border-width: 0px 2px 2px 0px; border-style: solid; border-color: #bcbcbc; }
+
+
+div.bhsreport .score table tr.body > td.score{ padding-left:18px; width:15%; }
+div.bhsreport .score table tr.body > td.risk { padding-left:18px; width:45%; }
+
+
+div.bhsreport div.list table td.c0 {border-right: none;}
+div.bhsreport div.list table td.c1 {border-left: none;}
+
+/* NEW DESIGN END */
+
+/* emulate displayL table-cell
+div.bhsreport div.group.section div.list table td span.img { display:block; float:left; width: 11px; height:33px; }
+div.bhsreport div.group.section div.list table td span.img + span { display:inline;  padding-left: 5px; vertical-align: middle; }
+*/
+
+/* Section Answers Common end */
+
+div.bhsreport div div.list table td.c0.details {padding-left: 20px;}
+
+/* Tobacco Cessation Counseling begin */
+/*div.bhsreport div.group.tcc div.list > table {background-color: #99ccff;} version 2.0 does not have background */
+div.bhsreport div.tcc div.list table td.c1 {width:84%;}
+div.bhsreport div.tcc div.list table td.c2 {width:8%;}
+div.bhsreport div.tcc div.list table td.c3 {width:8%;}
+
+
+/* Tobacco Cessation Counseling end */
+
+
+/* CAGE (Alcohol) Screening Tool begin */
+div.bhsreport div.cage div.list table td.c0 {width:3.2%;}
+div.bhsreport div.cage div.list table td.c1 {width:80.8%;}
+div.bhsreport div.cage div.list table td.c2 {width:8%;}
+div.bhsreport div.cage div.list table td.c3 {width:8%;}
+
+
+/* Tobacco Cessation Counseling end */
+
+
+/* PHQ-9 (Depression) Screening Results begin */
+div.bhsreport div.phq9 div.list table td.c0 {width:3.2%; }
+div.bhsreport div.phq9 div.list table td.c1 {width:36.4%; }
+div.bhsreport div.phq9 div.list table td.c2 {width:12.4%; }
+div.bhsreport div.phq9 div.list table td.c3 {width:12.5%;}
+div.bhsreport div.phq9 div.list table td.c4 {width:19%;}
+div.bhsreport div.phq9 div.list table td.c5 {width:16.5%;}
+
+
+/* Drug of Choice Results begin */
+div.bhsreport div.drug-of-choice div.list table td.c1 {width:40%;}
+div.bhsreport div.drug-of-choice div.list table td.c2 {width:54.5%;}
+
+
+/*** highlight colors **/
+
+div.bhsreport div.phq9 div.list.difficulty { margin-top: 8px;}
+div.bhsreport div.phq9 div.list.difficulty table table { margin:0; padding:0; border:0px none; }
+div.bhsreport div.phq9 div.list.difficulty table table td {margin:0; padding:0; vertical-align:top; }
+div.bhsreport div.phq9 div.list.difficulty table table td > span {display: inline;}
+div.bhsreport div.phq9 div.list.difficulty table table td >  img {display: inline; margin-right:5px; /*margin-top:2px;*/}
+
+div.bhsreport div.phq9 div.note{ text-align:justify; font-size:6pt; margin: 10px 7px; padding:0;}
+
+/* PHQ-9 (Depression) Screening Results end */
+
+/* HITS Screening Results begin */
+div.bhsreport div.hits div.list table td.c0 {width:3.2%;}
+div.bhsreport div.hits div.list table td.c1 {width:42.9%;}
+div.bhsreport div.hits div.list table td.c2 {width:10.3%;}
+div.bhsreport div.hits div.list table td.c3 {width:9.5%;}
+div.bhsreport div.hits div.list table td.c4 {width:11.0%;}
+div.bhsreport div.hits div.list table td.c5 {width:12.3%;}
+div.bhsreport div.hits div.list table td.c6 {width:10.8%;}
+
+/* HITS Screening Results end */
+/* Problem Gambling begin */
+div.bhsreport div.gambling div.list table td.c1 {width:84%;}
+div.bhsreport div.gambling div.list table td.c2 {width:8%;}
+div.bhsreport div.gambling div.list table td.c3 {width:8%;}
+div.bhsreport div.gambling div.list table td.c5 {width:7.8%;}
+div.bhsreport div.gambling div.list table td.c6 {width:7.8%;}
+
+/* Problem Gambling end */
+
+/* Footer */
+div.bhsreport div.footer{ margin-top:18px; border-top: solid 1px #000000; padding:0; clear:both;}
+div.bhsreport div.footer .logo{display:block; float:left; width:72px; margin-top:5px; height:30px; text-align:left;}
+div.bhsreport div.footer .date{display:block; float:left; text-align:center; padding-top:15px; width:80%;}
+div.bhsreport div.footer .version{display:block; float:right; width:72px; text-align:right; padding-top:15px; font-family: Helvetica, Arial, Tahoma; font-size:8pt; font-weight:bold;}
+
+/* Report Details start */
+
+div.bhsreport_details {padding-bottom: 10px; border-bottom: solid 1px #333333; margin-bottom:15px;margin-left: 20px;margin-right: 20px;}
+div.bhsreport_details p { float:none; clear:both; display:block; margin:0; padding:0; text-align:left; overflow:hidden;}
+div.bhsreport_details p + p{ margin-top: 10px;}
+div.bhsreport_details p.errors{color:#FF0000; text-align:left; padding-top:10px; padding-bottom: 10px; clear:both; }
+
+div.bhsreport_details p span {margin-left: 35px; margin-right:5px;}
+div.bhsreport_details p span:first-child{ margin-left:0px;}
+
+div.bhsreport_details > div.buttons { text-align:left; margin:10px 0 5px 0; overflow:hidden;  }
+div.bhsreport_details > div.buttons  input[type=button]{ margin-right: 10px;}
+div.bhsreport_details > div.buttons > div.delete{ text-align:right; }
+div.bhsreport_details > div.buttons > div.delete > input[type=button]{ font-weight:bold; background-color:#E3A207; color: #333333;margin-right: 0; }
+div.buttons input[type=button]{ margin-right: 10px;}
+div.buttonset > .resetbtn > input[type=button] {
+    background-color: #E3A207;
+    color: #333333;
+}
+
+
+div.bhsreport_details > div.buttons .create-bhs-visit > input[type=button] {
+    font-weight: bold;
+    background-color: #E3A207;
+    color: #333333;
+}
+
+div.bhsreport_details a, div.bhsreport_details a:visited, div.bhsreport_details a:focus { color: rgb(37, 153, 255); }
+
+/* Report Details end */
+
+/* Report END */
+
+
+
+/* BH Indicator Report Start, Inherits report styles */
+
+div.bhsreport.indicator h1,
+div.bhi > .indicator h1 {
+    font-size: 13pt;
+    font-weight: bold;
+    margin-bottom: 12pt;
+    text-align: center;
+    min-height: 40px;
+    line-height: 20px;
+}
+div.bhsreport.indicator h1 .sub,
+div.bhi > .indicator h1 .sub
+{
+        display: block;
+        font-size: 12pt; font-weight: normal; text-align:center; 
+        }
+
+div.bhsreport.indicator div.list table th.c0 {width:80%;}
+div.bhsreport.indicator div.list table th.c1 {width:10%;}
+div.bhsreport.indicator div.list table th.c2 {width:10%; }
+
+div.bhsreport.indicator div.list { margin:0; padding:0; overflow:hidden;}
+div.bhsreport.indicator div.list > table { border-width:1px 1px 1px 1px; border-color:Black; border-style:dotted;}
+div.bhsreport.indicator div.list > table td { border:solid 0px #000;}
+div.bhsreport.indicator div.list > table th { text-align:left; padding: 2px 3px 2px 7px; border:solid 1px #000000; border-width:1px 1px;  border-collapse:collapse; vertical-align:top;}
+
+div.bhsreport.indicator div.header table { width:100%; border: none 0px; border-collapse:collapse; margin:0px; padding:0;}
+div.bhsreport.indicator div.header td { text-align:left; padding: 2px 3px 2px 7px; border:none 0px; border-collapse:collapse; vertical-align:top;}
+div.bhsreport.indicator div.header table td.c0 {width:20%; text-align:left;}
+div.bhsreport.indicator div.header table td.c2 {width:80%; text-align:left;}
+
+
+div.bhsreport.indicator .list.total > table > tbody > tr > td{ border-width:0px; }
+div.bhsreport.indicator .total.list table td.c0 {width:90%;}
+div.bhsreport.indicator .list.total > table > tbody > tr > td.c1 {width:10%; }
+
+div.bhsreport.indicator div.footer{ margin:18px 3px 3px 3px; border-top: solid 1px #000000; padding:0; clear:both;}
+div.repeater table{border:solid 1px #000000; width:100%;border-collapse:collapse}
+div.repeater table td, th{text-align:left; padding-left:10px; border:solid 1px #000000; border-collapse:collapse}
+/* BH Indicator Report End */
+
+
+/* Security report */
+.sec_rep { width:410px; margin:0px auto 20px auto;}
+.sec_rep li .date_range {float:left;}
+.sec_rep li .date_range > span {float:left; margin:0px 5px 0px 5px;}
+.sec_rep li .date_range > .datePicker_container { float:left;}
+
+
+.sec_log_settings { width: 500px; margin: 0 auto 10px auto; text-align:left; overflow:hidden;}
+.sec_log_settings h2 { font-size: 12px; font-weight:bold;}
+.sec_log_settings .cat_name { background-color: #bcbcbc; color:#4059AD; font-weight:bold; padding:5px; margin-top:10px; }
+
+.sec_log_settings .event { overflow:hidden; padding:5px 5px 5px 10px;}
+.sec_log_settings .event_alternate { background-color:#eeeeee; overflow:hidden; padding:5px 5px 5px 10px;}
+.sec_log_settings .descr { float:left; margin:0; padding:0; }
+.sec_log_settings .enabled { float:right; margin:0; padding:0; }
+.sec_log_settings input[type=checkbox] { width:15px; height:15px; }
+.sec_log_settings input[type=submit] { display:block; margin-top:15px; width:100px; }
+
+
+/* License keys */
+ul.licenseKey{ margin:0; padding:0;}
+ul.licenseKey li {list-style: none; margin:10px 30px; padding:0; text-align:left;  }
+ul.licenseKey li.key, ul.licenseKey li.key span {font-size:16px; letter-spacing: 1px; color: #999999;}
+ul.licenseKey li.key a{ color:#333333; margin-left: 20px; font-size: 14px;}
+ul.licenseKey li.key .operations {margin-top: 10px; margin-bottom: 20px;}
+ul.licenseKey li.key .operations a { margin-left:0px; margin-right: 10px;}
+ul.licenseKey li span{ font-size: 20px;}
+ul.licenseKey li span.error{ color:Red;}
+ul.licenseKey li input[type=text]{ font-size: 20px; width: 17em; text-transform:uppercase;}
+ul.licenseKey li input[type=submit]{ font-size: 18px; }
+
+div.info{ margin: 10px 0px; font-style:italic; text-align:left; color: #666666;}
+
+
+.notification-box{ clear:both; overflow:hidden; padding:8px 5px 8px 15px; margin:0 0 15px 0px;  background-color:#EDBD47;}
+.notification-box .close { float:right; font-size:8pt; }
+.notification-box .warn { display:block; float:left; }
+.notification-box > div { margin:5px 0px 0px 8px; text-align: left;}
+.notification-box > div > span{ padding-left: 15px;}
+.notification-box .renew { color:#0968B7; }
+
+
+div#system_summary{text-align:left;}
+div#system_summary h2,div#system_summary.h2
+{ padding: 0px 0px 5px 0px; font-weight:bold; font-size: 12px; text-decoration:underline; margin-bottom: 5px; font-style:italic;}
+
+div#system_summary ul{ padding: 0; margin:0;}
+div#system_summary ul li{padding: 0;  list-style: none; margin:0; clear:both;}
+div#system_summary ul li > span{ display:block; float:left; margin: 5px 0px;}
+div#system_summary ul li > span:first-child{ width: 20em; }
+
+
+/* age selection */
+table.ageSelection td.c1{ width: 70%;}
+table.ageSelection td.c2{ width: 20%;}
+table.ageSelection td.c3{ width: 10%; }
+
+
+/* visit settings - cut score selection */
+table.visitSettingsSelection td.c1{ width: 45%;}
+table.visitSettingsSelection td.c2{ width: 55%; text-align:right; padding-right: 10px}
+table.visitSettingsSelection td.c2 input[type="text"] { width: 50px;}
+table.visitSettingsSelection td.c2  span.hint { padding-right: 5px;}
+table.gridView.visitSettingsSelection td.c2 > table.grid2col {width: 100%;}
+table.gridView.visitSettingsSelection td.c2 > table > tbody > tr {background-color: transparent;}
+table.gridView.visitSettingsSelection td.c2 > .grid2col  td.left{  text-align: right; width:100%;}
+table.gridView.visitSettingsSelection td.c2 > .grid2col  td.right{ width:70px;}
+
+table.visitSettingsSelection td.c3{ width: 10%; }
+table.visitSettingsSelection th.c2{text-align:right; padding-right: 10px}
+
+
+/* screening frequency config */
+table.screeningFrequency td.c1{ width: 70%;}
+table.screeningFrequency th.c2,
+table.screeningFrequency td.c2{ width: 30%; text-align: left;}
+
+
+
+/* export and edit */
+div.nomatch{ text-align: center; padding: 10px 20px 20px 20px; margin: 0 auto;  }
+
+div#PatientDetails input[type=text],
+div#PatientDetails select,
+div#PatientDetails select option
+{
+        text-transform: uppercase;
+}
+div#PatientDetails .error_summary{ width: 100%;}
+div#PatientDetails #changeMessage .error_message {color: #333;}
+
+/* EXPORT WIZARD CONTROL 
+*******************************/
+.wizard {
+    margin-left: 20px;margin-right: 20px;
+}
+.wizard .wizard-buttons{ text-align: right;}
+.wizard .wizard-sidebar{}
+.wizard .wizard-sidebar ul{ float: right;}
+.wizard .wizard-sidebar li a{ text-transform: uppercase;}
+.wizard .wizard-content{ padding: 10px 0px;}
+.wizard .wizard-header{ padding: 10px 0px; text-align: left;}
+
+/* PATIENT EXPORT PREVIEW 
+*************************************/
+div#patient-export-preview * {text-align: left;}
+#patient-export-preview h2{ font-size: 120%; font-weight: bold; line-height: 1.6;}
+#patient-export-preview ul li{ display: block; line-height: 1.6; list-style-type: none;}
+#patient-export-preview ul + h2{ margin-top: 10px;}
+
+/* EXPORT PREVIEW 
+**************************************/
+.export-preview * { text-align: left;}
+.export-preview h2{ font-size: 120%; font-weight: bold; line-height: 1.6;}
+.export-preview h3{ font-size: 100%; font-weight: bold; line-height: 1.6;}
+.export-preview li{ margin: 5px 0px; padding: 0px; list-style-type: none; clear: both; overflow: hidden;}
+.export-preview ul li .row-number{ display: block; float: left; }
+.export-preview ul li .name{ display:block; float: left; margin-left: 10px; min-width: 25em;}
+
+.export-preview ul li .comments, 
+.export-preview ul li .result,
+.export-preview ul li .before,
+.export-preview ul li .after
+{ display:block; float: left; margin-left: 10px; margin-left: 25px;}
+
+.export-preview ul li .comments em,
+.export-preview ul li .result em,
+.export-preview ul li .before em,
+.export-preview ul li .after em
+{ font-style: italic; padding-right: 10px;}
+
+.export-preview ul li .result{ min-width: 12.5em;}
+
+#export-preview-page .params{ border-bottom: 1px solid #000; padding-bottom: 10px; margin-right:20px;}
+
+
+
+/* Preview at a glance 
+*******************************/
+.export-parameter-glance * {text-align: left;}
+.export-parameter-glance h2{ font-weight: bold; line-height: 1.6; clear: both;}
+.export-parameter-glance ul{ overflow: hidden;}
+.export-parameter-glance ul li{ list-style: none; display: block; float: left; margin-left: 5em;}
+.export-parameter-glance ul li:first-child{ margin-left: 0px;}
+.export-parameter-glance ul + h2{ margin-top: 10px;}	
+
+
+/* Export Result 
+********************************/
+.export-result * {text-align: left;margin-left: 20px;margin-right: 20px;}
+.export-result h2{ font-weight: bold; line-height: 1.6; clear: both; font-size: 200%; }
+.export-result ul{ overflow: hidden; }
+
+
+.export-result li{ margin: 20px 10px; padding: 0px; list-style-type: none; clear: both; overflow: hidden;}
+
+.export-result li,
+.export-result li span{ font-size: 110%; line-height: 1.6; }
+
+.export-result ul li .row-number{ display: block; float: left; }
+.export-result ul li .name{ display:block; float: left; margin-left: 10px; min-width: 25em;}
+
+.export-result .failed .status,
+.export-result .AllFailed
+{
+        color: #FF0000;
+}
+
+.export-result .AllSucceed,
+.export-result .ok .status
+{
+        color: #008800;
+}
+
+.export-result .SomeOperationsFailed
+{
+        color: #ffa500;
+}
+
+
+.patientDetails.note {
+        font-size: 90%;
+}
+
+
+/* Password Recovery Wizard*/
+#password-recovery{ margin-left: 20px;margin-right: 20px;}
+
+/* Password Recovery Wizard End*/
+
+.content-right-margin{ margin-right: 20px;}
+
+
+/** bhs visit */
+.bhsvisit div.grid3col .column.first {width: 40%; text-align:right;  clear:both;}
+.bhsvisit div.grid3col .column.second {width:280px; text-align:left; padding-left:5px; padding-right:5px;} 
+.bhsvisit div.grid3col .column.third {width:300px; text-align:left; padding-left:5px; padding-right:5px;} 
+.bhsvisit div.grid2col .column.right {padding-left:5px; padding-right:5px;}
+
+.bhsvisit div.grid3col .column.second input[type=text],
+.bhsvisit div.grid3col .column.second textarea {
+    width: 250px;
+    resize: vertical;
+}
+
+.bhsvisit div.grid3col .column.second select {width: 250px;}
+
+.bhsvisit div.grid2col .column.right input[type=text],
+.bhsvisit div.grid2col .column.right textarea {
+    width: 380px;
+    resize: vertical;
+}
+.bhsvisit div.grid2col .column.right select {width: 380px; }
+.bhsvisit div.grid3col.scorelevel .column.second{width: 30px;}
+
+.bhsvisit div.grid3col.scorelevel .column.second input[type=text] {width: 25px; }
+
+.bhsvisit div.grid2col.notes .column.right textarea { width: 640px;}
+
+ DIV.grid2col .column.right > table{ width: 397px; border-width:0px;}
+
+.bhsvisit DIV.grid2col .column.right > table td {padding-left: 0px; border-width:0px;}
+
+.reporttype-filter input[type=radio]{ margin-right: 5px; }
+
+.gridView  tr .demographic-report {color:#2599FF;}
+.gridView  tr .demographic-report.incomplete {color:#FF0000;}
+
+@media only screen and (max-width: 1024px) {
+    .bhsvisit div.grid3col .column.second {
+        width: 280px;
+    }
+
+    .bhsvisit div.grid2col .column.left {
+        width: 30%;
+    }
+
+    .bhsvisit div.grid3col .column.first {
+        width: 30%;
+    }
+
+    .bhsvisit div.grid3col .column.third {
+        width: 200px;
+    }
+
+    .bhsvisit div.grid3col .column.second input[type=text],
+    .bhsvisit div.grid3col .column.second textarea {
+        width: 250px;
+        
+    }
+
+    .bhsvisit div.grid3col .column.second select {
+        width: 250px;
+    }
+}
+#editor-notes {min-height: 150px;}
+#editor-notes em{ font-style: italic; font-weight: inherit;}
+#editor-notes strong {font-weight: bold;}
+#editor-notes h1,
+#editor-notes h2,
+#editor-notes h3,
+#editor-notes h4
+{
+    background: none;
+    margin:0;
+    padding:0;
+    text-align: inherit;
+    color:inherit;
+    font-weight: inherit;
+}
+
+
+div#follow-up-date span.reset-button{
+    display:block;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    div#mainContainer {
+        min-width: 980px;
+    }
+
+    div#header {
+        min-width: inherit;
+    }
+    div#content {
+        min-width: inherit;
+    }
+    div#footer {
+        min-width: inherit;
+    }
+    .login-form {
+       
+    }
+
+    div#header div#logo{width: 130px;}
+
+}

@@ -1,0 +1,15 @@
+.tableHead {
+    background-color: rgb(237,237,242);
+    color: rgb(46,46,66);
+    font-size: 1em;
+    text-align: center;
+    & th {
+        color: rgb(46,46,66);
+        font-size: 1em;
+        font-weight: 700;
+    }
+}
+
+.table {
+    font-size: 1em !important;
+}

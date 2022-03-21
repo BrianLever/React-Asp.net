@@ -1,0 +1,165 @@
+﻿.mainMenu
+{
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+	list-style-type: none;
+}
+
+.mainMenu ul.AspNet-Menu /* Tier 1 */
+{
+}
+.mainMenu ul.AspNet-Menu > li > a, .mainMenu ul.AspNet-Menu > li > span
+{
+	margin: 0px 10px;
+}
+
+.mainMenu li
+{
+	list-style-type: none;
+	white-space: nowrap;
+	margin: 0;
+	line-height: 23px;
+	border-collapse: collapse;
+	text-align: left;
+	display: inline;
+}
+
+.mainMenu li:hover, /* list items being hovered over */ .mainMenu li.AspNet-Menu-Hover
+{
+	color: #EEBD47;
+}
+
+.mainMenu a, /* all anchors and spans (nodes with no link) */ .mainMenu span
+{
+	color: White;
+	font-size: 11px;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	background-image: none;
+	text-decoration: none;
+}
+
+.mainMenu li.AspNet-Menu-WithChildren
+{
+	padding-right: 10px;
+}
+
+.mainMenu li.AspNet-Menu-WithChildren ul /* Tier N */
+{
+	width: 100px;
+	border-collapse: collapse;
+	background-color: White;
+}
+
+.mainMenu ul.AspNet-Menu li ul li ul /* Tier 3,... */
+{
+	margin: -1.8em 0 0 196px;
+	position: absolute;
+	width: 150px;
+}
+
+.mainMenu li.AspNet-Menu-WithChildren ul li /* Tier N */
+{
+	width: 96%;
+	padding: 0% 2%;
+	border-bottom: solid 1px #EEBD47;
+	border-left: solid 1px #EEBD47;
+	border-right: solid 1px #EEBD47;
+}
+
+.mainMenu li.AspNet-Menu-WithChildren ul > li:first-child /* Tier N */
+{
+	border-top: solid 1px #EEBD47;
+}
+
+.mainMenu li.AspNet-Menu-WithChildren ul li:hover /* Tier N */
+{
+	background-color: Orange;
+}
+
+
+.mainMenu li.AspNet-Menu-Leaf a, /* leaves */ .mainMenu li.AspNet-Menu-Leaf span
+{
+	background-image: none !important;
+}
+
+.mainMenu li:hover a, /* hovered text */ .mainMenu li:hover span, .mainMenu li.AspNet-Menu-Hover a, .mainMenu li.AspNet-Menu-Hover span, .mainMenu li:hover li:hover a, .mainMenu li:hover li:hover span, .mainMenu li.AspNet-Menu-Hover li.AspNet-Menu-Hover a, .mainMenu li.AspNet-Menu-Hover li.AspNet-Menu-Hover span, .mainMenu li:hover li:hover li:hover a, .mainMenu li:hover li:hover li:hover span, .mainMenu li.AspNet-Menu-Hover li.AspNet-Menu-Hover li.AspNet-Menu-Hover a, .mainMenu li.AspNet-Menu-Hover li.AspNet-Menu-Hover li.AspNet-Menu-Hover span
+{
+	color: #edbd47;
+	text-decoration: none;
+}
+
+.mainMenu li:hover, .mainMenu li:hover li
+{
+	/*	background-color: #cccccc;*/
+}
+
+.mainMenu .AspNet-Menu-Selected a, .mainMenu .AspNet-Menu-Selected span,
+.AspNet-Menu-ChildSelected a, .AspNet-Menu-ChildSelected span
+{
+	color:#E3A207; /*logo's color is #EEBD47, but it is too light on the white bg*/
+}
+
+.leftMenu .AspNet-Menu-Selected a, .mainMenu .AspNet-Menu-Selected span
+{
+	color: #E3A207; /*logo's color is #EEBD47, but it is too light on the white bg*/
+}
+
+.mainMenu li.AspNet-Menu-WithChildren, 
+.mainMenu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren, 
+.mainMenu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren
+{
+	background-image: url(img/openMenu.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.mainMenu li:hover.AspNet-Menu-WithChildren, .mainMenu li.AspNet-Menu-WithChildren ul li:hover
+{
+	/*background: transparent url(img/arrow_blue.gif) right center no-repeat;*/
+}
+
+
+.mainMenu .AspNet-Menu-Horizontal
+{
+	z-index: 999;
+	position: relative;
+}
+
+.leftMenu
+{
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+
+.leftMenu ul.AspNet-Menu 
+{
+}
+.leftMenu ul.AspNet-Menu-Vertical > li > a, .leftMenu ul.AspNet-Menu-Vertical > li > span
+{
+	margin: 0px 10px;
+	text-align: left;
+}
+
+.leftMenu li
+{
+	margin: 0;
+	line-height: 25px;
+	border-collapse: collapse;
+	text-align: left;
+	list-style-type:none;
+}
+.leftMenu li:hover,  .leftMenu li.AspNet-Menu-Hover
+{
+	color: #edbd47;
+}
+
+.leftMenu li.AspNet-Menu-Leaf a:hover
+{
+	color: #edbd47;
+}
+

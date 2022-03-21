@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FrontDeskMaster.master.cs"
+    Inherits="FrontDeskMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="shortcut icon" href="~/favicon.ico" runat="server" type="image/x-icon" />
+</head>
+<body>
+    <div id="mainContainer">
+        <form id="form1" runat="server">
+        <asp:ScriptManager ID="scriptManager" runat="server" AllowCustomErrorsRedirect="true"
+            EnablePartialRendering="true" EnablePageMethods="true" />
+        <div id="header">
+            <div id="logo">
+                <asp:Image runat="server" SkinID="LogoImg" />
+            </div>
+            <div id="menuLine">
+                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" EnableViewState="False"
+                    SkinID="mainMenu" CssSelectorClass="mainMenu" />
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+            </div>
+            <div id="loginStatus">
+                <div>
+                    <h1>
+                        <%=ApplicationName %></h1>
+                    <asp:LoginView ID="LoginView1" runat="server">
+                        <LoggedInTemplate>
+                            Logged as
+                            <%=LoggedUserName%>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+                <div id="logoText">
+                    <span class="version">Version:
+                        <%= (AppVersion) %></span>
+                </div>
+            </div>
+            <div class="clearer"></div>
+        </div>
+        <div id="content">
+            <div id="pageHeader">
+                <h1>
+                    <%=PageHeaderText%></h1>
+            </div>
+            <div id="scrollContent">
+                <asp:ContentPlaceHolder ID="cphContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="footer">
+            <p>
+                Copyright&nbsp;&copy;&nbsp;2009 - <%= GetCurrentYear() %>, J.L. Ward Associates, Inc. All rights reserved.&nbsp;
+                <a href="http://www.screendox.com/support">www.screendox.com</a></p>
+                <p class="label">Powered by <a href="http://www.3si2.com" target="_blank"><asp:Image runat="server" EnableViewState="false" ImageUrl="~/images/3si2_label.png" AlternateText="Software Systems and Services Internaltional Inc." /></a>
+                </p>
+        </div>
+
+        <script type="text/javascript">
+            $addHandler(window, "resize", onResize);
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+            onResize();
+        </script>
+
+        </form>
+
+        <script language="javascript" type="text/javascript">
+
+
+            function endRequestHandler(sender, args) {
+                if (args.get_error() != undefined) {
+                    var errorMessage = args.get_error().message;
+                    args.set_errorHandled(true);
+                    var text = new String(errorMessage);
+                    if (text.startsWith("Sys.WebForms")) {
+                        var pos = text.indexOf(": ", 0);
+                        if (pos >= 0) {
+                            text = text.substr(pos + 2, text.length - pos - 2);
+                        }
+                    }
+
+                    alert(text);
+                }
+
+            }
+
+            if (prm != null) {
+                prm.add_endRequest(endRequestHandler);
+            }
+        </script>
+
+    </div>
+</body>
+</html>

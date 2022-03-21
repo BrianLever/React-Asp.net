@@ -1,0 +1,29 @@
+﻿.textbox
+{
+	border: solid 1px #666666;
+	font-size: 13px;
+	line-height:15px;
+	margin:0;
+	padding:2px 0px 2px 3px;
+	width:350px;
+}
+
+.combobox
+{
+	border: solid 1px #666666;
+	font-size: 13px;
+	line-height:15px;
+	margin:0;
+	padding:1px 0px 1px 0px;
+	width:355px;
+}
+
+.btn
+{
+	font-size: 12px;
+	color: White;
+	font-family: Tahoma, Arial;
+	border:solid 1px #666666;
+	background-color: #2599FF;
+	padding:2px 5px;
+}

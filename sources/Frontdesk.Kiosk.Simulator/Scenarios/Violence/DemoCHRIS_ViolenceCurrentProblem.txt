@@ -1,0 +1,55 @@
+﻿{
+	"_sectionAnswers": {
+		"DAST": {
+			"_answers": {
+				"10": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 10,
+					"AnswerValue": 0
+				},
+				
+				
+			},
+			"ScreeningSectionID": "DAST",
+			"AnswerValue": 0
+		},
+		"HITS": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 1,
+					"AnswerValue": 5
+				},
+				"2": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 2,
+					"AnswerValue": 2
+				},
+				"3": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 3,
+					"AnswerValue": 3
+				},
+				"4": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 4,
+					"AnswerValue": 1
+				},
+				"5": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 5,
+					"AnswerValue": 1
+				},
+				
+			},
+			"ScreeningSectionID": "HITS",
+			"AnswerValue": 1
+		}
+	},
+	"ScreeningID": "BHS",
+	"KioskID": 1000,
+	"FirstName": "CHRIS (Violence Current Problem)",
+	"LastName": "DEMO",
+	"MiddleName": "",
+	"Birthday": "1985-01-01T00:00:00"
+}

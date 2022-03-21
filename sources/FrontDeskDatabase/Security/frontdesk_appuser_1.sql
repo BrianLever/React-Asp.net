@@ -1,0 +1,1 @@
+﻿CREATE USER [frontdesk_appuser] FOR LOGIN [frontdesk_appuser] WITH DEFAULT_SCHEMA = dbo ;

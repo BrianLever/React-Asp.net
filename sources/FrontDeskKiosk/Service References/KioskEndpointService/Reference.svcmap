@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="93aca9b4-71d7-4646-9875-accdf1e19249" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>true</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="FrontDesk" />
+      <ReferencedAssembly AssemblyName="FrontDesk.Common" />
+      <ReferencedAssembly AssemblyName="ScreenDox.Rpms.Common.Models" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://localhost/screendox/endpoint/KioskEndpoint.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="www.frontdeskhealth.com1.wsdl" MetadataType="Wsdl" ID="371ce63c-4a5c-4c1f-87f4-ebee5d73b564" SourceId="1" SourceUrl="https://localhost/screendox/endpoint/KioskEndpoint.svc/mex" />
+    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="e5833720-eb3a-42d8-80cb-7778d9c96c4b" SourceId="1" SourceUrl="https://localhost/screendox/endpoint/KioskEndpoint.svc/mex" />
+    <MetadataFile FileName="www.frontdeskhealth.com1.xsd" MetadataType="Schema" ID="b189450f-0d9a-449f-a5ee-d2072eff3b41" SourceId="1" SourceUrl="https://localhost/screendox/endpoint/KioskEndpoint.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="1d6d1239-e639-46f4-8827-1b0611bd876c" SourceId="1" SourceUrl="https://localhost/screendox/endpoint/KioskEndpoint.svc/mex" />
+    <MetadataFile FileName="Arrays1.xsd" MetadataType="Schema" ID="b86f93ad-9098-4cd9-a84f-7b229d70fe36" SourceId="1" SourceUrl="https://localhost/screendox/endpoint/KioskEndpoint.svc/mex" />
+    <MetadataFile FileName="System1.xsd" MetadataType="Schema" ID="86503951-58c4-4ecc-a2da-bc217014dd4a" SourceId="1" SourceUrl="https://localhost/screendox/endpoint/KioskEndpoint.svc/mex" />
+    <MetadataFile FileName="FrontDesk.Server.Services1.xsd" MetadataType="Schema" ID="2a805f70-c2cf-4220-8909-bc94faedab85" SourceId="1" SourceUrl="https://localhost/screendox/endpoint/KioskEndpoint.svc/mex" />
+    <MetadataFile FileName="ScreenDox.Server.Common.Models.xsd" MetadataType="Schema" ID="507834f8-41af-4d5c-baa5-5291a05491e5" SourceId="1" SourceUrl="https://localhost/screendox/endpoint/KioskEndpoint.svc/mex" />
+    <MetadataFile FileName="FrontDesk.Common1.xsd" MetadataType="Schema" ID="a4894e73-9df3-461a-ade9-44fb61997d90" SourceId="1" SourceUrl="https://localhost/screendox/endpoint/KioskEndpoint.svc/mex" />
+    <MetadataFile FileName="www.screendox.com.xsd" MetadataType="Schema" ID="2a585763-9c2b-46d3-9d8a-605aad6cb16f" SourceId="1" SourceUrl="https://localhost/screendox/endpoint/KioskEndpoint.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

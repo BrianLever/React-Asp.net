@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CCFD383D-DE2A-4CC8-B9BE-4AEB515328B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrontDesk.Common</RootNamespace>
+    <AssemblyName>FrontDesk.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>FrontDesk.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bhservice\BhsEntry.cs" />
+    <Compile Include="Bhservice\BhsDemographics.cs" />
+    <Compile Include="Bhservice\BhsFollowUp.cs" />
+    <Compile Include="Bhservice\BhsVisit.cs" />
+    <Compile Include="Bhservice\Export\BhsFollowUpExtendedWithIdentity.cs" />
+    <Compile Include="Bhservice\Export\BhsVisitExtendedWithIdentity.cs" />
+    <Compile Include="Bhservice\IBhsEntry.cs" />
+    <Compile Include="Bhservice\IBhsFollowUpSchedule.cs" />
+    <Compile Include="Bhservice\Import\PatientDemographicsKioskResult.cs" />
+    <Compile Include="Bhservice\LookupLists.cs" />
+    <Compile Include="Bhservice\ManualScreeningResultValue.cs" />
+    <Compile Include="Bhservice\ScreeningResultValue.cs" />
+    <Compile Include="Bhservice\TreatmentActionItem.cs" />
+    <Compile Include="Configuration\AppSettingsProxy.cs" />
+    <Compile Include="Configuration\ScreenDoxServerConfigurationHelper.cs" />
+    <Compile Include="Data\DBCompactDatabase.cs" />
+    <Compile Include="Data\DBDatabase.cs" />
+    <Compile Include="Data\ITransactionalDatabase.cs" />
+    <Compile Include="Data\LikeCondition.cs" />
+    <Compile Include="Data\QueryBuilder.cs" />
+    <Compile Include="Debugging\DebugLogger.cs" />
+    <Compile Include="Entity\BaseValidableEntity.cs" />
+    <Compile Include="Entity\IValidatable.cs" />
+    <Compile Include="Entity\NonValidEntityException.cs" />
+    <Compile Include="Extensions\CountyTextFunctions.cs" />
+    <Compile Include="Extensions\DataMaskingExtensions.cs" />
+    <Compile Include="Extensions\DataReaderExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\DbParameterExtentions.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="Extensions\JsonContractResolvers\ContextTypeOnlyJsonContractResolver.cs" />
+    <Compile Include="Extensions\JsonExtensions.cs" />
+    <Compile Include="Extensions\LogExtentions.cs" />
+    <Compile Include="Extensions\NullableConverter.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TimeSpanExtensions.cs" />
+    <Compile Include="Extensions\TypeConvertExtensions.cs" />
+    <Compile Include="Extensions\XmlExtensions.cs" />
+    <Compile Include="InfrastructureServices\ITimeService.cs" />
+    <Compile Include="InfrastructureServices\TimeService.cs" />
+    <Compile Include="Logging\LoggerFactory.cs" />
+    <Compile Include="LookupValue.cs" />
+    <Compile Include="LookupValueDeleteLogItem.cs" />
+    <Compile Include="LookupValueWithDescription.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\ScreeningLabels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScreeningLabels.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Screening\Bhs\BhsFollowUpReportDescriptor.cs" />
+    <Compile Include="Screening\Bhs\BhsVisitReportDescriptor.cs" />
+    <Compile Include="Screening\Bhs\BhsDemographicsIndicatorDescriptor.cs" />
+    <Compile Include="Screening\DemographicsRaceDiscriptor.cs" />
+    <Compile Include="Screening\AnxietyScreeningSectionResult.cs" />
+    <Compile Include="Screening\IScreeningAgesSettingsProvider.cs" />
+    <Compile Include="Screening\IScreeningPatientIdentity.cs" />
+    <Compile Include="Screening\IScreeningPatientIdentityWithAddress.cs" />
+    <Compile Include="Screening\IScreeningResult.cs" />
+    <Compile Include="Screening\ScreeningAgesSettingsProvider.cs" />
+    <Compile Include="Screening\ScreeningPatientIdentity.cs" />
+    <Compile Include="Screening\ScreeningPatientIdentityExtentions.cs" />
+    <Compile Include="Screening\ScreeningPatientInfoWithAddress.cs" />
+    <Compile Include="Screening\ScreeningResult.cs" />
+    <Compile Include="Screening\ScreeningSectionDescriptor.cs" />
+    <Compile Include="Screening\ScreeningSectionQuestionResult.cs" />
+    <Compile Include="Screening\DepressionScreeningSectionResult.cs" />
+    <Compile Include="Screening\ScreeningSectionResult.cs" />
+    <Compile Include="Screening\ScreeningSectionResultExtensions.cs" />
+    <Compile Include="Screening\ScreeningTimeLog.cs" />
+    <Compile Include="StringExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FrontDesk.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ScreeningLabels.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScreeningLabels.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

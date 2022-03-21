@@ -1,0 +1,15 @@
+REGEDIT4
+
+;make FrontDesk.exe a shell application on kiosk
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon]
+"Shell"= "C:\\Program Files\\FrontDesk\\FrontDeskKiosk.exe"
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Winlogon]
+;"Shell"= "C:\\Program Files\\FrontDesk\\FrontDeskKiosk.exe"
+
+
+;[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon]
+;"Shell"= "explorer.exe" - clear
+
+

@@ -1,0 +1,21 @@
+import { IRootState } from '../../states';
+import { IBranchLocationItemResponse } from '../../actions/branch-locations';
+
+export const getBranchLocationArraySelector = (state: IRootState): Array<IBranchLocationItemResponse> => state.branchLocations.branchLocationArray;
+export const isBranchLocationsLoadingSelector = (state: IRootState): boolean => state.branchLocations.isBranchLocationLoading;
+export const getTotalBranchLocationsNumberSelector = (state: IRootState): number => state.branchLocations.totalBranchLocations;
+export const getCurrentPage = (state: IRootState): number => state.branchLocations.currentPage;
+export const getBranchLocationsActiveDirectionSelector = (state: IRootState): string => state.branchLocations.activeDirection;
+export const getBranchLocationsActiveKeySelector = (state: IRootState): string => state.branchLocations.activeSort;
+export const getBranchLocationsCurrentPageSelector = (state: IRootState): number => state.branchLocations.currentPage;
+export const getSelectedFilterBranchLocationNameKeySelector = (s: IRootState): string =>  s.branchLocations.selectedFilterBranchLocationNameKey;
+export const getSelectedFilterScreeningProfileIdSelector = (s: IRootState): number =>  s.branchLocations.selectedFilterScreeningProfileId;
+export const getSelectedFilterBranchLocationIdSelector = (s: IRootState): number =>  s.branchLocations.selectedFilterBranchLocationId;
+export const getSelectedFilterShowDisabledSelector = (s: IRootState): number =>  s.branchLocations.selectedFilterShowDisabled;
+export const getCreateBranchLocationsNameSelector = (s: IRootState): string =>  s.branchLocations.createBranchLocationName;
+export const getCreateBranchLocationsDescriptionSelector = (s: IRootState): string =>  s.branchLocations.createBranchLocationDescription;
+export const getCreateBranchLocationsScreenProfileSelector = (s: IRootState): number =>  s.branchLocations.createBranchLocationScreenProfile;
+export const getSelectedBranchLocationIdSelector = (s: IRootState): number =>  s.branchLocations.selectedBranchLocationId;
+export const IsNewBranchLocationLoadingSelector = (state: IRootState): boolean => state.branchLocations.isNewBranchLocationLoading;
+export const setBranchLocationAutoStatusSelector = (state: IRootState): boolean => state.branchLocations.isAutoStatus;
+export const setBranchLocationDisabledSelector = (state: IRootState): boolean => state.branchLocations.branchLocationDisabled;

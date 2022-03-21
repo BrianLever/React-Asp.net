@@ -1,0 +1,52 @@
+﻿{
+	"_sectionAnswers": {
+		"PHQ-9": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 1,
+					"AnswerValue": 0
+				},
+				"2": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 2,
+					"AnswerValue": 0
+				},
+			},
+			"ScreeningSectionID": "PHQ-9",
+			"AnswerValue": 0
+		},
+		"BBGS": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "BBGS",
+					"QuestionID": 1,
+					"AnswerValue": 1
+				},
+				"2": {
+					"ScreeningSectionID": "BBGS",
+					"QuestionID": 2,
+					"AnswerValue": 1
+				},
+				"3": {
+					"ScreeningSectionID": "BBGS",
+					"QuestionID": 3,
+					"AnswerValue": 1
+				},
+				"4": {
+					"ScreeningSectionID": "BBGS",
+					"QuestionID": 4,
+					"AnswerValue": 1
+				}				
+			},
+			"ScreeningSectionID": "BBGS",
+			"AnswerValue": 1
+		}
+	},
+	"ScreeningID": "BHS",
+	"KioskID": 1000,
+	"FirstName": "GEORGE (Gambling Score 3)",
+	"LastName": "DEMO",
+	"MiddleName": "",
+	"Birthday": "1958-07-23T00:00:00"
+}

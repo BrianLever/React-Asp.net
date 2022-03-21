@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "df7d8022-8a59-400c-a6dd-2788cd44cfe8",
+		"name": "Screendox Server API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Screens",
+			"item": [
+				{
+					"name": "Search: Get Unique Patient Screens",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Location\": null,\r\n  \"StartDate\": \"2020-10-01\",\r\n  \"EndDate\": null,\r\n  \"FirstName\": null,\r\n  \"LastName\": null,\r\n  \"ScreeningResultID\": null,\r\n  \"StartRowIndex\": 0,\r\n  \"MaximumRows\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/screendoxapi/api/screen/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"screendoxapi",
+								"api",
+								"screen",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search: Get Related Patient Screenings",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Location\": null,\r\n  \"StartDate\": \"2020-10-01\",\r\n  \"EndDate\": null,\r\n  \"FirstName\": null,\r\n  \"LastName\": null,\r\n  \"ScreeningResultID\": null,\r\n  \"StartRowIndex\": 0,\r\n  \"MaximumRows\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{server_api_url}}/api/screen/search/210677",
+							"protocol": "http",
+							"host": [
+								"{{server_api_url}}"
+							],
+							"path": [
+								"api",
+								"screen",
+								"search",
+								"210677"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Report - Some Responses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Location\": null,\r\n  \"StartDate\": \"2020-10-01\",\r\n  \"EndDate\": null,\r\n  \"FirstName\": null,\r\n  \"LastName\": null,\r\n  \"ScreeningResultID\": null,\r\n  \"StartRowIndex\": 0,\r\n  \"MaximumRows\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{server_api_url}}/api/screen/180573",
+							"protocol": "http",
+							"host": [
+								"{{server_api_url}}"
+							],
+							"path": [
+								"api",
+								"screen",
+								"180573"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetGpraReportingTime",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Location\": null,\r\n  \"StartDate\": \"2020-10-01\",\r\n  \"EndDate\": null,\r\n  \"FirstName\": null,\r\n  \"LastName\": null,\r\n  \"ScreeningResultID\": null,\r\n  \"StartRowIndex\": 0,\r\n  \"MaximumRows\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{server_api_url}}/api/screen/gpra",
+							"protocol": "http",
+							"host": [
+								"{{server_api_url}}"
+							],
+							"path": [
+								"api",
+								"screen",
+								"gpra"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetMinDate",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Location\": null,\r\n  \"StartDate\": \"2020-10-01\",\r\n  \"EndDate\": null,\r\n  \"FirstName\": null,\r\n  \"LastName\": null,\r\n  \"ScreeningResultID\": null,\r\n  \"StartRowIndex\": 0,\r\n  \"MaximumRows\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{server_api_url}}/api/screen/mindate",
+							"protocol": "http",
+							"host": [
+								"{{server_api_url}}"
+							],
+							"path": [
+								"api",
+								"screen",
+								"mindate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile and Account",
+			"item": [
+				{
+					"name": "Get User Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{server_api_url}}/api/profile",
+							"protocol": "http",
+							"host": [
+								"{{server_api_url}}"
+							],
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BranchLocation",
+			"item": [
+				{
+					"name": "Get Items for List Binding",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{server_api_url}}/api/branchlocation/list",
+							"protocol": "http",
+							"host": [
+								"{{server_api_url}}"
+							],
+							"path": [
+								"api",
+								"branchlocation",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get System Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{server_api_url}}/api/systeminfo",
+					"protocol": "http",
+					"host": [
+						"{{server_api_url}}"
+					],
+					"path": [
+						"api",
+						"systeminfo"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server_api_url",
+			"value": "localhost/screendoxapi"
+		}
+	]
+}

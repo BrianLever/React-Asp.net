@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeleteConfirmText" xml:space="preserve">
+    <value>You are about to delete {0}. Proceed?</value>
+  </data>
+  <data name="DropDown_NotSelectedText" xml:space="preserve">
+    <value>&lt;&lt; Not selected &gt;&gt;</value>
+  </data>
+  <data name="EmptyButRequiredFiledText" xml:space="preserve">
+    <value>[Missing]</value>
+  </data>
+  <data name="InvalidScreeningTraceMsg" xml:space="preserve">
+    <value>Invalid data received from kiosk</value>
+  </data>
+  <data name="KioskEndpoint_ActivationLicenseErrorMesage" xml:space="preserve">
+    <value>Screening results from Kiosk have been rejected due to application license conflict. Check product activation.</value>
+  </data>
+  <data name="KioskEndpoint_KioskCountLicenseErrorMesage" xml:space="preserve">
+    <value>Screening results from Kiosk have been rejected due to application license conflict. You have more active kiosks than allowed by your license. Please acquire new license or disable unused kiosks.</value>
+  </data>
+  <data name="KioskEndpoint_KioskNotFoundOrDisabled" xml:space="preserve">
+    <value>Screening results have been rejected. Reason: kiosk with KioskID '{0}' has not been found or is disabled. Results have been sent from {1} address.</value>
+  </data>
+  <data name="KioskEndpoint_LocationCountLicenseErrorMesage" xml:space="preserve">
+    <value>Screening results from Kiosk have been rejected due to application license conflict. You have more active branch locations than allowed by your license agreement. Please acquire additional licenses or disable Branch Locations.</value>
+  </data>
+  <data name="LicenseValidation_NeedToActivateMessage" xml:space="preserve">
+    <value>To start working with the application you need to activate it first.</value>
+  </data>
+  <data name="LocationCountExceeded" xml:space="preserve">
+    <value>You have exceeded the maximum allowed number of Branch Locations according to the terms of your license agreement. Please acquire additional licenses or disable Branch Locations.</value>
+  </data>
+  <data name="Location_Disabled_Failid" xml:space="preserve">
+    <value>Failed to enable branch location. Maximum branch locations count has been exceeded</value>
+  </data>
+  <data name="Location_UnableToEnableBecauseMaxExceeded" xml:space="preserve">
+    <value>You cannot enable this branch location because you have exceeded the maximum allowed amount of branch locations according to your license.</value>
+  </data>
+  <data name="SaveChangesConfirmText" xml:space="preserve">
+    <value>You are about to commit your changes. Proceed?</value>
+  </data>
+  <data name="ScreeningValidation_AddressMissing" xml:space="preserve">
+    <value>Street address is missing</value>
+  </data>
+  <data name="ScreeningValidation_CityMissing" xml:space="preserve">
+    <value>City is missing</value>
+  </data>
+  <data name="ScreeningValidation_FirstNameMissing" xml:space="preserve">
+    <value>First name is missing</value>
+  </data>
+  <data name="ScreeningValidation_InvalidPhoneNumber" xml:space="preserve">
+    <value>Invalid phone number</value>
+  </data>
+  <data name="ScreeningValidation_InvalidScreeningResult" xml:space="preserve">
+    <value>Invalid screening result. Please check number of received screening results.</value>
+  </data>
+  <data name="ScreeningValidation_InvalidState" xml:space="preserve">
+    <value>Invalid state</value>
+  </data>
+  <data name="ScreeningValidation_InvalidZipCode" xml:space="preserve">
+    <value>Invalid ZIP code</value>
+  </data>
+  <data name="ScreeningValidation_IvalidDateOfBirth" xml:space="preserve">
+    <value>Invalid date of birth</value>
+  </data>
+  <data name="ScreeningValidation_LastNameMissing" xml:space="preserve">
+    <value>Last name is missing</value>
+  </data>
+  <data name="ScreeningValidation_PhoneMissing" xml:space="preserve">
+    <value>Phone number is missing</value>
+  </data>
+  <data name="ScreeningValidation_StateMissing" xml:space="preserve">
+    <value>State is missing</value>
+  </data>
+  <data name="ScreeningValidation_ZipCodeMissing" xml:space="preserve">
+    <value>ZIP code is missing</value>
+  </data>
+  <data name="SecurityEvent_AcountActivated" xml:space="preserve">
+    <value>New account was activated.</value>
+  </data>
+  <data name="SecurityEvent_BHRPrinted" xml:space="preserve">
+    <value>Behavioral Health Screening Report was printed. &lt;a href="{0}"&gt;Report ID: {1}&lt;/a&gt;</value>
+  </data>
+  <data name="SecurityEvent_BHRRemoved" xml:space="preserve">
+    <value>Behavioral Health Screening Report was removed. Patient Name: {0}, Date of Birth: {1}</value>
+  </data>
+  <data name="SecurityEvent_BHRViewed" xml:space="preserve">
+    <value>Behavioral Health Screening Report was read. &lt;a href="{0}"&gt;Report ID: {1}&lt;/a&gt;</value>
+  </data>
+  <data name="SecurityEvent_BranchRemoved" xml:space="preserve">
+    <value>Branch location "{0}" was removed.</value>
+  </data>
+  <data name="SecurityEvent_KioskRemoved" xml:space="preserve">
+    <value>Kiosk "{0}" was removed.</value>
+  </data>
+  <data name="SecurityEvent_Local_BHRPrinted" xml:space="preserve">
+    <value>Behavioral Health Screening Report was printed. Report ID: {0}</value>
+  </data>
+  <data name="SecurityEvent_Local_BHRViewed" xml:space="preserve">
+    <value>Behavioral Health Screening Report was read. Report ID: {0}</value>
+  </data>
+  <data name="SecurityEvent_Local_NewBranch" xml:space="preserve">
+    <value>New branch location was created. Branch Location: {0}</value>
+  </data>
+  <data name="SecurityEvent_Local_NewKiosk" xml:space="preserve">
+    <value>New kiosk was registered. Kiosk: {0}</value>
+  </data>
+  <data name="SecurityEvent_Local_NewUser" xml:space="preserve">
+    <value>New user was created. User: {0}</value>
+  </data>
+  <data name="SecurityEvent_LoggedIn" xml:space="preserve">
+    <value>User was logged into the system.</value>
+  </data>
+  <data name="SecurityEvent_NewBranch" xml:space="preserve">
+    <value>New branch location was created. Branch Location: &lt;a href="{0}"&gt;{1}&lt;/a&gt;</value>
+  </data>
+  <data name="SecurityEvent_NewKiosk" xml:space="preserve">
+    <value>New kiosk was registered. Kiosk: &lt;a href="{0}"&gt;{1}&lt;/a&gt;</value>
+  </data>
+  <data name="SecurityEvent_NewUser" xml:space="preserve">
+    <value>New user was created. User: &lt;a href="{0}"&gt;{1}&lt;/a&gt;</value>
+  </data>
+  <data name="SecurityEvent_PasswordChanged" xml:space="preserve">
+    <value>Password was changed.</value>
+  </data>
+  <data name="SecurityEvent_SecQuestionChanged" xml:space="preserve">
+    <value>Security question and answer were changed.</value>
+  </data>
+  <data name="SecurityLogExcelCaption_Description" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="SecurityLogExcelCaption_LogDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="SecurityLogExcelCaption_UserName" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Async_Updating_Text" xml:space="preserve">
+    <value>Updating...</value>
+  </data>
+  <data name="Async_Updating_Wait_Text" xml:space="preserve">
+    <value>Please wait while page content is being updated.</value>
+  </data>
+  <data name="NonSuNeed2ActivateMessage" xml:space="preserve">
+    <value>ScreenDox application need to be activated before first use. You need to login with Superuser credentials to activate this product.</value>
+  </data>
+  <data name="SecurityEvent_EditPatient" xml:space="preserve">
+    <value>Patient contact information was changed. Screening result ID: {0}</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_BRIEF" xml:space="preserve">
+    <value>Brief Screening Questions</value>
+  </data>
+  <data name="BHS_REPORT_INDICATES" xml:space="preserve">
+    <value>Indicates</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_PERCENT_NEGATIVE" xml:space="preserve">
+    <value>(%)   Negative</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_PERCENT_POSITIVE" xml:space="preserve">
+    <value>(%)   Positive</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_TOTAL_NEGATIVE" xml:space="preserve">
+    <value>Total Negative</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_TOTAL_POSITIVE" xml:space="preserve">
+    <value>Total Positive</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_TOTAL_REPORTED" xml:space="preserve">
+    <value>Total Reported</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_TOTAL_UNIQUE" xml:space="preserve">
+    <value>Total Unique Patients</value>
+  </data>
+  <data name="NA" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="REPORT_BHS_HEADER_BRIEF" xml:space="preserve">
+    <value>Brief Screening Questions</value>
+  </data>
+  <data name="RPMSCredentialsExpirationAlertMessage" xml:space="preserve">
+    <value>The EHR credentials which are required by ScreenDox to export results will expire in {0} day(s). Please contact IT administrator to set up new password.</value>
+  </data>
+  <data name="RPMSCredentialsExpiredMessage" xml:space="preserve">
+    <value>The EHR credentials which are required by ScreenDox to export results are expired. The Export feature is disabled. Please contact IT administrator to set up a new password.</value>
+  </data>
+  <data name="REPORT_INDICATOR_HEADER_TOTAL" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="SecurityEvent_ManuallyCreateBhsVisitInformation" xml:space="preserve">
+    <value>Patient address was updated from RPMS. Patient Name: {0}, Date of Birth: {1}</value>
+  </data>
+  <data name="SecurityEvent_PatientAddressHasBeenAddedFromBhsVisit" xml:space="preserve">
+    <value>Patient address was updated from RPMS. Patient Name: {0}, Date of Birth: {1}</value>
+  </data>
+  <data name="SecurityEvent_PrintBhsDemographics" xml:space="preserve">
+    <value>Patient Demographics was printed. ID: {0}</value>
+  </data>
+  <data name="SecurityEvent_PrintBhsFollowUp" xml:space="preserve">
+    <value>Follow-Up Report was printed. ID: {0}</value>
+  </data>
+  <data name="SecurityEvent_PrintBhsVisit" xml:space="preserve">
+    <value>Visit Report was printed. ID: {0}</value>
+  </data>
+  <data name="SecurityEvent_UpdateBhsDemographicsInformation" xml:space="preserve">
+    <value>BHS Patient Demographics was completed. Report ID: {0},  Patient Name: {1}, Date of Birth: {2}</value>
+  </data>
+  <data name="SecurityEvent_UpdateBhsThirtyDayFollowUpInformation" xml:space="preserve">
+    <value>BHS Follow-Up was completed.Report ID: {0},  Patient Name: {1}, Date of Birth: {2}</value>
+  </data>
+  <data name="SecurityEvent_UpdateBhsVisitInformation" xml:space="preserve">
+    <value>BHS Visit Report was completed. Report ID: {0},  Patient Name: {1}, Date of Birth: {2}</value>
+  </data>
+  <data name="SecurityEvent_ExportBhsReports" xml:space="preserve">
+    <value>BHS Reports has been exported to Excel. Type: {3}. Filter: [Start: {0}, End: {1}. Reports: {2}.</value>
+  </data>
+  <data name="SecurityEvent_ExportedToHealthManagementSystem" xml:space="preserve">
+    <value>Behavioral Health Screening Report was exported to external EHR management system. Export details: {0}.</value>
+  </data>
+  <data name="SecurityEvent_UpdateDrugOfChoice" xml:space="preserve">
+    <value>Drug Use values for Screening Report ID: {0}, Visit ID: {1} has been modified. Old values: Primary: {2}. Secondary: {3}, Tertiary: {4}. New values: Primary: {5}. Secondary: {6}, Tertiary: {7}</value>
+  </data>
+  <data name="ExportWizard_AlreadyExportedWarning" xml:space="preserve">
+    <value>NOTE: ScreenDox record has been already exported on {0}. </value>
+  </data>
+  <data name="SecurityEvent_NewScreeningProfile" xml:space="preserve">
+    <value>New screening profile was created. Screening Profile &lt;a href="{0}"&gt;{1}&lt;/a&gt;</value>
+  </data>
+  <data name="SecurityEvent_ScreeningProfileRemoved" xml:space="preserve">
+    <value>Screening profile "{0}" was removed.</value>
+  </data>
+  <data name="REPORT_EXCEL_COMBINED_REQUIRED_UNIQUE_PATIENTS" xml:space="preserve">
+    <value>Combined Report requires "Report Type" of “Unique Patients”.</value>
+  </data>
+  <data name="ScreeningValidation_UnknownScreeningTool" xml:space="preserve">
+    <value>Invalid screening result. Unknown screening tool received: {0}</value>
+  </data>
+  <data name="Frequency_Annually" xml:space="preserve">
+    <value>Annually</value>
+  </data>
+  <data name="Frequency_BiMonthly" xml:space="preserve">
+    <value>Bi-Monthly</value>
+  </data>
+  <data name="Frequency_Daily" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="Frequency_EveryVisit" xml:space="preserve">
+    <value>Every visit</value>
+  </data>
+  <data name="Frequency_Monthly" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="Frequency_Once" xml:space="preserve">
+    <value>One time only</value>
+  </data>
+  <data name="Frequency_Quarterly" xml:space="preserve">
+    <value>Quarterly</value>
+  </data>
+  <data name="Frequency_Weekly" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+</root>

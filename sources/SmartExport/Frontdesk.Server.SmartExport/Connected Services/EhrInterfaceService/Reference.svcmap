@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0cee7319-15c0-4cd4-93ec-3220c770d2fa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>true</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/ScreenDoxEhrService/EhrInterface.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EhrInterface6.xsd" MetadataType="Schema" ID="476ea7f8-497b-474f-a313-0a6e1990ef29" SourceId="1" SourceUrl="http://localhost/ScreenDoxEhrService/EhrInterface.svc?xsd=xsd1" />
+    <MetadataFile FileName="EhrInterface61.xsd" MetadataType="Schema" ID="e893ed0b-449c-45c1-b33f-5dd91f381fae" SourceId="1" SourceUrl="http://localhost/ScreenDoxEhrService/EhrInterface.svc?xsd=xsd5" />
+    <MetadataFile FileName="EhrInterface62.xsd" MetadataType="Schema" ID="b7b4ec82-47b1-4e9f-b79f-8b3ca69f726f" SourceId="1" SourceUrl="http://localhost/ScreenDoxEhrService/EhrInterface.svc?xsd=xsd0" />
+    <MetadataFile FileName="EhrInterface1.disco" MetadataType="Disco" ID="82fc335e-7e43-4b0c-816a-4adc86df7c0f" SourceId="1" SourceUrl="http://localhost/ScreenDoxEhrService/EhrInterface.svc?disco" />
+    <MetadataFile FileName="EhrInterface63.xsd" MetadataType="Schema" ID="9d7f0dd2-6c22-4924-8cef-28b9834fa9f7" SourceId="1" SourceUrl="http://localhost/ScreenDoxEhrService/EhrInterface.svc?xsd=xsd2" />
+    <MetadataFile FileName="EhrInterface64.xsd" MetadataType="Schema" ID="dc76051f-7189-43ff-903d-62b54764ce89" SourceId="1" SourceUrl="http://localhost/ScreenDoxEhrService/EhrInterface.svc?xsd=xsd3" />
+    <MetadataFile FileName="EhrInterface65.xsd" MetadataType="Schema" ID="a0f7b0cb-e51c-4bfa-821b-020397a42b39" SourceId="1" SourceUrl="http://localhost/ScreenDoxEhrService/EhrInterface.svc?xsd=xsd4" />
+    <MetadataFile FileName="EhrInterface.wsdl" MetadataType="Wsdl" ID="d9934693-9e8a-48d2-8110-a8f0b4930c77" SourceId="1" SourceUrl="http://localhost/ScreenDoxEhrService/EhrInterface.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

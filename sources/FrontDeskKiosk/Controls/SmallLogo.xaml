@@ -1,0 +1,8 @@
+﻿<UserControl x:Class="FrontDesk.Kiosk.Controls.SmallLogo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Width="286" Height="55">
+    <Grid Width="280" Height="50">
+        <Image  Stretch="Uniform" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Source="../Images/logo_color_top.png"/>
+    </Grid>
+</UserControl>

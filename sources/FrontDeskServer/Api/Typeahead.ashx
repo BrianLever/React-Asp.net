@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" Class="FrontDesk.Server.Web.RestApi.TypeaheadRestHttpHandler" %>

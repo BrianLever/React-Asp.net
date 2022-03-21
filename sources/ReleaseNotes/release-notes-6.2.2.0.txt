@@ -1,0 +1,8 @@
+1. Updated ScreenDox server to the latest version 6.2.2.0.
+2. Updated RPMS Interface to the latest version (not in use)
+3. Installed ScreenDox Auto-Export service and disabled it unless ScreenDox will be connected to the NextGen with new releasse.
+4. Updated Kiosk applications - updated database with questions, new text for Smoking.
+4.1 Pechanga (PEC-MEDKIOSK) - Done
+4.2 Soboba	(MOR-MEDKIOSK) - Done
+4.3. San Manuel (SM-MEDKIOSK2) - Done
+4.4 Morongo - Done

@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="FrontDesk.Kiosk.Screens.ThankYou"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cc="clr-namespace:FrontDesk.Kiosk.Controls"
+    >
+    <UserControl.Resources>
+        <Style TargetType="TextBlock" x:Key="text_default" BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter Property="FontSize" Value="45" />
+            <Setter Property="LineHeight" Value="65" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="TextAlignment" Value="Center" />
+        </Style>
+        <Style TargetType="TextBlock" x:Key="good" BasedOn="{StaticResource text_default}">
+            <Setter Property="FontWeight" Value="Light" />
+            <Setter Property="FontFamily" Value="../Fonts/#Proxima Nova Light It" />
+
+        </Style>
+        <Style TargetType="TextBlock" x:Key="talk_to_provider" BasedOn="{StaticResource text_default}">
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+        
+    </UserControl.Resources>
+    <Grid>
+        <cc:ScreensBackGround/>
+
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel VerticalAlignment="Center">
+                <Border  x:Name="txtIsNegative" Style="{StaticResource yellow_bottom_line}">
+                    <TextBlock Style="{StaticResource talk_to_provider}"   Padding="0,0,0,0" >
+					<Run Text="Thank you for completing your screendox."></Run>
+                    </TextBlock>
+                </Border>
+                <StackPanel VerticalAlignment="Top" x:Name="txtIsPositive">
+
+                    <TextBlock Style="{StaticResource good}">
+                        <Run Text="Thank you for completing your screendox."/>
+                    </TextBlock>
+
+                    <TextBlock Style="{StaticResource talk_to_provider}"   Padding="0,50,0,0" >
+                        <Run Text="Please talk to your health care provider." />
+                    </TextBlock>
+                    <Border HorizontalAlignment="Center" Margin="0, 15, 0, 0" Style="{StaticResource yellow_bottom_line}">
+                        <TextBlock Style="{StaticResource good}">We care about you!</TextBlock>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</UserControl>

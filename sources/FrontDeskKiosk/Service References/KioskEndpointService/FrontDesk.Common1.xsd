@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FrontDesk.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FrontDesk.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfLookupValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LookupValue" nillable="true" type="tns:LookupValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLookupValue" nillable="true" type="tns:ArrayOfLookupValue" />
+  <xs:complexType name="LookupValue">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LookupValueOfint">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LookupValue" nillable="true" type="tns:LookupValue" />
+  <xs:complexType name="LookupValueOfint">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="LookupValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/FrontDesk.Common" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="int" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderIndex" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LookupValueOfint" nillable="true" type="tns:LookupValueOfint" />
+</xs:schema>

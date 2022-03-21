@@ -1,0 +1,7 @@
+﻿<%@ ServiceHost 
+    Language="C#" 
+    Debug="true" 
+    Service="RPMS.FrontDesk.EhrInterface" 
+    CodeBehind="EhrInterface.svc.cs" 
+    Factory="Ninject.Extensions.Wcf.NinjectServiceHostFactory"    
+%>

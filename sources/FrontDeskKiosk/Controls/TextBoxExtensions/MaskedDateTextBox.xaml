@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="FrontDesk.Kiosk.Controls.TextBoxExtensions.MaskedDateTextBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uc="clr-namespace:FrontDesk.Kiosk.Controls.TextBoxExtensions" Loaded="UserControl_Loaded">
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+            <Grid Width="315">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Border Style="{StaticResource MaskedTerminalTextBoxBorderRoot}" Grid.ColumnSpan="4">
+
+                </Border>
+                <uc:MaskedTerminalTextBox x:Name="ucMonth1" Grid.Column="0" Margin="8,0,0,0"/>
+                <uc:MaskedTerminalTextBox x:Name="ucMonth2" Grid.Column="1" Margin="0,0,8,0"/>
+            </Grid>
+
+            <TextBlock Style="{StaticResource MaskSeparator}"></TextBlock>
+
+
+            <Grid Width="315">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Border Style="{StaticResource MaskedTerminalTextBoxBorderRoot}" Grid.ColumnSpan="4">
+
+                </Border>
+                <uc:MaskedTerminalTextBox x:Name="ucDay1" Grid.Column="0" Margin="8,0,0,0" />
+                <uc:MaskedTerminalTextBox x:Name="ucDay2" Grid.Column="1" Margin="0,0,8,0" />
+            </Grid>
+
+            <TextBlock Style="{StaticResource MaskSeparator}"></TextBlock>
+
+            <Grid Width="630">
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Border Style="{StaticResource MaskedTerminalTextBoxBorderRoot}" Grid.ColumnSpan="5" Grid.RowSpan="2">
+                   
+                </Border>
+
+                <uc:MaskedTerminalTextBox x:Name="ucYear1" Grid.Column="0" Margin="8,0,0,0" Grid.RowSpan="2"/>
+                <uc:MaskedTerminalTextBox x:Name="ucYear2" Grid.Column="1" Grid.RowSpan="2"/>
+                <uc:MaskedTerminalTextBox x:Name="ucYear3" Grid.Column="2" Grid.RowSpan="2"/>
+                <uc:MaskedTerminalTextBox x:Name="ucYear4" Grid.Column="3" Margin="0,0,8,0" Grid.RowSpan="2"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

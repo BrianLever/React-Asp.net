@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+***********************************************************************************************
+website.publishproj
+
+WARNING: DO NOT MODIFY this file, it is used for the web publish process.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+***********************************************************************************************
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e194ee76-6a7a-4fe3-81a5-56935c863c3a}</ProjectGuid>
+    <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/FrontDeskServer</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SourceWebProject>http://localhost:52014</SourceWebProject>
+    <SourceWebMetabasePath>/IISExpress/7.5/LM/W3SVC/2/ROOT</SourceWebMetabasePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
+    <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
+    <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">1.0.0.0</AssemblyFileVersion>
+    <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BouncyCastle-1.5\BouncyCastle-3DESonly.csproj">
+      <Project>{2E34D9DD-24D2-4668-AD5E-698BCDFD4333}</Project>
+      <Name>BouncyCastle-3DESonly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk.Common\FrontDesk.Common.csproj">
+      <Project>{CCFD383D-DE2A-4CC8-B9BE-4AEB515328B3}</Project>
+      <Name>FrontDesk.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk.Licensing\FrontDesk.Licensing.csproj">
+      <Project>{B722E384-68B3-4B0F-9152-C80AFE82A567}</Project>
+      <Name>FrontDesk.Licensing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk.Server\FrontDesk.Server.csproj">
+      <Project>{1804A9C6-E97C-43B7-B90E-581C2746EFC9}</Project>
+      <Name>FrontDesk.Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk\FrontDesk.csproj">
+      <Project>{277C5FEB-A989-48C4-B6DC-C8EF41F5C215}</Project>
+      <Name>FrontDesk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPMS.Common\RPMS.Common.csproj">
+      <Project>{D0BE6581-5428-4CDE-A4F8-F9282BD087D8}</Project>
+      <Name>RPMS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScreenDox.Rpms.Common.Models\ScreenDox.Rpms.Common.Models.csproj">
+      <Project>{1A999930-8849-40CC-83E8-0D70E3ED61C5}</Project>
+      <Name>ScreenDox.Rpms.Common.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScreenDox.Server.Common\ScreenDox.Server.Common.csproj">
+      <Project>{BC1E2ABE-1809-4BD9-80BC-F04AE74C1FDB}</Project>
+      <Name>ScreenDox.Server.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartExport\Frontdesk.Server.SmartExport\Frontdesk.Server.SmartExport.csproj">
+      <Project>{E5510843-05C4-42F1-BC14-9863C3BF806F}</Project>
+      <Name>Frontdesk.Server.SmartExport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
+</Project>

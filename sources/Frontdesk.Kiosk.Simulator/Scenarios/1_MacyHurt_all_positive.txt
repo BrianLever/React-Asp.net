@@ -1,0 +1,15 @@
+{
+	"_sectionAnswers": {},
+	"ScreeningID": "BHS",
+	"StreetAddress": "",
+	"City": "",
+	"StateID": "",
+	"StateName": "",
+	"ZipCode": "",
+	"Phone": "",
+	"KioskID": 1000,
+	"FirstName": "MACY",
+	"LastName": "HURT",
+	"MiddleName": "LEE",
+	"Birthday": "2001-03-18T00:00:00"
+}

@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="FrontDesk.Kiosk.Screens.Birthday"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uc="clr-namespace:FrontDesk.Kiosk.Controls.TextBoxExtensions" 
+    xmlns:cc="clr-namespace:FrontDesk.Kiosk.Controls"                          
+    xmlns:kuc="clr-namespace:FrontDesk.Kiosk.Controls.Keyboard">
+    <Grid Style="{StaticResource ContactInfoContainer}">
+        <cc:ScreensBackGround/>
+        <StackPanel  Margin="0,0,0,210">
+            <TextBlock x:Name="lblInvalidEhrText" Visibility="Collapsed" Style="{ StaticResource FormLabel }">
+                <Run Style="{StaticResource HealthRecordNotFound}">Sorry, we could not find your health record.</Run>
+                <LineBreak/>
+                Please correct your <Run Style="{StaticResource FormLabelEmpasisEhrNotFound}" >DATE OF BIRTH</Run>, if needed:</TextBlock>
+
+            <TextBlock x:Name="lblText" Style="{ StaticResource FormLabel }">Please enter your <Run Style="{ StaticResource FormLabelEmpasis }">DATE OF BIRTH</Run>:</TextBlock>
+            <Grid Style="{StaticResource ContactInfoTextFieldLineWrapper}">
+                <uc:MaskedDateTextBox x:Name="ucDate" WatermarkForeground="#FFcccccc" FilledInControlForeground="#FF4D4D4D" HorizontalAlignment="Left"
+                                     
+                                      ></uc:MaskedDateTextBox>
+                <kuc:KeyButton x:Name="btnBackspace" Text="delete" DepressedTemplateKey="BackspaceSep" 
+                        PressedTemplateKey="BackspaceSep_Pressed" DisabledTemplateKey="BackspaceSep_Disabled" 
+                        KeyPressed="ucKeyboard_KeyPressed" HorizontalAlignment="Right"                              
+                        Style="{ StaticResource Backspace }" KeyPressing="btnBackspace_KeyPressing"></kuc:KeyButton>
+            </Grid>
+            <Grid Style="{ StaticResource DigitalKeyboard }">
+                <StackPanel Style="{ StaticResource KbBackground}"></StackPanel>
+                <kuc:KeyboardControl x:Name="ucKeyboard" KbType="Digital" Margin="0,20,0,20"
+                                     KeyPressing="ucKeyboard_KeyPressing" 
+                                     KeyPressed="ucKeyboard_KeyPressed"/>
+            </Grid>
+        </StackPanel>
+        <Button x:Name="btnNext" Click="OnNext" Style="{StaticResource YellowKeyboardAlignedNextButton}">NEXT</Button>
+        <Grid Background="#f7f7f7" Opacity="0.9" x:Name="pnlLoading" Visibility="Collapsed" >
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Style="{StaticResource PleaseWaitEhrMessage}"
+                       >Please wait a moment while <LineBreak/>we find your health record.</TextBlock>
+                <cc:LoadingIndicator x:Name="ucSpinner" VerticalAlignment="Bottom" Margin="0 0 0 100" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

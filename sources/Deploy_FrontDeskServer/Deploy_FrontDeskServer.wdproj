@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Microsoft Visual Studio 2008 Web Deployment Project 
+  http://go.microsoft.com/fwlink/?LinkID=104956
+
+-->
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69B0A396-63F2-4D98-89EC-01B0BFA4A2EE}</ProjectGuid>
+    <SourceWebPhysicalPath>..\FrontDeskServer</SourceWebPhysicalPath>
+    <SourceWebProject>{211D2BE6-E058-4DCC-8176-E73DB72E647B}|C:\Projects\FrontDesk\FrontDeskServer</SourceWebProject>
+    <SourceWebVirtualPath>/FrontDeskServer</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\Debug</OutputPath>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Deploy_FrontDeskServer</SingleAssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\Release</OutputPath>
+    <EnableUpdateable>false</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Deploy_FrontDeskServer</SingleAssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Server Setup|AnyCPU' ">
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Deploy_FrontDeskServer</SingleAssemblyName>
+    <OutputPath>.\Server Setup</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BouncyCastle-1.5\BouncyCastle-3DESonly.csproj">
+      <Project>{2E34D9DD-24D2-4668-AD5E-698BCDFD4333}</Project>
+      <Name>BouncyCastle-3DESonly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk.Common\FrontDesk.Common.csproj">
+      <Project>{CCFD383D-DE2A-4CC8-B9BE-4AEB515328B3}</Project>
+      <Name>FrontDesk.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk.Licensing\FrontDesk.Licensing.csproj">
+      <Project>{B722E384-68B3-4B0F-9152-C80AFE82A567}</Project>
+      <Name>FrontDesk.Licensing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk.Server\FrontDesk.Server.csproj">
+      <Project>{1804A9C6-E97C-43B7-B90E-581C2746EFC9}</Project>
+      <Name>FrontDesk.Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk\FrontDesk.csproj">
+      <Project>{277C5FEB-A989-48C4-B6DC-C8EF41F5C215}</Project>
+      <Name>FrontDesk</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>0.2.0.0</Value>
+      <Value>1.2.0.0</Value>
+      <Value>3.0.0.0</Value>
+      <Value>4.0.0.0</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>0.2.0.0</Value>
+      <Value>1.2.0.0</Value>
+      <Value>3.0.0.0</Value>
+      <Value>4.0.0.0</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>1.5.0.0</Value>
+      <Value>3.0.0.0</Value>
+      <Value>4.0.0.0</Value>
+      <Value>4.0.2.0</Value>
+      <Value>4.0.3.0</Value>
+      <Value>4.0.4.0</Value>
+      <Value>4.0.5.0</Value>
+      <Value>4.0.6.0</Value>
+      <Value>4.0.7.0</Value>
+      <Value>4.0.8.0</Value>
+      <Value>4.5.0.0</Value>
+      <Value>4.5.1.0</Value>
+      <Value>4.5.2.0</Value>
+      <Value>5.0.0.0</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>1.5.0.0</Value>
+      <Value>3.0.0.0</Value>
+      <Value>4.0.0.0</Value>
+      <Value>4.0.2.0</Value>
+      <Value>4.0.3.0</Value>
+      <Value>4.0.4.0</Value>
+      <Value>4.0.5.0</Value>
+      <Value>4.0.6.0</Value>
+      <Value>4.0.7.0</Value>
+      <Value>4.0.8.0</Value>
+      <Value>4.5.0.0</Value>
+      <Value>4.5.1.0</Value>
+      <Value>4.5.2.0</Value>
+      <Value>5.0.0.0</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Server Setup|AnyCPU'">
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>1.0.0.0</Value>
+      <Value>3.0.0.0</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>1.0.0.0</Value>
+      <Value>3.0.0.0</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WebDeployment\v10.0\Microsoft.WebDeployment.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.WebDeployment.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="BeforeMerge">
+  </Target>
+  <Target Name="AfterMerge">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <!-- Merge all assemblies to one and obfuscate. -->
+  <Target Name="AfterBuild" Condition="'$(Configuration)'=='Release' Or '$(Configuration)'=='Server Setup' ">
+    <Exec Command="cscript /nologo FixPrecompiledWCF.vbs &quot;$(Configuration)&quot;" IgnoreExitCode="false">
+    </Exec>
+    <Exec Command="AfterBuild.cmd &quot;$(Configuration)&quot; $(SingleAssemblyName)" IgnoreExitCode="false">
+    </Exec>
+  </Target>
+</Project>

@@ -1,0 +1,17 @@
+﻿<Application x:Class="FrontDesk.Kiosk.App"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+						 ShutdownMode="OnLastWindowClose">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="./ResourceDictionary/ApplicationStyles.xaml"/>
+                <ResourceDictionary Source="./ResourceDictionary/Keys.xaml"/>
+                <ResourceDictionary Source="./ResourceDictionary/Buttons.xaml"/>
+                <ResourceDictionary Source="./ResourceDictionary/Layouts.xaml"/>
+                <ResourceDictionary Source="./ResourceDictionary/TextBoxes.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

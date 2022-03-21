@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.frontdeskhealth.com" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.frontdeskhealth.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.frontdeskhealth.com/Imports">
+      <xsd:import schemaLocation="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd0" namespace="http://www.frontdeskhealth.com" />
+      <xsd:import schemaLocation="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/FrontDesk.Server.Services" />
+      <xsd:import schemaLocation="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/ScreenDox.Server.Common.Models" />
+      <xsd:import schemaLocation="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/FrontDesk.Common" />
+      <xsd:import schemaLocation="http://localhost/screendox/endpoint/KioskEndpoint.svc?xsd=xsd7" namespace="http://www.screendox.com" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IKioskEndpoint_SaveScreeningResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveScreeningResult" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_SaveScreeningResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveScreeningResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_SaveScreeningResult_v2_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveScreeningResult_v2" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_SaveScreeningResult_v2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveScreeningResult_v2Response" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_SaveDemographicsResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDemographicsResults" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_SaveDemographicsResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDemographicsResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_Ping_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ping" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_Ping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_Ping_v2_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ping_v2" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_Ping_v2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ping_v2Response" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_Ping_v3_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ping_v3" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_Ping_v3_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ping_v3Response" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_GetModifiedAgeSettings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModifiedAgeSettings" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_GetModifiedAgeSettings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModifiedAgeSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_GetModifiedAgeSettings_v2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModifiedAgeSettings_v2" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_GetModifiedAgeSettings_v2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModifiedAgeSettings_v2Response" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_TestKioskInstallation_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestKioskInstallation" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_TestKioskInstallation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestKioskInstallationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_GetPatientScreeningFrequencyStatistics_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientScreeningFrequencyStatistics" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_GetPatientScreeningFrequencyStatistics_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientScreeningFrequencyStatisticsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_GetPatientScreeningFrequencyStatistics_v2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientScreeningFrequencyStatistics_v2" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_GetPatientScreeningFrequencyStatistics_v2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientScreeningFrequencyStatistics_v2Response" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_GetModifiedLookupValues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModifiedLookupValues" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_GetModifiedLookupValues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModifiedLookupValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_GetLookupValuesDeleteLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLookupValuesDeleteLog" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_GetLookupValuesDeleteLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLookupValuesDeleteLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_ValidatePatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidatePatient" />
+  </wsdl:message>
+  <wsdl:message name="IKioskEndpoint_ValidatePatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidatePatientResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IKioskEndpoint">
+    <wsdl:operation name="SaveScreeningResult">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/SaveScreeningResult" message="tns:IKioskEndpoint_SaveScreeningResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/SaveScreeningResultResponse" message="tns:IKioskEndpoint_SaveScreeningResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveScreeningResult_v2">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/SaveScreeningResult_v2" message="tns:IKioskEndpoint_SaveScreeningResult_v2_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/SaveScreeningResult_v2Response" message="tns:IKioskEndpoint_SaveScreeningResult_v2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDemographicsResults">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/SaveDemographicsResults" message="tns:IKioskEndpoint_SaveDemographicsResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/SaveDemographicsResultsResponse" message="tns:IKioskEndpoint_SaveDemographicsResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ping">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/Ping" message="tns:IKioskEndpoint_Ping_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/PingResponse" message="tns:IKioskEndpoint_Ping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ping_v2">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/Ping_v2" message="tns:IKioskEndpoint_Ping_v2_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/Ping_v2Response" message="tns:IKioskEndpoint_Ping_v2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ping_v3">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/Ping_v3" message="tns:IKioskEndpoint_Ping_v3_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/Ping_v3Response" message="tns:IKioskEndpoint_Ping_v3_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModifiedAgeSettings">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/GetModifiedAgeSettings" message="tns:IKioskEndpoint_GetModifiedAgeSettings_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/GetModifiedAgeSettingsResponse" message="tns:IKioskEndpoint_GetModifiedAgeSettings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModifiedAgeSettings_v2">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/GetModifiedAgeSettings_v2" message="tns:IKioskEndpoint_GetModifiedAgeSettings_v2_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/GetModifiedAgeSettings_v2Response" message="tns:IKioskEndpoint_GetModifiedAgeSettings_v2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TestKioskInstallation">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/TestKioskInstallation" message="tns:IKioskEndpoint_TestKioskInstallation_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/TestKioskInstallationResponse" message="tns:IKioskEndpoint_TestKioskInstallation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientScreeningFrequencyStatistics">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/GetPatientScreeningFrequencyStatistics" message="tns:IKioskEndpoint_GetPatientScreeningFrequencyStatistics_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/GetPatientScreeningFrequencyStatisticsResponse" message="tns:IKioskEndpoint_GetPatientScreeningFrequencyStatistics_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientScreeningFrequencyStatistics_v2">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/GetPatientScreeningFrequencyStatistics_v2" message="tns:IKioskEndpoint_GetPatientScreeningFrequencyStatistics_v2_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/GetPatientScreeningFrequencyStatistics_v2Response" message="tns:IKioskEndpoint_GetPatientScreeningFrequencyStatistics_v2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModifiedLookupValues">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/GetModifiedLookupValues" message="tns:IKioskEndpoint_GetModifiedLookupValues_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/GetModifiedLookupValuesResponse" message="tns:IKioskEndpoint_GetModifiedLookupValues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLookupValuesDeleteLog">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/GetLookupValuesDeleteLog" message="tns:IKioskEndpoint_GetLookupValuesDeleteLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/GetLookupValuesDeleteLogResponse" message="tns:IKioskEndpoint_GetLookupValuesDeleteLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePatient">
+      <wsdl:input wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/ValidatePatient" message="tns:IKioskEndpoint_ValidatePatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.frontdeskhealth.com/IKioskEndpoint/ValidatePatientResponse" message="tns:IKioskEndpoint_ValidatePatient_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,71 @@
+﻿{
+	"_sectionAnswers": {
+		"SIH": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "SIH",
+					"QuestionID": 1,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "SIH",
+			"AnswerValue": 0
+		},
+		"TCC": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "TCC",
+					"QuestionID": 1,
+					"AnswerValue": 1
+				},
+				"2": {
+					"ScreeningSectionID": "TCC",
+					"QuestionID": 2,
+					"AnswerValue": 0
+				},
+				"3": {
+					"ScreeningSectionID": "TCC",
+					"QuestionID": 3,
+					"AnswerValue": 0
+				},
+				"4": {
+					"ScreeningSectionID": "TCC",
+					"QuestionID": 4,
+					"AnswerValue": 1
+				},
+
+			},
+			"ScreeningSectionID": "TCC",
+			"AnswerValue": 1
+		},
+		"DAST": {
+			"_answers": {
+				"10": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 10,
+					"AnswerValue": 0
+				},
+
+			},
+			"ScreeningSectionID": "DAST",
+			"AnswerValue": 0
+		},
+		"HITS": {
+			"_answers": {
+				"5": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 5,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "HITS",
+			"AnswerValue": 0
+		}
+	},
+	"ScreeningID": "BHS",
+	"KioskID": 1000,
+	"FirstName": "SCOOBY (Tobacco Ceremony)",
+	"LastName": "DOO",
+	"MiddleName": "",
+	"Birthday": "1960-02-01T00:00:00"
+}

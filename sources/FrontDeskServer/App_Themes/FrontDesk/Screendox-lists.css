@@ -1,0 +1,234 @@
+﻿
+/* Disabled rows in Grid View or Table Rows */
+
+table > tbody > tr.disabled > td { color: #888888; text-decoration: line-through;}
+
+/* GridView Style */
+table.gridView {border:none; border-collapse:collapse; width:100%; border-color:White; border-spacing: 0px;}
+
+.gridView tr > th {
+    background-color: #bcbcbc;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    padding: 6px 5px 6px 5px;
+    border: none;
+    border-collapse: separate;
+    border-bottom: solid 1px #e4e4e4;
+    margin: 0;
+    font-size: 11px;
+}
+table.gridView  tr > th a {color:#333;text-decoration:none; font-size: 11px;}
+table.gridView  tr > th a:visited{color:#333; text-decoration:none; }
+table.gridView  tr > th a:hover{color:#333;text-decoration:underline; }
+.gridView  tr > td {margin:0;  padding: 5px 5px 5px 5px;  border:none; border-collapse:separate; }
+.gridView  tr > td.linked > a { color:#000099; }
+
+.gridView  tbody tr { background-color:#ffffff; }
+.gridView  tbody tr.alt { background-color:#eeeeee; }
+
+.gridView  tr > th,
+.gridView  tr > td{text-align:left;}
+
+.gridView  tr > th.l,
+.gridView  tr > td.l {text-align:left;}
+
+.gridView  tr > th.r,
+.gridView  tr > td.r {text-align:right;}
+
+.gridView  tr > th.c,
+.gridView  tr > td.c {text-align:center;}
+
+/*BEGIN check-in list */
+
+div.check-in{ margin-left: 20px; margin-right:20px;}
+.score-filter-container div.check-in{margin-left:0; margin-right:0;}
+div.check-in table { outline: none;}
+
+div.check-in table > tbody > tr > td.icon {width:2%; min-width: 20px; text-align:left;}
+div.check-in table > tbody > tr > td.pname { overflow: hidden; width:43%; text-overflow: ellipsis; }
+div.check-in table > tbody > tr > td.pname > div { width:500px; text-align: left; 
+  overflow: hidden; white-space: nowrap;
+}
+div.check-in.follow-up table > tbody > tr > td.pname { width:43%; } 
+
+div.check-in td.details_container {padding:0;}
+div.check-in table > tbody > tr.expanded > td { background-color: #edbd47; }
+
+div.check-in .details_table{ width:100%; border:0; border-collapse:collapse;}
+div.check-in .details_table > tbody > tr > td:first-child {padding-left: 39px;}
+div.check-in .details_table > tbody > tr > td > a.risk {color:Red;}
+div.check-in .details_table > tbody > tr:hover > td{background-color: #d8d8f6;}
+
+/*END check-in list*/
+
+/*BEGIN IndicatorReport */
+
+div.indicatorReport table, div.indicatorReportTotal table{border:none; width:100%;border-collapse:collapse; outline: none;}
+div.indicatorReport table td, th{text-align:left; padding-left:10px; border:solid 1px #000000; border-collapse:collapse}
+div.indicatorReport tr > th { background-color:#bcbcbc ; color: #4059AD; font-weight: bold;  
+                              padding: 6px 5px 6px 5px; margin:0; text-align:center;
+                              border:none; border-collapse:separate; border-bottom:solid 1px #E3A207;}
+div.indicatorReport tr > th.percent{ padding-left: 10px; padding-right: 10px;}                              
+div.indicatorReport tr:first-child > th:first-child {text-align:left;}                              
+div.indicator div.indicatorReport tr > td {margin:0;  padding: 5px 5px 5px 5px;  border:none; border-collapse:separate; text-align:center }
+div.indicator div.indicatorReport tr > td:first-child {text-align:left;}
+div.indicator div.indicatorReport tr > td span.lpad{display: block; margin-left: 15px;}
+div.indicator div.indicatorReport .questionOnFocus tr > td span.lpad{margin-left: 0;}
+
+div.indicatorReport tbody tr { background-color:#ffffff; }
+div.indicatorReport tbody tr.alt { background-color:#eeeeee; }
+div.indicatorReport tr > td  p.indicat {margin:0px 0px 0px 20px; text-align:justify; font-size:8pt;}
+div.indicatorReport tr > td .lpad + p.indicat {margin-left:40px;}
+div.indicatorReport div.copyright{text-align: center; padding:10px 0px 5px 0px; font-size:8pt;}
+
+div.indicatorReportTotal tr {background-color:#bcbcbc ; color: #4059AD; font-weight: bold; }
+div.indicatorReportTotal tr > td{padding: 5px 5px 5px 5px;}
+div.indicatorReportTotal tr > td:first-child {text-align:left;}
+/*END IndicatorReport */
+
+
+
+
+div .EHRItem
+{
+    overflow:hidden;
+    padding: 5px 0px;
+    min-width: 350px;
+}
+
+
+div .EHRItem > div
+{
+    text-align:left;
+    font-weight:normal;
+    font-size:12px;
+    line-height:18px;
+}
+div .EHRItem > div .redText
+{
+    color:red;
+}
+
+div .EHRItem.alt
+{
+    background-color:#eeeeee;
+}
+
+#patient-details-root{ margin-left: 20px;margin-right: 20px;}
+
+div #PatientDetails
+{
+    width:550px;
+    float:left;
+    position: relative;
+   
+}
+
+div #PatientMatched
+{
+    float:left;
+    position: relative;
+
+}
+
+div #PatientMatched > div > div > div:first-child { padding-top: 0;}
+
+div #PatientDetails > div
+{
+    padding:5px;
+}
+
+div #PatientDetails h2
+{ text-align: left;padding-left: 0;font-weight: bolder;}
+
+div #PatientMatched h2 {
+  text-align: left;font-weight: bolder;  
+}
+
+div #PatientDetails > .container
+{
+    bottom: 35px;
+    top: 40px;
+    left: 0px;
+    right: 0;
+    position: absolute;
+    padding: 0;
+    z-index:-1;
+    margin:0;
+    width:inherit !important;
+}
+
+
+div #PatientDetails > .container >.frame
+{
+    border:1px solid #4059AD;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 44px;
+    position: absolute;
+     z-index: -1;
+}
+div #PatientDetails > .container #canvasArrow {
+    z-index: -1;
+    margin: 0 0 0 auto;
+    display: block;
+    width: 44px;
+    height: 150px;
+}
+
+
+
+div #PatientDetails .left
+{
+    float:left;
+    clear:both; overflow:hidden; 
+    text-align:right;
+    width:120px;
+    line-height:20px;
+}
+
+div #PatientDetails .right
+{
+    float:left;
+    line-height:20px;
+    width: 370px;
+    text-align: left;
+     
+}
+
+div#PatientDetails .right input[type=checkbox]{display: block;  float: left; height: 24px; width: 24px; margin-left:-5px;   }
+
+div#PatientDetails .buttonset {
+    padding-top: 5px;
+}
+
+div#PatientDetails .validation {
+    padding: 0;
+}
+
+div#PatientDetails #changeMessage {
+    padding: 0;
+}
+
+div#PatientDetails #changeMessage span {
+    padding: 10px 50px 10px 12%;
+    display: block;
+}
+
+div#PatientDetails .error_summary {
+    padding: 0;
+}
+div#PatientDetails .error_summary ul {
+    padding-left: 0;
+    margin: 5px 0;
+}
+
+.patientDetails.note {
+    
+}
+
+.wizard-sidebar > ul{ margin: 0;}
+
+.column.right ul.form-embeded-list{margin:0px 0px 0px 15px;}

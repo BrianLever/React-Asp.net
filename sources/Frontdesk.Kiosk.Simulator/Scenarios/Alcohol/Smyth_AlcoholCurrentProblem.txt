@@ -1,0 +1,111 @@
+﻿{
+		"_sectionAnswers": {
+		"SIH": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "SIH",
+					"QuestionID": 1,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "SIH",
+			"AnswerValue": 0
+		},
+		"TCC": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "TCC",
+					"QuestionID": 4,
+					"AnswerValue": 0
+				},
+				
+			},
+			"ScreeningSectionID": "TCC",
+			"AnswerValue": 0
+		},
+		"CAGE": {
+			"_answers": {
+				"5": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 5,
+					"AnswerValue": 1
+				},
+				"1": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 1,
+					"AnswerValue": 1
+				},
+				"2": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 2,
+					"AnswerValue": 0
+				},
+				"3": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 3,
+					"AnswerValue": 0
+				},
+				"4": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 4,
+					"AnswerValue": 1
+				},
+				
+			},
+			"ScreeningSectionID": "CAGE",
+			"AnswerValue": 1
+		},
+		"PHQ-9": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 1,
+					"AnswerValue": 0
+				},
+				"2": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 2,
+					"AnswerValue": 0
+				},
+			},
+			"ScreeningSectionID": "PHQ-9",
+			"AnswerValue": 0
+		},
+		"DAST": {
+			"_answers": {
+				"10": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 10,
+					"AnswerValue": 0
+				}
+				
+			},
+			"ScreeningSectionID": "DAST",
+			"AnswerValue": 0
+		},
+		"HITS": {
+			"_answers": {
+				"5": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 5,
+					"AnswerValue": 0
+				}
+				
+			},
+			"ScreeningSectionID": "HITS",
+			"AnswerValue": 0
+		}
+	},
+	"ScreeningID": "BHS",
+	"StreetAddress": "PO BOX 2524",
+	"City": "ORANGE COVE",
+	"StateID": "CA",
+	"StateName": "",
+	"ZipCode": "92061",
+	"Phone": "760-742-3421",
+	"KioskID": 1000,
+	"FirstName": "ALEXIS",
+	"LastName": "SMYTH",
+	"MiddleName": "Alcohol Current Problem",
+	"Birthday": "1993-08-31T00:00:00"
+}

@@ -1,0 +1,197 @@
+﻿{
+	"_sectionAnswers": {
+		"SIH": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "SIH",
+					"QuestionID": 1,
+					"AnswerValue": 1
+				}
+			},
+			"ScreeningSectionID": "SIH",
+			"AnswerValue": 1,
+		},
+		"TCC": {
+			"_answers": {
+				"4": {
+					"ScreeningSectionID": "TCC",
+					"QuestionID": 4,
+					"AnswerValue": 1
+				},
+				"1": {
+					"ScreeningSectionID": "TCC",
+					"QuestionID": 1,
+					"AnswerValue": 1
+				},
+				"2": {
+					"ScreeningSectionID": "TCC",
+					"QuestionID": 2,
+					"AnswerValue": 1
+				},
+				"3": {
+					"ScreeningSectionID": "TCC",
+					"QuestionID": 3,
+					"AnswerValue": 1
+				},
+				
+			},
+			"ScreeningSectionID": "TCC",
+			"AnswerValue": 1,
+
+		},
+		"PHQ-9": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 1,
+					"AnswerValue": 3
+				},
+				"2": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 2,
+					"AnswerValue": 3
+				},
+				"3": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 3,
+					"AnswerValue": 3
+				},
+				"4": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 4,
+					"AnswerValue": 3
+				},
+				"5": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 5,
+					"AnswerValue": 3
+				},
+				"6": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 6,
+					"AnswerValue": 3
+				},
+				"7": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 7,
+					"AnswerValue": 3
+				},
+				"8": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 8,
+					"AnswerValue": 3
+				},
+				"9": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 9,
+					"AnswerValue": 0
+				},
+				"10": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 10,
+					"AnswerValue": 3
+				}
+			},
+			"ScreeningSectionID": "PHQ-9",
+			"AnswerValue": 1,
+		},
+		"DAST": {
+			"_answers": {
+				"10": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 10,
+					"AnswerValue": 1
+				},
+				"1": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 1,
+					"AnswerValue": 1
+				},
+				"2": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 2,
+					"AnswerValue": 1
+				},
+				"3": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 3,
+					"AnswerValue": 1
+				},
+				"4": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 4,
+					"AnswerValue": 1
+				},
+				"5": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 5,
+					"AnswerValue": 1
+				},
+				"6": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 6,
+					"AnswerValue": 1
+				},
+				"7": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 7,
+					"AnswerValue": 1
+				},
+				"8": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 8,
+					"AnswerValue": 1
+				},
+				"9": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 9,
+					"AnswerValue": 1
+				}
+			},
+			"ScreeningSectionID": "DAST",
+			"AnswerValue": 1
+		},
+		"HITS": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 1,
+					"AnswerValue": 5
+				},
+				"2": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 2,
+					"AnswerValue": 5
+				},
+				"3": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 3,
+					"AnswerValue": 5
+				},
+				"4": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 4,
+					"AnswerValue": 5
+				},
+				"5": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 5,
+					"AnswerValue": 1
+				}
+			},
+			"ScreeningSectionID": "HITS",
+			"AnswerValue": 1
+		}
+	},
+	"ScreeningID": "BHS",
+	"StreetAddress": "123 WEST EL CAMINO",
+	"City": "SACRAMENTO",
+	"StateID": "CA",
+	"ZipCode": "91637",
+	"Phone": "916-413-4429",
+	"KioskID": 1000,
+	"FirstName": "PATIENT",
+	"LastName": "DEMO",
+	"MiddleName": "DARCY",
+	"Birthday": "1960-12-20T00:00:00"
+}

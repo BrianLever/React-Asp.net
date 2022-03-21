@@ -1,0 +1,60 @@
+﻿
+/* Disabled rows in Grid View or Table Rows */
+
+table > tbody > tr.disabled > td { color: #888888; text-decoration: line-through;}
+
+/* GridView Style */
+table.gridView {border:none; border-collapse:separate; width:100%; border-color:White;}
+
+.gridView  tr > th { background-color:#bcbcbc ; 
+                                  font-weight: bold; color: #4059AD; 
+                                  padding: 6px 5px 6px 5px;
+                                  border:none;
+                                  border-collapse:separate;
+                                  border-bottom:solid 1px #E3A207;
+                                  margin:0;
+}
+table.gridView  tr > th a {color:#4059AD;text-decoration:none; font-size: 11px;}
+table.gridView  tr > th a:visited{color:#4059AD;	text-decoration:none; }
+table.gridView  tr > th a:hover{color:#4059AD;text-decoration:underline; }
+
+.gridView  tr > td {margin:0;  padding: 5px 5px 5px 5px;  border:none; border-collapse:separate; }
+.gridView  tr > td.linked > a { color:#000099; }
+
+.gridView  tbody tr { background-color:#ffffff; }
+.gridView  tbody tr.alt { background-color:#eeeeee; }
+
+.gridView  tr > th,
+.gridView  tr > td{text-align:left;}
+
+.gridView  tr > th.l,
+.gridView  tr > td.l {text-align:left;}
+
+.gridView  tr > th.r,
+.gridView  tr > td.r {text-align:right;}
+
+.gridView  tr > th.c,
+.gridView  tr > td.c {text-align:center;}
+
+/* check-in list */
+
+div.check-in{}
+div.check-in table { outline: none;}
+
+div.check-in table > tbody > tr > td.icon {width:3%; min-width: 20px; text-align:left;}
+div.check-in table > tbody > tr > td.pname { overflow: hidden; width:67%; text-overflow: ellipsis; }
+div.check-in table > tbody > tr > td.pname > div { width:500px; text-align: left; 
+  overflow: hidden; white-space: nowrap;
+}
+
+div.check-in td.details_container {padding:0;}
+div.check-in table > tbody > tr.expanded > td { background-color: #edbd47; }
+
+div.check-in .details_table{ width:100%; border:0; border-collapse:collapse;}
+div.check-in .details_table > tbody > tr > td:first-child {padding-left: 39px;}
+div.check-in .details_table > tbody > tr > td > a.risk {color:Red;}
+div.check-in .details_table > tbody > tr:hover > td{background-color: #d8d8f6;}
+
+
+
+

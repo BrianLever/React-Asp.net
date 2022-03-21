@@ -1,0 +1,76 @@
+# ASP.NET
+# Build and test ASP.NET projects.
+# Add steps that publish symbols, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
+name: $(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+trigger:
+  branches:
+      include:
+      - releases/*
+      - features/*
+      - bugs/*
+  paths:
+    include:    
+    - sources/*
+    exclude:
+    - pipelines/*
+    - sources/screen.dox.ui.app/*
+    - sources/screendox.ui.app/*
+    - sources/fiddler_autoresponses/*
+    - sources/CI-cmdlets/*
+    - sources/kiosk-installation-cmdlets/*
+    - sources/Postman-files/*
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+stages:
+- stage: Build
+  jobs:
+  - job: Build_Screendox_API
+    displayName: 'Build Screendox API'
+    steps:
+    - script: $(Build.Repository.LocalPath)\sources\CI-cmdlets\setbuildversion.cmd $(Build.BuildId)
+      displayName: 'Set Version'
+      failOnStderr: true
+      
+    - task: NuGetCommand@2
+      displayName: 'NuGet Restore'
+      inputs:
+        command: 'restore'
+        restoreSolution: '**/*.sln'
+        feedsToUse: 'select'
+        vstsFeed: '896778c8-d8ef-4c25-a652-f67384b1f3e0'
+
+    - script: $(Build.Repository.LocalPath)\sources\CI-cmdlets\build_server_api.cmd $(Build.ArtifactStagingDirectory)
+      displayName: 'Build Screendox API'
+      failOnStderr: true
+       
+    - task: VSTest@2
+      displayName: 'Run Unit Tests'
+      inputs:
+        platform: '$(buildPlatform)'
+        configuration: '$(buildConfiguration)'
+        testFiltercriteria: TestCategory!=Integration
+
+    # Publish build artifacts to Azure Pipelines or a Windows file share
+    - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
+      displayName: 'Snapshot Environment Variables'
+
+    - task: CopyFiles@2
+      displayName: 'Copy deployment scripts'
+      inputs:
+        SourceFolder: '$(Build.SourcesDirectory)\pipelines\scripts'
+        Contents: '**'
+        TargetFolder: '$(Build.ArtifactStagingDirectory)\scripts'
+        OverWrite: true
+
+    - task: PublishBuildArtifacts@1
+      inputs:
+        pathToPublish: '$(Build.ArtifactStagingDirectory)' 
+        artifactName: 'drop' 
+        parallel: false

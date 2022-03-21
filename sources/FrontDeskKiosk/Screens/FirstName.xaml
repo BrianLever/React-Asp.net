@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="FrontDesk.Kiosk.Screens.FirstName"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uc="clr-namespace:FrontDesk.Kiosk.Controls.TextBoxExtensions" 
+    xmlns:cc="clr-namespace:FrontDesk.Kiosk.Controls"             
+    xmlns:kuc="clr-namespace:FrontDesk.Kiosk.Controls.Keyboard">
+    <Grid Style="{StaticResource ContactInfoContainer}">
+        <cc:ScreensBackGround />
+        <StackPanel>
+            <TextBlock x:Name="lblInvalidEhrText" Visibility="Collapsed" Style="{ StaticResource FormLabel }">
+               <Run Style="{StaticResource HealthRecordNotFound}">Sorry, we could not find your health record.</Run>
+                <LineBreak/>
+                Please correct your <Run Style="{StaticResource FormLabelEmpasisEhrNotFound}">FIRST NAME</Run>, if needed:</TextBlock>
+
+            <TextBlock x:Name="lblText" Style="{ StaticResource FormLabel }">Please enter your 
+                <Run Style="{ StaticResource FormLabelEmpasis }">FIRST NAME</Run>:</TextBlock>
+            <Grid Style="{StaticResource ContactInfoTextFieldLineWrapper}">
+                <uc:TerminalTextBox x:Name="ucText" TextChanged="ucText_TextChanged" MaxLength="128" HorizontalAlignment="Left"></uc:TerminalTextBox>
+                <kuc:KeyButton x:Name="btnBackspace" Text="DELETE" DepressedTemplateKey="BackspaceSep" 
+                    PressedTemplateKey="BackspaceSep_Pressed" DisabledTemplateKey="BackspaceSep_Disabled"   
+                    Style="{ StaticResource Backspace }" KeyPressing="btnBackspace_KeyPressing"
+                               HorizontalAlignment="Right"></kuc:KeyButton>
+            </Grid>
+            <Grid Style="{ StaticResource SymbolKeyboard }">
+                <StackPanel Style="{ StaticResource KbBackground}"></StackPanel>
+                <kuc:KeyboardControl x:Name="ucKeyboard" KbType="Symbol" KeyPressing="ucKeyboard_KeyPressing"></kuc:KeyboardControl>
+            </Grid>
+        </StackPanel>
+        <Button x:Name="btnNext" Click="OnNext" Style="{StaticResource YellowKeyboardAlignedNextButton}">NEXT</Button>
+    </Grid>
+</UserControl>

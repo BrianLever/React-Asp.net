@@ -1,0 +1,66 @@
+﻿<asp:TextBox runat="server" CssClass="textbox"></asp:TextBox>
+<asp:TextBox runat="server" SkinID="age" CssClass="textbox" Width="50px" onkeydown="return checkINTEGER(this, event, false);"></asp:TextBox>
+<asp:TextBox  SkinId="ZipCode" runat="server" CssClass="textbox"  onkeydown="return checkINTEGER(this, event, false);"    />
+<asp:TextBox  SkinId="NumbersOnly" runat="server" CssClass="textbox"  onkeydown="return checkINTEGER(this, event, false);"    />
+
+
+<asp:DropDownList runat="server" CssClass="combobox"></asp:DropDownList>
+
+<asp:Button runat="server" CssClass="btn" />
+
+<%-- Grid view --%>
+ <asp:GridView runat="server"  CssClass="gridView" 
+    AutoGenerateColumns="false" CellPadding="0" CellSpacing="0" BorderWidth="0px" 
+    PageSize="20"
+     >
+    <AlternatingRowStyle CssClass="alt" />
+    <RowStyle  />
+    <PagerSettings Mode="NumericFirstLast" PageButtonCount="10" Position="Bottom" NextPageText="Next"
+                                PreviousPageText="Prev" FirstPageText="First" LastPageText="Last" />
+    <PagerStyle CssClass="" />
+    <EditRowStyle BackColor="#bbbbbb" BorderColor="#000000" BorderStyle="Solid" BorderWidth="1px" />
+    <SelectedRowStyle BackColor="#CCCCCC" />
+    <PagerSettings PageButtonCount="5" />
+    <PagerTemplate>
+        <asp:PlaceHolder runat="server" ID="phPager"></asp:PlaceHolder>
+    </PagerTemplate>
+</asp:GridView>
+
+ 
+<%--
+<cc:HierarDynamicGrid runat="server"  CssClass="gridView" 
+    AutoGenerateColumns="false" CellPadding="0" CellSpacing="0" BorderWidth="0px" 
+    PageSize="20"
+     >
+    <AlternatingRowStyle CssClass="alt" />
+    <RowStyle  />
+    <PagerSettings Mode="NumericFirstLast" PageButtonCount="10" Position="Bottom" NextPageText="Next"
+                                PreviousPageText="Prev" />
+    <PagerStyle CssClass="pagelink lpad10" HorizontalAlign="Left" BorderWidth="0px"/>
+    <EditRowStyle BackColor="#bbbbbb" BorderColor="#000000" BorderStyle="Solid" BorderWidth="1px" />
+    <SelectedRowStyle BackColor="#CCCCCC" />
+    
+</cc:HierarDynamicGrid>
+
+<%-- Menu --%>
+
+
+<asp:Menu runat="server" Orientation="Horizontal" MaximumDynamicDisplayLevels="0"  SkinId="mainMenu"></asp:Menu>
+<asp:Menu runat="server" Orientation="Vertical" MaximumDynamicDisplayLevels="1"  SkinId="LeftMenu"></asp:Menu>
+
+<%-- Images --%>
+<asp:Image runat="server" SkinId="LogoImg" ImageUrl="~/images/logo_small_23.png" alt="ScreenDox" />
+
+<%-- Validator --%>                                        
+<asp:RequiredFieldValidator runat="server" CssClass="error_message" Text="*" ToolTip="Field is required"   />
+<asp:CustomValidator runat="server" CssClass="error_message" Text="*" />
+<asp:RangeValidator runat="server" CssClass="error_message" Text="*" />
+<asp:ValidationSummary runat="server" CssClass="error_summary"  />
+<asp:RegularExpressionValidator runat="server" CssClass="error_message" Text="!" />
+<asp:CompareValidator runat="server" CssClass="error_message" Text="!" />
+
+<%-- Label Controls --%>
+<%-- 
+<cc:FormLabel runat="server" MandatorySymbolCssClass="ast" DisplayColon="true" ColonPosition="AfterAsterix" CssClass="fieldLabel"/>
+--%>
+

@@ -1,0 +1,66 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "FrontDeskDatabase"
+   MSDTVersion = "80"
+   Begin Folder = "Change Scripts"
+      Begin Folder = "Integrate Frontdesk with RPMS"
+         Script = "v3.0.0.sql"
+      End
+      Begin Folder = "Published - Do not change"
+         Script = "v0.4.0.0.sql"
+         Script = "v0.6.0.0.sql"
+      End
+      Script = "v2.0.0.sql"
+   End
+   Begin Folder = "Create Scripts"
+      Script = "CreateDatabase.sql"
+      Begin Folder = "Functions"
+         Script = "fn_GetFullName.sql"
+         Script = "fn_GetPatientName.sql"
+      End
+      Script = "install_server.sql"
+      Begin Folder = "SQL Compact"
+         Script = "AnswerScale.sql"
+         Script = "InsertQuestionnareData.sql"
+         Script = "Screening.sql"
+         Script = "ScreeningSection.sql"
+         Script = "ScreeningSectionAge.sql"
+         Script = "ScreeningSectionQuestion.sql"
+         Script = "State.sql"
+      End
+      Begin Folder = "Tables"
+         Script = "AnswerScale.sql"
+         Script = "BranchLocation.sql"
+         Script = "ErrorLog.sql"
+         Script = "Kiosk.sql"
+         Script = "License.sql"
+         Begin Folder = "Membership"
+            Script = "Roles.sql"
+            Script = "Users.sql"
+            Script = "UsersInRoles.sql"
+         End
+         Script = "Screening.sql"
+         Script = "ScreeningResult.sql"
+         Script = "ScreeningScoreLevel.sql"
+         Script = "ScreeningSection.sql"
+         Script = "ScreeningSectionAge.sql"
+         Script = "ScreeningSectionQuestion.sql"
+         Script = "ScreeningSectionQuestionResult.sql"
+         Script = "ScreeningSectionResult.sql"
+         Script = "SecurityEvent.sql"
+         Script = "SecurityEventCategory.sql"
+         Script = "SecurityLog.sql"
+         Script = "SecurityQuestion.sql"
+         Script = "State.sql"
+         Script = "SystemSettings.sql"
+         Script = "UserDetails.sql"
+         Script = "UserPasswordHistory.sql"
+         Script = "Users_BranchLocation.sql"
+      End
+   End
+   Begin DBRefFolder = "Database References"
+   End
+   Begin Folder = "Queries"
+      Script = "CreateResultsStructures.sql"
+      Script = "InsertQuestionnareData.sql"
+   End
+End

@@ -1,0 +1,1315 @@
+﻿-- Script Date: 6/8/2019 12:23 PM  - ErikEJ.SqlCeScripting version 3.5.2.80
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Absentee-Shawnee Tribe of Indians, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Agdaagux Tribe of King Cove',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Agua Caliente, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ak-Chin Indian Community, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Akiachak Native Community',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Akiak Native Community',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Alabama-Coushatta Tribe, Texas',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Alabama-Quassarte Tribal Town, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Alatna Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Algaaciq Native Village (St. Mary’s)',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Allakaket Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Alturas Indian Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Alutiiq Tribe of Old Harbor',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Angoon Community Association',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Anvik Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Apache Tribe, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Arapaho Tribe of the Wind River Reservation, Wyoming',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Arctic Village (Village of Venetie Tribal Government)',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Aroostook Band of Micmacs, Maine',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Asa’carsarmiut Tribe',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Assiniboine and Sioux Tribes of the Fort Peck Indian Reservation, Montana',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Atqasuk Village (Atkasook)',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Augustine Band of Cahuilla Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Bad River Band of the Lake Superior Tribe of Chippewa Indians, Wisconsin',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Barona Group of Capitan Grande Band of Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Bay Mills Indian Community, Michigan',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Bear River Band of the Rohnerville Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Beaver Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Berry Creek Rancheria of Maidu Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Big Lagoon Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Big Pine Paiute Tribe of the Owens Valley, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Big Sandy Rancheria of Western Mono Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Big Valley Band of Pomo Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Birch Creek Tribe',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Bishop Paiute Tribe, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Blackfeet Tribe, Montana',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Blue Lake Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Bridgeport Indian Colony, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Buena Vista Rancheria of Me-Wuk Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Burns Paiute Tribe, Oregon',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cabazon Band of Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cachil DeHe Band of Wintun Indians of the Colusa Indian Community, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Caddo Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cahto Tribe of the Laytonville Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cahuilla Band of Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'California Valley Miwok Tribe, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Campo Band of Diegueno Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Catawba Indian Nation, South Carolina',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cayuga Nation, New York',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cedarville Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Central Council of the Tlingit & Haida Indian Tribes',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chalkyitsik Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cheesh-Na Tribe',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chemehuevi Indian Tribe, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cher-Ae Heights Indian Community of the Trinidad Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cherokee Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chevak Native Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cheyenne and Arapaho Tribes, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cheyenne River Sioux Tribe, South Dakota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chickaloon Native Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chickasaw Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chicken Ranch Rancheria of Me-Wuk Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chignik Bay Tribal Council',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chignik Lake Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chilkat Indian Village (Klukwan)',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chilkoot Indian Association (Haines)',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chinik Eskimo Community (Golovin)',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chippewa Cree Indians of the Rocky Boy’s Reservation, Montana',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chitimacha Tribe, Louisiana',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Choctaw Nation of Oklahoma, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Chuloonawick Native Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Circle Native Community',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Citizen Potawatomi Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cloverdale Rancheria of Pomo Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cocopah Tribe, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Coeur D’Alene Tribe, Idaho',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cold Springs Rancheria of Mono Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Colorado River Indian Tribes, Arizona and California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Comanche Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Confederated Salish and Kootenai Tribes of the Flathead Reservation, Montana',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Confederated Tribes and Bands of the Yakama Nation, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Confederated Tribes of Siletz Indians, Oregon',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Confederated Tribes of the Chehalis Reservation, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Confederated Tribes of the Colville Reservation, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Confederated Tribes of the Coos, Lower Umpqua and Siuslaw Indians, Oregon',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Confederated Tribes of the Goshute Reservation, Nevada and Utah',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Confederated Tribes of the Grand Ronde Community, Oregon',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Confederated Tribes of the Umatilla Indian Reservation, Oregon',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Confederated Tribes of the Warm Springs Reservation, Oregon',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Coquille Indian Tribe, Oregon',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cortina Indian Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Coushatta Tribe, Louisiana',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cow Creek Band of Umpqua Tribe of Indians, Oregon',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Cowlitz Indian Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Coyote Valley Band of Pomo Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Craig Tribal Association',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Crow Creek Sioux Tribe, South Dakota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Crow Tribe, Montana',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Curyung Tribal Council',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Death Valley Timbi-sha Shoshone Tribe, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Delaware Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Delaware Tribe of Indians, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Douglas Indian Association',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Dry Creek Rancheria Band of Pomo Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Duckwater Shoshone Tribe of the Duckwater Reservation, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Eastern Band of Cherokee Indians, North Carolina',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Eastern Shawnee Tribe, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Eastern Shoshone Tribe of the Wind River Reservation, Wyoming',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Egegik Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Eklutna Native Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Elem Indian Colony of Pomo Indians of the Sulphur Bank Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Elk Valley Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ely Shoshone Tribe, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Emmonak Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Enterprise Rancheria of Maidu Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Evansville Village (aka Bettles Field)',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ewiiaapaayp Band of Kumeyaay Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Federated Indians of Graton Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Flandreau Santee Sioux Tribe, South Dakota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Forest County Potawatomi Community, Wisconsin',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Fort Belknap Indian Community, Montana',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Fort Bidwell Indian Community, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Fort Independence Indian Community of Paiute Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Fort McDermitt Paiute and Shoshone Tribes, Nevada and Oregon',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Fort McDowell Yavapai Nation, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Fort Mojave Indian Tribe of Arizona, California & Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Fort Sill Apache Tribe, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Galena Village (aka Louden Village)',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Gila River Indian Community of the Gila River Indian Reservation, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Grand Traverse Band of Ottawa and Chippewa Indians, Michigan',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Greenville Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Grindstone Indian Rancheria of Wintun-Wailaki Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Guidiville Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Gulkana Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Habematolel Pomo of Upper Lake, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Hannahville Indian Community, Michigan',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Havasupai Tribe of the Havasupai Reservation, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Healy Lake Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ho-Chunk Nation, Wisconsin',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Hoh Indian Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Holy Cross Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Hoonah Indian Association',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Hoopa Valley Tribe, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Hopi Tribe, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Hopland Band of Pomo Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Houlton Band of Maliseet Indians, Maine',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Hualapai Indian Tribe, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Hughes Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Huslia Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Hydaburg Cooperative Association',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Igiugig Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Iipay Nation of Santa Ysabel, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Inaja Band of Diegueno Mission Indians of the Inaja and Cosmit Reservation, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Inupiat Community of the Arctic Slope',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ione Band of Miwok Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Iowa Tribe, Kansas and Nebraska',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Iowa Tribe, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Iqurmuit Traditional Council',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ivanof Bay Tribe',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Jackson Band of Miwuk Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Jamestown S’Klallam Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Jamul Indian Village, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Jena Band of Choctaw Indians, Louisiana',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Jicarilla Apache Nation, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kaguyak Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kaibab Band of Paiute Indians, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kaktovik Village (aka Barter Island)',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kalispel Indian Community, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Karuk Tribe, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kashia Band of Pomo Indians of the Stewarts Point Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kasigluk Traditional Elders Council',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kaw Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kenaitze Indian Tribe',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ketchikan Indian Corporation',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kewa Pueblo, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Keweenaw Bay Indian Community, Michigan',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kialegee Tribal Town, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kickapoo Traditional Tribe, Texas',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kickapoo Tribe of Indians, Kansas',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kickapoo Tribe, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'King Island Native Community',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'King Salmon Tribe',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kiowa Indian Tribe, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Klamath Tribes, California and Oregon',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Klawock Cooperative Association',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Knik Tribe',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Koi Nation, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kokhanok Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Kootenai Tribe, Idaho',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Koyukuk Native Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'La Jolla Band of Luiseno Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'La Posta Band of Diegueno Mission Indians of the La Posta Indian Reservation, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Lac Courte Oreilles Band of Lake Superior Chippewa Indians, Wisconsin',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Lac du Flambeau Band of Lake Superior Chippewa Indians, Wisconsin',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Lac Vieux Desert Band of Lake Superior Chippewa Indians, Michigan',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Las Vegas Tribe of Paiute Indians, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Levelock Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Lime Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Little River Band of Ottawa Indians, Michigan',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Little Traverse Bay Bands of Odawa Indians, Michigan',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Lone Pine Paiute-Shoshone Tribe, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Los Coyotes Band of Cahuilla and Cupeno Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Lovelock Paiute Tribe, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Lower Brule Sioux Tribe, South Dakota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Lower Elwha Tribal Community, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Lower Sioux Indian Community, Minnesota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Lummi Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Lytton Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Makah Indian Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Manchester Band of Pomo Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Manley Hot Springs Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Manokotak Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Manzanita Band of Diegueno Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Mashantucket Pequot Indian Tribe, Connecticut',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Mashpee Wampanoag Tribe, Massachusetts',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Match-e-be-nash-she-wish Band of Pottawatomi Indians, Michigan',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'McGrath Native Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Mechoopda Indian Tribe of Chico Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Menominee Indian Tribe, Wisconsin',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Mentasta Traditional Council',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Mesa Grande Band of Diegueno Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Mescalero Apache Tribe, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Metlakatla Indian Community, Annette Island Reserve',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Miami Tribe, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Miccosukee Tribe of Indians, Florida',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Middletown Rancheria of Pomo Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Minnesota Chippewa Tribe (Bois Forte / Nett Lake; Fond du Lac; Grand Portage; Leech Lake; Mille Lacs; White Earth), Minnesota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Mississippi Band of Choctaw Indians, Mississippi',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Moapa Band of Paiute Indians, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Modoc Tribe, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Mohegan Tribe of Indians, Connecticut',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Mooretown Rancheria of Maidu Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Morongo Band of Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Muckleshoot Indian Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Muscogee (Creek) Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Naknek Native Village',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Narragansett Indian Tribe, Rhode Island',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Afognak',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Akhiok',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Akutan',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Aleknagik',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Ambler',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Atka',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Barrow Inupiat Traditional Government',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Belkofski',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Brevig Mission',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Buckland',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Cantwell',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Chenega',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Chignik Lagoon',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Chitina',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Chuathbaluk (Russian Mission, Kuskokwim)',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Council',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Deering',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Diomede (Inalik)',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Eagle',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Eek',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Ekuk',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Ekwok',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Elim',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Eyak (Cordova)',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of False Pass',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Fort Yukon',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Gakona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Gambell',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Georgetown',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Goodnews Bay',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Hamilton',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Hooper Bay',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Native Village of Kanatak',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Navajo Nation, Arizona, New Mexico & Utah',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Nez Perce Tribe, Idaho',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Nisqually Indian Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Nooksack Indian Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Northern Cheyenne Tribe, Montana',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Northfork Rancheria of Mono Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Northwestern Band of the Shoshone Nation (Washakie), Utah',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Nottawaseppi Huron Band of the Potawatomi, Michigan',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Oglala Sioux Tribe, South Dakota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ohkay Owingeh, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Omaha Tribe, Nebraska',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Oneida Nation, New York',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Oneida Nation, Wisconsin',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Onondaga Nation, New York',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Osage Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Otoe-Missouria Tribe of Indians, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ottawa Tribe, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Paiute Indian Tribe (Cedar, Kanosh, Koosharem, Indian Peaks, and Shivwits), Utah',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Paiute-Shoshone Tribe of the Fallon Reservation and Colony, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pala Band of Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pamunkey Indian Tribe, Virginia',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pascua Yaqui Tribe, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Paskenta Band of Nomlaki Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Passamaquoddy Tribe, Maine',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pauma Band of Luiseno Mission Indians of the Pauma & Yuima Reservation, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pawnee Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pechanga Band of Luiseno Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Penobscot Nation, Maine',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Peoria Tribe of Indians, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Picayune Rancheria of Chukchansi Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pinoleville Pomo Nation, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pit River Tribe, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Poarch Band of Creeks, Alabama',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pokagon Band of Potawatomi Indians, Michigan & Indiana',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ponca Tribe of Indians, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ponca Tribe, Nebraska',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Port Gamble S’Klallam Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Potter Valley Tribe, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Prairie Band Potawatomi Nation, Kansas',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Prairie Island Indian Community, Minnesota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Acoma, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Cochiti, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Isleta, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Jemez, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Laguna, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Nambe, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Picuris, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Pojoaque, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of San Felipe, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of San Ildefonso, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Sandia, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Santa Ana, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Santa Clara, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Taos, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Tesuque, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pueblo of Zia, New Mexico',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Puyallup Tribe of the Puyallup Reservation, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Pyramid Lake Paiute Tribe of the Pyramid Lake Reservation, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Quapaw Tribe of Indians, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Quartz Valley Indian Community, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Quechan Tribe, California & Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Quileute Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Quinault Indian Nation, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ramona Band of Cahuilla, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Red Cliff Band of Lake Superior Chippewa Indians, Wisconsin',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Red Lake Band of Chippewa Indians, Minnesota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Redding Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Redwood Valley (Little River Band of Pomo Indians), California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Reno-Sparks Indian Colony, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Resighini Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Rincon Band of Luiseno Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Robinson Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Rosebud Sioux Tribe, South Dakota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Round Valley Indian Tribes, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Sac & Fox Nation, Missouri, Kansas, & Nebraska',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Sac & Fox Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Sac & Fox Tribe of the Mississippi, Iowa',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Saginaw Chippewa Indian Tribe, Michigan',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Saint Regis Mohawk Tribe, New York',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Salt River Pima-Maricopa Indian Community, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Samish Indian Nation, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'San Carlos Apache Tribe, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'San Juan Southern Paiute Tribe, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'San Manuel Band of Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'San Pasqual Band of Diegueno Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Santa Rosa Band of Cahuilla Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Santa Rosa Indian Community, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Santa Ynez Band of Chumash Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Santee Sioux Nation, Nebraska',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Sauk-Suiattle Indian Tribe',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Sault Ste. Marie Tribe of Chippewa Indians, Michigan',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Scotts Valley Band of Pomo Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Seminole Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Seminole Tribe, Florida',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Seneca Nation of Indians, New York',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Seneca–Cayuga Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Shakopee Mdewakanton Sioux Community, Minnesota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Shawnee Tribe, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Sherwood Valley Rancheria of Pomo Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Shingle Springs Band of Miwok Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Shinnecock Indian Nation, New York',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Shoalwater Bay Indian Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Shoshone-Bannock Tribes of the Fort Hall Reservation, Idaho',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Shoshone-Paiute Tribes of the Duck Valley Reservation, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Sisseton-Wahpeton Oyate of the Lake Traverse Reservation, South Dakota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Skokomish Indian Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Skull Valley Band of Goshute Indians, Utah',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Snoqualmie Indian Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Soboba Band of Luiseno Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Sokaogon Chippewa Community, Wisconsin',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Southern Ute Indian Tribe of the Southern Ute Reservation, Colorado',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Spirit Lake Tribe, North Dakota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Spokane Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Squaxin Island Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'St. Croix Chippewa Indians, Wisconsin',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Standing Rock Sioux Tribe, North & South Dakota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Stillaguamish Tribe of Indians, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Stockbridge Munsee Community, Wisconsin',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Summit Lake Paiute Tribe, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Suquamish Indian Tribe of the Port Madison Reservation, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Susanville Indian Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Swinomish Indian Tribal Community, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Sycuan Band of the Kumeyaay Nation, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Table Mountain Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Tejon Indian Tribe, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Te-Moak Tribe of Western Shoshone Indians (Battle Mountain; Elko; South Fork & Wells), Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Thlopthlocco Tribal Town, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Three Affiliated Tribes of the Fort Berthold Reservation, North Dakota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Tohono O’odham Nation, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Tolowa Dee-ni’ Nation (Smith River Rancheria), California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Tonawanda Band of Seneca, New York',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Tonkawa Tribe of Indians, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Tonto Apache Tribe, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Torres Martinez Desert Cahuilla Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Tulalip Tribes, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Tule River Indian Tribe, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Tunica-Biloxi Indian Tribe, Louisiana',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Tuolumne Band of Me-Wuk Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Turtle Mountain Band of Chippewa Indians, North Dakota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Tuscarora Nation, North Carolina',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Twenty-Nine Palms Band of Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'United Auburn Indian Community, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'United Keetoowah Band of Cherokee Indians, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Upper Sioux Community, Minnesota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Upper Skagit Indian Tribe, Washington',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ute Indian Tribe of the Uintah & Ouray Reservation, Utah',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ute Mountain Ute Tribe, Colorado, New Mexico & Utah',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Utu Utu Gwaitu Paiute Tribe of the Benton Paiute Reservation, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Viejas (Baron Long) Group of Capitan Grande Band of Mission Indians, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Walker River Paiute Tribe, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Wampanoag Tribe of Gay Head (Aquinnah), Massachusetts',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Washoe Tribe, Nevada & California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'White Mountain Apache Tribe, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Wichita and Affiliated Tribes (Wichita, Keechi, Waco & Tawakonie), Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Wilton Rancheria, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Winnebago Tribe, Nebraska',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Winnemucca Indian Colony, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Wiyot Tribe (Table Bluff), California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Wyandotte Nation, Oklahoma',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Yankton Sioux Tribe, South Dakota',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Yavapai-Apache Nation of the Camp Verde Indian Reservation, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Yavapai-Prescott Indian Tribe, Arizona',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Yerington Paiute Tribe, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Yocha Dehe Wintun Nation (Rumsey), California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Yomba Shoshone Tribe, Nevada',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Ysleta del Sur Pueblo, Texas',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Yurok Tribe, California',{ts '2019-06-04 00:00:00'});
+GO
+INSERT INTO [Tribe] ([Value],[LastModifiedDateUTC]) 
+VALUES (N'Zuni Tribe, New Mexico',{ts '2019-06-04 00:00:00'});
+GO

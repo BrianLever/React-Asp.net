@@ -1,0 +1,57 @@
+﻿{
+	"_sectionAnswers": {
+		"PHQ-9": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 1,
+					"AnswerValue": 0
+				},
+				"2": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 2,
+					"AnswerValue": 0
+				},
+			},
+			"ScreeningSectionID": "PHQ-9",
+			"AnswerValue": 0
+		},
+		"BBGS": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "BBGS",
+					"QuestionID": 1,
+					"AnswerValue": 1
+				},
+				"2": {
+					"ScreeningSectionID": "BBGS",
+					"QuestionID": 2,
+					"AnswerValue": 0
+				},
+				"3": {
+					"ScreeningSectionID": "BBGS",
+					"QuestionID": 3,
+					"AnswerValue": 0
+				},
+				"4": {
+					"ScreeningSectionID": "BBGS",
+					"QuestionID": 4,
+					"AnswerValue": 0
+				}				
+			},
+			"ScreeningSectionID": "BBGS",
+			"AnswerValue": 1
+		}
+	},
+	"ScreeningID": "BHS",
+	"StreetAddress": "1000 NW SOUTHERN",
+	"City": "ABIQUI",
+	"StateID": "NM",
+	"ZipCode": "11009",
+	"Phone": "000-000-0000",
+	"KioskID": 1000,
+	"FirstName": "JONES (Gambling Negative)",
+	"LastName": "SMITH",
+	"MiddleName": "",
+	"Birthday": "1964-01-19T00:00:00"
+}

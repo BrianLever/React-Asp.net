@@ -1,0 +1,144 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:FrontDesk.Kiosk.ResourceDictionary">
+
+    <Style TargetType="UserControl" x:Key="keyButtonRoot">
+        <Setter Property="Width" Value="Auto" />
+        <Setter Property="Height" Value="Auto" />
+        <Setter Property="Margin" Value="8,5,8,5" />
+    </Style>
+
+
+    <ControlTemplate x:Key="SimpleKey" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#ffcbcbcb" Height="109.4" Width="150" >
+            <StackPanel />
+        </Border>
+    </ControlTemplate>
+    <ControlTemplate x:Key="SimpleKey_Pressed" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#FF4d4d4d" Height="109.4" Width="150">
+            <StackPanel />
+        </Border>
+    </ControlTemplate>
+    <ControlTemplate x:Key="SimpleKey_Disabled" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#ffcbcbcb" Height="109.4" Width="150" >
+            <StackPanel />
+        </Border>
+    </ControlTemplate>
+
+    <Style TargetType="TextBlock" x:Key="SimpleKey_Text" BasedOn="{StaticResource keyButtonText}">
+    </Style>
+    <Style TargetType="TextBlock" x:Key="SimpleKey_Pressed_Text" BasedOn="{StaticResource keyButtonTextSelected}">
+    </Style>
+    <Style TargetType="TextBlock" x:Key="SimpleKey_Disabled_Text" BasedOn="{StaticResource keyButtonText}">
+    </Style>
+
+
+    <ControlTemplate x:Key="DigitalKey" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#ffcbcbcb" Height="109.4" Width="150" />
+    </ControlTemplate>
+    <ControlTemplate x:Key="DigitalKey_Pressed" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#FF4d4d4d" Height="109.4" Width="150">
+        </Border>
+    </ControlTemplate>
+    <ControlTemplate x:Key="DigitalKey_Disabled" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#ffcbcbcb" Height="109.4" Width="150" />
+    </ControlTemplate>
+
+    <Style TargetType="TextBlock" x:Key="DigitalKey_Text" BasedOn="{StaticResource keyButtonText}">
+        <Setter Property="FontSize" Value="70px" />
+    </Style>
+    <Style TargetType="TextBlock" x:Key="DigitalKey_Pressed_Text" BasedOn="{StaticResource keyButtonTextSelected}">
+        <Setter Property="FontSize" Value="70px" />
+    </Style>
+    <Style TargetType="TextBlock" x:Key="DigitalKey_Disabled_Text" BasedOn="{StaticResource keyButtonText}">
+        <Setter Property="FontSize" Value="70px" />
+    </Style>
+
+
+    <ControlTemplate x:Key="Space" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#ffcbcbcb" Height="109.4" Width="1146">
+        </Border>
+    </ControlTemplate>
+    <ControlTemplate x:Key="Space_Pressed" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#FF4d4d4d" Height="109.4" Width="1146"></Border>
+    </ControlTemplate>
+    <ControlTemplate x:Key="Space_Disabled" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#ffcbcbcb" Height="109.4" Width="1146"></Border>
+    </ControlTemplate>
+    
+    <Style TargetType="TextBlock" x:Key="Space_Text" BasedOn="{StaticResource keyButtonText}">
+    </Style>
+    <Style TargetType="TextBlock" x:Key="Space_Pressed_Text" BasedOn="{StaticResource keyButtonTextSelected}">
+    </Style>
+    <Style TargetType="TextBlock" x:Key="Space_Disabled_Text" BasedOn="{StaticResource keyButtonText}">
+    </Style>
+    
+    
+    
+    <ControlTemplate x:Key="Grey" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="Transparent" Height="109.4" Width="150"/>
+    </ControlTemplate>
+    <Style TargetType="TextBlock" x:Key="Grey_Text" BasedOn="{StaticResource keyButtonText}">
+    </Style>
+
+    <ControlTemplate x:Key="BackspaceSep" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#ffcbcbcb" Height="101.4"  Width="320"></Border>
+    </ControlTemplate>
+    <ControlTemplate x:Key="BackspaceSep_Pressed" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#FF4d4d4d" Height="101.4"  Width="320"></Border>
+    </ControlTemplate>
+    <ControlTemplate x:Key="BackspaceSep_Disabled" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#ffcbcbcb" Height="101.4"  Width="320"></Border>
+    </ControlTemplate>
+
+    <Style TargetType="TextBlock" x:Key="BackspaceSep_Text" BasedOn="{StaticResource keyButtonText}">
+    </Style>
+    <Style TargetType="TextBlock" x:Key="BackspaceSep_Pressed_Text" BasedOn="{StaticResource keyButtonTextSelected}">
+    </Style>
+    <Style TargetType="TextBlock" x:Key="BackspaceSep_Disabled_Text" BasedOn="{StaticResource keyButtonText}">
+    </Style>
+
+    
+    <Style TargetType="UserControl" x:Key="AutoSuggestPopupItem">
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="Height" Value="Auto" />
+    </Style>
+
+    <ControlTemplate x:Key="AutoSuggestPopupItemBtn" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#ffcbcbcb" Height="101.4" HorizontalAlignment="Stretch"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="AutoSuggestPopupItemBtn_Pressed" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#FF4d4d4d" Height="101.4" HorizontalAlignment="Stretch" />
+    </ControlTemplate>
+    <ControlTemplate x:Key="AutoSuggestPopupItemBtn_Disabled" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#ffcbcbcb" Height="101.4" HorizontalAlignment="Stretch"/>
+    </ControlTemplate>
+
+
+    <ControlTemplate x:Key="AutoSuggestPopupItemBtnMultiLine" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#ffcbcbcb" Height="101.4" HorizontalAlignment="Stretch"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="AutoSuggestPopupItemBtnMultiLine_Pressed" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#FF4d4d4d" Height="101.4" HorizontalAlignment="Stretch" />
+    </ControlTemplate>
+    <ControlTemplate x:Key="AutoSuggestPopupItemBtnMultiLine_Disabled" TargetType="{x:Type UserControl}">
+        <Border CornerRadius="10" Background="#ffcbcbcb" Height="101.4" HorizontalAlignment="Stretch"/>
+    </ControlTemplate>
+
+    <Style TargetType="TextBlock" x:Key="AutoSuggestPopupItemBtn_Text" BasedOn="{StaticResource keyButtonText}">
+    </Style>
+    <Style TargetType="TextBlock" x:Key="AutoSuggestPopupItemBtn_Pressed_Text" BasedOn="{StaticResource keyButtonTextSelected}">
+    </Style>
+    <Style TargetType="TextBlock" x:Key="AutoSuggestPopupItemBtn_Disabled_Text" BasedOn="{StaticResource keyButtonText}">
+    </Style>
+
+
+    <Style TargetType="TextBlock" x:Key="AutoSuggestPopupItemBtnMultiLine_Text" BasedOn="{StaticResource keyButtonTextLong}">
+    </Style>
+    <Style TargetType="TextBlock" x:Key="AutoSuggestPopupItemBtnMultiLine_Pressed_Text" BasedOn="{StaticResource keyButtonTextLongSelected}">
+    </Style>
+    <Style TargetType="TextBlock" x:Key="AutoSuggestPopupItemBtnMultiLine_Disabled_Text" BasedOn="{StaticResource keyButtonTextLong}">
+    </Style>
+
+</ResourceDictionary>

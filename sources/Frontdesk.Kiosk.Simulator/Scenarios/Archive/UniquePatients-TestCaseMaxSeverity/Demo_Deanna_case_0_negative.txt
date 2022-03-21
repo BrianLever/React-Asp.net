@@ -1,0 +1,72 @@
+﻿{
+	"_sectionAnswers": {
+		"PHQ-9": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 1,
+					"AnswerValue": 0
+				},
+				"2": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 2,
+					"AnswerValue": 0
+				},
+				"3": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 3,
+					"AnswerValue": 0
+				},
+				"4": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 4,
+					"AnswerValue": 0
+				},
+				"5": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 5,
+					"AnswerValue": 0
+				},
+				"6": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 6,
+					"AnswerValue": 0
+				},
+				"7": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 7,
+					"AnswerValue": 0
+				},
+				"8": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 8,
+					"AnswerValue": 0
+				},
+				"9": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 9,
+					"AnswerValue": 0
+				},
+				"10": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 10,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "PHQ-9"
+		},
+		
+	},
+	"ScreeningID": "BHS",
+	"StreetAddress": "",
+	"City": "",
+	"StateID": "",
+	"StateName": "",
+	"ZipCode": "",
+	"Phone": "",
+	"KioskID": 1000,
+	"FirstName": "DEANNA",
+	"LastName": "DEMO",
+	"MiddleName": "",
+	"Birthday": "1988-08-18T00:00:00"
+}

@@ -1,0 +1,52 @@
+{
+	"_sectionAnswers": {
+		
+		"CAGE": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 1,
+					"AnswerValue": 1
+				},
+				"2": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 2,
+					"AnswerValue": 1
+				},
+				"3": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 3,
+					"AnswerValue": 1
+				},
+				"4": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 4,
+					"AnswerValue": 1
+				},
+				"5": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 5,
+					"AnswerValue": 1
+				}
+			},
+			"ScreeningSectionID": "CAGE",
+			"AnswerValue": 1,
+			"Score": 4,
+			"ScoreLevel": 3,
+			"ScoreLevelLabel": "Evidence of DEPENDENCE until ruled out",
+			"Indicates": "Evaluate, treat, and/or referral as indicated by clinician's expertise"
+		}
+	},
+	"ScreeningID": "BHS",
+	"StreetAddress": "26028 NORTH LAKE WOHLFORD",
+	"City": "AMADOR COUNTY",
+	"StateID": "CA",
+	"StateName": "California",
+	"ZipCode": "92061",
+	"Phone": "(555) 666-6666",
+	"KioskID": 1000,
+	"FirstName": "ADELA",
+	"LastName": "GARERD",
+	"MiddleName": "",
+	"Birthday": "1965-09-09T00:00:00"
+}

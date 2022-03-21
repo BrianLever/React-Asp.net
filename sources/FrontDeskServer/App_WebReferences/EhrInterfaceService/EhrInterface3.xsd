@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.screendox.com" elementFormDefault="qualified" targetNamespace="http://www.screendox.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/ScreenDoxEhrService/EhrInterface.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost/ScreenDoxEhrService/EhrInterface.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/RPMS.Common.Models" />
+  <xs:complexType name="Patient">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PatientSearch">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EHR" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneHome" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneOffice" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StateID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StreetAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Patient" nillable="true" type="tns:Patient" />
+  <xs:complexType name="PatientSearch">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="matchRank" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PatientSearch" nillable="true" type="tns:PatientSearch" />
+  <xs:complexType name="ArrayOfPatient">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Patient" nillable="true" type="tns:Patient" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPatient" nillable="true" type="tns:ArrayOfPatient" />
+  <xs:complexType name="ArrayOfVisit">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Visit" nillable="true" type="tns:Visit" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVisit" nillable="true" type="tns:ArrayOfVisit" />
+  <xs:complexType name="Visit">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="tns:Location" />
+      <xs:element minOccurs="0" name="ServiceCategory" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Visit" nillable="true" type="tns:Visit" />
+  <xs:complexType name="Location">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Location" nillable="true" type="tns:Location" />
+  <xs:complexType name="ExportTask">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CrisisAlerts" nillable="true" type="tns:ArrayOfCrisisAlert" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Errors" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Exams" nillable="true" type="tns:ArrayOfExam" />
+      <xs:element minOccurs="0" name="HealthFactors" nillable="true" type="tns:ArrayOfHealthFactor" />
+      <xs:element minOccurs="0" name="PatientRecordModifications" nillable="true" type="tns:ArrayOfPatientRecordModification" />
+      <xs:element minOccurs="0" name="ScreeningSections" nillable="true" type="tns:ArrayOfExportScreeningSectionPreview" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExportTask" nillable="true" type="tns:ExportTask" />
+  <xs:complexType name="ArrayOfCrisisAlert">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CrisisAlert" nillable="true" type="tns:CrisisAlert" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCrisisAlert" nillable="true" type="tns:ArrayOfCrisisAlert" />
+  <xs:complexType name="CrisisAlert">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Author" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateOfNote" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Details" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentTypeAbbr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="EntryDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CrisisAlert" nillable="true" type="tns:CrisisAlert" />
+  <xs:complexType name="ArrayOfExam">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Exam" nillable="true" type="tns:Exam" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExam" nillable="true" type="tns:ArrayOfExam" />
+  <xs:complexType name="Exam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExamID" type="xs:int" />
+      <xs:element minOccurs="0" name="ExamName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultLabel" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Exam" nillable="true" type="tns:Exam" />
+  <xs:complexType name="ArrayOfHealthFactor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HealthFactor" nillable="true" type="tns:HealthFactor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHealthFactor" nillable="true" type="tns:ArrayOfHealthFactor" />
+  <xs:complexType name="HealthFactor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Factor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FactorID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HealthFactor" nillable="true" type="tns:HealthFactor" />
+  <xs:complexType name="ArrayOfPatientRecordModification">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PatientRecordModification" nillable="true" type="tns:PatientRecordModification" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPatientRecordModification" nillable="true" type="tns:ArrayOfPatientRecordModification" />
+  <xs:complexType name="PatientRecordModification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrentValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Field" type="tns:PatientRecordExportFields" />
+      <xs:element minOccurs="0" name="UpdateWithValue" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PatientRecordModification" nillable="true" type="tns:PatientRecordModification" />
+  <xs:simpleType name="PatientRecordExportFields">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AddressLine1" />
+      <xs:enumeration value="AddressLine2" />
+      <xs:enumeration value="AddressLine3" />
+      <xs:enumeration value="Phone" />
+      <xs:enumeration value="City" />
+      <xs:enumeration value="StateID" />
+      <xs:enumeration value="ZipCode" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PatientRecordExportFields" nillable="true" type="tns:PatientRecordExportFields" />
+  <xs:complexType name="ArrayOfExportScreeningSectionPreview">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExportScreeningSectionPreview" nillable="true" type="tns:ExportScreeningSectionPreview" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExportScreeningSectionPreview" nillable="true" type="tns:ArrayOfExportScreeningSectionPreview" />
+  <xs:complexType name="ExportScreeningSectionPreview">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ScoreLevelLabel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScreeningSectionID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExportScreeningSectionPreview" nillable="true" type="tns:ExportScreeningSectionPreview" />
+  <xs:complexType name="ArrayOfExportResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExportResult" nillable="true" type="tns:ExportResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExportResult" nillable="true" type="tns:ArrayOfExportResult" />
+  <xs:complexType name="ExportResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fault" nillable="true" type="tns:ExportFault" />
+      <xs:element minOccurs="0" name="IsSuccessful" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExportResult" nillable="true" type="tns:ExportResult" />
+  <xs:complexType name="ExportFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/RPMS.Common.Models" minOccurs="0" name="FaultType" type="q2:ExportFaultType" />
+      <xs:element minOccurs="0" name="InfoMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExportFault" nillable="true" type="tns:ExportFault" />
+  <xs:complexType name="ScreeningResultRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PatientID" type="xs:int" />
+      <xs:element minOccurs="0" name="ScreendoxRecordNo" type="xs:long" />
+      <xs:element minOccurs="0" name="ScreeningDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Sections" nillable="true" type="tns:ArrayOfScreeningResultSectionRecord" />
+      <xs:element minOccurs="0" name="VisitID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScreeningResultRecord" nillable="true" type="tns:ScreeningResultRecord" />
+  <xs:complexType name="ArrayOfScreeningResultSectionRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ScreeningResultSectionRecord" nillable="true" type="tns:ScreeningResultSectionRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfScreeningResultSectionRecord" nillable="true" type="tns:ArrayOfScreeningResultSectionRecord" />
+  <xs:complexType name="ScreeningResultSectionRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Answers" nillable="true" type="tns:ArrayOfScreeningResultSectionAnswerRecord" />
+      <xs:element minOccurs="0" name="Indicates" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Score" type="xs:int" />
+      <xs:element minOccurs="0" name="ScoreLevel" type="xs:int" />
+      <xs:element minOccurs="0" name="ScoreLevelLabel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScreeningSectionID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScreeningResultSectionRecord" nillable="true" type="tns:ScreeningResultSectionRecord" />
+  <xs:complexType name="ArrayOfScreeningResultSectionAnswerRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ScreeningResultSectionAnswerRecord" nillable="true" type="tns:ScreeningResultSectionAnswerRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfScreeningResultSectionAnswerRecord" nillable="true" type="tns:ArrayOfScreeningResultSectionAnswerRecord" />
+  <xs:complexType name="ScreeningResultSectionAnswerRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnswerText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AnswerValue" type="xs:int" />
+      <xs:element minOccurs="0" name="QuestionID" type="xs:int" />
+      <xs:element minOccurs="0" name="QuestionText" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScreeningResultSectionAnswerRecord" nillable="true" type="tns:ScreeningResultSectionAnswerRecord" />
+  <xs:complexType name="PatientValidationResult">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CorrectionsLog" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="PatientRecord" nillable="true" type="tns:Patient" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PatientValidationResult" nillable="true" type="tns:PatientValidationResult" />
+  <xs:complexType name="ExportMetaInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsNextGenMode" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsRpmsMode" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExportMetaInfo" nillable="true" type="tns:ExportMetaInfo" />
+</xs:schema>

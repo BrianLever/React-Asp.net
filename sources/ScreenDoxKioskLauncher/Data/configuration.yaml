@@ -1,0 +1,6 @@
+﻿key: 8Z4W
+secret: JzwK#SEsSKNTPzLNEgMMJEfJnW6hHuKZdbjvxTyg5Rccc8Ur6vXUngfEUnjgVimm
+screendoxServerBaseUrl: https://screendox.3sicorp.com/screendox
+screenDoxInstallationServiceBaseUrl: https://screendox.3sicorp.com/ScreenDoxKioskInstallApi
+kioskExeName: ScreenDoxKiosk.exe
+kioskApplicationDirectory: D:\Test\ScreenDox-Installation\app

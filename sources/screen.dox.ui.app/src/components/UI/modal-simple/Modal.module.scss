@@ -1,0 +1,60 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: #00000080;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+    overflow: hidden;
+  }
+  
+  .header {
+    padding: 1rem;
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-family: "hero-new",sans-serif;
+    font-size: 25.6px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    margin-right: calc(0em * -1);
+    text-transform: none;
+    color: #2e2e42;
+    transition-timing-function: cubic-bezier(0.400,0.000,0.200,1.000);
+  }
+  
+  .paper {
+    position: 'absolute';
+    width: 400;
+    // border: 2px solid #000;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+  
+  .actions {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  @media (min-width: 768px) {
+    .modal {
+      left: calc(50% - 20rem);
+      width: 40rem;
+    }
+  }
+  

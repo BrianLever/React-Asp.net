@@ -1,0 +1,3 @@
+%{TIMESTAMP_ISO8601:timestamp} %{LOGLEVEL:level} %{GREEDYDATA:message}
+
+https://grokdebug.herokuapp.com/

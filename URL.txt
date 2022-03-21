@@ -1,0 +1,30 @@
+
+React URL
+	https://screendox-dev.3sicorp.com/screendox-ngen-dev/
+
+Proto WordPress URL
+
+	https://proto.screendox.com/
+
+Legacy Asp.net URL
+
+	http://screendox.3sicorp.com/screendox/Default.aspx
+	
+	user = kgerhardt
+
+	password=Q!w2e3r4t5
+
+
+
+
+reference URL		https://3si2.com/
+
+
+Working PlatForm URL
+
+	https://dev.azure.com/SSSII/SDx%20-%203Si2/_wiki/wikis/Screendox%20Wiki/3/Setup-		Development-Environment
+
+
+Username:    admin-001
+
+Password:   Screendox--2021

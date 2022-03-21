@@ -1,0 +1,1 @@
+﻿CREATE LOGIN [frontdesk_appuser] WITH PASSWORD = '{PASSWORD}' , CHECK_EXPIRATION = OFF;

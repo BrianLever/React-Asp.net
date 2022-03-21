@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ScreeningProfile.master.cs"
+    Inherits="ScreeningProfileMaster" MasterPageFile="~/FrontDeskMaster.master" %>
+
+
+<%@ MasterType VirtualPath="~/FrontDeskMaster.master" %>
+<asp:Content runat="server" ID="content" ContentPlaceHolderID="cphContent">
+    <div class="w100" id="screeningProfileRoot">
+        <div class="lmar20 rmar20">
+            <asp:ContentPlaceHolder runat="server" ID="cphTop">
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+        <div class="fleft w20 leftMenu" id="screenProfileLeftMenu">
+            <asp:Menu runat="server" ID="menuLeft" DataSourceID="smdsLeftMenu" SkinID="LeftMenu">
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="smdsLeftMenu" runat="server" 
+                StartingNodeUrl="~/systemtools/ScreenProfileList.aspx"
+                ShowStartingNode="false" />
+        </div>
+        <div class="fleft w80" id="reports-content">
+            <asp:ContentPlaceHolder runat="server" ID="cphSubContent">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+         $(document).ready(function () {
+            $("#screenProfileLeftMenu").screeningProfileMasterCtrl({
+                "formObjectId": "<%= ScreeningProfileId %>"
+            });
+        });
+
+    </script>
+</asp:Content>

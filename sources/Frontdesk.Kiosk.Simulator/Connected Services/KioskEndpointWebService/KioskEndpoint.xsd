@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.frontdeskhealth.com" elementFormDefault="qualified" targetNamespace="http://www.frontdeskhealth.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:52014/endpoint/KioskEndpoint.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:52014/endpoint/KioskEndpoint.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:import schemaLocation="http://localhost:52014/endpoint/KioskEndpoint.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/FrontDesk.Server.Services" />
+  <xs:import schemaLocation="http://localhost:52014/endpoint/KioskEndpoint.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/ScreenDox.Server.Common.Models" />
+  <xs:import schemaLocation="http://localhost:52014/endpoint/KioskEndpoint.svc?xsd=xsd7" namespace="http://www.screendox.com" />
+  <xs:element name="SaveScreeningResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:ScreeningResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ScreeningResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ScreeningPatientInfoWithAddress">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="KioskID" type="xs:short" />
+          <xs:element minOccurs="0" name="ScreeningID" nillable="true" type="xs:string" />
+          <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_sectionAnswers" nillable="true" type="q1:ArrayOfKeyValueOfstringScreeningSectionResult34V4oZCD" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ScreeningResult" nillable="true" type="tns:ScreeningResult" />
+  <xs:complexType name="ScreeningPatientInfoWithAddress">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ScreeningPatientIdentity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StateID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StateName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StreetAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ScreeningPatientInfoWithAddress" nillable="true" type="tns:ScreeningPatientInfoWithAddress" />
+  <xs:complexType name="ScreeningPatientIdentity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Birthday" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScreeningPatientIdentity" nillable="true" type="tns:ScreeningPatientIdentity" />
+  <xs:complexType name="ScreeningSectionResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnswerValue" type="xs:int" />
+      <xs:element minOccurs="0" name="Indicates" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Score" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ScoreLevel" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ScoreLevelLabel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScreeningSectionID" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_answers" nillable="true" type="q2:ArrayOfKeyValueOfintScreeningSectionQuestionResult34V4oZCD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScreeningSectionResult" nillable="true" type="tns:ScreeningSectionResult" />
+  <xs:complexType name="ScreeningSectionQuestionResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnswerValue" type="xs:int" />
+      <xs:element minOccurs="0" name="QuestionID" type="xs:int" />
+      <xs:element minOccurs="0" name="ScreeningSectionID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScreeningSectionQuestionResult" nillable="true" type="tns:ScreeningSectionQuestionResult" />
+  <xs:element name="SaveScreeningResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveScreeningResultResult" nillable="true" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveScreeningResult_v2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:ScreeningResult" />
+        <xs:element minOccurs="0" name="timeLog" nillable="true" type="tns:ArrayOfScreeningTimeLogRecord" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfScreeningTimeLogRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ScreeningTimeLogRecord" nillable="true" type="tns:ScreeningTimeLogRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfScreeningTimeLogRecord" nillable="true" type="tns:ArrayOfScreeningTimeLogRecord" />
+  <xs:complexType name="ScreeningTimeLogRecord">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ended" type="q3:DateTimeOffset" />
+      <xs:element minOccurs="0" name="ScreeningSectionID" nillable="true" type="xs:string" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Started" type="q4:DateTimeOffset" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScreeningTimeLogRecord" nillable="true" type="tns:ScreeningTimeLogRecord" />
+  <xs:element name="SaveScreeningResult_v2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveScreeningResult_v2Result" nillable="true" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveDemographicsResults">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="tns:PatientDemographicsKioskResult" />
+        <xs:element minOccurs="0" name="timeLog" nillable="true" type="tns:ArrayOfScreeningTimeLogRecord" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PatientDemographicsKioskResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ScreeningPatientIdentity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountyNameOfResidence" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountyOfResidence" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountyStateOfResidence" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EducationLevelId" type="xs:int" />
+          <xs:element minOccurs="0" name="GenderId" type="xs:int" />
+          <xs:element minOccurs="0" name="KioskID" type="xs:short" />
+          <xs:element minOccurs="0" name="LivingOnReservationId" type="xs:int" />
+          <xs:element minOccurs="0" name="MaritalStatusId" type="xs:int" />
+          <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MilitaryExperience" nillable="true" type="q5:ArrayOfint" />
+          <xs:element minOccurs="0" name="RaceId" type="xs:int" />
+          <xs:element minOccurs="0" name="SexualOrientationId" type="xs:int" />
+          <xs:element minOccurs="0" name="TribalAffiliation" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PatientDemographicsKioskResult" nillable="true" type="tns:PatientDemographicsKioskResult" />
+  <xs:element name="SaveDemographicsResultsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveDemographicsResultsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="kioskID" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PingResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ping_v2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/FrontDesk.Server.Services" minOccurs="0" name="message" nillable="true" type="q6:KioskPingMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ping_v2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Ping_v2Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ping_v3">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ScreenDox.Server.Common.Models" minOccurs="0" name="message" nillable="true" type="q7:KioskPingMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ping_v3Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Ping_v3Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModifiedAgeSettings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lastModifiedDateUTC" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModifiedAgeSettingsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetModifiedAgeSettingsResult" nillable="true" type="tns:ArrayOfScreeningSectionAgeView" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfScreeningSectionAgeView">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ScreeningSectionAgeView" nillable="true" type="tns:ScreeningSectionAgeView" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfScreeningSectionAgeView" nillable="true" type="tns:ArrayOfScreeningSectionAgeView" />
+  <xs:complexType name="ScreeningSectionAgeView">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsEnabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastModifiedDateUTC" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MinimalAge" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="ScreeningSectionID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScreeningSectionAgeView" nillable="true" type="tns:ScreeningSectionAgeView" />
+  <xs:element name="GetModifiedAgeSettings_v2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="kioskId" type="xs:short" />
+        <xs:element minOccurs="0" name="lastModifiedDateUTC" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModifiedAgeSettings_v2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetModifiedAgeSettings_v2Result" nillable="true" type="tns:ArrayOfScreeningSectionAgeView" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestKioskInstallation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="kioskKey" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestKioskInstallationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestKioskInstallationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientScreeningFrequencyStatistics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="patient" nillable="true" type="tns:ScreeningPatientIdentity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientScreeningFrequencyStatisticsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetPatientScreeningFrequencyStatisticsResult" nillable="true" type="q8:ArrayOfKeyValueOfstringint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientScreeningFrequencyStatistics_v2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="patient" nillable="true" type="tns:ScreeningPatientIdentity" />
+        <xs:element minOccurs="0" name="kioskID" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientScreeningFrequencyStatistics_v2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetPatientScreeningFrequencyStatistics_v2Result" nillable="true" type="q9:ArrayOfKeyValueOfstringint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModifiedLookupValues">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lastModifiedDateUTC" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="kioskID" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModifiedLookupValuesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetModifiedLookupValuesResult" nillable="true" type="q10:ArrayOfKeyValueOfstringArrayOfLookupValueh7ln8uBg" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLookupValuesDeleteLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lastModifiedDateUTC" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="kioskID" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLookupValuesDeleteLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetLookupValuesDeleteLogResult" nillable="true" type="q11:ArrayOfKeyValueOfstringArrayOfLookupValueh7ln8uBg" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidatePatient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://www.screendox.com" minOccurs="0" name="patient" nillable="true" type="q12:PatientSearch" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidatePatientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://www.screendox.com" minOccurs="0" name="ValidatePatientResult" nillable="true" type="q13:PatientSearch" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

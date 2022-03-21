@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1804A9C6-E97C-43B7-B90E-581C2746EFC9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrontDesk.Server</RootNamespace>
+    <AssemblyName>FrontDesk.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>FrontDesk.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Server Setup|AnyCPU' ">
+    <OutputPath>bin\Server Setup\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=19.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.19.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac, Version=6.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.6.0.0\lib\netstandard2.0\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Bootstrapper, Version=2.0.3.13, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bootstrapper.2.0.3.13\lib\Net40\Bootstrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.NLog41, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.NLog41.3.4.1\lib\net40\Common.Logging.NLog41.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.8.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.8.1\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Essential.Diagnostics.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9d041bca93991466, processorArchitecture=MSIL">
+      <HintPath>..\packages\Essential.Diagnostics.Core.2.0.206\lib\Essential.Diagnostics.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Essential.Diagnostics.RollingFileTraceListener, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9d041bca93991466, processorArchitecture=MSIL">
+      <HintPath>..\packages\Essential.Diagnostics.RollingFileTraceListener.2.0.206\lib\Essential.Diagnostics.RollingFileTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.0.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\!!!Required Components\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.4.2.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.7.9\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.5.0.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\FrontDeskServer\App_GlobalResources\Labels.Designer.cs">
+      <Link>Resources\Labels.Designer.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labels.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BhsIndicatorPdfReportBase.cs" />
+    <Compile Include="Configuration\ScreeningAgesDbProvider.cs" />
+    <Compile Include="Controllers\IVisitCreator.cs" />
+    <Compile Include="Controllers\ScreeningResultCreator.cs" />
+    <Compile Include="Controllers\VisitCreator.cs" />
+    <Compile Include="Data\BhsVisits\BhsDemographicsDb.cs" />
+    <Compile Include="Data\BhsVisits\BhsFollowUpReportDb.cs" />
+    <Compile Include="Data\BhsVisits\BhsFollowUpDb.cs" />
+    <Compile Include="Data\BhsVisits\BhsHistoryDb.cs" />
+    <Compile Include="Data\BhsVisits\BhsVisitReportDb.cs" />
+    <Compile Include="Data\BhsVisits\BhsVisitDb.cs" />
+    <Compile Include="Data\BhsVisits\ILookupListsDataSource.cs" />
+    <Compile Include="Data\BhsVisits\ILookupValueSource.cs" />
+    <Compile Include="Data\BhsVisits\ITypeaheadDataSource.cs" />
+    <Compile Include="Data\BhsVisits\LookupLists.cs" />
+    <Compile Include="Data\BhsVisits\LookupListsDataSource.cs" />
+    <Compile Include="Data\BhsVisits\TypeaheadDb.cs" />
+    <Compile Include="Data\BhsVisits\LookupValueDb.cs" />
+    <Compile Include="Data\BhsVisits\TypeaheadDataSource.cs" />
+    <Compile Include="Data\ColumbiaSuicideReportDb.cs" />
+    <Compile Include="Data\IBranchLocationDb.cs" />
+    <Compile Include="Data\Logging\IErrorLogDb.cs" />
+    <Compile Include="Data\ScreeningProfile\IScreeningFrequencyRepository.cs" />
+    <Compile Include="Data\ScreeningProfile\IScreeningProfileFrequencyRepository.cs" />
+    <Compile Include="Data\ScreeningProfile\ScreeningProfileFrequencyDb.cs" />
+    <Compile Include="Data\ScreeningProfile\ScreeningProfileMinimalAgeDatabase.cs" />
+    <Compile Include="Data\Configuration\VisitSettingsDatabase.cs" />
+    <Compile Include="Data\Helpers\ScreeningResultByProblemFilterModelToSqlHelper.cs" />
+    <Compile Include="Data\KioskDataValues\LookupValuesDeleteLogDb.cs" />
+    <Compile Include="Data\ScreeningProfile\ScreeningProfileDb.cs" />
+    <Compile Include="Data\ScreeningResultExportDb.cs" />
+    <Compile Include="Data\TimeLog\TimeLogRecordDb.cs" />
+    <Compile Include="Descriptors\BhsWebPagesDescriptor.cs" />
+    <Compile Include="KioskHelper.cs" />
+    <Compile Include="Licensing\Services\ILicenseService.cs" />
+    <Compile Include="Logging\ErrorLoggerService.cs" />
+    <Compile Include="Logging\IErrorLoggerService.cs" />
+    <Compile Include="Logging\SecurityLog.cs" />
+    <Compile Include="Membership\IUserService.cs" />
+    <Compile Include="Membership\UserService.cs" />
+    <Compile Include="Messages\TextStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Printouts\Bhs\BhsCheckInBySortPdfPrintout.cs" />
+    <Compile Include="Printouts\Bhs\BhsDemographicsPdfPrintout.cs" />
+    <Compile Include="Printouts\Bhs\BhsFollowUpListPdfPrintout.cs" />
+    <Compile Include="Printouts\Bhs\BhsFollowUpPdfPrintout.cs" />
+    <Compile Include="Printouts\Bhs\BhsListPagePrintoutBase.cs" />
+    <Compile Include="Printouts\Bhs\BhsListPrintoutBase.cs" />
+    <Compile Include="Printouts\Bhs\BhsPrintoutBase.cs" />
+    <Compile Include="Printouts\Bhs\BhsVisitPdfPrintout.cs" />
+    <Compile Include="Printouts\PdfReachTextFormatter.cs" />
+    <Compile Include="Printouts\TableColumnDefinition.cs" />
+    <Compile Include="Reports\bhs\BhsDemopgraphicsVisitsPdfReport.cs" />
+    <Compile Include="Reports\bhs\BhsFollowUpOutcomesPdfReport.cs" />
+    <Compile Include="Reports\bhs\BhsPdfReportBase.cs" />
+    <Compile Include="Reports\AnxietyBhsPdfReportSection.cs" />
+    <Compile Include="Reports\DrugOfChoicePdfReportSection.cs" />
+    <Compile Include="Reports\DrugsOfChoiceByAgePdfReport.cs" />
+    <Compile Include="Reports\ExcelReports\ErrorLogExcelReportPart.cs" />
+    <Compile Include="Reports\ExcelReports\ErrorLogExcelExport.cs" />
+    <Compile Include="Reports\ExcelReports\CombinedResultsExcelReportPart.cs" />
+    <Compile Include="Reports\ExcelReports\DrugsOfChoiceResultsExcelReportPart.cs" />
+    <Compile Include="Reports\ExcelReports\ExcelExportBase.cs" />
+    <Compile Include="Reports\ScreenTimeLogPdfReport.cs" />
+    <Compile Include="Reports\bhs\BhsVisitOutcomesPdfReport.cs" />
+    <Compile Include="Reports\ExcelReports\ExcelReportPartDataTableBase.cs" />
+    <Compile Include="Reports\ExcelReports\ExcelReportPartModelBase.cs" />
+    <Compile Include="Reports\ExcelReports\ScreeningResultsExcelReportPart.cs" />
+    <Compile Include="Reports\ExcelReports\BhsDemographicsExcelReportPart.cs" />
+    <Compile Include="Reports\ExcelReports\BhsFollowUpExcelReportPart.cs" />
+    <Compile Include="Reports\ExcelReports\BhsVisitExcelReportPart.cs" />
+    <Compile Include="Reports\ExcelReports\BhsReportExcelReport.cs" />
+    <Compile Include="Reports\ExcelReports\ExcelCellFactory.cs" />
+    <Compile Include="Reports\ExcelReports\ExcelCellStyle.cs" />
+    <Compile Include="Reports\ExcelReports\ExcelDocumentSettings.cs" />
+    <Compile Include="Reports\ExcelReports\TableColumnDefinition.cs" />
+    <Compile Include="Reports\ExcelReports\TableRowDefinition.cs" />
+    <Compile Include="Reports\ProblemGamblingBhsPdfReportSection.cs" />
+    <Compile Include="Screening\AnxietyScreeningScoring.cs" />
+    <Compile Include="Screening\DrugOfChoiceScreeningScoring.cs" />
+    <Compile Include="Screening\IndicatorReportItemFactory.cs" />
+    <Compile Include="Screening\Models\BhsCheckInItemPrintoutModel.cs" />
+    <Compile Include="Screening\Models\BhsFollowUpListItemDtoModel.cs" />
+    <Compile Include="Screening\Models\BhsFollowUpListItemPrintoutModel.cs" />
+    <Compile Include="Printouts\Bhs\BhsVisitListPdfPrintout.cs" />
+    <Compile Include="Reports\PdfTextFormattingExtensions.cs" />
+    <Compile Include="Reports\ViolenceBhsPdfReportSection.cs" />
+    <Compile Include="Reports\SubstanceAbuseBhsPdfReportSection.cs" />
+    <Compile Include="Reports\DepressionBhsPdfReportSection.cs" />
+    <Compile Include="Reports\BhsIndicatorByAgePdfReport.cs" />
+    <Compile Include="BhsIndicatorPdfReport.cs" />
+    <Compile Include="Reports\BhsPdfReport.cs" />
+    <Compile Include="Configuration\AppSettings.cs" />
+    <Compile Include="Configuration\ServerSettings.cs" />
+    <Compile Include="Controllers\IDateService.cs" />
+    <Compile Include="Controllers\RpmsExportController.cs" />
+    <Compile Include="Data\BranchLocationDb.cs" />
+    <Compile Include="Data\FDMembershipUserDb.cs" />
+    <Compile Include="Data\IndicatorReportDb.cs" />
+    <Compile Include="Data\IPatientScreeningFrequencyRepository.cs" />
+    <Compile Include="Data\Logging\ErrorLogDb.cs" />
+    <Compile Include="Data\PatientScreeningFrequencyDatabase.cs" />
+    <Compile Include="Data\ScreeningResultDb.cs" />
+    <Compile Include="Data\Logging\SecurityLogDb.cs" />
+    <Compile Include="Data\SecurityQuestionDb.cs" />
+    <Compile Include="Data\ScreeningScoreDb.cs" />
+    <Compile Include="Data\StateDatabase.cs" />
+    <Compile Include="Data\FDUserDatabase.cs" />
+    <Compile Include="Extensions\WizardExtensions.cs" />
+    <Compile Include="GPRAReportingTime.cs" />
+    <Compile Include="Licensing\Activation.cs" />
+    <Compile Include="Licensing\License.cs" />
+    <Compile Include="Licensing\PasswordProtectedFeatures.cs" />
+    <Compile Include="Licensing\Services\LicenseCertificate.cs" />
+    <Compile Include="Licensing\Services\LicenseService.cs" />
+    <Compile Include="Licensing\Services\LicenseServiceDb.cs" />
+    <Compile Include="Logging\ErrorLog.cs" />
+    <Compile Include="Membership\DuplicatePasswordException.cs" />
+    <Compile Include="Membership\FDMembershipUser.cs" />
+    <Compile Include="Membership\Providers\SingleApplicationMembershipProvider.cs" />
+    <Compile Include="Membership\Providers\SingleApplicationMembershipProviderRoleProvider.cs" />
+    <Compile Include="Membership\UserRoles.cs" />
+    <Compile Include="Messages\ConfirmMessage.cs" />
+    <Compile Include="Messages\CustomError.cs" />
+    <Compile Include="Messages\CustomMessage.cs" />
+    <Compile Include="PdfPageEvents.cs" />
+    <Compile Include="PdfReport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\BhsPdfReportSectionBase.cs" />
+    <Compile Include="Reports\PdfDocumentSettings.cs" />
+    <Compile Include="Reports\AlcoholBhsPdfReportSection.cs" />
+    <Compile Include="Reports\TobaccoBhsPdfReportSection.cs" />
+    <Compile Include="Resources\Copyrights.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Copyrights.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\TextMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Screening\AlhoholScreeningScoring.cs" />
+    <Compile Include="Data\Configuration\ScreeningFrequencyDatabase.cs" />
+    <Compile Include="Screening\BhsIndicatorReportByAgeItem.cs" />
+    <Compile Include="Screening\IndicatorReportByAgeItem.cs" />
+    <Compile Include="Screening\Mappers\BhsPatientAddressmapper.cs" />
+    <Compile Include="Screening\Mappers\BhsVisitListItemDtoModelMapper.cs" />
+    <Compile Include="Screening\Mappers\IndicatorReportByAgeItemMapper.cs" />
+    <Compile Include="Screening\Models\BhsBHIReportSectionByAgeViewModel.cs" />
+    <Compile Include="Screening\Models\BhsFollowUpOutcomesViewModel.cs" />
+    <Compile Include="Screening\Models\BhsSearchRelatedItemsFilter.cs" />
+    <Compile Include="Screening\Models\BhsVisitListItemPrintoutModel.cs" />
+    <Compile Include="Screening\Models\BhsVisitListItemDtoModel.cs" />
+    <Compile Include="Screening\Models\BhsFollowUpViewModel.cs" />
+    <Compile Include="Screening\Models\BhsHistoryItem.cs" />
+    <Compile Include="Screening\Models\BhsScreeningHistoryItem.cs" />
+    <Compile Include="Screening\Models\BhsVisitOutcomesViewModel.cs" />
+    <Compile Include="Screening\Models\BhsVisitViewModel.cs" />
+    <Compile Include="Screening\Models\DischargedDescriptor.cs" />
+    <Compile Include="Screening\Models\BhsIndicatorReportByAgeItemViewModel.cs" />
+    <Compile Include="Screening\Models\DrugOfChoiceModel.cs" />
+    <Compile Include="Screening\Models\Export\BhsReportExport.cs" />
+    <Compile Include="Screening\Models\Export\BhsSearchFilterModel.cs" />
+    <Compile Include="Screening\Models\IndicatorReportByAgeItemViewModel.cs" />
+    <Compile Include="Screening\IScreeningScoreLevelRepository.cs" />
+    <Compile Include="Screening\Models\BhsDemographicsReportByAgeViewModel.cs" />
+    <Compile Include="Screening\Models\IndicatorReportByAgeViewModel.cs" />
+    <Compile Include="Screening\Models\IndicatorReportViewModel.cs" />
+    <Compile Include="Screening\Models\IPatientId.cs" />
+    <Compile Include="Screening\Models\PatientCheckInDtoModel.cs" />
+    <Compile Include="Screening\Models\ScreeningsByScoreLevelCountResult.cs" />
+    <Compile Include="Screening\Models\ScreeningSectionScoreHint.cs" />
+    <Compile Include="Screening\Models\ScreeningTimeLogReportItem.cs" />
+    <Compile Include="Screening\Models\ScreeningTimeLogReportViewModel.cs" />
+    <Compile Include="Screening\Models\SearchRelatedItemsFilter.cs" />
+    <Compile Include="Screening\Models\SectionScoreLevelCountResult.cs" />
+    <Compile Include="Screening\PatientCheckInViewModel.cs" />
+    <Compile Include="Screening\PatientScreeningFrequencyService.cs" />
+    <Compile Include="Screening\Scoring\ScreeningSectionScoreHintCreator.cs" />
+    <Compile Include="Screening\Services\BhsDemographicsIndicatorReportService.cs" />
+    <Compile Include="Screening\Services\BhsDemographicsService.cs" />
+    <Compile Include="Screening\Services\BhsExportService.cs" />
+    <Compile Include="Screening\Services\BhsFollowUpService.cs" />
+    <Compile Include="Screening\Services\BhsFollowUpIndicatorReportService.cs" />
+    <Compile Include="Screening\Services\BhsVisitIndicatorReportService.cs" />
+    <Compile Include="Screening\Services\BhsVisitService.cs" />
+    <Compile Include="Screening\Services\BranchLocationService.cs" />
+    <Compile Include="Screening\Services\IBhsVisitService.cs" />
+    <Compile Include="Screening\Services\IBranchLocationService.cs" />
+    <Compile Include="Screening\Services\IIndicatorReportService.cs" />
+    <Compile Include="Screening\Services\IndicatorReportService.cs" />
+    <Compile Include="Screening\Services\IScreeningProfileFrequencyService.cs" />
+    <Compile Include="Screening\Services\IScreeningProfileMinimalAgeService.cs" />
+    <Compile Include="Screening\Services\ScreeningProfileFrequencyService.cs" />
+    <Compile Include="Screening\Services\ScreeningProfileMinimalAgeService.cs" />
+    <Compile Include="Screening\Services\ScreeningProfileService.cs" />
+    <Compile Include="Screening\Services\ScreeningScoreLevelService.cs" />
+    <Compile Include="Screening\Services\ScreeningTimeLogService.cs" />
+    <Compile Include="Screening\Services\VisitSettingsService.cs" />
+    <Compile Include="Screening\Services\ScreeningDefinitionService.cs" />
+    <Compile Include="Screening\Services\ScreeningResultService.cs" />
+    <Compile Include="Screening\ProblemGamblingScreeningScoring.cs" />
+    <Compile Include="Screening\SubstanceAbuseScreeningScoring.cs" />
+    <Compile Include="Screening\DepressionScreeningScoring.cs" />
+    <Compile Include="Screening\IndicatorReportItem.cs" />
+    <Compile Include="Screening\PartnerViolenceScreeningScoring.cs" />
+    <Compile Include="Screening\ScreeningResultHelper.cs" />
+    <Compile Include="Screening\ScreeningScoreLevel.cs" />
+    <Compile Include="Screening\ScreeningScoring.cs" />
+    <Compile Include="Screening\ScreeningScoringFactory.cs" />
+    <Compile Include="Screening\TobaccoScreeningScoring.cs" />
+    <Compile Include="FDUser.cs" />
+    <Compile Include="SecurityQuestion.cs" />
+    <Compile Include="Services\CustomWcfHostFactory.cs" />
+    <Compile Include="Services\IKioskEndpoint.cs" />
+    <Compile Include="Services\IValidatePatientRecordService.cs" />
+    <Compile Include="Services\KioskEndpoint.cs" />
+    <Compile Include="Services\ScreeningSectionAgeView.cs" />
+    <Compile Include="Services\Security\KioskAuthorizeException.cs" />
+    <Compile Include="Services\Security\KioskEndpointHeaderDescriptor.cs" />
+    <Compile Include="Utils\FilePathResolver.cs" />
+    <Compile Include="Web\AccessPermissions.cs" />
+    <Compile Include="Web\BaseManagementWebForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\BaseWebForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Controls\AsyncUpdateIndicator.cs" />
+    <Compile Include="Web\Controls\BaseFormUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Controls\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Controls\BaseWebFormUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Controls\ExcelExport.cs" />
+    <Compile Include="Web\Controls\ExcelExportButton.cs" />
+    <Compile Include="Web\Controls\FormLabel.cs" />
+    <Compile Include="Web\Controls\Grid\dynamiccontrolsplaceholder.cs" />
+    <Compile Include="Web\Controls\Grid\HierarDynamicGridExtender.cs" />
+    <Compile Include="Web\Controls\Grid\HierarColumn.cs" />
+    <Compile Include="Web\Controls\Grid\HierarDynamicGrid.cs" />
+    <Compile Include="Web\Controls\Pager.cs" />
+    <Compile Include="Web\Controls\Phone.cs" />
+    <Compile Include="Web\Controls\PhoneTextBox.cs" />
+    <Compile Include="Web\Controls\RichDatePicker.cs" />
+    <Compile Include="Web\Controls\ScreenListUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Controls\YesNoLabel.cs" />
+    <Compile Include="Web\Extensions\ListControlExtensions.cs" />
+    <Compile Include="Web\Formatters\IndicatorReportMainQuestionFormatter.cs" />
+    <Compile Include="Web\IndicatorReportBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Notification\NotificationCategory.cs" />
+    <Compile Include="Web\Notification\NotificationMessage.cs" />
+    <Compile Include="Web\Notification\NotificationMessagesHub.cs" />
+    <Compile Include="Web\PageIDSource.cs" />
+    <Compile Include="Web\Resources\Strings.Designer.cs" />
+    <Compile Include="Web\RestApi\TypeaheadRestHttpHandler.cs" />
+    <Compile Include="Web\WebPageParametersDescriptor.cs" />
+    <Compile Include="Web\WebUIHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\FrontDeskServer\App_GlobalResources\Labels.resx">
+      <Link>Resources\Labels.resx</Link>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Labels.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages\TextStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TextStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Copyrights.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Copyrights.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TextMessages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TextMessages.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web\Resources\Strings.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FrontDesk.Common\FrontDesk.Common.csproj">
+      <Project>{CCFD383D-DE2A-4CC8-B9BE-4AEB515328B3}</Project>
+      <Name>FrontDesk.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk.Licensing\FrontDesk.Licensing.csproj">
+      <Project>{B722E384-68B3-4B0F-9152-C80AFE82A567}</Project>
+      <Name>FrontDesk.Licensing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrontDesk\FrontDesk.csproj">
+      <Project>{277C5FEB-A989-48C4-B6DC-C8EF41F5C215}</Project>
+      <Name>FrontDesk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPMS.Common\RPMS.Common.csproj">
+      <Project>{d0be6581-5428-4cde-a4f8-f9282bd087d8}</Project>
+      <Name>RPMS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScreenDox.Rpms.Common.Models\ScreenDox.Rpms.Common.Models.csproj">
+      <Project>{1a999930-8849-40cc-83e8-0d70e3ed61c5}</Project>
+      <Name>ScreenDox.Rpms.Common.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScreenDox.Server.Common\ScreenDox.Server.Common.csproj">
+      <Project>{bc1e2abe-1809-4bd9-80bc-f04ae74c1fdb}</Project>
+      <Name>ScreenDox.Server.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Screendox.Server.Models\ScreenDox.Server.Models.csproj">
+      <Project>{897817ac-5b59-4098-b6dc-22d42e73f1d9}</Project>
+      <Name>ScreenDox.Server.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\Styles\DatePicker.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\images\cal_ico.png" />
+    <EmbeddedResource Include="Web\images\calendar_ico.png" />
+    <EmbeddedResource Include="Web\Controls\Grid\HierarDynamicGridBehavior.js" />
+    <EmbeddedResource Include="Web\Controls\Grid\images\collapse_grid.png" />
+    <EmbeddedResource Include="Web\Controls\Grid\images\expand_grid.png" />
+    <Content Include="Web\Controls\Grid\Startup.js" />
+    <EmbeddedResource Include="Web\scripts\ClientValidator.js" />
+    <EmbeddedResource Include="Web\images\loader.gif" />
+    <EmbeddedResource Include="Web\scripts\AsyncUpdateIndicator.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="FrontDesk.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

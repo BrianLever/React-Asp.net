@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Root" roles="*">
+    <siteMapNode url="~/Default.aspx" title="Screen"  description="Screen" />
+    <siteMapNode url="~/Bhs/BhsVisitList.aspx" title="Visit">
+    </siteMapNode>
+    <siteMapNode url="~/Bhs/FollowUpList.aspx" title="Follow-Up">
+    </siteMapNode>
+    <siteMapNode url="~/Reports/Default.aspx" title="Reports">
+
+      <siteMapNode url="~/Reports/BhsIndexReport.aspx" title="Screening Results by Problem"  />
+      <siteMapNode url="~/Reports/IndexReportByAge.aspx" title="Screening Results by Age"  />
+      <siteMapNode url="~/Reports/ScreeningResultsByProblem.aspx" title="Screening Results by Sort"  />
+      <siteMapNode url="~/Reports/DrugOfChoiceByAge.aspx" title="Drug Use Results by Age"  />
+
+      <siteMapNode url="~/Reports/IndexReportPatientDemographics.aspx" title="Patient Demographics - Visits"  />
+      <siteMapNode url="~/Reports/IndexReportBhsVisitOutcomes.aspx" title="Visits Outcomes"  />
+      <siteMapNode url="~/Reports/IndexReportBhsFollowUpOutcomes.aspx" title="Follow-Up Outcomes"  />
+      <siteMapNode url="~/Reports/ScreenTimeLog.aspx" title="Screen Time Log"  />
+      <siteMapNode url="~/Reports/ExportToExcel.aspx" title="Export to Excel"  />
+    </siteMapNode>
+    <siteMapNode url="~/UserProfile.aspx" title="My Profile"  description="My profile">
+      <siteMapNode url="~/ChangePassword.aspx" title="Change Password"  description="Change Password" />
+      <siteMapNode url="~/ChangeSecurityQuestion.aspx" title="Change Security Question"  description="Change Security Question" />
+    </siteMapNode>
+    <siteMapNode url="UserList.aspx" title="User List"  description="Users" >
+      <siteMapNode url="~/UserDetails.aspx" title="User Account Details"  description="User Account Details" />
+    </siteMapNode>
+
+    <siteMapNode url="~/management/BranchLocationList.aspx" title="Branch Locations"  />
+    <siteMapNode url="~/management/KioskList.aspx" title="Kiosks"/>
+    <siteMapNode url="~/systemtools/Default.aspx" title="System Tools" description="System Tools">
+      <siteMapNode url="~/systemtools/ErrorLogList.aspx" title="Error Log"  description="Error Log" />
+      <siteMapNode url="~/systemtools/SecurityLog.aspx" title="Security Log" description="Security Log"></siteMapNode>
+      <siteMapNode url="~/systemtools/SystemSettings.aspx" title="System Settings" description="System Settings"></siteMapNode>
+      <siteMapNode url="~/systemtools/LicenseManagement.aspx" title="Registration" description="Registered product licenses"></siteMapNode>
+      <siteMapNode url="~/systemtools/RpmsCredentials.aspx" title="EHR Credentials" description="Manage EHR-account credentials"></siteMapNode>
+
+      <siteMapNode url="~/systemtools/ScreenProfileList.aspx" title="Screen Profiles">
+        <siteMapNode url="~/systemtools/ScreenProfile.aspx" title="Screen Profile"/>
+        <siteMapNode url="~/systemtools/ScreenProfileMinimalAge.aspx" title="Screening Minimum Age"  description="Configure minimum age for screening measures" />
+        <siteMapNode url="~/systemtools/ScreenProfileFrequencySettings.aspx" title="Screening Frequency Settings" description="Set the frequency of the collection of contact information and number of screenings" />
+      </siteMapNode>
+
+      <siteMapNode url="~/systemtools/VisitSettings.aspx" title="Visit Settings"></siteMapNode>
+      <siteMapNode url="~/systemtools/AutoexportDashboard.aspx" title="Auto-Export Dashboard"></siteMapNode>
+      <siteMapNode url="~/systemtools/AgeGroupSettings.aspx" title="Age Groups"></siteMapNode>
+
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

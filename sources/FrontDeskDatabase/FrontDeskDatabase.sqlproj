@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">10.0</VisualStudioVersion>
+    <PostConversionRemoveFromScc />
+    <PostConversionAddToScc />
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DacVersion>4.5.0.0</DacVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <PostUpgradeAddToSCC>;D:\Projects\FrontDesk-vs2010\FrontDeskDatabase\FrontDeskDatabase.dbproj;D:\Projects\FrontDesk-vs2010\FrontDeskDatabase\Connections.txt;D:\Projects\FrontDesk-vs2010\FrontDeskDatabase\Scripts\Post-Deployment\Script.PostDeployment.sql;D:\Projects\FrontDesk-vs2010\FrontDeskDatabase\Scripts\Pre-Deployment\Script.PreDeployment.sql</PostUpgradeAddToSCC>
+    <PreviousProjectVersion>4.1</PreviousProjectVersion>
+    <UpgradedFromDBP>True</UpgradedFromDBP>
+    <Name>FrontDeskDatabase</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath />
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <LoadSqlClrTypes>True</LoadSqlClrTypes>
+    <ValidateCasingOnIdentifiers>False</ValidateCasingOnIdentifiers>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{c15579a0-9f07-48ce-b98f-b1b0ae878893}</ProjectGuid>
+    <GenerateDatabaseFile>False</GenerateDatabaseFile>
+    <GenerateCreateScript>True</GenerateCreateScript>
+    <DefaultSchema>dbo</DefaultSchema>
+    <TargetLanguage>CS</TargetLanguage>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <AnsiNullDefault>True</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseState>ONLINE</DatabaseState>
+    <UpdateOptions>READ_WRITE</UpdateOptions>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>LOCAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>FULL</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>NONE</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <DefaultFileStreamFilegroup />
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase />
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>FrontDesk</TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+  </PropertyGroup>
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <ItemGroup>
+    <Folder Include="Scripts" />
+    <Folder Include="Schema Comparisons" />
+    <Folder Include="Queries\IndicatorReport" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions" />
+    <Folder Include="Scripts\Production" />
+    <Folder Include="dbo\Views" />
+    <Folder Include="Scripts\Data" />
+    <Folder Include="dbo\StoredProcedures" />
+    <Folder Include="Export" />
+    <Folder Include="Export\Tables" />
+    <Folder Include="Export\StoredProcedures" />
+    <Folder Include="Change Scripts\OneTimeFixes" />
+    <Folder Include="Import" />
+    <Folder Include="Queries\Auto-export" />
+    <Folder Include="dbo\StoredProcedures\ExportExcel" />
+    <Folder Include="dbo\Views\ExcelExport" />
+    <Folder Include="Create Scripts\9.5.0.2" />
+    <Folder Include="Change Scripts\Published - Do not change\v10" />
+    <Folder Include="Change Scripts\Published - Do not change\old" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Change Scripts" />
+    <Folder Include="Change Scripts\Integrate Frontdesk with RPMS" />
+    <Folder Include="Change Scripts\Published - Do not change" />
+    <Folder Include="Create Scripts" />
+    <Folder Include="Create Scripts\SQL Compact" />
+    <Folder Include="Queries" />
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connections.txt" />
+    <None Include="Create Scripts\CreateDatabase.sql" />
+    <None Include="Create Scripts\install_server.sql" />
+    <None Include="Create Scripts\SQL Compact\AnswerScale.sql" />
+    <None Include="Create Scripts\SQL Compact\Screening.sql" />
+    <None Include="Create Scripts\SQL Compact\ScreeningSection.sql" />
+    <None Include="Create Scripts\SQL Compact\ScreeningSectionQuestion.sql" />
+    <None Include="Create Scripts\SQL Compact\State.sql" />
+    <None Include="Queries\CreateResultsStructures.sql" />
+    <None Include="Queries\IndicatorReport\TestPositiveNegativeSectionLevels.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Queries\IndicatorReport\IndicatorReportPosNegativeBySeverityLevels.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Queries\IndicatorReport\IndicatorReportPosNegativeBySeverityLevelsForTCC.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Queries\IndicatorReport\TestIndicatorReportTCCAnswers.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\SQL Compact\InsertQuestionnareData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Scripts\Production\CreateIssAppPoolLogin.sql" />
+    <None Include="Queries\IndicatorReport\IndicatorReportPosNegativeDepressionDeath.sql" />
+    <None Include="Queries\IndicatorReport\IndicatorReport_GetUniqueBhsIndicatorReport_v2.sql" />
+    <None Include="Queries\IndicatorReport\IndicatorReport_UniquePatientsPositiveByAges.sql" />
+    <None Include="Security\smart_export_user.sql" />
+    <None Include="dbo\Views\vBhsFollowUpForExport.sql" />
+    <None Include="Change Scripts\OneTimeFixes\FixBhsVisitScore.sql" />
+    <None Include="Queries\IndicatorReport\FilterStartForSortByProblemFilter.sql" />
+    <None Include="Import\ImportTribes.sqlce" />
+    <None Include="Import\LookupValue.csv" />
+    <None Include="Import\Tribes.csv" />
+    <None Include="Import\ImportCounty.sqlce" />
+    <None Include="Import\ImportLookupValue.sqlce" />
+    <None Include="Queries\IndicatorReport\GetUniqueBhsIndicatorReportByScoreLevel.sql" />
+    <None Include="Queries\IndicatorReport\GetBhsIndicatorReportByScoreLevelForDepression.sql" />
+    <None Include="Queries\IndicatorReport\GetBhsPositiveNagativeIndicatorReportForTCC.sql" />
+    <None Include="Queries\IndicatorReport\GetIndicatorReportUniquePatientsPositiveByAges.sql" />
+    <None Include="Queries\IndicatorReport\GetBhsIndicatorReportByScoreLevelAndAge.sql" />
+    <None Include="Queries\IndicatorReport\GetBhsIndicatorReportUniquePatientsByScoreLevelAndAgeForDepression.sql" />
+    <None Include="Queries\IndicatorReport\GetBhsIndicatorReportUniquePatientsByScoreLevelAndAge.sql" />
+    <None Include="Queries\IndicatorReport\GetFollowUpPatientReportByAge.sql" />
+    <None Include="FrontDeskDatabase.publish.xml" />
+    <None Include="FrontDeskDatabase_1.publish.xml" />
+    <None Include="Security\InitUsers.sql" />
+    <None Include="Security\Permissions_Roles.sql" />
+    <None Include="Queries\Auto-export\ExcludeRecords.sql" />
+    <None Include="Create Scripts\add_users.sql" />
+    <None Include="Create Scripts\create_branchlocations.sql" />
+    <None Include="Create Scripts\create_kioks.sql" />
+    <None Include="Change Scripts\v11.0.1.0.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <BuildContributorArgument Include="OutDir=$(OutDir)" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug.publish.xml" />
+    <None Include="Release.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Scripts\Script.PreDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Users.sql" />
+    <Build Include="dbo\Tables\Roles.sql" />
+    <Build Include="dbo\Tables\UsersInRoles.sql" />
+    <Build Include="dbo\Tables\UserDetails.sql" />
+    <Build Include="dbo\Tables\UserPasswordHistory.sql" />
+    <Build Include="dbo\Tables\SecurityQuestion.sql" />
+    <Build Include="dbo\Tables\SystemSettings.sql" />
+    <Build Include="dbo\Tables\DbVersion.sql" />
+    <Build Include="dbo\Tables\BranchLocation.sql" />
+    <Build Include="dbo\Tables\Users_BranchLocation.sql" />
+    <Build Include="dbo\Tables\Kiosk.sql" />
+    <Build Include="dbo\Tables\State.sql" />
+    <Build Include="dbo\Tables\ErrorLog.sql" />
+    <Build Include="dbo\Tables\AnswerScale.sql" />
+    <Build Include="dbo\Tables\AnswerScaleOption.sql" />
+    <Build Include="dbo\Tables\Screening.sql" />
+    <Build Include="dbo\Tables\ScreeningSection.sql" />
+    <Build Include="dbo\Tables\ScreeningSectionQuestion.sql" />
+    <Build Include="dbo\Tables\ScreeningScoreLevel.sql" />
+    <Build Include="dbo\Tables\ScreeningResult.sql" />
+    <Build Include="dbo\Tables\ScreeningSectionResult.sql" />
+    <Build Include="dbo\Tables\ScreeningSectionQuestionResult.sql" />
+    <Build Include="dbo\Tables\SecurityEventCategory.sql" />
+    <Build Include="dbo\Tables\SecurityEvent.sql" />
+    <Build Include="dbo\Tables\SecurityLog.sql" />
+    <Build Include="dbo\Tables\License.sql" />
+    <Build Include="dbo\Tables\ScreeningSectionAge.sql" />
+    <Build Include="dbo\Tables\ScreeningFrequency-removed.sql" />
+    <Build Include="Security\frontdesk_appuser.sql" />
+    <Build Include="Security\frontdesk_appuser_1.sql" />
+    <None Include="Security\Permissions.sql" />
+    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
+    <Build Include="dbo\Functions\fn_GetFullName.sql" />
+    <Build Include="dbo\Functions\fn_GetPatientName.sql" />
+    <Build Include="Scripts\Production\CreateSecurityRole.sql" />
+    <Build Include="dbo\Tables\RpmsCredentials.sql" />
+    <Build Include="dbo\Functions\fn_GetAge.sql" />
+    <None Include="Queries\IndicatorReport\IndicatorReportAgeDepressionDeath.sql" />
+    <None Include="Queries\IndicatorReport\IndicatorReportUniquePosNegativeBySeverityLevels.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Queries\IndicatorReport\IndicatorReportUniquePosNegativeDepressionDeath.sql" />
+    <None Include="Queries\IndicatorReport\IndicatorReportUniquePosNegativeBySeverityLevelsForTCC.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <Build Include="dbo\Tables\VisitSettings.sql" />
+    <Build Include="dbo\Tables\BhsVisit.sql" />
+    <Build Include="dbo\Tables\NewVisitReferralRecommendation.sql" />
+    <Build Include="dbo\Tables\NewVisitReferralRecommendationAccepted.sql" />
+    <Build Include="dbo\Tables\ReasonNewVisitReferralRecommendationNotAccepted.sql" />
+    <Build Include="dbo\Tables\Discharged.sql" />
+    <Build Include="dbo\Tables\Gender.sql" />
+    <Build Include="dbo\Tables\Race.sql" />
+    <Build Include="dbo\Tables\SexualOrientation.sql" />
+    <Build Include="dbo\Tables\MaritalStatus.sql" />
+    <Build Include="dbo\Tables\EducationLevel.sql" />
+    <Build Include="dbo\Tables\MilitaryExperience.sql" />
+    <Build Include="dbo\Tables\LivingOnReservation.sql" />
+    <Build Include="dbo\Tables\BhsDemographics.sql" />
+    <Build Include="dbo\Views\vBhsVisitsAndDemographics.sql" />
+    <Build Include="dbo\Tables\TreatmentAction.sql" />
+    <Build Include="dbo\Tables\BhsFollowUp.sql" />
+    <Build Include="dbo\Tables\PatientAttendedVisit.sql" />
+    <Build Include="dbo\Tables\FollowUpContactOutcome.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetHistoryOfPreviousNotEmptyScreenings.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetHistoryOfVisitsAndFollowUps.sql" />
+    <Build Include="dbo\StoredProcedures\uspSetMissingPatientAddress.sql" />
+    <None Include="dbo\Views\vBhsVisitTreatmentActionReport.sql" />
+    <Build Include="dbo\Tables\Tribe.sql" />
+    <Build Include="dbo\Tables\County.sql" />
+    <Build Include="dbo\Views\vBhsVisitsWithDemographics.sql" />
+    <Build Include="Hangfire.sql" />
+    <Build Include="export.sql" />
+    <Build Include="Export\Tables\SmartExportLog.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetScreeningResults.sql" />
+    <Build Include="Export\StoredProcedures\uspLogExportResult.sql" />
+    <Build Include="dbo\Views\vBhsVisitForExport.sql" />
+    <Build Include="dbo\Views\vBhsDemographics.sql" />
+    <Build Include="dbo\Functions\fn_IntListToTable.sql" />
+    <Build Include="dbo\Functions\fn_CheckMilitaryExperienceValues.sql" />
+    <Build Include="dbo\Functions\fn_GetMilitaryExperienceNames.sql" />
+    <Build Include="dbo\Views\vScreeningResultsForExcelExport.sql" />
+    <Build Include="dbo\Views\vScreeningResults.sql" />
+    <Build Include="dbo\Tables\ScreeningTimeLog.sql" />
+    <Build Include="dbo\Views\vScreeningTimeLogReport.sql" />
+    <Build Include="dbo\Tables\DrugOfChoice.sql" />
+    <Build Include="dbo\StoredProcedures\uspUpdateDrugOfChoice.sql" />
+    <None Include="Create Scripts\SQL Compact\LookupValue.sql" />
+    <None Include="Create Scripts\SQL Compact\Tribe.sql" />
+    <None Include="Create Scripts\SQL Compact\InsertLookupValue.sql" />
+    <None Include="Create Scripts\SQL Compact\County.sql" />
+    <Build Include="dbo\Tables\LookupValuesDeleteLog.sql" />
+    <Build Include="dbo\StoredProcedures\uspChangeKioskLastActivityDate.sql" />
+    <None Include="Queries\IndicatorReport\GetUniqueBhsIndicatorReportByScoreLevelForDepression.sql" />
+    <None Include="Queries\IndicatorReport\GetBhsIndicatorReportByScoreLevel.sql" />
+    <Build Include="dbo\Tables\ScreeningProfile.sql" />
+    <Build Include="dbo\StoredProcedures\uspCreateNewScreeningProfile.sql" />
+    <Build Include="dbo\Tables\ScreeningProfileFrequency.sql" />
+    <Build Include="dbo\Tables\ScreeningProfileSectionAge.sql" />
+    <Build Include="dbo\StoredProcedures\uspUpdateScreeningProfileAgeSettings.sql" />
+    <Build Include="dbo\StoredProcedures\uspUpdateScreeningProfileFrequency.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetAllBranchLocations.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetBranchLocation.sql" />
+    <Build Include="dbo\Views\vKiosk.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetScreeningProfileByKioskID.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetModifiedSectionMinimalAgeSettingsForKiosk.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetModifiedSectionMinimalAgeSettings.sql" />
+    <Build Include="dbo\StoredProcedures\uspScreeningProfileRefreshKioskSettings.sql" />
+    <Build Include="Export\Tables\PatientNameMap.sql" />
+    <Build Include="dbo\StoredProcedures\uspFindMatchedPatientForExport.sql" />
+    <Build Include="dbo\Functions\ufnMapPatientName.sql" />
+    <Build Include="Export\Tables\PatientNameCorrectionLog.sql" />
+    <Build Include="Export\StoredProcedures\uspAddPatientNameCorrectionLog.sql" />
+    <Build Include="dbo\StoredProcedures\uspUpdateScreeningResultPatientInfo.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetAllScoreLevels.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetQuestionPositiveScoreLevels.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetScreeningResultsForExport.sql" />
+    <Build Include="dbo\Views\vDrugsOfChoiceForExcelExport.sql" />
+    <Build Include="dbo\Views\ExcelExport\vUniquePatientScreenings.sql" />
+    <Build Include="dbo\Functions\fn_GetUniquePatientScreenings.sql" />
+    <Build Include="dbo\StoredProcedures\ExportExcel\uspGetUniquePatientScreeningResultsForExcelExport.sql" />
+    <Build Include="dbo\StoredProcedures\ExportExcel\uspGetUniqueDrugsOfChoiceScreeningsResultsForExcelExport.sql" />
+    <Build Include="dbo\StoredProcedures\ExportExcel\uspGetUniquePatientCombinedResultsForExcelExport.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetScreeningSections.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetScreeningSectionQuestions.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetBhsVisitByID.sql" />
+    <None Include="Create Scripts\9.5.0.2\InsertQuestionnareData.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\9.5.0.2\PopulateCounty.sql" />
+    <None Include="Create Scripts\9.5.0.2\PopulateLookups.sql" />
+    <None Include="Create Scripts\9.5.0.2\PopulateSettings_9.5.0.2.sql" />
+    <None Include="Create Scripts\9.5.0.2\PopulateTribe.sql" />
+    <None Include="Create Scripts\9.5.0.2\install_schema_9.5.0.2.sql" />
+    <None Include="Scripts\Data\InsertQuestionnareData.sql" />
+    <None Include="Scripts\Data\PopulateCounty.sql" />
+    <None Include="Scripts\Data\PopulateLookups.sql" />
+    <None Include="Scripts\Data\PopulateSettings.sql" />
+    <None Include="Scripts\Data\PopulateTribe.sql" />
+    <None Include="Create Scripts\9.5.0.2\Permissions_Roles.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetActiveUserByUsername.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v0.4.0.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v0.6.0.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v2.0.0.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\Published - Do not change\old\v3.0.0.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\Published - Do not change\old\v4.0.0_ksa.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\Published - Do not change\old\v4.0.1.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\Published - Do not change\old\v4.0.2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\Published - Do not change\old\v4.0.8.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Change Scripts\Published - Do not change\old\v4.5.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v5.0.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v5.0.1.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.0.0.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.0.0.1.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.0.0.2.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.0.0.3.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.0.0.4.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.0.1.30.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.0.2.4.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.1.0.1.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.1.1.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.2.0.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.2.1.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.2.2.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.3.0.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.3.1.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.3.1.1.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v6.3.1.2.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.0.0.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.0.0.1.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.0.0.2.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.0.0.3.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.0.0.4.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.0.0.5.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.0.0.6.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.0.0.7.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.0.1.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.0.1.1.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.0.2.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.1.0.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.1.0.1.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.1.0.2.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.1.0.3.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.1.0.4.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v7.1.0.5.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v8.0.0.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v9.0.0.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\old\v9.0.0.1.sql" />
+    <None Include="Change Scripts\Published - Do not change\v10\v10.0.1.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\v10\v10.0.1.1.sql" />
+    <None Include="Change Scripts\Published - Do not change\v10\v10.0.2.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\v10\v10.0.4.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\v10\v10.0.4.1.sql" />
+    <Build Include="Change Scripts\Published - Do not change\v10\v10.0.5.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\v10\v9.5.0.0.sql" />
+    <None Include="Change Scripts\Published - Do not change\v10\v9.5.0.1.sql" />
+    <Build Include="dbo\Tables\UsersRefreshToken.sql" />
+    <Build Include="dbo\StoredProcedures\uspAddUsersRefressToken.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetUsersRefressToken.sql" />
+    <Build Include="dbo\StoredProcedures\uspRevokeAllUsersRefressToken.sql" />
+    <Build Include="dbo\StoredProcedures\uspRevokeUsersRefressToken.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetUserByID.sql" />
+    <Build Include="dbo\Tables\ColumbiaSuicideReport.sql" />
+    <Build Include="dbo\Tables\ColumbiaSuicideRiskAssessmentReport.sql" />
+    <Build Include="dbo\StoredProcedures\uspAddColumbiaSuicideReport.sql" />
+    <None Include="Change Scripts\v11.0.2.0.sql" />
+    <Build Include="dbo\StoredProcedures\uspAddColumbiaSuicidalIdeation.sql" />
+    <Build Include="dbo\Tables\ColumbiaSuicidalIdeation.sql" />
+    <Build Include="dbo\Tables\ColumbiaIntensityIdeation.sql" />
+    <Build Include="dbo\Tables\ColumbiaSuicideBehaviorAct.sql" />
+    <Build Include="dbo\Tables\ColumbiaSuicideRiskAssessmentReport_OtherProtectiveFactors.sql" />
+    <Build Include="dbo\Tables\ColumbiaSuicideRiskAssessmentReport_OtherRiskFactors.sql" />
+    <Build Include="dbo\StoredProcedures\uspAddColumbiaIntensityIdeation.sql" />
+    <Build Include="dbo\StoredProcedures\uspAddColumbiaSuicideBehaviorAct.sql" />
+    <Build Include="dbo\StoredProcedures\uspAddColumbiaSuicideRiskAssessmentReport.sql" />
+    <Build Include="dbo\StoredProcedures\uspAddColumbiaSuicideRiskAssessmentReportOtherProtectiveFactors.sql" />
+    <Build Include="dbo\StoredProcedures\uspAddColumbiaSuicideRiskAssessmentReportOtherRiskFactors.sql" />
+    <Build Include="dbo\StoredProcedures\uspDeleteColumbiaSuicideReportItems.sql" />
+    <Build Include="dbo\Tables\ColumbiaSuicideRiskScoreLevel.sql" />
+    <None Include="Scripts\Data\SuicideRiskReportData.sql" />
+    <Build Include="dbo\StoredProcedures\uspUpdateColumbiaSuicideReport.sql" />
+    <Build Include="dbo\StoredProcedures\uspUpdateColumbiaSuicideRiskAssessmentReport.sql" />
+    <Build Include="dbo\Views\vColumbiaSuicideReport.sql" />
+    <Build Include="dbo\StoredProcedures\uspGetColumbiaSuicideReport.sql" />
+    <Build Include="dbo\Views\vPatients.sql" />
+    <None Include="Change Scripts\v11.0.3.0.sql" />
+  </ItemGroup>
+</Project>

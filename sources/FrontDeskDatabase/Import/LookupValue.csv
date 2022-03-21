@@ -1,0 +1,43 @@
+﻿Screen,ID,Name,OrderIndex,LastModifiedDateUTC
+Race,1,American Indian,2,58:27.5
+Race,2,Asian,4,58:27.5
+Race,3,Black or African American,5,58:27.5
+Race,4,Hispanic or Latino,6,58:27.5
+Race,5,Native Hawaiian or Other Pacific Islander,7,58:27.5
+Race,6,Unknown,10,58:27.5
+Race,7,Alaska Native,3,58:27.5
+Race,8,White,8,58:27.5
+Race,9,Other,9,58:27.5
+EducationLevel,1,Elementary School,2,58:27.5
+EducationLevel,2,Some High School,3,58:27.5
+EducationLevel,3,Completed High School Diploma,5,58:27.5
+EducationLevel,5,Technical School,6,58:27.5
+EducationLevel,6,AA degree,7,58:27.5
+EducationLevel,7,Bachelor's Degree,8,58:27.5
+EducationLevel,8,Master's Degree,9,58:27.5
+EducationLevel,10,Doctoral Degree,10,58:27.5
+EducationLevel,11,Completed GED or High School Equivalent,4,58:27.5
+MaritalStatus,1,Divorced,6,58:27.6
+MaritalStatus,2,Married,3,58:27.6
+MaritalStatus,3,Partner,4,58:27.6
+MaritalStatus,4,Single,2,58:27.6
+MaritalStatus,5,Widowed,7,58:27.6
+MaritalStatus,6,Separated,5,58:27.6
+SexualOrientation,1,Straight/Heterosexual,2,58:27.5
+SexualOrientation,2,Bisexual,4,58:27.5
+SexualOrientation,3,Gay/Lesbian,3,58:27.5
+SexualOrientation,4,Don’t Know,6,58:27.5
+SexualOrientation,5,Other,5,58:27.5
+SexualOrientation,6,Decline to Answer,7,58:27.5
+MilitaryExperience,1,None,2,00:14.5
+MilitaryExperience,2,Active duty,3,00:14.5
+MilitaryExperience,3,Veteran,4,00:14.5
+MilitaryExperience,4,Deployed to a combat zone,5,00:14.5
+Gender,1,Male,2,58:27.5
+Gender,2,Female,3,58:27.5
+Gender,3,Transgender,4,58:27.5
+Gender,4,Don’t Know,6,58:27.5
+Gender,5,"Not Female, Male, or Transgender",5,58:27.5
+Gender,6,Decline to Answer,7,58:27.5
+LivingOnReservation,1,On Reservation,2,58:27.5
+LivingOnReservation,2,Off Reservation,3,58:27.5

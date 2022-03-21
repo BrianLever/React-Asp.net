@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/FrontDeskRpmsService/EhrInterface.svc?xsd=xsd2" namespace="http://www.screendox.com" />
+  <xs:import schemaLocation="http://localhost/FrontDeskRpmsService/EhrInterface.svc?xsd=xsd3" namespace="http://www.frontdeskhealth.com" />
+  <xs:element name="GetMatchedPatients">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://www.screendox.com" minOccurs="0" name="searchPattern" nillable="true" type="q1:Patient" />
+        <xs:element minOccurs="0" name="currentPageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="maxRows" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMatchedPatientsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://www.screendox.com" minOccurs="0" name="GetMatchedPatientsResult" nillable="true" type="q2:ArrayOfPatient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://www.screendox.com" minOccurs="0" name="searchPattern" nillable="true" type="q3:Patient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPatientCountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://www.screendox.com" minOccurs="0" name="searchPattern" nillable="true" type="q4:PatientSearch" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://www.screendox.com" minOccurs="0" name="GetPatientRecordResult" nillable="true" type="q5:Patient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScheduledVisitsByPatient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://www.screendox.com" minOccurs="0" name="patientRecord" nillable="true" type="q6:PatientSearch" />
+        <xs:element minOccurs="0" name="currentPageIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="maxRows" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScheduledVisitsByPatientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://www.screendox.com" minOccurs="0" name="GetScheduledVisitsByPatientResult" nillable="true" type="q7:ArrayOfVisit" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScheduledVisitsByPatientCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://www.screendox.com" minOccurs="0" name="patientRecord" nillable="true" type="q8:PatientSearch" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScheduledVisitsByPatientCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetScheduledVisitsByPatientCountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVisitRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="visitID" type="xs:int" />
+        <xs:element xmlns:q9="http://www.screendox.com" minOccurs="0" name="patientRecord" nillable="true" type="q9:PatientSearch" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVisitRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://www.screendox.com" minOccurs="0" name="GetVisitRecordResult" nillable="true" type="q10:Visit" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PreviewExportResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://www.frontdeskhealth.com" minOccurs="0" name="screeningResult" nillable="true" type="q11:ScreeningResult" />
+        <xs:element xmlns:q12="http://www.screendox.com" minOccurs="0" name="selectedPatient" nillable="true" type="q12:PatientSearch" />
+        <xs:element minOccurs="0" name="selectedVisitRowId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PreviewExportResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://www.screendox.com" minOccurs="0" name="PreviewExportResultResult" nillable="true" type="q13:ExportTask" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CommitExportTask">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="patientID" type="xs:int" />
+        <xs:element minOccurs="0" name="visitID" type="xs:int" />
+        <xs:element xmlns:q14="http://www.screendox.com" minOccurs="0" name="exportTask" nillable="true" type="q14:ExportTask" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CommitExportTaskResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://www.screendox.com" minOccurs="0" name="CommitExportTaskResult" nillable="true" type="q15:ArrayOfExportResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExportScreeningData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://www.screendox.com" minOccurs="0" name="screeningResultRecord" nillable="true" type="q16:ScreeningResultRecord" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExportScreeningDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://www.screendox.com" minOccurs="0" name="ExportScreeningDataResult" nillable="true" type="q17:ArrayOfExportResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidatePatientRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://www.screendox.com" minOccurs="0" name="patientSearch" nillable="true" type="q18:PatientSearch" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidatePatientRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://www.screendox.com" minOccurs="0" name="ValidatePatientRecordResult" nillable="true" type="q19:PatientValidationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMeta">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMetaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://www.screendox.com" minOccurs="0" name="GetMetaResult" nillable="true" type="q20:ExportMetaInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

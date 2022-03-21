@@ -1,0 +1,7 @@
+IIS7 Web Setup/Install & Error Status 1603
+
+In order to install a web setup project on Windows Server 2008 and IIS 7, you need to install the "IIS 6 Metabase Compatibility" role service.
+
+http://www.nitiative.com/portal/Home/tabid/36/EntryId/15/IIS7-Web-Setup-Install-Error-Status-1603.aspx
+
+----------------------

@@ -1,0 +1,56 @@
+.removeBoxShadow {
+    box-shadow: none !important;
+    &::hover {
+        box-shadow: none !important;
+    }
+}
+
+
+.ehrExportRecordHrnText {
+    font-size: 1em;
+    background-color: transparent;
+    transition-timing-function: cubic-bezier(0.400,0.000,0.200,1.000);
+    font-family: "hero-new",sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    margin-right: calc(0em * -1);
+    text-transform: none;
+    color: rgb(46,46,66);
+    transition-timing-function: cubic-bezier(0.400,0.000,0.200,1.000);
+    text-align: left;
+    width: 100%;
+}
+
+.ehrExportRecordNameText {
+    font-family: "hero-new",sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    margin-right: calc(0em * -1);
+    text-transform: none;
+    color: rgb(46,46,66);
+    transition-timing-function: cubic-bezier(0.400,0.000,0.200,1.000);
+    text-align: left;
+}
+
+.ehrExportRecordText {
+    font-size: 1em;
+    background-color: transparent;
+    transition-timing-function: cubic-bezier(0.400,0.000,0.200,1.000);
+    font-family: "hero-new",sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    margin-right: calc(0em * -1);
+    text-transform: none;
+    color: rgb(46,46,66);
+    transition-timing-function: cubic-bezier(0.400,0.000,0.200,1.000);
+    text-align: left;
+    width: 100%;
+    margin-left: 10px;
+}

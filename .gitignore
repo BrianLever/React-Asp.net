@@ -1,0 +1,13 @@
+**/.dtbcache.v2
+/sources/.vs/Screendox/DesignTimeBuild/.dtbcache.v2
+/sources/.vs
+/sources/.vs/*
+/sources/.vs/**
+/sources/.vs/Screendox/v16/TestStore/0/testlog.manifest
+/sources/.vs/Screendox/v16/TestStore/0/testlog.manifest
+/sources/RPMS.Data.CareBridge/obj/project.assets.json
+/sources/ScreenDox.Kiosk.Configuration.Tests/obj/project.assets.json
+/sources/ScreenDox.Kiosk.Configuration/obj/project.assets.json
+/sources/ScreenDox.Rpms.Common.Models/obj/project.assets.json
+/sources/ScreenDox.Server.Common/obj/project.assets.json
+/sources/ScreenDox.ServerInstallation.KioskRegistrationUtil/obj/project.assets.json

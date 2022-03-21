@@ -1,0 +1,121 @@
+﻿{
+	"_sectionAnswers": {
+		"SIH": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "SIH",
+					"QuestionID": 1,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "SIH",
+			"AnswerValue": 0
+		},
+		"TCC": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "TCC",
+					"QuestionID": 4,
+					"AnswerValue": 0
+				},
+				
+			},
+			"ScreeningSectionID": "TCC",
+			"AnswerValue": 0
+		},
+		"CAGE": {
+			"_answers": {
+				
+				"5": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 5,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "CAGE",
+			"AnswerValue": 0
+		},
+		"GAD-7": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 1,
+					"AnswerValue": 3
+				},
+				"2": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 2,
+					"AnswerValue": 0
+				},
+				"3": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 3,
+					"AnswerValue": 2
+				},
+				"4": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 4,
+					"AnswerValue": 0
+				},
+				"5": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 5,
+					"AnswerValue": 0
+				},
+				"6": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 6,
+					"AnswerValue": 0
+				},
+				"7": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 7,
+					"AnswerValue": 0
+				},
+				"8": {
+					"ScreeningSectionID": "GAD-7",
+					"QuestionID": 8,
+					"AnswerValue": 2
+				}
+			},
+			"ScreeningSectionID": "GAD-7",
+			"AnswerValue": 1
+		},
+		"DAST": {
+			"_answers": {
+				"10": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 10,
+					"AnswerValue": 0
+				},
+				
+			},
+			"ScreeningSectionID": "DAST",
+			"AnswerValue": 0
+		},
+		"HITS": {
+			"_answers": {
+				"5": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 5,
+					"AnswerValue": 0
+				}
+				
+			},
+			"ScreeningSectionID": "HITS",
+			"AnswerValue": 0
+		}
+	},
+	"ScreeningID": "BHS",
+	"StreetAddress": "11230 OAK DR. P.O. BOX 120",
+	"City": "HANFORD",
+	"StateID": "CA",
+	"StateName": "",
+	"ZipCode": "93245",
+	"Phone": "557-587-3244",
+	"KioskID": 1000,
+	"FirstName": "ANNETTE (Anxiety Mild)",
+	"LastName": "ROBINSON",
+	"MiddleName": "",
+	"Birthday": "1959-06-02T00:00:00"
+}

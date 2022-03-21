@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Reports.master.cs"
+    Inherits="ReportsMaster" MasterPageFile="~/FrontDeskMaster.master" %>
+
+<%@ Register Src="~/controls/UI/RpmsCredentialsExpiratonNotificationMessage.ascx" TagPrefix="ctrl" TagName="RpmsCredentialsExpirationAlert" %>
+
+<%@ MasterType VirtualPath="~/FrontDeskMaster.master" %>
+<asp:Content runat="server" ID="content" ContentPlaceHolderID="cphContent">
+    <div class="w100">
+        <div class="lmar20 rmar20">
+            <asp:ContentPlaceHolder runat="server" ID="cphTop">
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+        <div class="fleft w20 leftMenu">
+            <asp:Menu runat="server" ID="menuLeft" DataSourceID="smdsLeftMenu" SkinID="LeftMenu">
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="smdsLeftMenu" runat="server" StartingNodeUrl="~/Reports/Default.aspx"
+                ShowStartingNode="false" />
+        </div>
+        <div class="fleft w80" id="reports-content">
+            <asp:ContentPlaceHolder runat="server" ID="cphSubContent">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>

@@ -1,0 +1,6 @@
+﻿key: PRUW
+secret: 7da891c424f26415aa18f104f67df4fe719114b148c65f59d80042ee3fe17f58
+screendoxServerBaseUrl: https://localhost/screendox
+screenDoxInstallationServiceBaseUrl: http://localhost/ScreenDoxKioskInstallApi
+kioskExeName: ScreenDoxKiosk.exe
+kioskApplicationDirectory: D:\Test\ScreenDox-Installation\app

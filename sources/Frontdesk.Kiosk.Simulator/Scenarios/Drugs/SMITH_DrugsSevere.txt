@@ -1,0 +1,88 @@
+﻿{
+	"_sectionAnswers": {
+		"PHQ-9": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 1,
+					"AnswerValue": 0
+				},
+				"2": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 2,
+					"AnswerValue": 0
+				},
+			},
+			"ScreeningSectionID": "PHQ-9",
+			"AnswerValue": 0
+		},
+		"DAST": {
+			"_answers": {
+				"10": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 10,
+					"AnswerValue": 1
+				},
+				"1": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 1,
+					"AnswerValue": 1
+				},
+				"2": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 2,
+					"AnswerValue": 0
+				},
+				"3": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 3,
+					"AnswerValue": 1
+				},
+				"4": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 4,
+					"AnswerValue": 1
+				},
+				"5": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 5,
+					"AnswerValue": 1
+				},
+				"6": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 6,
+					"AnswerValue": 1
+				},
+				"7": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 7,
+					"AnswerValue": 1
+				},
+				"8": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 8,
+					"AnswerValue": 0
+				},
+				"9": {
+					"ScreeningSectionID": "DAST",
+					"QuestionID": 9,
+					"AnswerValue": 1
+				}
+				
+			},
+			"ScreeningSectionID": "DAST",
+			"AnswerValue": 1
+		}
+	},
+	"ScreeningID": "BHS",
+	"StreetAddress": "1000 NW SOUTHERN",
+	"City": "ABIQUI",
+	"StateID": "NM",
+	"ZipCode": "11009",
+	"Phone": "000-000-0000",
+	"KioskID": 1000,
+	"FirstName": "JONES (Drugs Severe)",
+	"LastName": "SMITH",
+	"MiddleName": "",
+	"Birthday": "1964-01-19T00:00:00"
+}

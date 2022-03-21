@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="FrontDesk.Kiosk.Controls.Keyboard.KeyButton"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uc="clr-namespace:FrontDesk.Kiosk.Controls.Keyboard"
+    Loaded="UserControl_Loaded"
+             Background="Transparent"
+             Stylus.IsPressAndHoldEnabled="False"
+             Style="{StaticResource keyButtonRoot}" 
+             MouseDown="UserControl_MouseDown" 
+             TouchDown="UserControl_TouchDown" 
+             MouseUp="UserControl_MouseUp" 
+             TouchLeave="UserControl_TouchLeave" 
+             Mouse.MouseLeave="UserControl_MouseLeave"
+             HorizontalAlignment="Center"
+             >
+
+    <UserControl.Resources>
+        <ResourceDictionary  Source="./../../ResourceDictionary/Keys.xaml"/>
+    </UserControl.Resources>
+
+
+
+    <Grid HorizontalAlignment="{TemplateBinding Property=UserControl.HorizontalAlignment}" Background="Transparent">
+        <uc:KeyButtonLayout x:Name="ucLayout" Template="{DynamicResource SimpleKey}" Loaded="UcLayout_Loaded" ></uc:KeyButtonLayout>
+        <TextBlock x:Name="txt" Style="{StaticResource keyButtonText}" Text=""/>
+        <Image x:Name="img" x:FieldModifier="private" Style="{StaticResource keyButtonImage}" />
+    </Grid>
+
+
+
+
+</UserControl>

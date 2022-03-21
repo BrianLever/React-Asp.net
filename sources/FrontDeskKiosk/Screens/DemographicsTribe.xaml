@@ -1,0 +1,137 @@
+﻿<UserControl x:Class="FrontDesk.Kiosk.Screens.DemographicsTribe"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uc="clr-namespace:FrontDesk.Kiosk.Controls.TextBoxExtensions" 
+    xmlns:cc="clr-namespace:FrontDesk.Kiosk.Controls"                         
+    xmlns:kuc="clr-namespace:FrontDesk.Kiosk.Controls.Keyboard"
+    xmlns:fa="http://schemas.fontawesome.io/icons/"
+             
+             >
+    <UserControl.Resources>
+        <Storyboard x:Key="DisplaySuggestedList">
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="Visibility" 
+                                           Storyboard.TargetName="pnlPopupItemsWrapper">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="Visibility"
+                                           Storyboard.TargetName="pnlSpinner">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Collapsed}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        
+        <Style x:Key="AutoSuggestPopupContainer" TargetType="Border">
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="Background" Value="#f3f3f3"/>
+            <Setter Property="Margin" Value="0,0,0,0" />
+        </Style>
+        <Style TargetType="TextBlock" x:Key="AutoSuggestPopupItemText" BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter Property="FontSize" Value="45px" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="FontFamily" Value="../Fonts/#Proxima Nova" />
+            <Setter Property="Foreground" Value="#FF4D4D4D" />
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+        <Style TargetType="TextBlock" x:Key="AutoSuggestHelpText" BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter Property="FontSize" Value="36px" />
+            <Setter Property="FontWeight" Value="Normal" />
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+
+    
+
+
+
+    </UserControl.Resources>
+    <Grid Style="{StaticResource ContactInfoContainer}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.2*" />
+            <RowDefinition Height="2.0*"/>
+        </Grid.RowDefinitions>
+        <cc:ScreensBackGround Grid.RowSpan="2"/>
+        <StackPanel Grid.RowSpan="2">
+            <TextBlock Style="{ StaticResource FormLabel }">Please enter your <Run FontWeight="Bold">TRIBAL AFFILIATION</Run>:</TextBlock>
+            <Grid Style="{StaticResource ContactInfoTextFieldLineWrapper}">
+                <uc:TerminalTextBox x:Name="ucText"  MaxLength="255" HorizontalAlignment="Left"></uc:TerminalTextBox>
+                <kuc:KeyButton x:Name="btnBackspace" Text="DELETE" DepressedTemplateKey="BackspaceSep" 
+                    PressedTemplateKey="BackspaceSep_Pressed" DisabledTemplateKey="BackspaceSep_Disabled"   
+                    Style="{ StaticResource Backspace }"
+                               HorizontalAlignment="Right"></kuc:KeyButton>
+            </Grid>
+            <Grid Style="{ StaticResource SymbolKeyboard }">
+                <StackPanel Style="{ StaticResource KbBackground}"></StackPanel>
+                <kuc:KeyboardControl x:Name="ucKeyboard" KbType="Symbol" 
+                                     ></kuc:KeyboardControl>
+            </Grid>
+        </StackPanel>
+        <Button x:Name="btnNext" Style="{StaticResource YellowKeyboardAlignedNextButton}" Grid.RowSpan="2">NEXT</Button>
+
+
+        <Border x:Name="pnlMatchedItems"  Style="{ StaticResource AutoSuggestPopupContainer}" Grid.Row="1" 
+                Visibility="Visible" Margin="0,0,0,0">
+            <Grid>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Visibility="Hidden" x:Name="pnlPopupItemsWrapper">
+                    <TextBlock Style="{StaticResource AutoSuggestPopupItemText}" Margin="0, 10, 0, 10">
+                    <Run>
+                    Found several possible matches.</Run><LineBreak/> 
+                    <Run>
+                    Please SELECT the match or RETURN to keybord to continue.</Run>
+                    </TextBlock>
+
+                    <StackPanel x:Name="pnlMatchedItemsContainer" HorizontalAlignment="Stretch" Orientation="Vertical">
+                        <kuc:KeyButton HorizontalAlignment="Stretch" Style="{ StaticResource AutoSuggestPopupItem }" Text="TEST" 
+                              DepressedTemplateKey="AutoSuggestPopupItemBtn" 
+                                   DepressedTemplateKeyLongText="AutoSuggestPopupItemBtnMultiLine"
+                               PressedTemplateKey="AutoSuggestPopupItemBtn_Pressed" 
+                                   PressedTemplateKeyLongText="AutoSuggestPopupItemBtnMultiLine_Pressed"
+                               DisabledTemplateKey="AutoSuggestPopupItemBtn_Disabled"
+                               DisabledTemplateKeyLongText="AutoSuggestPopupItemBtnMultiLine_Disabled"
+                               Margin="10,0,0,5"
+                                />
+                        <kuc:KeyButton HorizontalAlignment="Stretch" Style="{ StaticResource AutoSuggestPopupItem }" 
+                                   Text="Minnesota Chippewa Tribe (Bois Forte / Nett Lake; Fond du Lac; Grand Portage; Leech Lake; Mille Lacs; White Earth), Minnesota" 
+                              DepressedTemplateKey="AutoSuggestPopupItemBtn" 
+                                   DepressedTemplateKeyLongText="AutoSuggestPopupItemBtnMultiLine"
+                               PressedTemplateKey="AutoSuggestPopupItemBtn_Pressed" 
+                                   PressedTemplateKeyLongText="AutoSuggestPopupItemBtnMultiLine_Pressed"
+                               DisabledTemplateKey="AutoSuggestPopupItemBtn_Disabled"
+                               DisabledTemplateKeyLongText="AutoSuggestPopupItemBtnMultiLine_Disabled"
+                               Margin="10,0,0,5"
+                                />
+                        <kuc:KeyButton HorizontalAlignment="Stretch" Style="{ StaticResource AutoSuggestPopupItem }" 
+                                   Text="Wampanoag Tribe of Gay Head (Aquinnah), Massachusetts" 
+                               DepressedTemplateKey="AutoSuggestPopupItemBtn" 
+                                   DepressedTemplateKeyLongText="AutoSuggestPopupItemBtnMultiLine"
+                               PressedTemplateKey="AutoSuggestPopupItemBtn_Pressed" 
+                                   PressedTemplateKeyLongText="AutoSuggestPopupItemBtnMultiLine_Pressed"
+                               DisabledTemplateKey="AutoSuggestPopupItemBtn_Disabled"
+                               DisabledTemplateKeyLongText="AutoSuggestPopupItemBtnMultiLine_Disabled"
+                               SingleLineTextMaxCharacters="65"
+                               Margin="10,0,0,5"
+                                />
+
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button x:Name="btnReturn" Width="600" Style="{StaticResource YellowReturnButton}" Margin="10,20,0,5" 
+                           
+                            >RETURN TO KEYBOARD</Button>
+                    </StackPanel>
+                </StackPanel>
+
+                <fa:ImageAwesome x:Name="pnlSpinner" Icon="Spinner" Spin="True"  SpinDuration="2" 
+                         VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,50,0,0"
+                                 Width="100" Foreground="#ffcbcbcb" >
+                </fa:ImageAwesome>
+            </Grid>
+        </Border>
+
+    </Grid>
+</UserControl>

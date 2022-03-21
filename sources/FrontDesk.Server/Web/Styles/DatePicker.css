@@ -1,0 +1,8 @@
+﻿/* default date picker styles */
+.datePicker_container{ display: inline-block; text-align:left;}
+.datePicker_container > div { float:left; text-align:left;}
+.datePicker_container .icon { float:left; margin-left:1px; line-height:20px; vertical-align:middle;}
+.datePicker_container > div > img { height:20px; padding:0; margin:0; border:none; vertical-align:middle;}
+.datePicker_container > div > input[type=text]{width:85px;}
+
+.datePicker_container.readonly > div.icon a {visibility:hidden; display:none;} 

@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 1em;
+    user-select: none;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    text-transform: none;
+    color: #2e2e42;
+}
+  
+.container input {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #f5f6f8;
+    border: 1px solid rgb(46,46,66);
+    border-radius: 3px;
+}
+  
+.container input:checked ~ .checkmark {
+    border: none;
+    background-color: #2e2e42;
+}
+
+.container .checkboxText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.container .checkmark:after {
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+
+.alignedFlex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

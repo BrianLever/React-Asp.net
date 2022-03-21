@@ -1,0 +1,6 @@
+key: 9ZKW
+secret: 7754ce3d90cfc300fc3980b8a792283e1349373ebf1882543dfabfb5c3afdb85
+screendoxServerBaseUrl: https://10.200.100.159/screendox
+screenDoxInstallationServiceBaseUrl: https://10.200.100.159/ScreenDoxKioskInstallApi
+kioskExeName: ScreenDoxKiosk.exe
+kioskApplicationDirectory: C:\Program Files (x86)\ScreenDox\app

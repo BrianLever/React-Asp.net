@@ -1,0 +1,16 @@
+{
+	"_sectionAnswers": {
+	},
+	"ScreeningID": "BHS",
+	"StreetAddress": "H",
+	"City": "M",
+	"StateID": "KS",
+	"StateName": "Kansas",
+	"ZipCode": "68000",
+	"Phone": "(000) 000-0000",
+	"KioskID": 1000,
+	"FirstName": "MACY",
+	"LastName": "HURT",
+	"MiddleName": "LEE",
+	"Birthday": "2001-03-18T00:00:00"
+}

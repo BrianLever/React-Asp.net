@@ -1,0 +1,7 @@
+.removeBoxShadow {
+    box-shadow: none !important;
+    text-transform: none;
+    &::hover {
+        box-shadow: none !important;
+    }
+}

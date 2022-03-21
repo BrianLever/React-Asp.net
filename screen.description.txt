@@ -1,0 +1,4878 @@
+[
+    {
+        "Questions": [],
+        "ScreeningSectionID": "CIF",
+        "ScreeningID": "BHS",
+        "ScreeningSectionName": "Contact Information",
+        "ScreeningSectionShortName": "CIF",
+        "MainSectionQuestions": [],
+        "NotMainSectionQuestions": []
+    },
+    {
+        "Questions": [],
+        "ScreeningSectionID": "DMGR",
+        "ScreeningID": "BHS",
+        "ScreeningSectionName": "Patient Demographics",
+        "ScreeningSectionShortName": "DMGR",
+        "MainSectionQuestions": [],
+        "NotMainSectionQuestions": []
+    },
+    {
+        "Questions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "SIH",
+                "PreambleText": "",
+                "QuestionText": "Does anyone in the home smoke tobacco (such as cigarettes, cigars, pipes, electronic nicotine delivery devices, etc.)?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ],
+        "ScreeningSectionID": "SIH",
+        "ScreeningID": "BHS",
+        "ScreeningSectionName": "Smoker in the Home",
+        "ScreeningSectionShortName": "SIH",
+        "MainSectionQuestions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "SIH",
+                "PreambleText": "",
+                "QuestionText": "Does anyone in the home smoke tobacco (such as cigarettes, cigars, pipes, electronic nicotine delivery devices, etc.)?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ],
+        "NotMainSectionQuestions": []
+    },
+    {
+        "Questions": [
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "TCC",
+                "PreambleText": "",
+                "QuestionText": "Do you use tobacco?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "TCC",
+                "PreambleText": "",
+                "QuestionText": "Do you use tobacco for ceremony?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "TCC",
+                "PreambleText": "",
+                "QuestionText": "Do you smoke tobacco (such as cigarettes, cigars, pipes, electronic nicotine delivery devices, etc.)?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "TCC",
+                "PreambleText": "",
+                "QuestionText": "Do you use smokeless tobacco?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ],
+        "ScreeningSectionID": "TCC",
+        "ScreeningID": "BHS",
+        "ScreeningSectionName": "Tobacco Use",
+        "ScreeningSectionShortName": "TCC",
+        "MainSectionQuestions": [
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "TCC",
+                "PreambleText": "",
+                "QuestionText": "Do you use tobacco?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ],
+        "NotMainSectionQuestions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "TCC",
+                "PreambleText": "",
+                "QuestionText": "Do you use tobacco for ceremony?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "TCC",
+                "PreambleText": "",
+                "QuestionText": "Do you smoke tobacco (such as cigarettes, cigars, pipes, electronic nicotine delivery devices, etc.)?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "TCC",
+                "PreambleText": "",
+                "QuestionText": "Do you use smokeless tobacco?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Questions": [
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "CAGE",
+                "PreambleText": "",
+                "QuestionText": "Do you drink alcohol?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "CAGE",
+                "PreambleText": "",
+                "QuestionText": "Have you ever felt you should CUT down on your drinking?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "CAGE",
+                "PreambleText": "",
+                "QuestionText": "Have people ANNOYED you by criticizing your drinking?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "CAGE",
+                "PreambleText": "",
+                "QuestionText": "Have you ever felt bad or GUILTY about your drinking?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "CAGE",
+                "PreambleText": "",
+                "QuestionText": "Have you ever had a drink first thing in the morning to steady your nerves or get rid of a hangover (EYE-OPENER)?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ],
+        "ScreeningSectionID": "CAGE",
+        "ScreeningID": "BHS",
+        "ScreeningSectionName": "Alcohol Use (CAGE)",
+        "ScreeningSectionShortName": "CAGE",
+        "MainSectionQuestions": [
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "CAGE",
+                "PreambleText": "",
+                "QuestionText": "Do you drink alcohol?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ],
+        "NotMainSectionQuestions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "CAGE",
+                "PreambleText": "",
+                "QuestionText": "Have you ever felt you should CUT down on your drinking?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "CAGE",
+                "PreambleText": "",
+                "QuestionText": "Have people ANNOYED you by criticizing your drinking?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "CAGE",
+                "PreambleText": "",
+                "QuestionText": "Have you ever felt bad or GUILTY about your drinking?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "CAGE",
+                "PreambleText": "",
+                "QuestionText": "Have you ever had a drink first thing in the morning to steady your nerves or get rid of a hangover (EYE-OPENER)?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Questions": [
+            {
+                "QuestionID": 10,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Have you used drugs other than those required for medical reasons?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Do you abuse more than one drug at a time?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Are you always able to stop using drugs when you want to?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Have you had “blackouts” or “flashbacks” as a result of drug use?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Do you ever feel bad or guilty about your drug use?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Does your spouse (or parent) ever complain about your involvement with drugs?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 6,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Have you neglected your family because of your use of drugs?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 7,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Have you engaged in illegal activities in order to obtain drugs?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 8,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Have you ever experienced withdrawal symptoms (felt sick) when you stopped taking drugs?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 9,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Have you had medical problems as a result of your drug use (e.g., memory loss, hepatitis, convulsions, bleeding)?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ],
+        "ScreeningSectionID": "DAST",
+        "ScreeningID": "BHS",
+        "ScreeningSectionName": "Non-Medical Drug Use (DAST-10)",
+        "ScreeningSectionShortName": "DAST-10",
+        "MainSectionQuestions": [
+            {
+                "QuestionID": 10,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Have you used drugs other than those required for medical reasons?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ],
+        "NotMainSectionQuestions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Do you abuse more than one drug at a time?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Are you always able to stop using drugs when you want to?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Have you had “blackouts” or “flashbacks” as a result of drug use?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Do you ever feel bad or guilty about your drug use?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Does your spouse (or parent) ever complain about your involvement with drugs?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 6,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Have you neglected your family because of your use of drugs?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 7,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Have you engaged in illegal activities in order to obtain drugs?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 8,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Have you ever experienced withdrawal symptoms (felt sick) when you stopped taking drugs?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 9,
+                "ScreeningSectionID": "DAST",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Have you had medical problems as a result of your drug use (e.g., memory loss, hepatitis, convulsions, bleeding)?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Questions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "DOCH",
+                "PreambleText": "",
+                "QuestionText": "What Drug do you use THE MOST?",
+                "AnswerScaleID": 5,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 21,
+                        "AnswerScaleID": 5,
+                        "Text": "Methamphetamine",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 23,
+                        "AnswerScaleID": 5,
+                        "Text": "Other Amphetamines",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 25,
+                        "AnswerScaleID": 5,
+                        "Text": "Marijuana/Cannabis/Wax/Hashish",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 27,
+                        "AnswerScaleID": 5,
+                        "Text": "Opioid/Medication",
+                        "Value": 6
+                    },
+                    {
+                        "AnswerScaleOptionID": 29,
+                        "AnswerScaleID": 5,
+                        "Text": "Opioid/Heroin",
+                        "Value": 5
+                    },
+                    {
+                        "AnswerScaleOptionID": 31,
+                        "AnswerScaleID": 5,
+                        "Text": "Benzodiazepines",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 33,
+                        "AnswerScaleID": 5,
+                        "Text": "Cocaine/Crack",
+                        "Value": 7
+                    },
+                    {
+                        "AnswerScaleOptionID": 35,
+                        "AnswerScaleID": 5,
+                        "Text": "Hallucinogens/Psychedelics",
+                        "Value": 8
+                    },
+                    {
+                        "AnswerScaleOptionID": 37,
+                        "AnswerScaleID": 5,
+                        "Text": "Sedatives/Hypnotics/Non-Benzo Tranquilizers",
+                        "Value": 9
+                    },
+                    {
+                        "AnswerScaleOptionID": 39,
+                        "AnswerScaleID": 5,
+                        "Text": "Inhalants",
+                        "Value": 10
+                    },
+                    {
+                        "AnswerScaleOptionID": 41,
+                        "AnswerScaleID": 5,
+                        "Text": "Barbiturates/Downers",
+                        "Value": 11
+                    },
+                    {
+                        "AnswerScaleOptionID": 43,
+                        "AnswerScaleID": 5,
+                        "Text": "PCP/Ketamine/GHB/Designer Drugs",
+                        "Value": 12
+                    },
+                    {
+                        "AnswerScaleOptionID": 45,
+                        "AnswerScaleID": 5,
+                        "Text": "Other Stimulants",
+                        "Value": 13
+                    },
+                    {
+                        "AnswerScaleOptionID": 47,
+                        "AnswerScaleID": 5,
+                        "Text": "Other",
+                        "Value": 14
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "DOCH",
+                "PreambleText": "",
+                "QuestionText": "What DRUG do you use SECOND MOST?",
+                "AnswerScaleID": 6,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 20,
+                        "AnswerScaleID": 6,
+                        "Text": "(None) Don’t Use Any Other Drugs",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 22,
+                        "AnswerScaleID": 6,
+                        "Text": "Methamphetamine",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 24,
+                        "AnswerScaleID": 6,
+                        "Text": "Other Amphetamines",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 26,
+                        "AnswerScaleID": 6,
+                        "Text": "Marijuana/Cannabis/Wax/Hashish",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 28,
+                        "AnswerScaleID": 6,
+                        "Text": "Opioid/Medication",
+                        "Value": 6
+                    },
+                    {
+                        "AnswerScaleOptionID": 30,
+                        "AnswerScaleID": 6,
+                        "Text": "Opioid/Heroin",
+                        "Value": 5
+                    },
+                    {
+                        "AnswerScaleOptionID": 32,
+                        "AnswerScaleID": 6,
+                        "Text": "Benzodiazepines",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 34,
+                        "AnswerScaleID": 6,
+                        "Text": "Cocaine/Crack",
+                        "Value": 7
+                    },
+                    {
+                        "AnswerScaleOptionID": 36,
+                        "AnswerScaleID": 6,
+                        "Text": "Hallucinogens/Psychedelics",
+                        "Value": 8
+                    },
+                    {
+                        "AnswerScaleOptionID": 38,
+                        "AnswerScaleID": 6,
+                        "Text": "Sedatives/Hypnotics/Non-Benzo Tranquilizers",
+                        "Value": 9
+                    },
+                    {
+                        "AnswerScaleOptionID": 40,
+                        "AnswerScaleID": 6,
+                        "Text": "Inhalants",
+                        "Value": 10
+                    },
+                    {
+                        "AnswerScaleOptionID": 42,
+                        "AnswerScaleID": 6,
+                        "Text": "Barbiturates/Downers",
+                        "Value": 11
+                    },
+                    {
+                        "AnswerScaleOptionID": 44,
+                        "AnswerScaleID": 6,
+                        "Text": "PCP/Ketamine/GHB/Designer Drugs",
+                        "Value": 12
+                    },
+                    {
+                        "AnswerScaleOptionID": 46,
+                        "AnswerScaleID": 6,
+                        "Text": "Other Stimulants",
+                        "Value": 13
+                    },
+                    {
+                        "AnswerScaleOptionID": 48,
+                        "AnswerScaleID": 6,
+                        "Text": "Other",
+                        "Value": 14
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "DOCH",
+                "PreambleText": "",
+                "QuestionText": "Do you use ANY OTHER DRUG?",
+                "AnswerScaleID": 6,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 20,
+                        "AnswerScaleID": 6,
+                        "Text": "(None) Don’t Use Any Other Drugs",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 22,
+                        "AnswerScaleID": 6,
+                        "Text": "Methamphetamine",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 24,
+                        "AnswerScaleID": 6,
+                        "Text": "Other Amphetamines",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 26,
+                        "AnswerScaleID": 6,
+                        "Text": "Marijuana/Cannabis/Wax/Hashish",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 28,
+                        "AnswerScaleID": 6,
+                        "Text": "Opioid/Medication",
+                        "Value": 6
+                    },
+                    {
+                        "AnswerScaleOptionID": 30,
+                        "AnswerScaleID": 6,
+                        "Text": "Opioid/Heroin",
+                        "Value": 5
+                    },
+                    {
+                        "AnswerScaleOptionID": 32,
+                        "AnswerScaleID": 6,
+                        "Text": "Benzodiazepines",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 34,
+                        "AnswerScaleID": 6,
+                        "Text": "Cocaine/Crack",
+                        "Value": 7
+                    },
+                    {
+                        "AnswerScaleOptionID": 36,
+                        "AnswerScaleID": 6,
+                        "Text": "Hallucinogens/Psychedelics",
+                        "Value": 8
+                    },
+                    {
+                        "AnswerScaleOptionID": 38,
+                        "AnswerScaleID": 6,
+                        "Text": "Sedatives/Hypnotics/Non-Benzo Tranquilizers",
+                        "Value": 9
+                    },
+                    {
+                        "AnswerScaleOptionID": 40,
+                        "AnswerScaleID": 6,
+                        "Text": "Inhalants",
+                        "Value": 10
+                    },
+                    {
+                        "AnswerScaleOptionID": 42,
+                        "AnswerScaleID": 6,
+                        "Text": "Barbiturates/Downers",
+                        "Value": 11
+                    },
+                    {
+                        "AnswerScaleOptionID": 44,
+                        "AnswerScaleID": 6,
+                        "Text": "PCP/Ketamine/GHB/Designer Drugs",
+                        "Value": 12
+                    },
+                    {
+                        "AnswerScaleOptionID": 46,
+                        "AnswerScaleID": 6,
+                        "Text": "Other Stimulants",
+                        "Value": 13
+                    },
+                    {
+                        "AnswerScaleOptionID": 48,
+                        "AnswerScaleID": 6,
+                        "Text": "Other",
+                        "Value": 14
+                    }
+                ]
+            }
+        ],
+        "ScreeningSectionID": "DOCH",
+        "ScreeningID": "BHS",
+        "ScreeningSectionName": "Drug Use",
+        "ScreeningSectionShortName": "DOCH",
+        "MainSectionQuestions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "DOCH",
+                "PreambleText": "",
+                "QuestionText": "What Drug do you use THE MOST?",
+                "AnswerScaleID": 5,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 21,
+                        "AnswerScaleID": 5,
+                        "Text": "Methamphetamine",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 23,
+                        "AnswerScaleID": 5,
+                        "Text": "Other Amphetamines",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 25,
+                        "AnswerScaleID": 5,
+                        "Text": "Marijuana/Cannabis/Wax/Hashish",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 27,
+                        "AnswerScaleID": 5,
+                        "Text": "Opioid/Medication",
+                        "Value": 6
+                    },
+                    {
+                        "AnswerScaleOptionID": 29,
+                        "AnswerScaleID": 5,
+                        "Text": "Opioid/Heroin",
+                        "Value": 5
+                    },
+                    {
+                        "AnswerScaleOptionID": 31,
+                        "AnswerScaleID": 5,
+                        "Text": "Benzodiazepines",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 33,
+                        "AnswerScaleID": 5,
+                        "Text": "Cocaine/Crack",
+                        "Value": 7
+                    },
+                    {
+                        "AnswerScaleOptionID": 35,
+                        "AnswerScaleID": 5,
+                        "Text": "Hallucinogens/Psychedelics",
+                        "Value": 8
+                    },
+                    {
+                        "AnswerScaleOptionID": 37,
+                        "AnswerScaleID": 5,
+                        "Text": "Sedatives/Hypnotics/Non-Benzo Tranquilizers",
+                        "Value": 9
+                    },
+                    {
+                        "AnswerScaleOptionID": 39,
+                        "AnswerScaleID": 5,
+                        "Text": "Inhalants",
+                        "Value": 10
+                    },
+                    {
+                        "AnswerScaleOptionID": 41,
+                        "AnswerScaleID": 5,
+                        "Text": "Barbiturates/Downers",
+                        "Value": 11
+                    },
+                    {
+                        "AnswerScaleOptionID": 43,
+                        "AnswerScaleID": 5,
+                        "Text": "PCP/Ketamine/GHB/Designer Drugs",
+                        "Value": 12
+                    },
+                    {
+                        "AnswerScaleOptionID": 45,
+                        "AnswerScaleID": 5,
+                        "Text": "Other Stimulants",
+                        "Value": 13
+                    },
+                    {
+                        "AnswerScaleOptionID": 47,
+                        "AnswerScaleID": 5,
+                        "Text": "Other",
+                        "Value": 14
+                    }
+                ]
+            }
+        ],
+        "NotMainSectionQuestions": [
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "DOCH",
+                "PreambleText": "",
+                "QuestionText": "What DRUG do you use SECOND MOST?",
+                "AnswerScaleID": 6,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 20,
+                        "AnswerScaleID": 6,
+                        "Text": "(None) Don’t Use Any Other Drugs",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 22,
+                        "AnswerScaleID": 6,
+                        "Text": "Methamphetamine",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 24,
+                        "AnswerScaleID": 6,
+                        "Text": "Other Amphetamines",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 26,
+                        "AnswerScaleID": 6,
+                        "Text": "Marijuana/Cannabis/Wax/Hashish",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 28,
+                        "AnswerScaleID": 6,
+                        "Text": "Opioid/Medication",
+                        "Value": 6
+                    },
+                    {
+                        "AnswerScaleOptionID": 30,
+                        "AnswerScaleID": 6,
+                        "Text": "Opioid/Heroin",
+                        "Value": 5
+                    },
+                    {
+                        "AnswerScaleOptionID": 32,
+                        "AnswerScaleID": 6,
+                        "Text": "Benzodiazepines",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 34,
+                        "AnswerScaleID": 6,
+                        "Text": "Cocaine/Crack",
+                        "Value": 7
+                    },
+                    {
+                        "AnswerScaleOptionID": 36,
+                        "AnswerScaleID": 6,
+                        "Text": "Hallucinogens/Psychedelics",
+                        "Value": 8
+                    },
+                    {
+                        "AnswerScaleOptionID": 38,
+                        "AnswerScaleID": 6,
+                        "Text": "Sedatives/Hypnotics/Non-Benzo Tranquilizers",
+                        "Value": 9
+                    },
+                    {
+                        "AnswerScaleOptionID": 40,
+                        "AnswerScaleID": 6,
+                        "Text": "Inhalants",
+                        "Value": 10
+                    },
+                    {
+                        "AnswerScaleOptionID": 42,
+                        "AnswerScaleID": 6,
+                        "Text": "Barbiturates/Downers",
+                        "Value": 11
+                    },
+                    {
+                        "AnswerScaleOptionID": 44,
+                        "AnswerScaleID": 6,
+                        "Text": "PCP/Ketamine/GHB/Designer Drugs",
+                        "Value": 12
+                    },
+                    {
+                        "AnswerScaleOptionID": 46,
+                        "AnswerScaleID": 6,
+                        "Text": "Other Stimulants",
+                        "Value": 13
+                    },
+                    {
+                        "AnswerScaleOptionID": 48,
+                        "AnswerScaleID": 6,
+                        "Text": "Other",
+                        "Value": 14
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "DOCH",
+                "PreambleText": "",
+                "QuestionText": "Do you use ANY OTHER DRUG?",
+                "AnswerScaleID": 6,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 20,
+                        "AnswerScaleID": 6,
+                        "Text": "(None) Don’t Use Any Other Drugs",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 22,
+                        "AnswerScaleID": 6,
+                        "Text": "Methamphetamine",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 24,
+                        "AnswerScaleID": 6,
+                        "Text": "Other Amphetamines",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 26,
+                        "AnswerScaleID": 6,
+                        "Text": "Marijuana/Cannabis/Wax/Hashish",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 28,
+                        "AnswerScaleID": 6,
+                        "Text": "Opioid/Medication",
+                        "Value": 6
+                    },
+                    {
+                        "AnswerScaleOptionID": 30,
+                        "AnswerScaleID": 6,
+                        "Text": "Opioid/Heroin",
+                        "Value": 5
+                    },
+                    {
+                        "AnswerScaleOptionID": 32,
+                        "AnswerScaleID": 6,
+                        "Text": "Benzodiazepines",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 34,
+                        "AnswerScaleID": 6,
+                        "Text": "Cocaine/Crack",
+                        "Value": 7
+                    },
+                    {
+                        "AnswerScaleOptionID": 36,
+                        "AnswerScaleID": 6,
+                        "Text": "Hallucinogens/Psychedelics",
+                        "Value": 8
+                    },
+                    {
+                        "AnswerScaleOptionID": 38,
+                        "AnswerScaleID": 6,
+                        "Text": "Sedatives/Hypnotics/Non-Benzo Tranquilizers",
+                        "Value": 9
+                    },
+                    {
+                        "AnswerScaleOptionID": 40,
+                        "AnswerScaleID": 6,
+                        "Text": "Inhalants",
+                        "Value": 10
+                    },
+                    {
+                        "AnswerScaleOptionID": 42,
+                        "AnswerScaleID": 6,
+                        "Text": "Barbiturates/Downers",
+                        "Value": 11
+                    },
+                    {
+                        "AnswerScaleOptionID": 44,
+                        "AnswerScaleID": 6,
+                        "Text": "PCP/Ketamine/GHB/Designer Drugs",
+                        "Value": 12
+                    },
+                    {
+                        "AnswerScaleOptionID": 46,
+                        "AnswerScaleID": 6,
+                        "Text": "Other Stimulants",
+                        "Value": 13
+                    },
+                    {
+                        "AnswerScaleOptionID": 48,
+                        "AnswerScaleID": 6,
+                        "Text": "Other",
+                        "Value": 14
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Questions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling nervous, anxious, or on edge?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Not being able to stop or control worrying?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Worrying too much about different things?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Trouble relaxing?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Being so restless that it is hard to sit still?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 6,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Becoming easily annoyed or irritable?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 7,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling afraid as if something awful might happen?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 8,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "",
+                "QuestionText": "If you checked off ANY problems, how DIFFICULT have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+                "AnswerScaleID": 3,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": true,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 7,
+                        "AnswerScaleID": 3,
+                        "Text": "Not difficult at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 8,
+                        "AnswerScaleID": 3,
+                        "Text": "Somewhat difficult",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 9,
+                        "AnswerScaleID": 3,
+                        "Text": "Very difficult",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 10,
+                        "AnswerScaleID": 3,
+                        "Text": "Extremely difficult",
+                        "Value": 3
+                    }
+                ]
+            }
+        ],
+        "ScreeningSectionID": "GAD-7",
+        "ScreeningID": "BHS",
+        "ScreeningSectionName": "Anxiety (GAD-7)",
+        "ScreeningSectionShortName": "GAD-7",
+        "MainSectionQuestions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling nervous, anxious, or on edge?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Not being able to stop or control worrying?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            }
+        ],
+        "NotMainSectionQuestions": [
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Worrying too much about different things?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Trouble relaxing?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Being so restless that it is hard to sit still?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 6,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Becoming easily annoyed or irritable?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 7,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling afraid as if something awful might happen?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 8,
+                "ScreeningSectionID": "GAD-7",
+                "PreambleText": "",
+                "QuestionText": "If you checked off ANY problems, how DIFFICULT have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+                "AnswerScaleID": 3,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": true,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 7,
+                        "AnswerScaleID": 3,
+                        "Text": "Not difficult at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 8,
+                        "AnswerScaleID": 3,
+                        "Text": "Somewhat difficult",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 9,
+                        "AnswerScaleID": 3,
+                        "Text": "Very difficult",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 10,
+                        "AnswerScaleID": 3,
+                        "Text": "Extremely difficult",
+                        "Value": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Questions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling nervous, anxious, or on edge?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Not being able to stop or control worrying?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Worrying too much about different things?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Trouble relaxing?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Being so restless that it is hard to sit still?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 6,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Becoming easily annoyed or irritable?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 7,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling afraid as if something awful might happen?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 8,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "",
+                "QuestionText": "If you checked off ANY problems, how DIFFICULT have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+                "AnswerScaleID": 3,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": true,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 7,
+                        "AnswerScaleID": 3,
+                        "Text": "Not difficult at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 8,
+                        "AnswerScaleID": 3,
+                        "Text": "Somewhat difficult",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 9,
+                        "AnswerScaleID": 3,
+                        "Text": "Very difficult",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 10,
+                        "AnswerScaleID": 3,
+                        "Text": "Extremely difficult",
+                        "Value": 3
+                    }
+                ]
+            }
+        ],
+        "ScreeningSectionID": "GAD7A",
+        "ScreeningID": "BHS",
+        "ScreeningSectionName": "Anxiety (GAD-7)",
+        "ScreeningSectionShortName": "GAD7A",
+        "MainSectionQuestions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling nervous, anxious, or on edge?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Not being able to stop or control worrying?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Worrying too much about different things?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Trouble relaxing?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Being so restless that it is hard to sit still?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 6,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Becoming easily annoyed or irritable?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 7,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling afraid as if something awful might happen?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            }
+        ],
+        "NotMainSectionQuestions": [
+            {
+                "QuestionID": 8,
+                "ScreeningSectionID": "GAD7A",
+                "PreambleText": "",
+                "QuestionText": "If you checked off ANY problems, how DIFFICULT have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+                "AnswerScaleID": 3,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": true,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 7,
+                        "AnswerScaleID": 3,
+                        "Text": "Not difficult at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 8,
+                        "AnswerScaleID": 3,
+                        "Text": "Somewhat difficult",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 9,
+                        "AnswerScaleID": 3,
+                        "Text": "Very difficult",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 10,
+                        "AnswerScaleID": 3,
+                        "Text": "Extremely difficult",
+                        "Value": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Questions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Little interest or pleasure in doing things?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling down, depressed, or hopeless?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Trouble falling or staying asleep, or sleeping too much?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling tired or having little energy?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Poor appetite or overeating?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 6,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 7,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Trouble concentrating on things, such as reading the newspaper or watching television?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 8,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 9,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Thoughts that you would be BETTER OFF DEAD or of HURTING YOURSELF in some way?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 10,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "",
+                "QuestionText": "If you checked off ANY problems, how DIFFICULT have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+                "AnswerScaleID": 3,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 7,
+                        "AnswerScaleID": 3,
+                        "Text": "Not difficult at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 8,
+                        "AnswerScaleID": 3,
+                        "Text": "Somewhat difficult",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 9,
+                        "AnswerScaleID": 3,
+                        "Text": "Very difficult",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 10,
+                        "AnswerScaleID": 3,
+                        "Text": "Extremely difficult",
+                        "Value": 3
+                    }
+                ]
+            }
+        ],
+        "ScreeningSectionID": "PHQ-9",
+        "ScreeningID": "BHS",
+        "ScreeningSectionName": "Depression (PHQ-9)",
+        "ScreeningSectionShortName": "PHQ-9",
+        "MainSectionQuestions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Little interest or pleasure in doing things?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling down, depressed, or hopeless?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            }
+        ],
+        "NotMainSectionQuestions": [
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Trouble falling or staying asleep, or sleeping too much?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling tired or having little energy?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Poor appetite or overeating?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 6,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 7,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Trouble concentrating on things, such as reading the newspaper or watching television?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 8,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 9,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Thoughts that you would be BETTER OFF DEAD or of HURTING YOURSELF in some way?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 10,
+                "ScreeningSectionID": "PHQ-9",
+                "PreambleText": "",
+                "QuestionText": "If you checked off ANY problems, how DIFFICULT have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+                "AnswerScaleID": 3,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 7,
+                        "AnswerScaleID": 3,
+                        "Text": "Not difficult at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 8,
+                        "AnswerScaleID": 3,
+                        "Text": "Somewhat difficult",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 9,
+                        "AnswerScaleID": 3,
+                        "Text": "Very difficult",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 10,
+                        "AnswerScaleID": 3,
+                        "Text": "Extremely difficult",
+                        "Value": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Questions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Little interest or pleasure in doing things?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling down, depressed, or hopeless?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Trouble falling or staying asleep, or sleeping too much?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling tired or having little energy?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Poor appetite or overeating?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 6,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 7,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Trouble concentrating on things, such as reading the newspaper or watching television?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 8,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 9,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Thoughts that you would be BETTER OFF DEAD or of HURTING YOURSELF in some way?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 10,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "",
+                "QuestionText": "If you checked off ANY problems, how DIFFICULT have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+                "AnswerScaleID": 3,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 7,
+                        "AnswerScaleID": 3,
+                        "Text": "Not difficult at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 8,
+                        "AnswerScaleID": 3,
+                        "Text": "Somewhat difficult",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 9,
+                        "AnswerScaleID": 3,
+                        "Text": "Very difficult",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 10,
+                        "AnswerScaleID": 3,
+                        "Text": "Extremely difficult",
+                        "Value": 3
+                    }
+                ]
+            }
+        ],
+        "ScreeningSectionID": "PHQ9A",
+        "ScreeningID": "BHS",
+        "ScreeningSectionName": "Depression (PHQ-9)",
+        "ScreeningSectionShortName": "PHQ9A",
+        "MainSectionQuestions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Little interest or pleasure in doing things?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling down, depressed, or hopeless?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Trouble falling or staying asleep, or sleeping too much?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling tired or having little energy?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Poor appetite or overeating?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 6,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 7,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Trouble concentrating on things, such as reading the newspaper or watching television?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 8,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 9,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "Over the LAST 2 WEEKS, how often have you been bothered by any of the following problems:",
+                "QuestionText": "Thoughts that you would be BETTER OFF DEAD or of HURTING YOURSELF in some way?",
+                "AnswerScaleID": 2,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 3,
+                        "AnswerScaleID": 2,
+                        "Text": "Not at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 4,
+                        "AnswerScaleID": 2,
+                        "Text": "Several days",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 5,
+                        "AnswerScaleID": 2,
+                        "Text": "More than half the days",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 6,
+                        "AnswerScaleID": 2,
+                        "Text": "Nearly every day",
+                        "Value": 3
+                    }
+                ]
+            },
+            {
+                "QuestionID": 10,
+                "ScreeningSectionID": "PHQ9A",
+                "PreambleText": "",
+                "QuestionText": "If you checked off ANY problems, how DIFFICULT have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+                "AnswerScaleID": 3,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 7,
+                        "AnswerScaleID": 3,
+                        "Text": "Not difficult at all",
+                        "Value": 0
+                    },
+                    {
+                        "AnswerScaleOptionID": 8,
+                        "AnswerScaleID": 3,
+                        "Text": "Somewhat difficult",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 9,
+                        "AnswerScaleID": 3,
+                        "Text": "Very difficult",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 10,
+                        "AnswerScaleID": 3,
+                        "Text": "Extremely difficult",
+                        "Value": 3
+                    }
+                ]
+            }
+        ],
+        "NotMainSectionQuestions": []
+    },
+    {
+        "Questions": [
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "HITS",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Did a partner, family member, or caregiver hurt, insult, threaten, or scream at you?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "HITS",
+                "PreambleText": "Over the LAST 12 MONTHS, how often did your partner, family member, or caregiver:",
+                "QuestionText": "Physically HURT you?",
+                "AnswerScaleID": 4,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 11,
+                        "AnswerScaleID": 4,
+                        "Text": "Never",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 12,
+                        "AnswerScaleID": 4,
+                        "Text": "Rarely",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 13,
+                        "AnswerScaleID": 4,
+                        "Text": "Sometimes",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 14,
+                        "AnswerScaleID": 4,
+                        "Text": "Fairly Often",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 15,
+                        "AnswerScaleID": 4,
+                        "Text": "Frequently",
+                        "Value": 5
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "HITS",
+                "PreambleText": "Over the LAST 12 MONTHS, how often did your partner, family member, or caregiver:",
+                "QuestionText": "INSULT or talk down to you?",
+                "AnswerScaleID": 4,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 11,
+                        "AnswerScaleID": 4,
+                        "Text": "Never",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 12,
+                        "AnswerScaleID": 4,
+                        "Text": "Rarely",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 13,
+                        "AnswerScaleID": 4,
+                        "Text": "Sometimes",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 14,
+                        "AnswerScaleID": 4,
+                        "Text": "Fairly Often",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 15,
+                        "AnswerScaleID": 4,
+                        "Text": "Frequently",
+                        "Value": 5
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "HITS",
+                "PreambleText": "Over the LAST 12 MONTHS, how often did your partner, family member, or caregiver:",
+                "QuestionText": "THREATEN you with physical harm?",
+                "AnswerScaleID": 4,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 11,
+                        "AnswerScaleID": 4,
+                        "Text": "Never",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 12,
+                        "AnswerScaleID": 4,
+                        "Text": "Rarely",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 13,
+                        "AnswerScaleID": 4,
+                        "Text": "Sometimes",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 14,
+                        "AnswerScaleID": 4,
+                        "Text": "Fairly Often",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 15,
+                        "AnswerScaleID": 4,
+                        "Text": "Frequently",
+                        "Value": 5
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "HITS",
+                "PreambleText": "Over the LAST 12 MONTHS, how often did your partner, family member, or caregiver:",
+                "QuestionText": "SCREAM or curse at you?",
+                "AnswerScaleID": 4,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 11,
+                        "AnswerScaleID": 4,
+                        "Text": "Never",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 12,
+                        "AnswerScaleID": 4,
+                        "Text": "Rarely",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 13,
+                        "AnswerScaleID": 4,
+                        "Text": "Sometimes",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 14,
+                        "AnswerScaleID": 4,
+                        "Text": "Fairly Often",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 15,
+                        "AnswerScaleID": 4,
+                        "Text": "Frequently",
+                        "Value": 5
+                    }
+                ]
+            }
+        ],
+        "ScreeningSectionID": "HITS",
+        "ScreeningID": "BHS",
+        "ScreeningSectionName": "Intimate Partner/Domestic Violence (HITS)",
+        "ScreeningSectionShortName": "HITS",
+        "MainSectionQuestions": [
+            {
+                "QuestionID": 5,
+                "ScreeningSectionID": "HITS",
+                "PreambleText": "Over the LAST 12 MONTHS:",
+                "QuestionText": "Did a partner, family member, or caregiver hurt, insult, threaten, or scream at you?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ],
+        "NotMainSectionQuestions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "HITS",
+                "PreambleText": "Over the LAST 12 MONTHS, how often did your partner, family member, or caregiver:",
+                "QuestionText": "Physically HURT you?",
+                "AnswerScaleID": 4,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 11,
+                        "AnswerScaleID": 4,
+                        "Text": "Never",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 12,
+                        "AnswerScaleID": 4,
+                        "Text": "Rarely",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 13,
+                        "AnswerScaleID": 4,
+                        "Text": "Sometimes",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 14,
+                        "AnswerScaleID": 4,
+                        "Text": "Fairly Often",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 15,
+                        "AnswerScaleID": 4,
+                        "Text": "Frequently",
+                        "Value": 5
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "HITS",
+                "PreambleText": "Over the LAST 12 MONTHS, how often did your partner, family member, or caregiver:",
+                "QuestionText": "INSULT or talk down to you?",
+                "AnswerScaleID": 4,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 11,
+                        "AnswerScaleID": 4,
+                        "Text": "Never",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 12,
+                        "AnswerScaleID": 4,
+                        "Text": "Rarely",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 13,
+                        "AnswerScaleID": 4,
+                        "Text": "Sometimes",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 14,
+                        "AnswerScaleID": 4,
+                        "Text": "Fairly Often",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 15,
+                        "AnswerScaleID": 4,
+                        "Text": "Frequently",
+                        "Value": 5
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "HITS",
+                "PreambleText": "Over the LAST 12 MONTHS, how often did your partner, family member, or caregiver:",
+                "QuestionText": "THREATEN you with physical harm?",
+                "AnswerScaleID": 4,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 11,
+                        "AnswerScaleID": 4,
+                        "Text": "Never",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 12,
+                        "AnswerScaleID": 4,
+                        "Text": "Rarely",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 13,
+                        "AnswerScaleID": 4,
+                        "Text": "Sometimes",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 14,
+                        "AnswerScaleID": 4,
+                        "Text": "Fairly Often",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 15,
+                        "AnswerScaleID": 4,
+                        "Text": "Frequently",
+                        "Value": 5
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "HITS",
+                "PreambleText": "Over the LAST 12 MONTHS, how often did your partner, family member, or caregiver:",
+                "QuestionText": "SCREAM or curse at you?",
+                "AnswerScaleID": 4,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 11,
+                        "AnswerScaleID": 4,
+                        "Text": "Never",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 12,
+                        "AnswerScaleID": 4,
+                        "Text": "Rarely",
+                        "Value": 2
+                    },
+                    {
+                        "AnswerScaleOptionID": 13,
+                        "AnswerScaleID": 4,
+                        "Text": "Sometimes",
+                        "Value": 3
+                    },
+                    {
+                        "AnswerScaleOptionID": 14,
+                        "AnswerScaleID": 4,
+                        "Text": "Fairly Often",
+                        "Value": 4
+                    },
+                    {
+                        "AnswerScaleOptionID": 15,
+                        "AnswerScaleID": 4,
+                        "Text": "Frequently",
+                        "Value": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Questions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "BBGS",
+                "PreambleText": "In the PAST 12 MONTHS, have you gambled?",
+                "QuestionText": "(Examples of gambling include lottery scratchers or draw tickets, casino games, daily fantasy sports, bingo, online poker, horse racing, etc.)?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "BBGS",
+                "PreambleText": "During the PAST 12 MONTHS:",
+                "QuestionText": "Have you become restless, irritable, or anxious when trying to stop/cut down on gambling?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "BBGS",
+                "PreambleText": "During the PAST 12 MONTHS:",
+                "QuestionText": "Have you tried to keep your family or friends from knowing how much you gambled?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "BBGS",
+                "PreambleText": "During the PAST 12 MONTHS:",
+                "QuestionText": "Did you have such financial trouble as a result of your gambling that you had to get help with living expenses from family, friends, or welfare?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ],
+        "ScreeningSectionID": "BBGS",
+        "ScreeningID": "BHS",
+        "ScreeningSectionName": "Problem Gambling (BBGS)",
+        "ScreeningSectionShortName": "BBGS",
+        "MainSectionQuestions": [
+            {
+                "QuestionID": 1,
+                "ScreeningSectionID": "BBGS",
+                "PreambleText": "In the PAST 12 MONTHS, have you gambled?",
+                "QuestionText": "(Examples of gambling include lottery scratchers or draw tickets, casino games, daily fantasy sports, bingo, online poker, horse racing, etc.)?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": true,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ],
+        "NotMainSectionQuestions": [
+            {
+                "QuestionID": 2,
+                "ScreeningSectionID": "BBGS",
+                "PreambleText": "During the PAST 12 MONTHS:",
+                "QuestionText": "Have you become restless, irritable, or anxious when trying to stop/cut down on gambling?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 3,
+                "ScreeningSectionID": "BBGS",
+                "PreambleText": "During the PAST 12 MONTHS:",
+                "QuestionText": "Have you tried to keep your family or friends from knowing how much you gambled?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            },
+            {
+                "QuestionID": 4,
+                "ScreeningSectionID": "BBGS",
+                "PreambleText": "During the PAST 12 MONTHS:",
+                "QuestionText": "Did you have such financial trouble as a result of your gambling that you had to get help with living expenses from family, friends, or welfare?",
+                "AnswerScaleID": 1,
+                "IsMainQuestion": false,
+                "ShowOnlyWhenPossitiveScore": false,
+                "IndexOrder": 0,
+                "AnswerOptions": [
+                    {
+                        "AnswerScaleOptionID": 1,
+                        "AnswerScaleID": 1,
+                        "Text": "Yes",
+                        "Value": 1
+                    },
+                    {
+                        "AnswerScaleOptionID": 2,
+                        "AnswerScaleID": 1,
+                        "Text": "No",
+                        "Value": 0
+                    }
+                ]
+            }
+        ]
+    }
+]

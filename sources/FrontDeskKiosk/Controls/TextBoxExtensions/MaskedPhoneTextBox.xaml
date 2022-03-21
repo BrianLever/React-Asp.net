@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="FrontDesk.Kiosk.Controls.TextBoxExtensions.MaskedPhoneTextBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uc="clr-namespace:FrontDesk.Kiosk.Controls.TextBoxExtensions"
+    Focusable="True">
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+            <Border Style="{StaticResource MaskedTerminalTextBoxBorderRoot}" Width="315">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <uc:MaskedTerminalTextBox x:Name="ucNum1" Grid.Column="0" Margin="8,0,0,0" />
+                    <uc:MaskedTerminalTextBox x:Name="ucNum2" Grid.Column="1"/>
+                    <uc:MaskedTerminalTextBox x:Name="ucNum3" Grid.Column="2" Margin="0,0,8,0" />
+                </Grid>
+            </Border>
+
+            <TextBlock Style="{StaticResource MaskSeparator}"></TextBlock>
+
+            <Border Style="{StaticResource MaskedTerminalTextBoxBorderRoot}" Width="315">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <uc:MaskedTerminalTextBox x:Name="ucNum4" Grid.Column="0" Margin="8,0,0,0" />
+                    <uc:MaskedTerminalTextBox x:Name="ucNum5" Grid.Column="1"/>
+                    <uc:MaskedTerminalTextBox x:Name="ucNum6" Grid.Column="2" Margin="0,0,8,0" />
+                </Grid>
+            </Border>
+
+
+            <TextBlock Style="{StaticResource MaskSeparator}"></TextBlock>
+
+            <Border Style="{StaticResource MaskedTerminalTextBoxBorderRoot}" Width="630">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <uc:MaskedTerminalTextBox x:Name="ucNum7" Grid.Column="0" Margin="8,0,0,0"/>
+                    <uc:MaskedTerminalTextBox x:Name="ucNum8" Grid.Column="1"/>
+                    <uc:MaskedTerminalTextBox x:Name="ucNum9" Grid.Column="2"/>
+                    <uc:MaskedTerminalTextBox x:Name="ucNum10" Grid.Column="3" Margin="0,0,8,0"/>
+                </Grid>
+            </Border>
+        </StackPanel>
+    </Grid>
+</UserControl>

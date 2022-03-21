@@ -1,0 +1,5 @@
+version: 9.0.1.5
+installOn: 2020-08-09T05:01:00
+kiosks:
+- key: PLUW
+  installOn: 2020-08-09T00:01:00

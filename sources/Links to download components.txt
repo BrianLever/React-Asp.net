@@ -1,0 +1,22 @@
+SQL Server Compact Edition 3.5 SP1
+http://www.microsoft.com/downloads/details.aspx?FamilyId=DC614AEE-7E1C-4881-9C32-3A6CE53384D9&displaylang=en#filelist
+
+BouncyCastle
+http://www.bouncycastle.org/csharp/
+http://www.bouncycastle.org/csharp/download/bccrypto-net-1.5-src.zip
+Source code, examples, tests, documentation.
+checksums: md5 ab43eeeec7dd967db3edb95988838677
+sha1 2ed08c563b57a7d8ca877a2d3b6f63375d77a724
+
+Windows Media Player 10
+http://www.microsoft.com/windows/windowsmedia/download/AllDownloads.aspx
+http://download.microsoft.com/download/1/2/A/12A31F29-2FA9-4F50-B95D-E45EF7013F87/MP10Setup.exe
+
+ILMerge
+http://research.microsoft.com/en-us/people/mbarnett/ilmerge.aspx
+http://www.microsoft.com/downloads/details.aspx?FamilyID=22914587-b4ad-4eae-87cf-b14ae6a939b0&displaylang=en
+http://download.microsoft.com/download/1/3/4/1347C99E-9DFB-4252-8F6D-A3129A069F79/ILMerge.msi
+
+Eazfuscator.NET
+http://www.foss.kharkov.ua/g1/projects/eazfuscator/dotnet/Default.aspx
+http://www.foss.kharkov.ua/g1/projects/eazfuscator/dotnet/Downloads/Eazfuscator.NET%202.7%20Setup.msi

@@ -1,0 +1,81 @@
+{
+	"_sectionAnswers": {
+		"TCC": {
+			"_answers": {
+				"4": {
+					"ScreeningSectionID": "TCC",
+					"QuestionID": 4,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "TCC",
+			"AnswerValue": 0,
+			"Score": 0,
+			"ScoreLevel": 0,
+			"ScoreLevelLabel": "NEGATIVE",
+			"Indicates": "Negative"
+		},
+		"CAGE": {
+			"_answers": {
+				"5": {
+					"ScreeningSectionID": "CAGE",
+					"QuestionID": 5,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "CAGE",
+			"AnswerValue": 0,
+			"Score": 0,
+			"ScoreLevel": 0,
+			"ScoreLevelLabel": "NEGATIVE",
+			"Indicates": "No problems reported"
+		},
+		"PHQ-9": {
+			"_answers": {
+				"1": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 1,
+					"AnswerValue": 0
+				},
+				"2": {
+					"ScreeningSectionID": "PHQ-9",
+					"QuestionID": 2,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "PHQ-9",
+			"AnswerValue": 0,
+			"Score": 0,
+			"ScoreLevel": 0,
+			"ScoreLevelLabel": "NONE-MINIMAL depression severity",
+			"Indicates": "No proposed treatment action"
+		},
+		"HITS": {
+			"_answers": {
+				"5": {
+					"ScreeningSectionID": "HITS",
+					"QuestionID": 5,
+					"AnswerValue": 0
+				}
+			},
+			"ScreeningSectionID": "HITS",
+			"AnswerValue": 0,
+			"Score": 0,
+			"ScoreLevel": 0,
+			"ScoreLevelLabel": "NEGATIVE",
+			"Indicates": "No problems reported. Review with patient (if possible)"
+		}
+	},
+	"ScreeningID": "BHS",
+	"StreetAddress": "H",
+	"City": "M",
+	"StateID": "KS",
+	"StateName": "Kansas",
+	"ZipCode": "68000",
+	"Phone": "(000) 000-0000",
+	"KioskID": 1000,
+	"FirstName": "MACY",
+	"LastName": "HURT",
+	"MiddleName": "LEE",
+	"Birthday": "2001-03-18T00:00:00"
+}

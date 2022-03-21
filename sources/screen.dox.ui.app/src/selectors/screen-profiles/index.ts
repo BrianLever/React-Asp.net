@@ -1,0 +1,23 @@
+import { IScreenProfilesState } from "../../states/screen-profiles";
+import { IRootState } from '../../states';
+
+export const isScreenProfilesListRequestLoadingSelector = (state: IRootState) => state.screenProfiles.isScreenProfileListLoading;
+export const screenProfileSortKeySelector = (state: IRootState) => state.screenProfiles.sortKey;
+export const screenProfileSortDirectionelector = (state: IRootState) => state.screenProfiles.sortDirection;
+export const screenProfileStartRowIndexSelector = (state: IRootState) => state.screenProfiles.StartRowIndex;
+export const screenProfileMaximumRowsSelector = (state: IRootState) => state.screenProfiles.MaximumRows;
+export const screenProfileFilterByNameSelector = (state: IRootState) => state.screenProfiles.FilterByName;
+export const screenProfilesListSelector = (state: IRootState) => state.screenProfiles.screenProfileList;
+export const screenProfilesTotalSelector = (state: IRootState) => state.screenProfiles.totalScreenProfiles;
+export const screenProfilesCurrentPageSelector = (state: IRootState) => state.screenProfiles.currentPage;
+export const screenProfileCreateScreenProfileNameSelector = (state: IRootState) => state.screenProfiles.createScreenProfileName;
+export const screenProfileCreateScreenProfileDescriptionSelector = (state: IRootState) => state.screenProfiles.createScreenProfileDescription;
+export const isNewScreenProfileLoadingSelector = (state: IRootState) => state.screenProfiles.isCreateScreenProfileLoading;
+export const ScreenProfileIdSelector = (state: IRootState) => state.screenProfiles.screenProfileId;
+export const isScreeningMinimumAgeListLoadingSelector = (state: IRootState) => state.screenProfiles.isScreeningMinimumAgeListLoading;
+export const screeningMinimumAgeListSelector = (state: IRootState) => state.screenProfiles.screeningMinimumAgeList;
+export const setScreenProfileSelectedOptionSelector = (state: IRootState) => state.screenProfiles.selectedScreenProfileEditOption;
+export const screenProfileFrequencyListSelector = (state: IRootState) => state.screenProfiles.screenProfileFrequencyList;
+export const isScreenProfileFrequencyListLoadingSelector = (state: IRootState) => state.screenProfiles.isScreenProfileFrequencyListLoading;
+export const screenProfileDefaultFrequencyListSelector = (state: IRootState) => state.screenProfiles.screenProfileDefaultFrequencyList;
+export const screenProfileAgeGroupsListSelector = (state: IRootState) => state.screenProfiles.screenProfileAgeGroupsList;

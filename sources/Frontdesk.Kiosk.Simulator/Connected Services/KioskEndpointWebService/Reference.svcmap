@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b8eb2963-7948-49d0-a170-c2f7c5dc6097" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52014/endpoint/KioskEndpoint.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="KioskEndpoint3.xsd" MetadataType="Schema" ID="3c660b30-9e40-4cbc-ad14-6450b5696c50" SourceId="1" SourceUrl="http://localhost:52014/endpoint/KioskEndpoint.svc?xsd=xsd4" />
+    <MetadataFile FileName="KioskEndpoint4.xsd" MetadataType="Schema" ID="430cea7f-5601-4658-a420-a63eb9fddf13" SourceId="1" SourceUrl="http://localhost:52014/endpoint/KioskEndpoint.svc?xsd=xsd6" />
+    <MetadataFile FileName="KioskEndpoint31.xsd" MetadataType="Schema" ID="fa509209-e68c-4c54-ab02-97214c4a4839" SourceId="1" SourceUrl="http://localhost:52014/endpoint/KioskEndpoint.svc?xsd=xsd5" />
+    <MetadataFile FileName="KioskEndpoint.disco" MetadataType="Disco" ID="2145b1c9-eff4-41c9-b66d-dfc8ac60cc62" SourceId="1" SourceUrl="http://localhost:52014/endpoint/KioskEndpoint.svc?disco" />
+    <MetadataFile FileName="KioskEndpoint41.xsd" MetadataType="Schema" ID="1102c5f3-8208-415f-a997-c7203af38ccb" SourceId="1" SourceUrl="http://localhost:52014/endpoint/KioskEndpoint.svc?xsd=xsd7" />
+    <MetadataFile FileName="KioskEndpoint.xsd" MetadataType="Schema" ID="c6f1e27b-eac5-4593-a232-2b2e164c09a2" SourceId="1" SourceUrl="http://localhost:52014/endpoint/KioskEndpoint.svc?xsd=xsd0" />
+    <MetadataFile FileName="KioskEndpoint1.xsd" MetadataType="Schema" ID="f0ff70d3-096f-44c3-9f7b-4b278f38c477" SourceId="1" SourceUrl="http://localhost:52014/endpoint/KioskEndpoint.svc?xsd=xsd1" />
+    <MetadataFile FileName="KioskEndpoint2.xsd" MetadataType="Schema" ID="d1db03b1-457a-416a-8a1e-3b851ee22c48" SourceId="1" SourceUrl="http://localhost:52014/endpoint/KioskEndpoint.svc?xsd=xsd2" />
+    <MetadataFile FileName="KioskEndpoint32.xsd" MetadataType="Schema" ID="644b272e-934a-42e6-ab65-e1956f2cbfd1" SourceId="1" SourceUrl="http://localhost:52014/endpoint/KioskEndpoint.svc?xsd=xsd3" />
+    <MetadataFile FileName="KioskEndpoint.wsdl" MetadataType="Wsdl" ID="9f11967b-a530-4ed6-8be3-47fc06901ff3" SourceId="1" SourceUrl="http://localhost:52014/endpoint/KioskEndpoint.svc?wsdl" />
+    <MetadataFile FileName="KioskEndpoint1.wsdl" MetadataType="Wsdl" ID="38ae44c8-f69a-4c4c-a733-92f050f70880" SourceId="1" SourceUrl="http://localhost:52014/endpoint/KioskEndpoint.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

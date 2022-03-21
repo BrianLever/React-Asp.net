@@ -1,0 +1,775 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:FrontDesk.Kiosk.ResourceDictionary"
+                    xmlns:k="clr-namespace:FrontDesk.Kiosk.Converters"
+                   >
+
+    <k:ToUpperValueConverter x:Key="ToUpperConverter" />
+    <!-- Path -->
+
+    <Style x:Key="DarkChevronPath" TargetType="Path">
+        <Setter Property="Fill">
+            <Setter.Value>
+                <SolidColorBrush Color="#FF323232"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="YellowChevronPath" TargetType="Path">
+        <Setter Property="Fill">
+            <Setter.Value>
+                <SolidColorBrush Color="#ffedbc47"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="NextButtonYellowPath" TargetType="Path">
+        <Setter Property="Fill">
+            <Setter.Value>
+                <SolidColorBrush Color="#FFE7BE5D"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="NextButtonDarkPath" TargetType="Path">
+        <Setter Property="Fill">
+            <Setter.Value>
+                <SolidColorBrush Color="#FF323232"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="NextButtonYellowBorder" TargetType="Border">
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="#FFE7BE5D"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="NextButtonDarkBorder" TargetType="Border">
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="#FF323232"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <Style x:Key="NextButtonYellowEclipsePath" TargetType="Path">
+        <Setter Property="Fill">
+            <Setter.Value>
+                <SolidColorBrush Color="#FFE7BE5D"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Stroke">
+            <Setter.Value>
+                <SolidColorBrush Color="#FFE7BE5D"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="NextButtonDarkEclipsePath" TargetType="Path">
+        <Setter Property="Fill">
+            <Setter.Value>
+                <SolidColorBrush Color="#FF323232"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Stroke">
+            <Setter.Value>
+                <SolidColorBrush Color="#FF323232"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="NextButtonYellowEllipse" TargetType="Ellipse">
+        <Setter Property="Fill">
+            <Setter.Value>
+                <SolidColorBrush Color="#FFE7BE5D"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Stroke">
+            <Setter.Value>
+                <SolidColorBrush Color="#FFE7BE5D"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="NextButtonDarkEllipse" TargetType="Ellipse">
+        <Setter Property="Fill">
+            <Setter.Value>
+                <SolidColorBrush Color="#FF323232"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Stroke">
+            <Setter.Value>
+                <SolidColorBrush Color="#FF323232"></SolidColorBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- End Path -->
+
+    <!-- TextBlock -->
+    <Style TargetType="TextBlock" x:Key="StartButton-Yellow" BasedOn="{StaticResource {x:Type TextBlock}}">
+        <Setter Property="Foreground" Value="#ffedbc47" />
+        <Setter Property="FontFamily" Value="../Fonts/#Proxima Nova Black" />
+    </Style>
+    <Style TargetType="TextBlock" x:Key="StartButton-Dark" BasedOn="{StaticResource {x:Type TextBlock}}">
+        <Setter Property="Foreground" Value="#FF323232" />
+        <Setter Property="FontFamily" Value="../Fonts/#Proxima Nova Black" />
+    </Style>
+
+
+    <Style TargetType="TextBlock" x:Key="Questions-Default" BasedOn="{StaticResource {x:Type TextBlock}}">
+        <Setter Property="Foreground" Value="#FF4D4D4D" />
+        <Setter Property="FontFamily" Value="../Fonts/#Proxima Nova Black" />
+        <Setter Property="FontSize" Value="45.5px" />
+        <Setter Property="FontWeight" Value="Black" />
+        <Setter Property="TextAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+    <Style TargetType="TextBlock" x:Key="Questions-Pressed" BasedOn="{StaticResource Questions-Default}">
+        <Setter Property="Foreground" Value="#fff7f7f7" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="Questions-Disabled" BasedOn="{StaticResource Questions-Default}">
+        <Setter Property="Foreground" Value="#fff7f7f7" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="Questions-MultiLine-Default" BasedOn="{StaticResource Questions-Default}">
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontFamily" Value="../Fonts/#Proxima Nova" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="Questions-MultiLine-Pressed" BasedOn="{StaticResource Questions-MultiLine-Default}">
+        <Setter Property="Foreground" Value="#FFF7F7F7" />
+    </Style>
+
+
+    <Style TargetType="TextBlock" x:Key="Questions-MultiLine-Disabled" BasedOn="{StaticResource Questions-MultiLine-Default}">
+        <Setter Property="Foreground" Value="#FFF7F7F7" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="Questions-DrugsInventory-Default" BasedOn="{StaticResource Questions-MultiLine-Default}">
+        <Setter Property="FontSize" Value="31.5" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="Questions-DrugsInventory-Pressed" BasedOn="{StaticResource Questions-MultiLine-Pressed}">
+        <Setter Property="FontSize" Value="31.5" />
+    </Style>
+
+
+    <Style TargetType="TextBlock" x:Key="Questions-DrugsInventory-Disabled" BasedOn="{StaticResource Questions-MultiLine-Disabled}">
+        <Setter Property="FontSize" Value="31.5" />
+    </Style>
+
+
+    <Style TargetType="TextBlock" x:Key="Questions-Demographics-Default" BasedOn="{StaticResource Questions-Default}">
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontFamily" Value="../Fonts/#Proxima Nova" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="Questions-Demographics-Pressed" BasedOn="{StaticResource Questions-Pressed}">
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontFamily" Value="../Fonts/#Proxima Nova" />
+    </Style>
+
+
+    <Style TargetType="TextBlock" x:Key="Questions-Demographics-Disabled" BasedOn="{StaticResource Questions-Disabled}">
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontFamily" Value="../Fonts/#Proxima Nova" />
+    </Style>
+
+
+    <Style TargetType="TextBlock" x:Key="Questions-Demographics-38-Default" BasedOn="{StaticResource Questions-Demographics-Default}">
+        <Setter Property="FontSize" Value="38.5" />
+        <Setter Property="LineHeight" Value="46.2" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="Questions-Demographics-38-Pressed" BasedOn="{StaticResource Questions-Demographics-Pressed}">
+        <Setter Property="FontSize" Value="38.5" />
+        <Setter Property="LineHeight" Value="46.2" />
+    </Style>
+
+
+    <Style TargetType="TextBlock" x:Key="Questions-Demographics-38-Disabled" BasedOn="{StaticResource Questions-Demographics-Disabled}">
+        <Setter Property="FontSize" Value="38.5" />
+        <Setter Property="LineHeight" Value="46.2" />
+    </Style>
+
+
+
+
+
+    <Style TargetType="TextBlock" x:Key="keyButtonText" BasedOn="{StaticResource {x:Type TextBlock}}">
+        <Setter Property="FontSize" Value="45px" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontFamily" Value="../Fonts/#Proxima Nova" />
+        <Setter Property="Foreground" Value="#FF4D4D4D" />
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="TextWrapping" Value="NoWrap" />
+    </Style>
+    <Style TargetType="TextBlock" x:Key="keyButtonTextSelected" BasedOn="{StaticResource keyButtonText}">
+        <Setter Property="Foreground" Value="#FFF7F7F7" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="keyButtonTextLong" BasedOn="{StaticResource keyButtonText}">
+        <Setter Property="FontSize" Value="30px" />
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="keyButtonTextLongSelected" BasedOn="{StaticResource keyButtonTextLong}">
+        <Setter Property="Foreground" Value="#FFF7F7F7" />
+    </Style>
+
+    <!-- End TextBlock -->
+
+
+    <!-- Buttons -->
+
+    <Style x:Key="YellowStartButton" TargetType="Button">
+        <Setter Property="Stylus.IsPressAndHoldEnabled" Value="False"/>
+        <Setter Property="ClickMode" Value="Release" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Viewbox x:Name="root" Width="685.505" Height="162" Stretch="Uniform" 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                        <Canvas Width="972.000" Height="240.878" Background="Transparent">
+                            <Canvas>
+                                <Canvas>
+                                    <Canvas>
+                                        <Canvas>
+                                            <!-- Layer 1/<Group>/<Group>/<Group>/<Path> -->
+                                            <Path x:Name="InternalPath" StrokeThickness="10.0" Stroke="#FF323232" StrokeMiterLimit="1.0" Data="F1 M 967.000,32.465 L 967.000,208.413 C 967.000,223.582 954.704,235.878 939.535,235.878 L 32.465,235.878 C 17.296,235.878 5.000,223.582 5.000,208.413 L 5.000,32.465 C 5.000,17.296 17.296,5.000 32.465,5.000 L 939.535,5.000 C 954.704,5.000 967.000,17.296 967.000,32.465 Z"/>
+
+                                        </Canvas>
+                                        <Canvas>
+
+                                            <Canvas>
+
+                                                <!-- Layer 1/<Group>/<Group>/<Group>/<Group>/START -->
+                                                <TextBlock x:Name="Start1" Style="{StaticResource StartButton-Dark}" Canvas.Left="278.775" Canvas.Top="66.759" FontSize="97.30" >S</TextBlock>
+                                                <TextBlock x:Name="Start2" Style="{StaticResource StartButton-Dark}" Canvas.Left="338.418" Canvas.Top="66.759" FontSize="97.30" >T</TextBlock>
+                                                <TextBlock x:Name="Start3" Style="{StaticResource StartButton-Dark}" Canvas.Left="390.471" Canvas.Top="66.759" FontSize="97.30" >A</TextBlock>
+                                                <TextBlock x:Name="Start4" Style="{StaticResource StartButton-Dark}" Canvas.Left="459.552" Canvas.Top="66.759" FontSize="97.30" >R</TextBlock>
+                                                <TextBlock x:Name="Start5" Style="{StaticResource StartButton-Dark}" Canvas.Left="524.548" Canvas.Top="66.759" FontSize="97.30" >T</TextBlock>
+
+                                                <Canvas>
+
+                                                    <!-- Layer 1/<Group>/<Group>/<Group>/<Group>/<Group>/<Ellipse> -->
+                                                    <Path x:Name="EclipsePath" StrokeThickness="8.0" Stroke="#FF323232" StrokeMiterLimit="1.0" Style="{StaticResource DarkChevronPath}" Data="F1 M 693.225,122.439 C 693.225,146.957 673.350,166.832 648.832,166.832 C 624.315,166.832 604.439,146.957 604.439,122.439 C 604.439,97.922 624.315,78.046 648.832,78.046 C 673.350,78.046 693.225,97.922 693.225,122.439 Z"/>
+
+                                                    <!-- Layer 1/<Group>/<Group>/<Group>/<Group>/<Group>/<Path> -->
+                                                    <Path x:Name="ChevronPath" Style="{StaticResource YellowChevronPath}" Data="F1 M 644.856,100.009 L 647.489,97.375 C 648.604,96.260 650.407,96.260 651.510,97.375 L 674.569,120.423 C 675.684,121.538 675.684,123.341 674.569,124.444 L 651.510,147.503 C 650.395,148.618 648.592,148.618 647.489,147.503 L 644.856,144.869 C 643.729,143.743 643.752,141.904 644.903,140.801 L 659.196,127.184 L 625.106,127.184 C 623.528,127.184 622.259,125.915 622.259,124.337 L 622.259,120.541 C 622.259,118.964 623.528,117.694 625.106,117.694 L 659.196,117.694 L 644.903,104.077 C 643.741,102.974 643.717,101.135 644.856,100.009 Z"/>
+
+                                                </Canvas>
+
+                                            </Canvas>
+
+                                        </Canvas>
+
+                                    </Canvas>
+
+                                </Canvas>
+
+                            </Canvas>
+                        </Canvas>
+                    </Viewbox>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Start1" Property="Style" Value="{StaticResource StartButton-Yellow}" ></Setter>
+                            <Setter TargetName="Start2" Property="Style" Value="{StaticResource StartButton-Yellow}" ></Setter>
+                            <Setter TargetName="Start3" Property="Style" Value="{StaticResource StartButton-Yellow}" ></Setter>
+                            <Setter TargetName="Start4" Property="Style" Value="{StaticResource StartButton-Yellow}" ></Setter>
+                            <Setter TargetName="Start5" Property="Style" Value="{StaticResource StartButton-Yellow}" ></Setter>
+
+                            <Setter TargetName="ChevronPath" Property="Style" Value="{StaticResource DarkChevronPath}" ></Setter>
+                            <Setter TargetName="EclipsePath" Property="Style" Value="{StaticResource YellowChevronPath}" ></Setter>
+                            <Setter TargetName="InternalPath" Property="Style" Value="{StaticResource DarkChevronPath}" ></Setter>
+
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="NewNextButton" TargetType="Button">
+        <Setter Property="VerticalAlignment" Value="Bottom" />
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Margin" Value="0,0,150,55" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <StackPanel x:Name="root">
+                        <Rectangle x:Name="InternalRectangle" Width="214.631" Height="95.392" Stretch="Fill" Style="{StaticResource YellowActiveRectangle}"/>
+                        <Rectangle Width="214.631" Height="0.829346" Stretch="Fill" Fill="#FF323232"/>
+                        <Rectangle Width="214.631" Height="0.829346" Stretch="Fill" Fill="#FFF9DB8F"/>
+                        <Grid Width="120.491" Height="95" Margin="0,-95,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="20"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock x:Name="NextLabel" TextAlignment="Left" FontSize="34.23" VerticalAlignment="Center" HorizontalAlignment="Left"
+														Text="Next" Style="{StaticResource DarkLabel}">
+                            </TextBlock>
+                            <Grid Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                                <Path x:Name="ChevronPath" Width="20.0947" Height="33.1094" Stretch="Fill" Style="{StaticResource DarkChevronPath}" Data="F1 M 909.897,1243.51L 906.357,1239.97L 919.372,1226.95L 906.357,1213.94L 909.897,1210.4L 926.452,1226.95L 909.897,1243.51 Z "/>
+                            </Grid>
+                        </Grid>
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="ChevronPath" Property="Style" Value="{StaticResource YellowChevronPath}" ></Setter>
+                            <Setter TargetName="InternalRectangle" Property="Style" Value="{StaticResource NextPressedRectangle}" ></Setter>
+                            <Setter TargetName="NextLabel" Property="Style" Value="{StaticResource YellowLabel}" ></Setter>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="root" Property="Opacity" Value="0.4" ></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="YellowNextButton" TargetType="Button">
+        <Setter Property="VerticalAlignment" Value="Bottom" />
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Margin" Value="0,0,115,65" />
+        <Setter Property="Content" Value="NEXT" />
+        <Setter Property="Stylus.IsPressAndHoldEnabled" Value="False"/>
+        <Setter Property="ClickMode" Value="Release" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Viewbox x:Name="root" Width="320" Height="110" Stretch="Uniform">
+                        <Grid Width="457" Height="157.4" Background="Transparent">
+                            <Canvas Width="457" Height="157.4" Background="Transparent">
+                                <!-- Layer 6/<Group>/<Group>/<Path> -->
+                                <Path x:Name="InternalPath" Style="{StaticResource NextButtonYellowPath}" 
+                                      Canvas.Left="-2115.803" Canvas.Top="-3086.465" 
+                                      Data="F1 M 2572.803,3106.465 L 2572.803,3223.865 C 2572.803,3234.910 2563.848,3243.865 2552.803,3243.865 L 2135.803,3243.865 C 2124.757,3243.865 2115.803,3234.910 2115.803,3223.865 L 2115.803,3106.465 C 2115.803,3095.419 2124.757,3086.465 2135.803,3086.465 L 2552.803,3086.465 C 2563.848,3086.465 2572.803,3095.419 2572.803,3106.465 Z"/>
+
+                                <!-- Layer 6/<Group>/<Group>/<Ellipse> -->
+                                <Path x:Name="EclipsePath" Style="{StaticResource NextButtonDarkEclipsePath}" Canvas.Left="-2115.803" Canvas.Top="-3086.465" StrokeThickness="8.0" StrokeMiterLimit="1.0" 
+                                      Data="F1 M 2452.451,3168.165 C 2452.451,3181.781 2441.413,3192.819 2427.797,3192.819 C 2414.181,3192.819 2403.143,3181.781 2403.143,3168.165 C 2403.143,3154.549 2414.181,3143.511 2427.797,3143.511 C 2441.413,3143.511 2452.451,3154.549 2452.451,3168.165 Z"/>
+
+                                <!-- Layer 6/<Group>/<Group>/<Path> -->
+                                <Path x:Name="ChevronPath" Style="{StaticResource NextButtonYellowPath}" Canvas.Left="-2115.803" Canvas.Top="-3086.465" Data="F1 M 2425.589,3155.708 L 2427.051,3154.245 C 2427.670,3153.626 2428.672,3153.626 2429.284,3154.245 L 2442.090,3167.045 C 2442.710,3167.664 2442.710,3168.665 2442.090,3169.278 L 2429.284,3182.084 C 2428.665,3182.703 2427.664,3182.703 2427.051,3182.084 L 2425.589,3180.622 C 2424.963,3179.996 2424.976,3178.975 2425.615,3178.362 L 2433.553,3170.800 L 2414.620,3170.800 C 2413.744,3170.800 2413.039,3170.095 2413.039,3169.219 L 2413.039,3167.111 C 2413.039,3166.235 2413.744,3165.530 2414.620,3165.530 L 2433.553,3165.530 L 2425.615,3157.967 C 2424.969,3157.355 2424.956,3156.334 2425.589,3155.708 Z"/>
+
+
+                            </Canvas>
+                            <!-- Layer 6/<Group>/<Group>/<Group>/NEXT -->
+                            <TextBlock x:Name="ButtonText" Margin="132.612,3,0,0" Style="{StaticResource StartButton-Dark}" FontSize="52" LineHeight="62.4" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Run Text="{TemplateBinding Content}" /></TextBlock>
+                        </Grid>
+                    </Viewbox>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="ButtonText" Property="Style" Value="{StaticResource StartButton-Yellow}" ></Setter>
+                            <Setter TargetName="InternalPath" Property="Style" Value="{StaticResource NextButtonDarkPath}" ></Setter>
+
+                            <Setter TargetName="ChevronPath" Property="Style" Value="{StaticResource NextButtonDarkPath}" ></Setter>
+                            <Setter TargetName="EclipsePath" Property="Style" Value="{StaticResource NextButtonYellowEclipsePath}" ></Setter>
+
+
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="root" Property="Opacity" Value="0.4" ></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="YellowReturnButton" TargetType="Button">
+        <Setter Property="VerticalAlignment" Value="Bottom" />
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Margin" Value="0,0,0,0" />
+        <Setter Property="Content" Value="RETURN" />
+        <Setter Property="Stylus.IsPressAndHoldEnabled" Value="False"/>
+        <Setter Property="ClickMode" Value="Release" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="root" Width="{TemplateBinding Width}" CornerRadius="10" MinWidth="320" Height="110"  
+                           Style="{StaticResource NextButtonYellowBorder}" >
+
+                        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                            <!-- Layer 6/<Group>/<Group>/<Group>/NEXT -->
+                            <TextBlock x:Name="ButtonText" Margin="90.612,24.831,0,21.831" Style="{StaticResource StartButton-Dark}" FontSize="41.6" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.RowSpan="2">
+                                <Run Text="{TemplateBinding Content}" /></TextBlock>
+                            <Canvas Grid.RowSpan="2" Margin="40,0,0,0">
+
+                                <Ellipse x:Name="EllipsePath"
+                                  Style="{StaticResource NextButtonDarkEllipse}" 
+                                      StrokeThickness="8.0" StrokeMiterLimit="1.0" 
+                                Width="40" Height="40"
+                                Grid.RowSpan="2"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Canvas.Left="0"
+                                Canvas.Top="35"
+                                  
+                                />
+
+                                <Path x:Name="ChevronPath" Style="{StaticResource NextButtonYellowPath}" 
+                                  Data="F1 
+                                  M 12.6,2.7 
+                                  L 14.0,1.2 
+                                  C 14.7,0.6 15.7,0.6 16.2,1.2 
+                                  L 28.1,14.0 
+                                  C 29.7,14.7 29.7,15.7 29.1,15.2 
+                                  L 16.2,29.1 
+                                  C 15.7,29.7 14.7,29.7 14.1,29.0 
+                                  L 12.6,27.6 
+                                  C 10,27 10,26 12.6,25.3 
+                                  L 20.6,17.8 
+                                  L 1.6,17.8 
+                                  C 0.7,17.8 0.0,17.1 0.0,16.2 
+                                  L 0.0,14.1 
+                                  C 0.0,13.235 0.744,12.530 1.620,12.530 
+                                  L 20.553,12.530 
+                                  L 12.615,4.967 
+                                  C 11.969,4.355 11.956,3.334 12.589,2.708 
+                                  Z" 
+                                 
+                                  Canvas.Left="7"
+                                  Canvas.Top="43"
+                                  Margin="0,0,0,0" 
+                                  VerticalAlignment="Center"
+                                  Grid.RowSpan="2"
+                                 >
+                                    <Path.LayoutTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="0.8" ScaleY="0.8" />
+                                            <RotateTransform  CenterX="0" CenterY="0" Angle="180" />
+                                        </TransformGroup>
+                                    </Path.LayoutTransform>
+                                </Path>
+                            </Canvas>
+                        </Grid>
+
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="ButtonText" Property="Style" Value="{StaticResource StartButton-Yellow}" ></Setter>
+                            <Setter TargetName="root" Property="Style" Value="{StaticResource NextButtonDarkBorder}" ></Setter>
+
+                            <Setter TargetName="ChevronPath" Property="Style" Value="{StaticResource NextButtonDarkPath}" ></Setter>
+                            <Setter TargetName="EllipsePath" Property="Style" Value="{StaticResource NextButtonYellowEllipse}" ></Setter>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="root" Property="Opacity" Value="0.4" ></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="YellowKeyboardAlignedNextButton" TargetType="Button" BasedOn="{StaticResource YellowNextButton}">
+        <Setter Property="Margin" Value="0,0,0,65" />
+    </Style>
+
+    <Style x:Key="YellowCenterNextButton" TargetType="Button" BasedOn="{StaticResource YellowNextButton}">
+        <Setter Property="Margin" Value="0,0,0,0" />
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="DeleteButton" TargetType="Button">
+        <Setter Property="Margin" Value="15,0,0,0" />
+        <Setter Property="Width" Value="Auto" />
+        <Setter Property="Height" Value="Auto" />
+        <Setter Property="Content" Value="DELETE" />
+        <Setter Property="Stylus.IsPressAndHoldEnabled" Value="False"/>
+        <Setter Property="ClickMode" Value="Release" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Viewbox x:Name="root" Width="320" Height="110" Stretch="Uniform">
+                        <Grid Width="457" Height="157.4" Background="Transparent">
+                            <Canvas Width="457" Height="157.4" Background="Transparent">
+                                <!-- Layer 6/<Group>/<Group>/<Path> -->
+                                <Path x:Name="InternalPath" Style="{StaticResource NextButtonYellowPath}" 
+                                      Canvas.Left="-2115.803" Canvas.Top="-3086.465" 
+                                      Data="F1 M 2572.803,3106.465 L 2572.803,3223.865 C 2572.803,3234.910 2563.848,3243.865 2552.803,3243.865 L 2135.803,3243.865 C 2124.757,3243.865 2115.803,3234.910 2115.803,3223.865 L 2115.803,3106.465 C 2115.803,3095.419 2124.757,3086.465 2135.803,3086.465 L 2552.803,3086.465 C 2563.848,3086.465 2572.803,3095.419 2572.803,3106.465 Z"/>
+
+                                <!-- Layer 6/<Group>/<Group>/<Ellipse> -->
+                                <Path x:Name="EclipsePath" Style="{StaticResource NextButtonDarkEclipsePath}" Canvas.Left="-2115.803" Canvas.Top="-3086.465" StrokeThickness="8.0" StrokeMiterLimit="1.0" 
+                                      Data="F1 M 2452.451,3168.165 C 2452.451,3181.781 2441.413,3192.819 2427.797,3192.819 C 2414.181,3192.819 2403.143,3181.781 2403.143,3168.165 C 2403.143,3154.549 2414.181,3143.511 2427.797,3143.511 C 2441.413,3143.511 2452.451,3154.549 2452.451,3168.165 Z"/>
+
+                                <!-- Layer 6/<Group>/<Group>/<Path> -->
+                                <Path x:Name="ChevronPath" Style="{StaticResource NextButtonYellowPath}" Canvas.Left="-2115.803" Canvas.Top="-3086.465" Data="F1 M 2425.589,3155.708 L 2427.051,3154.245 C 2427.670,3153.626 2428.672,3153.626 2429.284,3154.245 L 2442.090,3167.045 C 2442.710,3167.664 2442.710,3168.665 2442.090,3169.278 L 2429.284,3182.084 C 2428.665,3182.703 2427.664,3182.703 2427.051,3182.084 L 2425.589,3180.622 C 2424.963,3179.996 2424.976,3178.975 2425.615,3178.362 L 2433.553,3170.800 L 2414.620,3170.800 C 2413.744,3170.800 2413.039,3170.095 2413.039,3169.219 L 2413.039,3167.111 C 2413.039,3166.235 2413.744,3165.530 2414.620,3165.530 L 2433.553,3165.530 L 2425.615,3157.967 C 2424.969,3157.355 2424.956,3156.334 2425.589,3155.708 Z"/>
+
+
+                            </Canvas>
+                            <!-- Layer 6/<Group>/<Group>/<Group>/NEXT -->
+                            <TextBlock x:Name="ButtonText" Margin="132.612,0,0,0" Style="{StaticResource StartButton-Dark}" 
+                                       FontSize="52.00" 
+                                       HorizontalAlignment="Left" 
+                                       VerticalAlignment="Center">
+                                <Run Text="{TemplateBinding Content}"/></TextBlock>
+                        </Grid>
+                    </Viewbox>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="ButtonText" Property="Style" Value="{StaticResource StartButton-Yellow}" ></Setter>
+                            <Setter TargetName="InternalPath" Property="Style" Value="{StaticResource NextButtonDarkPath}" ></Setter>
+
+                            <Setter TargetName="ChevronPath" Property="Style" Value="{StaticResource NextButtonDarkPath}" ></Setter>
+                            <Setter TargetName="EclipsePath" Property="Style" Value="{StaticResource NextButtonYellowEclipsePath}" ></Setter>
+
+
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="root" Property="Opacity" Value="0.4" ></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!-- Yes/NO button styles and template-->
+    <Style x:Key="ButtonYesNoStyle" TargetType="Button">
+        <Setter Property="Margin" Value="23,20,23,0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid Width="395px" Height="142px">
+                        <Border x:Name="MainPath" Background="#ffcbcbcb" CornerRadius="10" Padding="10,0,10,0">
+                            <TextBlock x:Name="TextBlock" Style="{StaticResource Questions-Default}"
+    							 Text="{TemplateBinding Content, Converter={StaticResource ToUpperConverter}}" TextWrapping="Wrap">
+                            </TextBlock>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefault" Value="True">
+                            <Setter TargetName="MainPath" Property="Background" Value="#ff4d4d4d" />
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-Pressed}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="MainPath" Property="Background" Value="#ff4d4d4d"/>
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-Pressed}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="MainPath" Property="Opacity" Value="0.4" />
+                            <Setter TargetName="MainPath" Property="Background" Value="#ffcbcbcb" />
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-Default}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="DepressionButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Margin" Value="12.5,20,12.5,0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid  Height="142px" Width="395px">
+                        <Border x:Name="MainPath" Background="#ffcbcbcb" CornerRadius="10" Padding="20,0,20,0">
+                            <TextBlock x:Name="TextBlock" Style="{StaticResource Questions-MultiLine-Default}"
+    							 Text="{TemplateBinding Content}" TextWrapping="Wrap">
+                            </TextBlock>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefault" Value="True">
+                            <Setter TargetName="MainPath" Property="Background" Value="#ff4d4d4d" />
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-MultiLine-Pressed}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="MainPath" Property="Background" Value="#ff4d4d4d"/>
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-MultiLine-Pressed}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="MainPath" Property="Opacity" Value="0.4" />
+                            <Setter TargetName="MainPath" Property="Background" Value="#ffcbcbcb" />
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-MultiLine-Disabled}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="DrugOfChoiceButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Margin" Value="18.2, 9.5, 18.2, 0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid  Height="105px" Width="485px">
+                        <Border x:Name="MainPath" Background="#ffcbcbcb" CornerRadius="10" Padding="20,0,20,0">
+                            <TextBlock x:Name="TextBlock" Style="{StaticResource Questions-DrugsInventory-Default}"
+    							 Text="{TemplateBinding Content}" TextWrapping="Wrap">
+                            </TextBlock>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefault" Value="True">
+                            <Setter TargetName="MainPath" Property="Background" Value="#ff4d4d4d" />
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-DrugsInventory-Pressed}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="MainPath" Property="Background" Value="#ff4d4d4d"/>
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-DrugsInventory-Pressed}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="MainPath" Property="Opacity" Value="0.5" />
+                            <Setter TargetName="MainPath" Property="Background" Value="#ffcbcbcb" />
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-DrugsInventory-Default}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ViolenceButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Margin" Value="12.5,20,12.5,0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid  Height="142px" Width="309px">
+                        <Border x:Name="MainPath" Background="#ffcbcbcb" CornerRadius="10" Padding="14,0,14,0">
+                            <TextBlock x:Name="TextBlock" Style="{StaticResource Questions-MultiLine-Default}"
+    							 Text="{TemplateBinding Content}" TextWrapping="Wrap">
+                            </TextBlock>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefault" Value="True">
+                            <Setter TargetName="MainPath" Property="Background" Value="#ff4d4d4d" />
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-MultiLine-Pressed}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="MainPath" Property="Background" Value="#ff4d4d4d"/>
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-MultiLine-Pressed}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="MainPath" Property="Opacity" Value="0.4" />
+                            <Setter TargetName="MainPath" Property="Background" Value="#ffcbcbcb" />
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-MultiLine-Disabled}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="DemographicsGenderButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Margin" Value="4.2, 18, 4.2, 0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid  Height="129px" Width="405.84px">
+                        <Border x:Name="MainPath" Background="#ffcbcbcb" CornerRadius="10" Padding="5,0,5,0">
+                            <TextBlock x:Name="TextBlock" Style="{StaticResource Questions-Demographics-Default}"
+    							 Text="{TemplateBinding Content}" TextWrapping="Wrap">
+                            </TextBlock>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefault" Value="True">
+                            <Setter TargetName="MainPath" Property="Background" Value="#ff4d4d4d" />
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-Demographics-Pressed}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="MainPath" Property="Background" Value="#ff4d4d4d"/>
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-Demographics-Pressed}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="MainPath" Property="Opacity" Value="0.5" />
+                            <Setter TargetName="MainPath" Property="Background" Value="#ffcbcbcb" />
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-Demographics-Default}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="DemographicsRaceButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Margin" Value="4.2, 18, 4.2, 0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid  Height="129px" Width="485px">
+                        <Border x:Name="MainPath" Background="#ffcbcbcb" CornerRadius="10" Padding="5,0,5,0">
+                            <TextBlock x:Name="TextBlock" Style="{StaticResource Questions-Demographics-38-Default}"
+    							 Text="{TemplateBinding Content}" TextWrapping="Wrap">
+                            </TextBlock>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefault" Value="True">
+                            <Setter TargetName="MainPath" Property="Background" Value="#ff4d4d4d" />
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-Demographics-38-Pressed}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="MainPath" Property="Background" Value="#ff4d4d4d"/>
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-Demographics-38-Pressed}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="MainPath" Property="Opacity" Value="0.5" />
+                            <Setter TargetName="MainPath" Property="Background" Value="#ffcbcbcb" />
+                            <Setter TargetName="TextBlock" Property="Style" Value="{StaticResource Questions-Demographics-38-Default}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+    <Style x:Key="ClickToContinueButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Stylus.IsPressAndHoldEnabled" Value="False"/>
+        <Setter Property="ClickMode" Value="Release" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid  Height="325px" Width="944px">
+                        <Border x:Name="MainPath" Background="#FFE7BE5D" CornerRadius="40" Padding="0">
+                            <TextBlock x:Name="TextBlock" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                            FontSize="91" LineHeight="105" Style="{StaticResource DarkLabel}">
+							        <Run Text="PRESS NOW" FontFamily="../Fonts/#Proxima Nova Black" FontWeight="Black"/> <LineBreak/>
+                                    <Run Text="TO CONTINUE" FontWeight="SemiBold"/>
+                            </TextBlock>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True"/>
+                        <Trigger Property="IsDefaulted" Value="True"/>
+                        <Trigger Property="IsMouseOver" Value="True"/>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="MainPath" Property="Background" Value="#ff4d4d4d"/>
+                            <Setter TargetName="TextBlock" Property="Foreground" Value="#FFE7BE5D" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- End Yes/NO button styles and template-->
+
+
+
+    <!-- End Buttons -->
+
+
+</ResourceDictionary>

@@ -1,0 +1,101 @@
+﻿.textbox
+{
+	border: solid 1px #666666;
+	font-size: 13px;
+	line-height:15px;
+	margin:0;
+	padding:2px 0px 2px 3px;
+	width:350px;
+}
+
+.combobox
+{
+	border: solid 1px #666666;
+	font-size: 13px;
+	line-height:15px;
+	margin:0;
+	padding:1px 0px 1px 0px;
+	width:350px;
+}
+
+.btn,
+.wizard .wizard-buttons input[type="button"],
+.wizard .wizard-buttons input[type="submit"],
+.wizard .wizard-buttons button {
+    font-size: 12px;
+	color: #fff;
+	font-family: Tahoma, Arial;
+	border: solid 1px #666666;
+	background-color: #2599FF;
+	padding:2px 5px;
+    -moz-min-width: 70px;
+    -ms-min-width: 70px;
+    -o-min-width: 70px;
+    -webkit-min-width: 70px;
+    min-width: 70px;
+}
+
+
+.btn[disabled],
+.wizard .wizard-buttons input[type="button"][disabled],
+.wizard .wizard-buttons input[type="submit"][disabled],
+.wizard .wizard-buttons button[disabled]
+{
+	color: #888;
+	background-color: #eee;
+}
+
+
+/* EXPORT WIZARD CONTROL 
+*******************************/
+.wizard .wizard-sidebar{ border-bottom: 1px solid #000; display:block;}
+.wizard .wizard-sidebar ul{ float: right;}
+.wizard .wizard-sidebar li{display: block; float: left; padding: 4px 10px; margin: 0px; 
+                           border-width: 1px 1px 0px 1px; border-style: solid; border-color: #fff;}
+.wizard .wizard-sidebar li.selected,
+.wizard .wizard-sidebar li.active{ background-color: #fadc63; border-color: #000;}
+
+.wizard .wizard-header{ border-bottom: 1px solid #000;}
+
+
+.export-preview ul li .after > span{ color: #2599FF;}
+.export-preview ul li .before > span { color: #666666;}
+.export-preview .errors{ color: #ff0000;}
+
+
+.export-result + #export-preview-page { margin-right: 20px; margin-left: 20px;}
+
+
+#login-outer {
+		display: table-cell;vertical-align: middle; 
+	/*display: table;width: 100%;*/
+}
+
+.login-element {
+	display: table-cell;vertical-align: middle;
+	
+}
+
+.ajax__calendar_container {
+    z-index: 9999;
+}
+
+#auto-refresh-button-container{
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+
+img.datagrid.expand.icon{height:14px;}
+
+img.datagrid.document.icon {
+    height: 17px;
+}
+
+
+img.datagrid.export.icon {
+    height: 16px;
+}
+
+.red-background{ background-color: red;}

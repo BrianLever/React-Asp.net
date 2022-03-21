@@ -1,0 +1,1 @@
+This project contains only classes required for triple DES (DESede) encryption and decryption.

@@ -1,0 +1,13 @@
+﻿[
+    {
+        "job-name": "EHR Smart Export Orchestrator",
+        "job-type": "Frontdesk.Server.SmartExport.Jobs.ScheduleSmartExportJob, Frontdesk.Server.SmartExport",
+        "cron-expression": "0/5 * * * *",
+        "job-data": {
+            "BatchSize": 50,
+            "RunningTimes": 300
+        },
+        "timezone": "Pacific Standard Time",
+        "queue": "orchestrator"
+    }
+]

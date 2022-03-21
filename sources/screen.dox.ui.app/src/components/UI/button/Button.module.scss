@@ -1,0 +1,38 @@
+.button {
+  font: inherit;
+  border: 1px solid #4f005f;
+  background: #4f005f;
+  color: white;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+}
+  
+.button:hover,
+.button:active {
+  background: #741188;
+  border-color: #741188;
+}
+  
+.button:focus {
+  outline: none;
+}
+
+.regularButtonColor {
+  font-size: 16px;;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: underline;
+  transition-timing-function: cubic-bezier(0.400,0.000,0.200,1.000);
+  line-break: normal;
+  white-space: nowrap;
+  color: #2e2e42 !important;
+  span {
+    color: #2e2e42 !important;
+  }
+  .regularButtonDisabledColor {
+    color: #2e374280 !important;
+  }
+}
+
+  
